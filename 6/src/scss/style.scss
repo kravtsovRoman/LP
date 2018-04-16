@@ -1,0 +1,381 @@
+$mainColor: #ff4f00;
+$secondColor: #0071bc; 
+$bgColor: #000025;
+$mainFont: 'Open Sans', sans-serif;
+$secondFont: 'Montserrat', sans-serif;
+$thirdFont: 'Merriweather', serif;
+
+body{
+	position: relative;
+	overflow-x: hidden;
+	font-size: 18px;
+	font-family: $mainFont;
+}
+.clear {
+	content: '';
+	clear: both;  
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;     
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
+.button{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 15px 80px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.h2{
+	margin-top: 60px;
+	margin-bottom: 40px;
+	font-size: 48px;
+	font-family: $secondFont;
+	position: relative;
+	font-weight: 300;
+	display: inline-block;
+}
+header{
+	& .header-top{
+		height: 100px;
+		background: $bgColor;
+	}
+	& .logo{
+		width: 100px;
+		margin-top: 10px;
+		float: left;
+	}
+	& .nav-menu{
+		float: left;
+		margin-left: 80px;
+		& li{
+			float: left;
+			margin-left: 10px;
+			padding: 8px;
+			margin-top: 30px;
+			& a{
+				&:hover{
+					border-bottom: 4px solid $mainColor;
+				}
+			}
+		}
+	}
+	& .reg-button{
+		background: $mainColor;
+		margin-top: 30px;
+		float: right;
+		padding: 10px 40px;
+		border-radius: 20px;
+		& a{
+			color: #fff;
+		}
+		&:hover {
+			cursor: pointer;
+			background-color: $secondColor;
+		}
+	}
+}
+.slider{
+	margin: 0 auto;
+	margin-bottom: 0;
+	& .slick-arrow{
+		position: absolute;
+		top: 50%;
+		right: 50px;
+		width: 52px;
+		height: 172px;
+		background: url('../image/slider-arrow.png');
+		background-repeat: no-repeat;
+		z-index: 999;
+		&:before,{
+			content: '';
+		}
+	}
+	& .slick-prev{
+		transform: rotate(180deg);
+		top: calc(50% - 40px);
+		left: 50px;
+	}
+	& .slick-dots{
+		position: absolute;
+		bottom: 30px;
+		& li{
+			& button:before{
+				content: '';
+				width: 15px;
+				height: 15px;
+				background: #FFF;
+				border-radius: 50%;
+			}
+		}
+	}
+	& .slick-dotted.slick-slider{
+		margin-bottom: 1px !important;
+	}
+	& .slide .slick-slide {
+		width: 100% !important;
+		outline: none;
+	}
+	& .block{
+		height: 650px;
+		color: #fff;
+		position: relative;
+		& img{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+		& .slider-content{
+			position: absolute;
+			left: 50%;
+			transform: translatex(-50%);
+			text-align: center;
+			& h2{
+				margin-top: 15%;
+				font-family: $thirdFont;
+				font-size: 48px;
+				font-weight: 700;
+			}
+			& h4{
+				width: 90%;
+				margin: 0 auto;
+				font-family: $secondFont;
+				font-size: 36px;
+				font-weight: 600;
+				margin-top: 5%;
+			}
+			& p{
+				font-size: 30px;
+				margin-top: 5%;
+			}
+			& .header-button{
+				margin-top: 10%;
+				background: $mainColor;
+				padding: 20px 60px;
+				border-radius: 50px;
+				&:hover{
+					background: $secondColor;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+.our-service{
+	text-align: center;
+	color: #000;
+	padding-bottom: 1px;
+	& h2{
+		color: #000;
+		font-family: $thirdFont;
+		font-size: 36px;
+		font-weight: 700;
+	}
+	& p{
+		width: 65%;
+		margin: 0 auto;
+		line-height: 25px;
+	}
+	&_block{		
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+		& .block{
+			width: 28%;
+			margin: 50px 20px;
+			padding: 20px 10px;
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		& h4{
+			padding-left: 10px;
+			margin-bottom: 10px;
+			font-size: 22px;
+			color: $mainColor;
+			position: relative;
+			color: #000;
+			&:before{
+				content: '';
+				display: block;
+				position: absolute;
+				left: -50px;
+				top: 0;
+				width: 50px;
+				height: 50px;
+				background: url('../image/our-service-icons.png') no-repeat;
+				background-position: 10px -5px;
+			}
+		}& .h4-2:before{
+			background-position: -60px 0 ;
+		}
+		& .h4-3:before{
+			background-position: -130px -5px ;
+		}
+		& .h4-4:before{
+			background-position: -215px 0px ;
+		}
+		& .h4-5:before{
+			background-position: -280px 0px ;
+		}
+		& .h4-6:before{
+			background-position: -353px 0px ;
+		}
+		& p{
+			width: 95%;
+			font-size: 16px;
+			padding-left: 10px;
+			margin: 0;
+		}
+	}
+}
+.tarde-with{
+	padding: 35px 0;
+	background: $bgColor;
+	color: #fff;
+	border-bottom: 2px solid white;
+	& h3{
+		font-size: 24px;
+		font-weight: 700;
+		color: $mainColor;
+		font-family: $secondFont;
+		margin-bottom: 20px;
+	}
+	& p{
+		font-size: 16px;
+		width: 60%;
+	}
+	& .button{
+		padding: 15px 60px;
+		margin-top: 10px;
+		background: $mainColor;
+		border-radius: 50px;
+		&:hover{
+			background: $secondColor;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+footer{
+	background: $bgColor;
+	color: #fff;
+	font-size: 14px;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	& .logo{
+		width: 150px;
+		margin-bottom: 50px;
+	}
+	& .contacts{
+		padding: 0 30px;
+		& h3{
+			color: #fff;
+		}
+
+		& p{
+			padding-top: 5px;
+		}
+	}
+	& .place{
+		& div{
+			margin-bottom: 30px;
+		}
+		& p{
+			line-height: 24px;
+			padding-right: 30px;
+		}
+	}
+	& h3{
+		font-size: 30px;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		font-family: $secondFont;
+	}
+	& .risk{
+		width: 50%;
+		& p{
+			line-height: 24px;
+		}
+		& a{
+			color: #0011f1;
+			text-decoration: underline;
+		}
+	}
+	& .warning{
+		width: 50%;
+		padding-left: 70px;
+		& p{
+			line-height: 24px;
+		}
+	}
+	& .footer-links{
+		text-align: center;
+		margin-top: 40px;
+		& li{
+			display: inline;
+			&:not(:first-child):before{
+				content: ' | ';
+			}
+			& a{
+				text-decoration: underline;
+				margin: 0 7px;
+				text-transform: uppercase;
+				font-size: 16px;
+				line-height: 30px;
+				&:hover{
+					color: #0011f1;
+				}
+			}
+		}
+	}
+	& .footer-icons{
+		text-align: center;
+		& li{
+			// background: url(../image/footer-icons.png) no-repeat;
+			background-position: 0px 5px;
+			margin-top: 30px;
+			display: inline-block;
+			width: 150px;
+			height: 50px;
+		}
+		& .visa{
+			background-position: 35px 5px;
+		}
+		& .master{
+			background-position: -130px 5px;
+		}
+		& .webmoney{
+			background-position: -315px 5px;
+		}
+		& .qiwi{
+			background-position: -500px 5px;
+		}
+		& .yandex{
+			background-position: -660px 5px;
+		}
+		& .dss{
+			background-position: -850px 5px;
+		}
+		& .reuters{
+			background-position: -1020px 5px;
+		}
+	}
+}
