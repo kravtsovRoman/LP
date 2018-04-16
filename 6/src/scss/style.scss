@@ -168,10 +168,6 @@ header{
 		}
 	}
 }
-
-
-
-
 .our-service{
 	text-align: center;
 	color: #000;
@@ -217,165 +213,299 @@ header{
 				background: url('../image/our-service-icons.png') no-repeat;
 				background-position: 10px -5px;
 			}
-		}& .h4-2:before{
-			background-position: -60px 0 ;
-		}
-		& .h4-3:before{
-			background-position: -130px -5px ;
-		}
-		& .h4-4:before{
-			background-position: -215px 0px ;
-		}
-		& .h4-5:before{
-			background-position: -280px 0px ;
-		}
-		& .h4-6:before{
-			background-position: -353px 0px ;
-		}
-		& p{
-			width: 95%;
-			font-size: 16px;
-			padding-left: 10px;
-			margin: 0;
-		}
-	}
-}
-.tarde-with{
-	padding: 35px 0;
-	background: $bgColor;
-	color: #fff;
-	border-bottom: 2px solid white;
-	& h3{
-		font-size: 24px;
-		font-weight: 700;
-		color: $mainColor;
-		font-family: $secondFont;
-		margin-bottom: 20px;
-	}
-	& p{
-		font-size: 16px;
-		width: 60%;
-	}
-	& .button{
-		padding: 15px 60px;
-		margin-top: 10px;
-		background: $mainColor;
-		border-radius: 50px;
-		&:hover{
-			background: $secondColor;
-		}
-	}
-}
-
-
-
-
-
-
-
-
-footer{
-	background: $bgColor;
-	color: #fff;
-	font-size: 14px;
-	padding-top: 50px;
-	padding-bottom: 70px;
-	& .logo{
-		width: 150px;
-		margin-bottom: 50px;
-	}
-	& .contacts{
-		padding: 0 30px;
-		& h3{
-			color: #fff;
-		}
-
-		& p{
-			padding-top: 5px;
-		}
-	}
-	& .place{
-		& div{
-			margin-bottom: 30px;
-		}
-		& p{
-			line-height: 24px;
-			padding-right: 30px;
-		}
-	}
-	& h3{
-		font-size: 30px;
-		text-transform: uppercase;
-		margin-bottom: 20px;
-		font-family: $secondFont;
-	}
-	& .risk{
-		width: 50%;
-		& p{
-			line-height: 24px;
-		}
-		& a{
-			color: #0011f1;
-			text-decoration: underline;
-		}
-	}
-	& .warning{
-		width: 50%;
-		padding-left: 70px;
-		& p{
-			line-height: 24px;
-		}
-	}
-	& .footer-links{
-		text-align: center;
-		margin-top: 40px;
-		& li{
-			display: inline;
-			&:not(:first-child):before{
-				content: ' | ';
+			}& .h4-2:before{
+				background-position: -60px 0 ;
 			}
-			& a{
-				text-decoration: underline;
-				margin: 0 7px;
-				text-transform: uppercase;
+			& .h4-3:before{
+				background-position: -130px -5px ;
+			}
+			& .h4-4:before{
+				background-position: -215px 0px ;
+			}
+			& .h4-5:before{
+				background-position: -280px 0px ;
+			}
+			& .h4-6:before{
+				background-position: -353px 0px ;
+			}
+			& p{
+				width: 95%;
 				font-size: 16px;
-				line-height: 30px;
-				&:hover{
-					color: #0011f1;
+				padding-left: 10px;
+				margin: 0;
+			}
+		}
+	}
+	.tarde-with{
+		padding: 35px 0;
+		background: $bgColor;
+		color: #fff;
+		& h3{
+			font-size: 24px;
+			font-weight: 700;
+			color: $mainColor;
+			font-family: $secondFont;
+			margin-bottom: 20px;
+		}
+		& p{
+			font-size: 16px;
+			width: 60%;
+		}
+		& .button{
+			padding: 15px 60px;
+			margin-top: 10px;
+			background: $mainColor;
+			border-radius: 50px;
+			&:hover{
+				background: $secondColor;
+			}
+		}
+	}
+	.make-step{
+		text-align: center;
+		color: #000;
+		padding-bottom: 1px;
+		& h2{
+			color: #000;
+			font-family: $thirdFont;
+			font-size: 36px;
+			font-weight: 700;
+		}
+		& p{
+			width: 65%;
+			margin: 0 auto;
+			line-height: 25px;
+		}
+		&_block{		
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			& .block{
+				width: 28%;
+				margin: 30px 10px;
+				padding: 20px 10px;
+				text-align: left;
+				margin-bottom: 20px;
+				&:hover .image{
+					transform: scale(1.05);
+					cursor: pointer;
+				}
+			}
+			& .image{
+				transition: .3s all;
+				width: 100%;
+				height: 200px;
+				background: url('../image/make-step_image1.jpg') no-repeat;
+				background-position: center;
+				margin-bottom: 20px;
+			}
+			& .image-2{
+				background: url('../image/make-step_image2.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			& .image-3{
+				background: url('../image/make-step_image3.jpg');
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+			& h4{
+				margin-bottom: 10px;
+				font-size: 20px;
+				color: #000;
+				font-weight: 600;
+			}
+			& p{
+				width: 95%;
+				font-size: 16px;
+				line-height: 22px;
+				margin: 0;
+			}
+		}
+	}
+	.order-brokerage{
+		padding: 35px 0;
+		background: $bgColor;
+		color: #fff;
+		border-bottom: 1px solid;
+		& .container{
+			justify-content: space-between;
+		}
+		& h3{
+			width: 70%;
+			font-size: 30px;
+			line-height: 36px;
+			font-weight: 700;
+			color: $mainColor;
+			font-family: $thirdFont;
+		}
+		& .button{
+			padding: 15px 60px;
+			margin-top: 10px;
+			border-radius: 50px;
+			border: 2px solid $mainColor;
+			&:hover{
+				background: $mainColor;
+			}
+		}
+	}
+	.we-glad{
+		text-align: center;
+		color: #000;
+		padding-bottom: 20px;
+		& h2{
+			color: #000;
+			font-family: $thirdFont;
+			font-size: 36px;
+			font-weight: 700;
+		}
+		& p{
+			width: 65%;
+			margin: 0 auto;
+			line-height: 25px;
+		}
+		& .slider-footer{
+			margin-top: 50px;
+			margin-bottom: 50px;
+			& .slick-arrow{
+				position: absolute;
+				top: 50%;
+				right: 0px;
+				width: 46px;
+				height: 46px;
+				background: url('../image/slider-footer-arrow.png');
+				background-repeat: no-repeat;
+				z-index: 999;
+				&:before,{
+					content: '';
+				}
+			}
+			& .flex{
+				justify-content: center;
+			}
+			& .slick-prev{
+				transform: rotate(180deg);
+				top: calc(50% - 40px);
+				left: 0px;
+			}
+			& .slide{
+				display: flex;
+				justify-content: center;
+			}
+			& .block{
+				width: 20%;
+				padding: 0px;
+				color: #000;
+				& .foto{
+					width: 175px;
+					height: 175px;
+					margin: 0 auto;
+					border-radius: 50%;
+					background: url('../image/footer-slider-fotos.jpg');
+					&-2{
+						background-position:  -205px 0;
+					}
+					&-3{
+						background-position:  -405px -20px;
+					}
+					&-4{
+						background-position:  -620px -10px;
+					}
+					&-5{
+						background: url('../image/footer-slider-fotos2.jpg');
+						background-position:  -19px -12px;
+					}
+					&-6{
+						background: url('../image/footer-slider-fotos2.jpg');
+						background-position:  -254px -20px;
+					}
+					&-7{
+						background: url('../image/footer-slider-fotos2.jpg');
+						background-position:  -480px -10px;
+					}
+					&-8{
+						background: url('../image/footer-slider-fotos2.jpg');
+						background-position:  -700px 0px;
+					}
+				}
+				& .name{
+					font-size: 20px;
+					font-weight: 700;
 				}
 			}
 		}
 	}
-	& .footer-icons{
-		text-align: center;
-		& li{
-			// background: url(../image/footer-icons.png) no-repeat;
-			background-position: 0px 5px;
-			margin-top: 30px;
-			display: inline-block;
+
+
+
+
+
+
+
+	footer{
+		background: $bgColor;
+		color: #fff;
+		font-size: 14px;
+		padding-top: 50px;
+		padding-bottom: 40px;
+		& p{
+			margin-top: 3px;
+		}
+		& .flex{
+			justify-content: space-between;
+		}
+		& .logo{
 			width: 150px;
-			height: 50px;
+			margin-bottom: 50px;
 		}
-		& .visa{
-			background-position: 35px 5px;
+		& .contacts{
+			padding: 0 30px;
+			& h3{
+				font-family: $thirdFont;
+				font-size: 22px;
+				color: #fff;
+			}
+			& p{
+				padding-top: 15px;
+			}
 		}
-		& .master{
-			background-position: -130px 5px;
+		& .links1{
+			list-style: disc;
+			padding: 0 80px;
+			border-left: 1px solid #fff;
+			border-right: 1px solid #fff;
+			& li{
+				margin-top: 10px;
+				&:hover{
+					color: $mainColor;
+				}
+				& a:hover{
+					color: $mainColor;
+				}
+			}
 		}
-		& .webmoney{
-			background-position: -315px 5px;
+		& .links2{
+			& li{
+				margin-top: 20px;
+				text-decoration: underline;
+				& a:hover{
+					color: $mainColor;
+				}
+			}
 		}
-		& .qiwi{
-			background-position: -500px 5px;
-		}
-		& .yandex{
-			background-position: -660px 5px;
-		}
-		& .dss{
-			background-position: -850px 5px;
-		}
-		& .reuters{
-			background-position: -1020px 5px;
+		& .risk{
+			padding-bottom: 30px;
+			& h3{
+				font-size: 20px;
+				line-height: 36px;
+			}
+			& p{
+				font-size: 16px;
+				line-height: 24px;
+			}
+			& a{
+				color: $mainColor;
+				text-decoration: underline;
+			}
 		}
 	}
-}
