@@ -320,6 +320,12 @@ header{
 				font-size: 16px;
 				line-height: 22px;
 				margin: 0;
+				margin-bottom: 20px;
+			}
+			& a{
+				color: #000;
+				font-weight: 700;
+				text-decoration: underline;
 			}
 		}
 	}

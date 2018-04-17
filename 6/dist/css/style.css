@@ -541,6 +541,13 @@ header .reg-button:hover {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
+  margin-bottom: 20px;
+}
+
+.make-step_block a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .order-brokerage {

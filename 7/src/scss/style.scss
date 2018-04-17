@@ -1,0 +1,363 @@
+$mainColor: #ed1c24;
+$secondColor: #208ab9; 
+$bgColor: #0a212c;
+$mainFont: 'Open Sans', sans-serif;
+$secondFont: 'Montserrat', sans-serif;
+
+body{
+	position: relative;
+	overflow-x: hidden;
+	font-size: 18px;
+	font-family: $mainFont;
+}
+.clear {
+	content: '';
+	clear: both;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;     
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
+.button{
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 15px 80px;
+	border-radius: 10px;
+	cursor: pointer;
+} 
+.h2{
+	margin-top: 60px;
+	margin-bottom: 40px;
+	font-size: 48px;
+	font-family: $secondFont;
+	position: relative;
+	font-weight: 300;
+	display: inline-block;
+}
+header{
+	height: 768px;
+	background: url('../image/header-bg.jpg');
+	& .logo{
+		width: 100px;
+		margin-top: 10px;
+		float: left;
+	}
+	& .nav-menu{
+		float: left;
+		margin-left: 80px;
+		& li{
+			float: left;
+			margin-left: 10px;
+			padding: 8px;
+			margin-top: 30px;
+			& a{
+				text-decoration: none;
+				&:hover{
+					border-bottom: 4px solid $mainColor;
+				}
+			}
+		}
+	}
+	& .reg-button{
+		background: $mainColor;
+		margin-top: 30px;
+		float: right;
+		padding: 12px 40px;
+		& a{
+			color: #fff;
+		}
+		&:hover {
+			cursor: pointer;
+			background-color: $secondColor;
+		}
+	}
+	.header-text{
+		padding-top: 150px;
+		text-align: center;
+		color: #fff;
+		& h1{
+			text-transform: uppercase;
+			font-size: 48px;
+			font-weight: 900;
+		}
+		& h5{
+			margin: 50px auto 0 auto;
+			width: 40%;
+			font-size: 30px;
+		}
+		& .button{
+			margin-top: 100px;
+			background: $mainColor;
+			border-radius: 0;
+			&:hover{
+				background: $secondColor;
+			}
+		}
+	}
+}
+.trade-together{
+	text-align: center;
+	color: #000;
+	padding-bottom: 1px;
+	& h2{
+		color: $secondColor;
+		font-family: $secondFont;
+		font-size: 36px;
+		font-weight: 700;
+	}
+	& p{
+		width: 60%;
+		margin: 0 auto;
+		line-height: 24px;
+	}
+	&_block{		
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		& .block{
+			width: 28%;
+			margin: 30px 10px;
+			padding: 20px 10px;
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		& .icon{
+			width: 50px;
+			height: 50px;
+			margin: 0 auto 20px auto;
+			background: url('../image/trade-together-icon.png') no-repeat;
+			background-position: 0px 2px;
+		}
+		& .icon-2{
+			background-position: -80px 2px;
+		}
+		& .icon-3{
+			background-position: -162px 2px;
+		}
+		& h4{
+			margin-bottom: 10px;
+			font-size: 20px;
+			color: darken($secondColor, 10%);
+			font-weight: 600;
+		}
+		& p{
+			width: 95%;
+			font-size: 16px;
+			line-height: 22px;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+		& a{
+			color: $mainColor;
+			font-weight: 700;
+			text-decoration: underline;
+			&:hover{
+				color: $secondColor;
+			}
+		}
+	}
+}
+.ten-year{
+	color: #fff;
+	text-align: center;
+	height: 165px;
+	background: url('../image/ten-year.jpg') no-repeat;
+	& .block{
+		margin: 40px auto;
+		padding-right: 30px;
+		padding-left: 30px;
+		font-size: 45px;
+	}
+	& .block:not(:last-child){
+		border-right: 4px solid #992931;
+	}
+	& p{
+		font-family: $secondFont;
+		font-weight: 700;
+		color: $mainColor;
+		line-height: 30px;
+	}
+	& span{
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+}
+.be-successful{
+	text-align: center;
+	color: #000;
+	padding-bottom: 1px;
+	max-height: 650px;
+	background: url('../image/be-successful-bg.jpg') no-repeat;
+	& h2{
+		color: $secondColor;
+		font-family: $secondFont;
+		font-size: 36px;
+		font-weight: 700;
+	}
+	& p{
+		width: 70%;
+		margin: 0 auto;
+		line-height: 24px;
+	}
+	&_block{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding-top: 10px;
+		padding-bottom: 70px;
+		& .block{
+			width: 28%;
+			margin: 40px 10px 0px 10px;
+			padding: 0px 10px;
+			text-align: left;
+		}
+		& h4{
+			margin-bottom: 10px;
+			font-size: 20px;
+			font-weight: 600;
+		}
+		& p{
+			width: 95%;
+			font-size: 16px;
+			line-height: 20px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+		
+	}
+}
+.tarde-with{
+	padding: 35px 0;
+	background: $bgColor;
+	color: #fff;
+	& h3{
+		font-size: 36px;
+		font-weight: 700;
+		color: #fff;
+		font-family: $secondFont;
+		margin-bottom: 20px;
+	}
+	& p{
+		font-size: 18px;
+		width: 60%;
+	}
+	& .button{
+		padding: 15px 60px;
+		margin-top: 20px;
+		background: $mainColor;
+		border-radius: 0;
+		&:hover{
+			background: $secondColor;
+		}
+	}
+}
+.questions-answers{
+	height: 730px;
+	background: url('../image/questions-answers-bg.jpg') no-repeat;
+	background-position: top;
+	& .block{
+		width: 60%;
+		float: right;
+		& h2{
+			font-weight: 700;
+			font-family: $secondFont;
+			color: $secondColor;
+		}
+		& p{
+			line-height: 24px;
+		}
+	}
+}
+.accordion-menu {
+	width: 100%;
+	margin: 40px auto 20px;
+	& li{
+		border: 1px solid #37b7f3;
+		margin-top: 10px;
+		&.open .dropdownlink{
+			background: #37b7f3;
+			.fa-chevron-down {
+				transform: rotate(540deg);
+			}
+		}
+	}
+	.dropdownlink {
+		cursor: pointer;
+		display: block;
+		padding: 20px 15px 20px 20px;
+		font-size: 18px;
+		position: relative;
+		transition: all .5s ease-out;
+		i {
+			position: absolute;
+			top: 17px;
+			left: 16px;
+		}
+		.fa-chevron-down {
+			right: 12px;
+			left: auto;
+			top: calc(50% - 17px);
+			width: 26px;
+			height: 35px;
+			background: url('../image/arrow_down.png') no-repeat;
+			transition: all .5s ease-out;
+		}
+	}
+	.submenuItems {
+	  display: none;
+	  li {
+	  	padding: 30px 20px;
+	  	border: none;
+	  }
+	}
+}
+footer{
+	background: $bgColor;
+	color: #fff;
+	font-size: 14px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	& p{
+		margin-top: 3px;
+	}
+	& .flex{
+		justify-content: space-between;
+	}
+	& .logo{
+		width: 150px;
+	}
+	& .contacts{
+		margin: auto 0;
+		padding-right: 100px;
+		& h3{
+			font-size: 22px;
+			float: left;
+			color: #fff;
+		}
+		& p{
+			font-size: 20px;
+			margin: 0 40px;
+			float: left;
+		}
+	}
+	& .risk{
+		margin-top: -20px;
+		padding-bottom: 30px;
+		& h3{
+			font-size: 20px;
+			line-height: 36px;
+		}
+		& p{
+			font-size: 16px;
+			line-height: 24px;
+		}
+		& a{
+			color: $mainColor;
+			text-decoration: underline;
+		}
+	}
+}
