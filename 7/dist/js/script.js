@@ -6,11 +6,11 @@ $(document).ready(function(){
     event.preventDefault();
     var id  = $(this).attr('href'),
     top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top}, 1500);
+    $('body,html').animate({scrollTop: top}, 1000);
   });
 
     //Animate number row
-    var time = 7000;
+    var time = 6000;
 
     $('#num1').animate({ num: 10}, {
       duration: time,
