@@ -1,0 +1,502 @@
+$mainColor: #41438a;
+$secondColor: #ff242a;
+$bgColor: #e1e1e1;
+$titleFont: 'Merriweather', serif;
+$mainFont: 'Open Sans', sans-serif;
+
+
+body{
+	position: relative;
+	overflow-x: hidden;
+	font-size: 18px;
+	color: #404040;
+	font-family: $mainFont;
+}
+.clear {
+	content: '';
+	clear: both;  
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
+.button{
+		display: inline-block;
+		text-transform: uppercase;
+		border: 2px solid $mainColor;
+		padding: 25px 80px;
+		border-radius: 20px;
+		cursor: pointer;
+}
+.h2{
+	padding-top: 80px;
+	padding-bottom: 30px;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+header{
+	color: #000;
+	& .logo{
+		width: 100px;
+		margin: 15px 0;
+		float: left;
+	}
+	& .nav-menu{
+		margin-left: 30px;
+		float: left;
+		& li{
+
+			float: left;
+			padding: 20px;
+			margin-top: 30px;
+			& a{
+				  color: #000;
+				  font-weight: 600;
+				&:hover{
+					border-bottom: 2px solid;
+				}
+			}
+		}
+	}
+	& .reg-button{
+				background: $mainColor;
+				margin-top: 30px;
+				border-radius: 30px;
+				float: right;
+				padding: 15px 50px;
+				&:hover{
+					cursor: pointer;
+					background: $secondColor;
+				}
+			}
+	.header-content{
+		height: 800px;
+		background: url('../image/header-bg_1.jpg') no-repeat;
+		background-size: cover;
+		position: relative;
+		&_text{
+			color: $mainColor;
+			width: 50%;
+			padding-top: 180px;
+			&_title{
+				text-transform: uppercase;
+				color: $mainColor;
+				font-size: 80px;
+				line-height: 80px;
+				font-weight: 900;
+				
+			}
+			&_description{
+				font-size: 20px;
+				line-height: 28px;
+			}
+		}
+	}
+	& .button{
+		color: #fff;
+		padding: 15px 75px;
+		background: $mainColor;
+		margin-top: 20px;
+		border: none;
+		&:hover{
+			cursor: pointer;
+			background: $secondColor;
+		}
+	}
+}
+.begin-work{
+	text-align: center;
+	h2{
+		color: $mainColor;
+	}
+	p{
+		line-height: 24px;
+		width: 85%;
+		margin:  0 auto;
+	}
+	&_block{		
+		display: flex;
+		justify-content: space-around;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		& .block{
+			margin: 0 10px;
+			padding: 0 20px;
+			position: relative;
+			& .num{
+				font-weight: 900;
+				font-size: 170px;
+				color: lighten($mainColor, 45%);
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%);
+			}
+			& h4{
+				position: relative;
+				width: 100%;
+				font-size: 22px;
+				line-height: 28px;
+				font-weight: 700;
+				margin: 20px 0;
+				color: #404040;
+				z-index: 99;
+			}
+			& p{
+				position: relative;
+				font-size: 16px;
+				line-height: 22px;
+				width: 100%;
+				z-index: 99;
+			}
+		}
+	}
+}
+.capabilities{
+	text-align: center;
+	color: #000;
+	background: $bgColor;
+	padding-bottom: 1px;
+	& p{
+		width: 70%;
+		margin: 0 auto;
+		line-height: 25px;
+	}
+	&_block{		
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 40px;
+		margin-bottom: 70px;
+		& .block{
+			width: 21%;
+			margin: 0 10px;
+			padding: 70px 20px 30px 20px;
+			margin: 20px 20px;
+			background: #FFF;
+			outline: 1px solid $mainColor;
+			transition: all .4s;
+			&:hover{
+				cursor: pointer;
+				outline: 2px solid $mainColor;
+				transform: scale(1.1, 1.1);
+				box-shadow: 15px 15px 10px rgba(0, 0, 0, .5);
+			}
+			&:hover h4:before{
+				background: url('../image/our-advantages-icons-hover.png');
+				background-position: 6px 0px;
+				
+			}
+			&:hover .h4-2:before{
+				background-position: -49px 0;
+			}
+			&:hover .h4-3:before{
+				background-position: -117px 5px;
+			}
+			&:hover .h4-4:before{
+				background-position: 5px -50px;
+			}
+			&:hover .h4-5:before{
+				background-position: -50px -50px;
+			}
+			&:hover .h4-6:before{
+				background-position: -110px -50px;
+			}
+		}
+		& h4{
+			margin-top: 10px;
+			margin-bottom: 20px;
+			font-size: 24px;
+			line-height: 25px;
+			position: relative;
+			&:before{
+				content: '';
+				display: block;
+				position: absolute;
+				transform: translate(-50%);
+				left: 50%;
+				top: -50px;
+				width: 50px;
+				height: 50px;
+				background: url('../image/our-advantages-icons.png') no-repeat;
+				background-position: 7px 0;
+			}
+		}& .h4-2:before{
+			background-position: -55px 0;
+		}
+		& .h4-3:before{
+			background-position: -124px 5px;
+		}
+		& .h4-4:before{
+			background-position: 8px -50px;
+		}
+		& .h4-5:before{
+			background-position: -55px -50px;
+		}
+		& .h4-6:before{
+			background-position: -120px -45px;
+		}
+		
+		& p{
+			width: 100%;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+}
+.leptop{
+	color: #fff;
+	position: relative;
+	background: $mainColor;
+	img{
+		width: 30%;
+		position: absolute;
+		left: 0px;
+		top: -20%;
+	}
+	h3{
+		width: 80%;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		padding-left: 330px;
+		font-size: 27px;
+		line-height: 32px;
+		font-weight: 700;
+	}
+	p{
+		width: 70%;
+		padding-left: 330px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.button{
+		margin: 20px 0;
+		padding: 20px 60px;
+		margin-left: 330px;
+		border: 2px solid #fff;
+		&:hover{
+			background: $secondColor;
+			border: 2px solid $secondColor;
+		}
+	}
+}
+.perfection-together{
+	background: $bgColor;
+	h2{
+		text-align: center;
+		color: #000;
+	}
+	.description{
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	&_block{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-top: 50px;
+		.block{
+			width: 45%;
+			padding-bottom: 70px;
+			h3{
+				font-size: 27px;
+				padding-left: 20px;
+				display: inline-block;
+				color: $mainColor;
+				border-bottom: 1px solid $mainColor;
+				padding-bottom: 5px;
+				margin-bottom: 15px;
+				position: relative;
+				&:before{
+					width: 50px;
+					height: 50px;
+					display: block;
+					position: absolute;
+					left: -50px;
+					bottom: -1px;
+					content: '';
+					background: url('../image/perfection-together-icons.png') no-repeat, $mainColor;
+					background-position: 9px 10px;
+				}
+			}
+			.item-2:before{
+				background-position: -45px 10px;
+			}
+			.item-3:before{
+				background-position: -102px 10px;
+			}
+			.item-4:before{
+				background-position: -161px 10px;
+			}
+			p{
+				padding-left: 20px;
+				margin-bottom: 10px;
+				line-height: 24px;
+			}
+			a{
+				padding-left: 20px;
+				font-size: 20px;
+				line-height: 24px;
+				font-weight: 600;
+				color: #000;
+				text-decoration: underline;
+				margin-bottom: 20px;
+				&:hover{
+					color: $mainColor;
+				}
+			}
+		}
+	}
+}
+
+.reviews{
+	& h2{
+		text-align: center;
+		font-weight: 700;
+		font-size: 36px;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+		& span{
+			line-height: 70px;
+			color: #485563;
+		}
+	}
+	& .button{
+		background: $mainColor;
+		color: #fff;
+		font-size: 24px;
+		display: table;
+		margin: 0 auto 50px auto;
+		&:hover{
+			background: $secondColor;
+			border: 2px solid $secondColor;
+		}
+	}
+	& .slider{
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		& .slick-arrow{
+			position: absolute;
+			top: 50%;
+			right: -100px;
+			width: 36px;
+			height: 80px;
+			background: url('../image/slider-arrow.png');
+			background-repeat: no-repeat;
+			&:before,{
+				content: '';
+			}
+		}
+		& .slick-prev{
+			transform: rotate(180deg);
+			top: calc(50% - 40px);
+			left: -100px;
+		}
+		& .slick-list{
+			margin: 0 100px;
+		}
+		& .slide{
+			display: flex;
+			justify-content: center;
+			padding: 50px;
+			border-radius: 10px;
+			background: #f4f0f0;
+			&-foto{
+				width: 160px;
+				height: 150px;
+				border-radius: 50%;
+				background: #ccc;
+				float: left;
+				margin: 0 30px;
+				overflow: hidden;
+				& img{
+					margin-left: -40px;
+				}
+			}
+			& .foto-2 {
+					margin-left: -26px;
+				}
+				& .foto-3 {
+					margin-left: -20px;
+				}
+			&-text{
+				width: 85%;
+				font-size: 17px;
+				& span{
+					display: block;
+					margin-top: 30px;
+					font-weight: 700;
+					font-style: italic;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+
+
+footer{
+	background: #464646;
+	color: #fff;
+	font-size: 16px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.flex{
+		justify-content: flex-start;
+	}
+	p{
+		line-height: 24px;    
+	}
+	& .footer-logo{
+		margin-right: 40px;
+		& img{
+			width: 150px;
+		}
+	}
+	.contacts{
+		width: 30%;
+		margin-right: 150px;
+		margin-bottom: 30px;
+		p{
+			margin-bottom: 20px;
+		}
+	}
+	.feedback{
+		width: 32%;
+		.button{
+			margin-top: 30px;
+			border: 2px solid #fff;
+			padding: 10px 60px;
+			font-weight: 400;
+			text-transform: none;
+			&:hover{
+				background: $secondColor;
+				border: 2px solid $secondColor;
+			}
+		}
+	}
+	& h3{
+		font-size: 30px;
+		font-weight: 500;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		color: #787cff;
+	}
+	h4{
+		font-size: 20px;
+		line-height: 36px;
+		color: #787cff;
+	}
+	.address{
+		margin-top: 30px;
+	}
+}

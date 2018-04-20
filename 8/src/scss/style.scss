@@ -1,13 +1,14 @@
-$mainColor: #55b7f9;
-// $secondColor: #208ab9; 
+$mainColor: #6cc3ff;
+$textColor: #525252;
 $bgColor: #0a212c;
 $mainFont: 'Roboto', sans-serif;
 
 body{
 	position: relative;
-	overflow-x: hidden;
-	font-size: 18px;
+	overflow-x: hidden; 
+	font-size: 16px;
 	font-family: $mainFont;
+	color: $textColor;
 }
 .clear {
 	content: '';
@@ -29,120 +30,427 @@ body{
 	cursor: pointer;
 } 
 .h2{
-	margin-top: 60px;
-	margin-bottom: 40px;
+	margin: 60px auto 40px auto;
 	font-size: 48px;
-	position: relative;
-	font-weight: 300;
-	display: inline-block;
+	text-align: center;
+	color: #525252;
 }
 header{
-	height: 768px;
-	background: #ccc;
-	.logo{
-		width: 100px;
-		margin-top: 10px;
-		float: left;
-	}
-	.nav-menu{
-		float: left;
-		margin-left: 80px;
-		li{
+	height: 600px;
+	background: url('../image/header-bg.jpg') no-repeat;
+	.header-top{
+		height: 17%;
+		background: rgba(22, 28, 43, .9);
+		.logo{
+			width: 100px;
+			margin-top: 10px;
 			float: left;
-			margin-left: 10px;
-			padding: 8px;
-			margin-top: 30px;
-			a{
-				text-decoration: none;
-				&:hover{
-					border-bottom: 4px solid $mainColor;
+		}
+		.header-contacts{
+			color: #fff;
+			margin-top: 15px;
+			margin-left: 10%;
+			float: left;
+			p{
+				padding-top: 10px;
+			}
+		}
+		.nav-menu{
+			float: left;
+			margin-left: 10%;
+			li{
+				float: left;
+				margin-left: 10px;
+				padding: 10px;
+				margin-top: 30px;
+				text-transform: uppercase;
+				a{
+					text-decoration: none;
+					padding-bottom: 5px;
+					&:hover{
+						border-bottom: 4px solid $mainColor;
+					}
 				}
 			}
 		}
 	}
-	.reg-button{
-		background: $mainColor;
-		margin-top: 30px;
-		float: right;
-		padding: 12px 40px;
-		a{
-			color: #fff;
-		}
-		&:hover {
-			cursor: pointer;
-		}
-	}
 	.header-text{
-		padding-top: 150px;
-		text-align: center;
+		padding-top: 80px;
+		text-align: left;
 		color: #fff;
+		
 		h1{
-			text-transform: uppercase;
+			padding: 10px 170px 10px 50px;
+			background: rgba(0, 0, 0, .2);
 			font-size: 48px;
-			font-weight: 900;
+			line-height: 60px;
+			font-weight: 500;
+			width: 50%;
+			margin-bottom: 5px;
+			border-radius: 100px 100px 100px 15px;
 		}
-		h5{
-			margin: 50px auto 0 auto;
-			width: 40%;
-			font-size: 30px;
+		p{
+			width: 50%;
+			padding: 30px 170px 30px 50px;
+			background: rgba(0, 0, 0, .2);
+			border-radius: 15px 100px 100px 15px;
+			font-size: 18px;
+			line-height: 24px;
 		}
 		.button{
-			margin-top: 100px;
-			background: $mainColor;
+			margin-top: 5px;
+			font-size: 36px;
+			font-weight: 500;
+			background: #55b7f9;
 			border-radius: 0;
+			padding: 25px 50px;
+			border-radius: 12px;
 			&:hover{
+				background: darken(#55b7f9, 10%);
 			}
 		}
 	}
 }
-
-
-
-
-
-
-footer{
-	background: $bgColor;
+.trade-with{
+	padding-bottom: 50px;
+	.h2{
+		font-size: 36px;
+		font-weight: 500;
+	}
+	.description{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 24px;
+		margin-bottom: 100px;
+	}
+	&_block{
+		.block{
+			text-align: left;
+			width: 25%;
+			padding-bottom: 50px;
+			position: relative;
+			border: 1px solid #e0e0e0;
+			margin: 0 25px;
+			&:hover{
+				background: #ececec;
+				cursor: pointer;
+			}
+			&:hover .but{
+				background: $mainColor;
+				color: #fff;
+			}
+			&:hover .icon{
+				background: url('../image/icons.png'), $mainColor;
+				background-position: 4px -147px;
+				border: 1px solid $mainColor;
+			}
+			&:hover .icon-2{
+				background: url('../image/icons.png'), $mainColor;
+				background-position: -55px -147px;
+				border: 1px solid $mainColor;
+			}
+			&:hover .icon-3{
+				background: url('../image/icons.png'), $mainColor;
+				background-position: -110px -145px;
+				border: 1px solid $mainColor;
+			}
+			h3{
+				font-size: 22px;
+				padding: 25px 25px 0 25px;
+				font-weight: 500;
+			}
+			p{
+				padding: 0px 25px 25px 25px;
+				margin-top: 20px;
+				text-align: left;
+				line-height: 24px;
+			}
+			.but{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				color: $textColor;
+				text-transform: uppercase;
+				border-top: 1px solid #e0e0e0;
+				padding: 15px 0;
+				text-align: center;
+			}
+			.icon{
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				box-sizing: border-box;
+				top: -50px;
+				left: -1px;
+				border: 1px solid #e0e0e0;
+				background: url('../image/icons.png');
+				background-position: 0 -20px;
+			}
+			.icon-2{
+				background-position: -60px -20px;
+			}
+			.icon-3{
+				background-position: -115px -20px;
+			}
+		}
+	}
+}
+.advantages{
+	margin-top: 80px;
+	background: url('../image/advantages-bg.jpg');
+	background-position: center;
 	color: #fff;
+	text-align: center;
+	padding-top: 120px;
+	.block{
+		width: 50%;
+		position: relative;
+		h3{
+			font-size: 24px;
+			font-weight: 500;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+		p{
+			width: 85%;
+			margin: 0 auto;
+			margin-bottom: 40px;
+		}
+		.button{
+			border: 2px solid #fff;
+			margin-bottom: 60px;
+			&:hover{
+				background: $mainColor;
+				border: 2px solid $mainColor;
+			}
+		}
+	}
+	.circle{
+		width: 180px;
+		height: 180px;
+		position: absolute;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		top: -200px;
+		left: 50%;
+		transform: translate(-50%);
+		&-inner{
+			width: 172px;
+			height: 172px;
+			background: #fff;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			box-shadow: inset 0px -4px 11px rgba(108, 195, 255, .5);
+			background: url('../image/icons2.png') no-repeat, #fff;
+			background-position: -223px 35px;
+		}
+		&-inner-2{
+			background-position: 3px 35px;
+		}
+	}
+}
+.trade-goods{
+	padding-bottom: 80px;
+	.container{
+		position: relative;
+		.woman{
+			height: 85%;
+			position: absolute;
+			left: 20px;
+			bottom: -30px;
+		}
+		.main-block{
+			width: 85%;
+			position: relative;
+			margin-left: 15%;
+			.h2{
+				font-size: 36px;
+				font-weight: 500;
+			}
+			.description{
+				width: 80%;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 24px;
+				margin-bottom: 40px;
+			}
+			.trade-goods_block{
+				flex-wrap: wrap;
+				.block{
+					border-radius: 100px 100px 100px 20px;
+					text-align: left;
+					width: 22%;
+					padding: 20px 20px 20px 0;
+					border: 1px solid #ccc;
+					margin: 0 15px 30px 15px;
+					transition: all .5s;
+					&:hover{
+						background: $mainColor;
+						color: #fff;
+						cursor: pointer;
+						border: 1px solid $mainColor;
+						border-radius: 100px 20px 100px 20px;
+					}
+					&:hover .icon{
+						background-position: -180px -146px;
+					}
+					&:hover .icon-2{
+						background-position: -245px -146px;
+					}
+					&:hover .icon-3{
+						background-position: -305px -146px;
+					}
+					&:hover .icon-4{
+						background-position: -370px -146px;
+					}
+					&:hover .icon-5{
+						background-position: -435px -146px;
+					}
+					&:hover .icon-6{
+						background-position: -500px -146px;
+					}
+					h3{
+						text-align: center;
+						font-size: 18px;
+						line-height: 24px;
+						padding: 25px 25px 0 25px;
+						font-weight: 500;
+						text-transform: uppercase;
+					}
+					.icon{
+						width: 50px;
+						height: 50px;
+						margin: 20px auto 0 auto;
+						background: url('../image/icons.png');
+						background-position: -185px -20px;
+					}
+					.icon-2{
+						background-position: -250px -20px;
+					}
+					.icon-3{
+						background-position: -310px -20px;
+					}
+					.icon-4{
+						background-position: -375px -20px;
+					}
+					.icon-5{
+						background-position: -440px -20px;
+					}
+					.icon-6{
+						background-position: -505px -20px;
+					}
+				}
+			}
+		}
+	}
+}
+footer{
+	background: #0f0f0f;
+	color: #a6a6a6;
 	font-size: 14px;
-	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-top: 60px;
+	.footer-bottom{
+		font-size: 16px;
+		line-height: 24px;
+		background: #1a1a1a;
+		padding: 20px 0;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		.container{
+			position: relative;
+		}
+		.social{
+			position: absolute;
+			left: 0;
+			.icon{
+				width: 30px;
+				height: 30px;
+				float: left;
+				margin-left: 20px;
+				border: 1px solid #fff;
+				border-radius: 3px;
+				background: url('../image/footer-icons.png') no-repeat;
+				background-position: 10px 5px;
+				transition: all .3s;
+				&:hover {
+					background: url('../image/footer-icons.png') no-repeat, #275574;
+					background-position: 10px 5px;
+					cursor: pointer;
+					border: 1px solid #275574;
+					transform: rotate(360deg);
+				}
+				&-2{
+					background-position: -50px 5px;
+					&:hover {
+						background: url('../image/footer-icons.png') no-repeat, #275574;
+						background-position: -50px 5px;
+					}
+				}
+				&-3{
+					background-position: -110px 5px;
+					&:hover {
+						background: url('../image/footer-icons.png') no-repeat, #275574;
+						background-position: -110px 5px;
+					}
+				}
+			}
+		}
+	}
 	p{
-		margin-top: 3px	}
+		margin-top: 3px;
+	}
 	.flex{
 		justify-content: space-between;
 	}
 	.logo{
 		width: 150px;
+		margin-right: 70px;
 	}
 	.contacts{
-		margin: auto 0;
-		padding-right: 100px;
+		width: 37%;
+		color: #f4f4f4;
+		margin-left: 55px;
 		h3{
-			font-size: 22px;
-			float: left;
+			font-size: 24px;
 			color: #fff;
 		}
 		p{
-			font-size: 20px;
-			margin: 0 40px;
-			float: left;
+			font-size: 16px;
+			line-height: 20px;
+		}
+		.country{
+			color: #68cbff;
+			margin-top: 20px;
+		}
+		.button{
+			background: $mainColor;
+			display: table;
+			margin: 20px auto 0 auto;
+			transition: all .2s;
+			&:hover{
+				background: #275574;
+			}
 		}
 	}
 	.risk{
+		width: 45%;
 		margin-top: -20px;
 		padding-bottom: 30px;
 		h3{
+			text-transform: uppercase;
 			font-size: 20px;
 			line-height: 36px;
 		}
 		p{
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 24px;
-		}
-		a{
-			color: $mainColor;
-			text-decoration: underline;
 		}
 	}
 }
