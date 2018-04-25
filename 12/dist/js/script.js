@@ -8,12 +8,6 @@ $(document).ready(function(){
     top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1500);
   });
-	
-	//Slider
-    $('.slider').slick({
-		speed: 500,
-		fade: true,
-	});
 
     
 });

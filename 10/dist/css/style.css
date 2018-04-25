@@ -585,34 +585,27 @@ header .button:hover {
   color: #41438a;
 }
 
-.reviews h2 {
+.reviews {
   text-align: center;
+  padding-bottom: 30px;
+}
+
+.reviews .h2 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 48px;
   text-transform: uppercase;
+  color: #41438a;
+}
+
+.reviews .description {
+  width: 50%;
+  margin: 0 auto;
   margin-bottom: 50px;
-}
-
-.reviews h2 span {
-  line-height: 70px;
-  color: #485563;
-}
-
-.reviews .button {
-  background: #41438a;
-  color: #fff;
-  font-size: 24px;
-  display: table;
-  margin: 0 auto 50px auto;
-}
-
-.reviews .button:hover {
-  background: #ff242a;
-  border: 2px solid #ff242a;
 }
 
 .reviews .slider {
   width: 80%;
+  text-align: left;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -620,7 +613,7 @@ header .button:hover {
 .reviews .slider .slick-arrow {
   position: absolute;
   top: 50%;
-  right: -100px;
+  right: -50px;
   width: 36px;
   height: 80px;
   background: url("../image/slider-arrow.png");
@@ -637,11 +630,12 @@ header .button:hover {
           transform: rotate(180deg);
   top: -webkit-calc(50% - 40px);
   top: calc(50% - 40px);
-  left: -100px;
+  left: -50px;
 }
 
 .reviews .slider .slick-list {
   margin: 0 100px;
+  overflow: inherit;
 }
 
 .reviews .slider .slide {
@@ -653,38 +647,30 @@ header .button:hover {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 50px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
-  background: #f4f0f0;
+  padding: 50px 0;
+  border: 1px solid #41438a;
 }
 
-.reviews .slider .slide-foto {
-  width: 160px;
+.reviews .slider .slide:before {
+  content: '';
+  width: 190px;
   height: 150px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background: #ccc;
-  float: left;
-  margin: 0 30px;
-  overflow: hidden;
-}
-
-.reviews .slider .slide-foto img {
-  margin-left: -40px;
-}
-
-.reviews .slider .slide .foto-2 {
-  margin-left: -26px;
-}
-
-.reviews .slider .slide .foto-3 {
-  margin-left: -20px;
+  background: url("../image/slider-dots.png") no-repeat;
+  background-position: center;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: -27px;
+  z-index: 9;
 }
 
 .reviews .slider .slide-text {
   width: 85%;
   font-size: 17px;
+  padding-bottom: 30px;
+  z-index: 99;
 }
 
 .reviews .slider .slide-text span {
@@ -725,7 +711,6 @@ footer .footer-logo img {
 footer .contacts {
   width: 30%;
   margin-right: 150px;
-  margin-bottom: 30px;
 }
 
 footer .contacts p {
