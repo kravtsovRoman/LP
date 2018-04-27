@@ -1,5 +1,12 @@
-     
 $(document).ready(function(){
+
+
+  //Burger menu в моб. версии
+  $('#burger_check+label').on('click', function(event){
+      $('.nav-menu').fadeToggle(200);
+      event.stopPropagation();
+    });
+
 
   //Anchors
   $("#anhcors").on("click","a", function (event) {
@@ -8,7 +15,6 @@ $(document).ready(function(){
     top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 1000);
   });
-
 
 //Animate number 
   $(window).on("scroll", function() {
@@ -48,7 +54,6 @@ $(document).ready(function(){
 });
 });
 
-
   //Accordion
   var Accordion = function(el, multiple) {
     this.el = el || {};
@@ -60,7 +65,6 @@ $(document).ready(function(){
     { el: this.el, multiple: this.multiple },
     this.dropdown);
 };
-
 
 //Accordion Prototype
 Accordion.prototype.dropdown = function(e) {
@@ -78,5 +82,5 @@ Accordion.prototype.dropdown = function(e) {
   }
 }
 
-//object
+//Accordion object
 var accordion = new Accordion($('.accordion-menu'), false);

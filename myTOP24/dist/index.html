@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>
 		myTop24 - получай стабильную прибыль от успешной компании
 	</title>
+	<link rel="shortcut icon" href="https://mytop24.com/sites/all/themes/Eldir/favicon.ico" type="image/vnd.microsoft.icon">
 	<meta name="description" content="
-	Превратите свой трафик в деньги по самым выгодным тарифам. От 100 долларов за каждого привлеченного клиента. Тысячи наших партнеров уже зарабатывают вместе с нами. Не упусти возможность получать отличную прибыль от стабильной компании.">
+		Превратите свой трафик в деньги по самым выгодным тарифам. От 100 долларов за каждого привлеченного клиента. Тысячи наших партнеров уже зарабатывают вместе с нами. Не упусти возможность получать отличную прибыль от стабильной компании.">
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/style.css">	
 </head>
@@ -21,28 +22,36 @@
 					<div class="buttons">
 						<a href="#" class="button button-enter">Вход</a>
 						<a href="#" class="button button-reg">Регистрация</a>
+						<div class="burger">
+							<input type="checkbox" id="burger_check" class="burger_checkbox">
+							<label for="burger_check">
+								<span class="span-1"></span>
+								<span class="span-2"></span>
+								<span class="span-3"></span>
+							</label>
+						</div>
 					</div>
-					<ul class="nav-menu" >
+					<ul class="nav-menu" id="anhcors">
 						<li>
-							<a href="#">О нас</a>
+							<a href="#digits">О нас</a>
 						</li>
 						<li>
-							<a href="#">Особенности</a>
+							<a href="#our-features">Особенности</a>
 						</li>
 						<li>
-							<a href="#">Как это работает?</a>
+							<a href="#how-work">Как это работает?</a>
 						</li> 
 						<li>
-							<a href="#">Преимущества</a>
+							<a href="#our-advantages">Преимущества</a>
 						</li>
 						<li>
-							<a href="#">Структура</a>
+							<a href="#partner-deductions">Структура</a>
 						</li>
 						<li>
-							<a href="#">FAQ</a>
+							<a href="#faq">FAQ</a>
 						</li>
 						<li>
-							<a href="#">Платежные системы</a>
+							<a href="#brends">Платежные системы</a>
 						</li>
 					</ul>
 				</div>
@@ -61,7 +70,7 @@
 			Нужен дополнительный заработок, но разбираться в теме финансов нет времени? Компания MyTop24 - то, что вам нужно, наши специалисты сделают так, чтобы сотрудничество приносило Вам желаемый доход и не тратило много времени. 
 		</p>
 	</div>
-	<div class="our-advantages">
+	<div class="our-advantages" id="our-advantages">
 		<div class="container">
 			<h2>
 				Наши преимущества
@@ -152,7 +161,7 @@
 			<div class="img-right"></div>
 		</div>
 	</div>
-	<div class="our-features">
+	<div class="our-features" id="our-features">
 		<div class="container">
 			<h2>
 				Наши особенности
@@ -199,14 +208,14 @@
 			<form class="form" action="#openModal">
 				<input type="text" placeholder="Ваше имя">
 				<input type="text" placeholder="Ваш телефон">
-				<input href="#openModal" type="submit" value="РЕГИСТРАЦИЯ"></input>
+				<input href="#openModal" type="submit" value="РЕГИСТРАЦИЯ">
 			</form>
 
 			<!-- Modal window -->
 			<div id="openModal" class="modalWindow">
 				<div>
 					<a href="#close" title="Закрыть" class="close">X</a>
-					<img src="image/modalWindow-icon.png">
+					<img src="image/modalWindow-icon.png" alt="">
 					<h2>СПАСИБО!</h2>
 					<p>Ваша заявка отправлена. </p>
 					<p>Скоро с вами свяжется наш менеджер.</p>
@@ -214,7 +223,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="how-work">
+	<div class="how-work" id="how-work">
 		<div class="container">
 			<h2>
 				Как это работает?
@@ -262,12 +271,7 @@
 				</div>
 			</div>
 	</div>
-
-
-
-
-
-	<div class="partner-deductions">
+	<div class="partner-deductions" id="partner-deductions">
 		<div class="container">
 			<h2>
 				Партнёрские отчисления 
@@ -322,81 +326,135 @@
 			</div>	
 		</div>
 	</div>
-
-
-
-
-
-
-
-
-
-	<div class="questions-answers" id="questions-answers">
+	<div class="faq" id="faq">
 		<div class="container">
-			<div class="block">
-				<h2 class="h2">Вопросы и ответы</h2>
-				<p>
-					Не стесняйтесь задать нам свой вопрос – мы с радостью ответим на любую интересующую лично вас тему о торговле. Мы донесем до вас 100% правдивую информацию, которая будет вам максимально полезна.
-				</p>
+				<h2 class="h2">FAQ</h2>
 				<ul class="accordion-menu">
 					<li>
 						<div class="dropdownlink">
-							Как открыть счет в компании?
+							Клиентов из каких стран вы принимаете?
 							<i class="fa fa-chevron-down"></i>
 						</div>
 						<ul class="submenuItems">
 							<li>
 								<p>
-									Нажмите кнопку зарегистрироваться, заполните свои данные и наши предствители свяжутся с Вами в ближайшее время.
+									Мы сотрудничаем с клиентами со всего мира, кроме стран, которые мы указываем Вам при консультации. Мы сотрудничаем с клиентами со всего мира, кроме стран, которые мы указываем Вам при консультации.
 								</p>
 							</li>
 						</ul>
 					</li>
 					<li>
 						<div class="dropdownlink">
-							Какой минимальный депозит нужен для начала торговли?
+							Есть ли у вас минимальный порог вывода?
 							<i class=" fa-chevron-down" ></i>
 						</div>
 						<ul class="submenuItems">
 							<li>
 								<p>
-									После открытия счета, наши консультанты подберут вам наиболее оптимальную стратегию торгов для ваших финансовых возможностей.
+									Ограничения по минимальному размеру вывода средств отсутствуют. Чем больше клиентов, тем больше Ваш пассивный доход от повторных депозитов.
 								</p>
 							</li>
 						</ul>
 					</li>
 					<li>
 						<div class="dropdownlink">
-							Как торговать, если нет опыта?
+							Какие у вас тарифы?
 							<i class=" fa-chevron-down" ></i>
 						</div>
 						<ul class="submenuItems">
 							<li>
 								<p>
-									Компания предоставляет всем заинтересованным клиентам ведущего брокера, который предоставит всю информацию необходимую для успешной торговли, обучение и сопровождение.
+									Мы работаем по принципу СPA (оплата за действие). За каждую начальную инвестицию привлеченного клиента наши партнеры получают 10% и 1-7% от повторных инвестиций. При большом количестве приведенных клиентов, myTop24 предоставит Вам улучшенные условия, что сделает сотрудничество с нами еще прибыльнее.
 								</p>
 							</li>
 						</ul>
 					</li>
 					<li>
 						<div class="dropdownlink">
-							Насколько безопасна торговля на бирже?
+							Как я могу начать зарабатывать?
 							<i class=" fa-chevron-down" ></i>
 						</div>
 						<ul class="submenuItems">
 							<li>
 								<p>
-									Торговля на мировых финансовых рынках несет в себе возможные риски, поэтому очень важно получить первую консультацию от брокера и научится правильно управлять рисками
+									Вам нужно зарегистрироваться, получить промо-материалы для рекламы и начать делиться ими. После этого клиенты, переходящие по Вашим рекламным материалам начинают приносить прибыль.
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<div class="dropdownlink">
+							Почему именно myTop24?
+							<i class=" fa-chevron-down" ></i>
+						</div>
+						<ul class="submenuItems">
+							<li>
+								<p>
+									Помимо стандартного набора функций, при сотрудничестве с нами Вы получите возможность обеспечить себе пассивный доход с повторных инвестиций клиентов. После 12 лет работы на рынке мы сотрудничаем более чем с 1200 партнерами, достигли конверсии в 7%, обеспечили стабильные и высокие выплаты. Все это позволяет нашим партнерам получать максимальный доход от их деятельности.
 								</p>
 							</li>
 						</ul>
 					</li>
 				</ul>
-			</div>
+		</div>
+	</div>
+	<div class="brends" id="brends">
+		<div class="container">
+			<ul class="flex">
+				<li class="item-1"></li>
+				<li class="item-2"></li>
+				<li class="item-3"></li>
+				<li class="item-4"></li>
+				<li class="item-5"></li>
+				<li class="item-6"></li>
+			</ul>
 		</div>
 	</div>
 	<footer>
-		FOOTER
+		<div class="container">
+			<h2>Напишите нам</h2>
+			<p class="description">
+				Партнерская программа MyTop24 предоставляет лучшие на рынке условия.
+			</p>
+			<p class="description">
+				С нами Вы сможете не только заработать дополнительные деньги, а и получить ценную информацию в финансовой сфере.
+			</p>
+			<div class="footer_blocks flex">
+				<div class="block flex">
+					<a href="index.html">
+						<img class="logo" src="image/logo.png" alt="">
+					</a>
+					<div class="contacts">
+						<p class="footer-mail">
+							support@strade24.com
+						</p>
+						<p>
+							+441440400025
+						</p>
+						<p>
+							+442080681922  
+						</p>
+					</div>
+				</div>
+				<div class="block footer-text">
+					<p>
+						Если у Вас возникли вопросы, свяжитесь с нами по указанным контактам в удобное время. Наша служба поддержки будет рада помочь Вам.
+					</p>
+				</div>
+				<div class="block">
+					<form class="form flex" action="#openModal">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Ваш телефон">
+						<input href="#openModal" type="submit" value="РЕГИСТРАЦИЯ">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>
+				MyTop24 © 2018 All rights reserved
+			</p>
+		</div>
 	</footer>
 
 	<script

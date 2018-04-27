@@ -1,0 +1,300 @@
+
+@media (max-width: 1600px) {
+
+}
+
+
+@media (max-width: 1299px) {
+	.container{
+		padding: 0 20px;
+	}
+	header{
+		background-position: 0;
+		background-size: cover;
+		.header-top{
+			padding: 0 10px;
+		}
+		.nav-menu li{
+			padding-left: 10px;
+		}
+	}
+	.our-advantages .become-partner input[type='submit']{
+		padding: 10px 70px;
+	}
+	.brends .flex{
+		flex-wrap: wrap;
+		li{
+			width: 18%;
+		}
+	}
+	footer .footer_blocks{
+		flex-wrap: wrap;
+		justify-content: center;
+		form{
+			margin-top: 20px;
+		}
+	}
+}
+
+
+@media (max-width: 991px) {
+	header{
+		background-position: -230px 0;
+		.header-text{
+			h1{
+			  font-size: 30px;
+  			line-height: 32px;
+			}
+			h5{
+				margin-top: 15px;
+		    margin-bottom: 20px;
+		    font-size: 18px;
+		    line-height: 20px;
+			}
+		}
+		.header-top{
+			position: relative;
+			.header-right{
+			}
+			.buttons{
+				transition: all .3s;
+				margin: 35px 0;
+				a{
+					margin-right: 20px;
+					transition: all .4s;
+				}
+			}
+		}
+		.nav-menu{
+			background: #d32424;
+			display: none;
+			position: absolute;
+			top: 100%;
+			right: 0;
+			box-shadow: -3px 5px 20px  rgba(0, 0, 0, .7);
+			li{
+				float: none;
+				font-size: 1.1em;
+				padding: 15px 20px;
+				transition: all .3s;
+				&:not(:last-child){
+					border-bottom: 1px solid #ccc;
+				}
+				& a:hover{
+					color: #000;
+					font-weight: 900;
+				}
+			}
+		}
+		.burger{
+			display: block;
+		}
+	}
+	.our-advantages{
+		&_content{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&_blocks{
+			width: 100%;
+		}
+	}
+	.start-earning .modalWindow div{
+		width: 50%;
+	}
+}
+
+
+
+@media (max-width: 767px) {
+	.our-advantages{
+		.become-partner{
+			width: 50%;
+		}
+	}
+	.affiliate-program{
+		padding-bottom: 0;
+		.container{
+			display: block;
+			.affiliate-program_blocks{
+				width: 100%;
+				.block{
+					.button{
+						margin-left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+	}
+	.img-right{
+		display: none;
+	}
+	.start-earning{
+		padding-bottom: 40px;
+		h2{
+			font-size: 1.1em;
+		}
+	}
+	.how-work{
+		padding: 30px 0;
+		&_blocks{
+			.block{
+				p{
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+	.our-features{
+		&_blocks{
+			padding-right: 5px;
+			.block{
+				width: 40%;
+			}
+		}
+	}
+	.digits{
+		.block{
+			width: 100px;
+			height: 100px;
+		}
+	}
+	.faq{
+		padding: 30px 0;
+		height: 400px;
+	}
+	.brends{
+		.flex{
+			li{
+				min-width: 160px;
+			}
+		}
+	}
+	.start-earning .modalWindow div{
+		width: 60%;
+		padding: 50px;
+		h2{
+			margin: 10px;
+		}
+	}
+}
+
+
+
+
+
+@media (max-width: 610px) {
+	header{
+		.buttons{
+			.button{
+				padding: 0 20px;
+			}
+		}
+		.nav-menu{
+			width: 70%;
+			right: 50%;
+			transform: translateX(50%);
+			text-align: center;
+		}
+		.header-text {
+	    padding: 0 30px 100px 30px;
+	    width: 90%;
+	    text-align: center;
+	    h1{
+	    	font-size: 28px;
+	    }
+	    h5{
+	    	margin-bottom: 50px;
+	    }
+		}
+	}
+	.under-header{
+		p{
+			width: 90%;
+		}
+	}
+	.how-work_blocks{
+		.block{
+			p{
+				&:before{
+					width: 75px;
+				}
+			}
+		}
+	}
+	.partner-deductions{
+		padding-bottom: 20px;
+		&_blocks{
+			.block{
+				width: 80%;
+				margin-bottom: 50px;
+			}
+		}
+	}
+	footer{
+		.footer_blocks{
+			.block{
+				width: 90%;
+				&:first-child{
+					justify-content: space-between;
+					margin-bottom: 30px;
+				}
+				form{
+					justify-content: center;
+					flex-direction: none;
+					input{
+						margin: 5px auto;
+					}
+				}
+			}
+		}
+	}
+	.start-earning .modalWindow div{
+		width: 70%;
+		padding: 50px;
+		img{
+			width: 100px;
+		}
+		h2{
+			margin: 10px;
+			font-size: 2em;
+		}
+		p{
+			font-size: 1em;
+		}
+		.close{
+			font-size: 40px;
+		}
+	}
+}
+
+
+
+
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 320px) {
+	
+
+
+
+
+	.start-earning .modalWindow div{
+		top: 75px;
+		width: 80%;
+		padding: 20px;
+		h2{
+			margin-bottom: 0;
+			font-size: 1.5em;
+		}
+		.close{
+			font-size: 30px;
+			top: 0px;
+		}
+	}
+}
