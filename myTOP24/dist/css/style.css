@@ -288,6 +288,13 @@ header .burger_checkbox:checked + label .span-3 {
 
 header .burger_checkbox + label {
   position: relative;
+  display: block;
+  width: 35px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 header .burger_checkbox + label:hover {
@@ -1225,7 +1232,7 @@ footer .footer-bottom p {
   line-height: 24px;
   padding: 25px 0;
 }
-@media (max-width: 1299px) {
+@media screen and (max-width: 1299px) {
   .container {
     padding: 0 20px;
   }
@@ -1273,7 +1280,7 @@ footer .footer-bottom p {
   }
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   header {
     background-position: -230px 0;
   }
@@ -1363,7 +1370,16 @@ footer .footer-bottom p {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  header .header-text .button {
+    padding: 15px 50px;
+    font-size: 16px;
+  }
+
+  .under-header p {
+    width: 80%;
+  }
+
   .our-advantages .become-partner {
     width: 50%;
   }
@@ -1437,11 +1453,20 @@ footer .footer-bottom p {
   .start-earning .modalWindow div h2 {
     margin: 10px;
   }
+
+  .footer-text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
-@media (max-width: 610px) {
+@media screen and (max-width: 610px) {
   header .buttons .button {
     padding: 0 20px;
+  }
+
+  header .burger {
+    margin-left: 0;
   }
 
   header .nav-menu {
@@ -1484,6 +1509,21 @@ footer .footer-bottom p {
     margin-bottom: 50px;
   }
 
+  .digits {
+    padding-bottom: 0;
+  }
+
+  .digits .flex {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .digits .flex .block {
+    margin-bottom: 100px;
+    margin: 0 auto 100px auto;
+  }
+
   footer .footer_blocks .block {
     width: 90%;
   }
@@ -1512,6 +1552,28 @@ footer .footer-bottom p {
     margin: 5px auto;
   }
 
+  .start-earning .form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .start-earning .form input {
+    margin-top: 5px;
+  }
+
+  .start-earning .form input[type="text"] {
+    width: 60%;
+  }
+
   .start-earning .modalWindow div {
     width: 70%;
     padding: 50px;
@@ -1535,7 +1597,296 @@ footer .footer-bottom p {
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 480px) {
+  header .header-top .container {
+    padding: 0;
+  }
+
+  header .header-top .container .logo {
+    width: 75px;
+  }
+
+  header .header-top .buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 10px 30px 10px 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  header .header-top .buttons a {
+    margin: 0 10px 10px 10px;
+    width: 50%;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  header .header-top .burger {
+    position: absolute;
+    right: 10px;
+  }
+
+  header .header-top .nav-menu {
+    width: 100%;
+  }
+
+  header .header-text {
+    width: 95%;
+    margin-top: 50px;
+    padding: 0 10px;
+  }
+
+  header .header-text .button {
+    margin-bottom: 20px;
+  }
+
+  .under-header p {
+    margin: 30px auto;
+  }
+
+  .our-advantages_blocks .block {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .our-advantages_blocks .block p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .our-advantages_blocks .block p:before {
+    top: -40px;
+    left: 50%;
+  }
+
+  .our-advantages .become-partner {
+    width: 90%;
+  }
+
+  .our-features_blocks .block {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .our-features_blocks .block p {
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .our-features_blocks .block p:before {
+    left: 50%;
+    top: 10px;
+  }
+
+  .start-earning .form input[type="text"] {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .start-earning .form input[type="submit"] {
+    width: 78%;
+    padding: 10px 0;
+  }
+
+  .how-work p {
+    width: 100%;
+  }
+
+  .how-work_blocks {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .how-work_blocks .block {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .how-work_blocks .block p:before {
+    top: -74px;
+    width: 150px;
+  }
+
+  .digits .flex .block {
+    width: 150px;
+    height: 150px;
+  }
+
+  .digits .flex .block:after {
+    bottom: -70px;
+  }
+
+  .faq {
+    padding-bottom: 0;
+  }
+
+  .faq p {
+    font-size: 16px;
+  }
+
+  .faq .accordion-menu {
+    margin-bottom: 0;
+  }
+
+  .faq .accordion-menu .dropdownlink {
+    padding: 15px 40px 15px 20px;
+    font-size: 16px;
+  }
+
+  footer {
+    padding-top: 30px;
+  }
+
+  footer .description {
+    font-size: 14px;
+  }
+
+  footer .footer_blocks {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  footer .footer_blocks .block {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  footer .footer_blocks .block .footer-mail:before {
+    display: none;
+  }
+
+  footer .footer_blocks .flex {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer .footer_blocks .flex a {
+    margin: 0 auto;
+  }
+
+  footer .footer_blocks .flex a .logo {
+    margin-right: 0;
+  }
+
+  footer .footer_blocks .flex .contacts {
+    margin: 0 auto;
+  }
+
+  footer .footer_blocks .footer-text p {
+    padding-left: 0;
+    border: none;
+    font-size: 14px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  footer .footer_blocks .form input[type="text"] {
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h2 {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  header .header-text h1 {
+    font-size: 25px;
+  }
+
+  header .header-text h5 {
+    margin: 10px auto 30px auto;
+    font-size: 16px;
+  }
+
+  .under-header p {
+    width: 95%;
+    font-size: 16px;
+    border-left: 0;
+    padding: 0;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .our-advantages {
+    padding-bottom: 30px;
+  }
+
+  .our-advantages .container {
+    padding: 0 10px;
+  }
+
+  .our-advantages .description {
+    font-size: 20px;
+  }
+
+  .our-advantages p {
+    font-size: 16px;
+  }
+
+  .our-advantages .become-partner {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .our-advantages .become-partner input[type='text'] {
+    padding-top: 10px;
+  }
+
+  .our-advantages .become-partner input[type='submit'] {
+    margin-top: 10px;
+  }
+
+  .affiliate-program {
+    padding: 30px 0 0 0;
+  }
+
+  .affiliate-program .block {
+    border: 0;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .affiliate-program .block h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .affiliate-program .block p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .affiliate-program .block .button {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+
+  .our-features p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .start-earning {
+    padding-bottom: 20px;
+  }
+
   .start-earning .modalWindow div {
     top: 75px;
     width: 80%;
@@ -1550,5 +1901,47 @@ footer .footer-bottom p {
   .start-earning .modalWindow div .close {
     font-size: 30px;
     top: 0px;
+  }
+
+  .start-earning .form input[type="text"] {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  .start-earning .form input[type="submit"] {
+    width: 103%;
+  }
+
+  .partner-deductions_blocks .block {
+    text-align: center;
+    width: 100%;
+  }
+
+  .partner-deductions_blocks .block .border-text h4 {
+    font-size: 20px;
+  }
+
+  .partner-deductions_blocks .block .border-text h4 + p {
+    font-size: 16px;
+  }
+
+  .partner-deductions_blocks .block .description {
+    font-size: 16px;
+  }
+
+  .faq p {
+    font-size: 14px;
+  }
+
+  .faq .accordion-menu .dropdownlink {
+    padding: 10px 30px 10px 15px;
+  }
+
+  .faq .accordion-menu .dropdownlink .fa-chevron-down {
+    right: 10px;
+  }
+
+  .brends {
+    padding: 10px 0;
   }
 }

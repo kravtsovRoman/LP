@@ -7,7 +7,6 @@ $(document).ready(function(){
       event.stopPropagation();
     });
 
-
   //Anchors
   $("#anhcors").on("click","a", function (event) {
     event.preventDefault();
