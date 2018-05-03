@@ -47,7 +47,16 @@ header{
 		justify-content: space-between;
 	}
 	.header-top{
+		position: relative;
 		background: rgba(0, 0, 0, .5);
+		transition: all .8s;
+		&-fixed{
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 999;
+			background: rgba(0, 0, 0, .8);
+		}
 	}
 	.logo{
 		width: 100px;
@@ -164,6 +173,20 @@ header{
 				background: $hoverColor;
 			}
 		}
+	}
+	.logo-fixed{
+		margin-top: 20px;
+		width: 70px;
+	}
+	.menu-fixed{
+		margin-top: 30px;
+	}
+	.header-buttons-fixed{
+		display: none;
+		margin: 10px 0;
+	}
+	.header-burger-fixed{
+		margin: 10px 0;
 	}
 }
 .under-header{
@@ -354,7 +377,7 @@ header{
 	text-align: center;
 	p{
 		width: 85%;
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 20px;
 		padding-bottom: 20px;
 		margin: 0 auto;
@@ -698,6 +721,9 @@ header{
 			li {
 				padding: 10px 20px; 
 				border: none;
+				p{
+					font-family: $mainFont;
+				}
 			}
 		}
 	}

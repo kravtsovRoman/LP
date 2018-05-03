@@ -52,7 +52,6 @@
 			}
 		}
 		.header-top{
-			position: relative;
 			.header-right{
 			}
 			.buttons{
@@ -71,6 +70,7 @@
 			top: 100%;
 			right: 0;
 			box-shadow: -3px 5px 20px  rgba(0, 0, 0, .7);
+			margin-top: 2px;
 			li{
 				float: none;
 				font-size: 1.1em;

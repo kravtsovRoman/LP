@@ -1,11 +1,30 @@
 $(document).ready(function(){
 
 
+ $(window).scroll(function() {
+  if ($(this).scrollTop() > 125) {
+    $(".header-top").addClass("header-top-fixed");
+    $(".header-top .buttons a").addClass("header-buttons-fixed");
+    $("header .header-top .buttons").addClass("header-burger-fixed");
+    $("header .logo").addClass("logo-fixed");
+    $("header .nav-menu").addClass("menu-fixed");
+  }
+  else{
+    $(".header-top").removeClass("header-top-fixed");
+    $(".header-top .buttons a").removeClass("header-buttons-fixed");
+    $("header .header-top .buttons").removeClass("header-burger-fixed");
+    $("header .logo").removeClass("logo-fixed");
+    $("header .nav-menu").removeClass("menu-fixed");        
+  }
+});
+
+
+
   //Burger menu в моб. версии
   $('#burger_check+label').on('click', function(event){
-      $('.nav-menu').fadeToggle(200);
-      event.stopPropagation();
-    });
+    $('.nav-menu').fadeToggle(200);
+    event.stopPropagation();
+  });
 
   //Anchors
   $("#anhcors").on("click","a", function (event) {
@@ -16,40 +35,40 @@ $(document).ready(function(){
   });
 
 //Animate number 
-  $(window).on("scroll", function() {
+$(window).on("scroll", function() {
 
-    var hight = $('#digits').offset().top;
+  var hight = $('#digits').offset().top;
 
-    if ($(window).scrollTop() > hight - 800) {
-      var time = 3000;
+  if ($(window).scrollTop() > hight - 800) {
+    var time = 3000;
 
-      $('#num1').animate({ num: 12}, {
-        duration: time,
-        step: function (num){
-          this.innerHTML = (num + 0).toFixed(0);
-        }
-      });
+    $('#num1').animate({ num: 12}, {
+      duration: time,
+      step: function (num){
+        this.innerHTML = (num + 0).toFixed(0);
+      }
+    });
 
-      $('#num2').animate({ num: 1288}, {
-        duration: time,
-        step: function (num){
-          this.innerHTML = (num + 0).toFixed(0);
-        }
-      });
+    $('#num2').animate({ num: 1288}, {
+      duration: time,
+      step: function (num){
+        this.innerHTML = (num + 0).toFixed(0);
+      }
+    });
 
-      $('#num3').animate({ num: 250000}, {
-        duration: time,
-        step: function (num){
-          this.innerHTML = (num + 0).toFixed(0);
-        }
-      });
-      $('#num4').animate({ num: 7}, {
-        duration: time,
-        step: function (num){
-          this.innerHTML = (num + 0).toFixed(0) + '%';
-        }
-      }); 
-    };
+    $('#num3').animate({ num: 250000}, {
+      duration: time,
+      step: function (num){
+        this.innerHTML = (num + 0).toFixed(0);
+      }
+    });
+    $('#num4').animate({ num: 7}, {
+      duration: time,
+      step: function (num){
+        this.innerHTML = (num + 0).toFixed(0) + '%';
+      }
+    }); 
+  };
 });
 });
 

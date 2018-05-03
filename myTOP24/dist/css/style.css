@@ -219,7 +219,19 @@ header .flex {
 }
 
 header .header-top {
+  position: relative;
   background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .8s;
+  -o-transition: all .8s;
+  transition: all .8s;
+}
+
+header .header-top-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 header .logo {
@@ -364,6 +376,24 @@ header .header-text .button {
 
 header .header-text .button:hover {
   background: #95121B;
+}
+
+header .logo-fixed {
+  margin-top: 20px;
+  width: 70px;
+}
+
+header .menu-fixed {
+  margin-top: 30px;
+}
+
+header .header-buttons-fixed {
+  display: none;
+  margin: 10px 0;
+}
+
+header .header-burger-fixed {
+  margin: 10px 0;
 }
 
 .under-header p {
@@ -604,7 +634,7 @@ header .header-text .button:hover {
 
 .our-features p {
   width: 85%;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   padding-bottom: 20px;
   margin: 0 auto;
@@ -1056,6 +1086,10 @@ header .header-text .button:hover {
   border: none;
 }
 
+.faq .accordion-menu .submenuItems li p {
+  font-family: "HelveticaRegular", "Open Sans", sans-serif;
+}
+
 .brends {
   padding: 60px 0;
 }
@@ -1297,10 +1331,6 @@ footer .footer-bottom p {
     line-height: 20px;
   }
 
-  header .header-top {
-    position: relative;
-  }
-
   header .header-top .buttons {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
@@ -1323,6 +1353,7 @@ footer .footer-bottom p {
     right: 0;
     -webkit-box-shadow: -3px 5px 20px rgba(0, 0, 0, 0.7);
             box-shadow: -3px 5px 20px rgba(0, 0, 0, 0.7);
+    margin-top: 2px;
   }
 
   header .nav-menu li {

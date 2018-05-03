@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>LP_1</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 			<link rel="stylesheet" href="libs/slick/css/slick.css">
 			<link rel="stylesheet" href="libs/slick/css/slick-theme.css">
 			<link rel="stylesheet" href="css/style.css">	
 		</head>
 		<body>
-			<header>
+			<header id="header">
 				<div class="bg">
-					<div class="container">
+					<div class="container img">
+						<div class="header-content-image">
+							</div>
 						<div class="header-top">
+							<div class="container">
 							<a href="index.html">
 								<img class="logo" src="image/logo.png" alt="">
 							</a>
-							<ul class="nav-menu">
+							<div class="burger">
+								<input type="checkbox" id="burger_check" class="burger_checkbox">
+								<label for="burger_check">
+									<span class="span-1"></span>
+									<span class="span-2"></span>
+									<span class="span-3"></span>
+								</label>
+							</div>
+							<ul class="nav-menu anhcors">
 								<li>
-									<a href="index.html">Главная</a>
+									<a href="#header">Главная</a>
 								</li>
 								<li>
 									<a href="#begin-work">О нас</a>
@@ -28,19 +40,20 @@
 									<a href="#work-with">Наши услуги</a>
 								</li>
 								<li>
-									<a href="#slider">Отзывы</a>
+									<a href="#reviews">Отзывы</a>
 								</li>
 								<li>
 									<a href="#contacts">Контакты</a>
 								</li>
 							</ul>
-							<div class="reg-button">
-								<a href="">Регистрация</a>
+							<div class="reg-button anhcors">
+								<a href="#begin-trade">Регистрация</a>
 							</div>
+						</div>
 						</div>
 						<div class="clear"></div>
 						<div class="header-content">
-							<div class="header-content_text">
+							<div class="header-content_text anhcors">
 								<h1 class="header-content_text_title">Новые возможности на бирже</h1>
 								<p class="header-content_text_description">
 									Торгуйте товарами, валютой и индексами
@@ -49,12 +62,9 @@
 								<p>
 									Компания STrade24 Inc предоставляет полный доступ к международным финансовым потокам валют, контрактов на разницу цены, индексов крупнейших бирж металлов и сырья. Зарегистрируйтесь, чтобы более подробно ознакомиться с условиями торговли.
 								</p>
-								<div class="button header-button">Зарегистрироваться</div>
-							</div>
-							<div class="header-content-image">
+								<a href="#begin-trade" class="button header-button">Зарегистрироваться</a>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</header>
@@ -82,10 +92,10 @@
 					<div class="learn-more_text">
 						<h2>Хотите узнать больше про торги на бирже?</h2>
 					</div>
-					<div class="learn-more_button">
-						<div class="button">
+					<div class="learn-more_button anhcors">
+						<a href="#begin-trade" class="button">
 							<p>Узнать больше</p>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -100,7 +110,7 @@
 							Мы предоставляем большие возможности для новичков. В частности, для вас работает наш аналитический и брокерский отдел, предоставляющий только самую актуальную информацию. Также для наших клиентов предоставляется сопровождение, в рамках которого мы предоставляем доступ к важным позициям.
 						</p>
 					</div>
-					<div class="blocks flex">
+					<div class="blocks flex anhcors">
 						<div class="block ">
 							<h3 class="block-title">Аналитический и брокерский отдел</h3>
 							<p>
@@ -109,9 +119,9 @@
 							<p>
 								Более прибыльная торговля, все брокеры имеют международную банковскую лицензию для управления средствами инвесторов и минимальный порог прибыльности. 
 							</p>
-							<div class="button">
+							<a href="#begin-trade" class="button">
 								<p>Получить консультацию</p>
-							</div>
+							</a>
 						</div>
 						<div class="block ">
 							<h3 class="block-title client">Клиентское сопровождение</h3>
@@ -124,14 +134,14 @@
 							<p>
 								Поддержка множества языков, валют и способов инвестирования.
 							</p>
-							<div class="button">
+							<a href="#begin-trade" class="button">
 								<p>Узнать подробнее</p>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="begin-trade">
+			<div class="begin-trade" id="begin-trade">
 			 	<div class="container">
 					<h2>Начните торговать уже сегодня</h2>
 					<p>
@@ -141,7 +151,7 @@
 				<form class="form" action="#openModal">
 					<input type="text" placeholder="Имя">
 					<input type="text" placeholder="Телефон">
-					<input href="#openModal" type="submit" value="ОСТАВИТЬ ЗАЯВКУ"></input>
+					<input href="#openModal" type="submit" value="РЕГИСТРАЦИЯ"></input>
 				</form>
 				<div id="openModal" class="modalWindow">
 			        <div>
@@ -155,7 +165,7 @@
 			</div>
 			
 			<div class="arrow"></div>
-			<div class="reviews">
+			<div class="reviews anhcors" id="reviews">
 				<h2>Отзывы <br> <span>Наших клиентов</span></h2>
 				<div class="slider" id="slider">
 					<div class="slide flex">
@@ -202,7 +212,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="button">Открыть счет</div>
+				<a  href="#begin-trade" class="button">Открыть счет</a>
 			</div>
 			<footer id="contacts">
 				<div class="arrow"></div>
@@ -226,26 +236,14 @@
 							<p class="country">Австралия и Океания - Republic of Vanuatu, </p>
 							<p>Shfa, Port-Vila P.O. Box 34456</p>
 						</div>
-						<p class="mail">Email: support@strade24.com</p>
 					</div>
 					<div class="risk">
 						<h3>Уведомление о рисках</h3>
 						<p>
-							Торговля валютами и контрактами на разницу цен несет высокий риск убытков в связи с тем, что такая торговля осуществляется за счет кредитования, что может привести к полной потере вами своего капитала. Такая торговля подходит не всем категориям инвесторов. Нажмите <a href="#">здесь</a>, чтобы ознакомиться с полным текстом нашего предупреждения о рисках, и до того, как продолжить, удостоверьтесь в том, что вы осознаете имеющиеся риски, принимая во внимание свой опыт в данной сфере. При необходимости обратитесь к независимому консультанту. Информация, содержащаяся на данном веб-сайте и в опубликованном на нем документах, имеет общий характер и не учитывает ваши личные обстоятельства, финансовое положение или потребности. Для того чтобы оценить, подходит ли вам торговля такими финансовыми продуктами, вы должны внимательно ознакомиться с нашими <a href="#">Условиями торговли</a> и получить независимую консультацию.
+							Торговля валютами и контрактами на разницу цен несет высокий риск убытков в связи с тем, что такая торговля осуществляется за счет кредитования, что может привести к полной потере вами своего капитала. Такая торговля подходит не всем категориям инвесторов. Нажмите здесь, чтобы ознакомиться с полным текстом нашего предупреждения о рисках, и до того, как продолжить, удостоверьтесь в том, что вы осознаете имеющиеся риски, принимая во внимание свой опыт в данной сфере. При необходимости обратитесь к независимому консультанту. Информация, содержащаяся на данном веб-сайте и в опубликованном на нем документах, имеет общий характер и не учитывает ваши личные обстоятельства, финансовое положение или потребности. Для того чтобы оценить, подходит ли вам торговля такими финансовыми продуктами, вы должны внимательно ознакомиться с нашими Условиями торговли и получить независимую консультацию.
 						</p>
 					</div>
 				</div>
-				<ul class="footer-links">
-					<li>
-						<a href="#">Отказ от ответственности</a>
-					</li>
-					<li>
-						<a href="#">Согласие с рассылкой</a>
-					</li>
-					<li>
-						<a href="#">Политика конфиденциальности</a>
-					</li>
-				</ul>
 				<ul class="footer-icons">
 					<li class="visa"></li>
 					<li class="master"></li>
