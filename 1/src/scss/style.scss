@@ -42,7 +42,6 @@ body{
 
 
 header{
-	// clip-path: polygon(0 0, 100% 0%, 100% 93%, 0% 106%);
 	width: 100%;
 	background-image: url('../image/header-bg_1.jpg');
 	-webkit-background-size: cover;
@@ -204,9 +203,6 @@ header{
 	}
 }
 
-// .header-polygon{
-// 	clip-path: none;
-// }
 .header-top-fixed{
 	position: fixed;
 	top: 0;

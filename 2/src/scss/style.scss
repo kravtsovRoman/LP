@@ -38,12 +38,22 @@ body{
 }
 header{
 	width: 100%;
+	padding-top: 100px;
 	background: url('../image/header_bg.jpg') no-repeat;
 	background-position: center;
+	background-size: cover;
+	.header-top{
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+		right: 0;
+		left: 0;
+	}
 	& .logo{
 		width: 135px;
 		margin-top: 30px;
 		float: left;
+		transition: all .5s ease-out;
 	}
 	& .nav-menu{
 		margin-left: 30px;
@@ -52,10 +62,56 @@ header{
 			float: left;
 			padding: 13px;
 			margin-top: 60px;
+			transition: all .5s ease-out;
 			& a{
-				  transition: .2s all;
 				&:hover{
 					border-bottom: 2px solid;
+				}
+			}
+		}
+	}
+	.burger{
+		display: none;
+		float: right;
+		margin-left: 10px;
+		margin-right: 30px;
+		&_checkbox{
+			display: none;
+			&:checked {
+				+label .span-2{
+					opacity: 0;
+				}
+				+label .span-1{
+					transform: rotate(135deg);
+					position: absolute;
+					top: 5px;
+				}
+				+label .span-3{
+					transform: rotate(-135deg);
+					position: absolute;
+					top: 5px;
+				}
+			}
+			&+label{
+				position: relative;
+				display: block;
+				width: 35px;
+				height: 20px;
+				left: 0;
+				top: 35px;
+				right: 0;
+				bottom: 0;
+				&:hover{
+					cursor: pointer;
+				}
+				span{
+					width: 35px;
+					height: 3px;
+					display: block;
+					background: #FFF;
+					border-radius: 5px;
+					margin-top: 5px;
+					transition: all .3s;
 				}
 			}
 		}
@@ -63,9 +119,11 @@ header{
 	& .reg-button{
 				background: $mainColor;
 				margin-top: 55px;
+				margin-right: 20px;
 				border-radius: 30px;
 				float: right;
 				padding: 15px 50px;
+				transition: all .5s ease-out;
 				&:hover{
 					cursor: pointer;
 					background: $secondColor;
@@ -104,6 +162,33 @@ header{
 		}
 	}
 }
+
+
+.header-top-fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	background: rgba(0, 0, 0, .8);
+}
+header .logo-fixed{
+	width: 70px;
+	margin: 10px 0;
+}
+header .nav-menu .menu-fixed{
+	line-height: 3em;
+	margin: 0;
+}
+.header-buttons-fixed{
+	display: none;
+}
+header .button-fixed{
+	margin-top: 15px;
+}
+
+
+
 .advantages-work{
 	text-align: center;
 	& h2{
@@ -141,7 +226,7 @@ header{
 			background-repeat: no-repeat;
 		}
 		& .icon-1{
-			background-position: -30px 0 ;
+			background-position: -30px 0;
 		}
 		& .icon-2{
 			background-position: -180px 0px;
@@ -302,7 +387,7 @@ header{
 		width: 600px;
 		background: #383831;
 		position: relative;
-		margin: 5% auto;
+		margin: 10% auto;
 		padding: 20px;
 		text-align: center;
 		padding: 100px;
@@ -369,7 +454,7 @@ header{
 				display: none;
 				position: absolute;
 				left: -120px;
-				bottom: -130px;
+				top: 170px;
 				background: $mainColor;
 				padding: 10px;
 				border-radius: 5px;
