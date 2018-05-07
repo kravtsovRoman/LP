@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>LP_3</title>
@@ -7,15 +7,25 @@
 	<meta name="keywords" content="">
 	<link rel="stylesheet" href="css/style.css">	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="header-top">
-				<a href="">
+				<div class="container">
+					<a href="">
 					<img class="logo" src="image/logo.png" alt="">
 				</a>
-				<ul class="nav-menu">
+				<div class="burger">
+						<input type="checkbox" id="burger_check" class="burger_checkbox">
+						<label for="burger_check">
+							<span class="span-1"></span>
+							<span class="span-2"></span>
+							<span class="span-3"></span>
+						</label>
+					</div>
+				<ul class="nav-menu anhcors">
 					<li>
 						<a href="">Главная</a>
 					</li>
@@ -29,8 +39,9 @@
 						<a href="#with-broker">Брокерские услуги</a>
 					</li>
 				</ul>
-				<div class="reg-button">
-					<a href="#">Регистрация</a>
+				<div class="reg-button anhcors">
+					<a href="#begin-trade">Регистрация</a>
+				</div>
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -50,10 +61,10 @@
 					Торгуйте товарами, валютой и индексами на крупнейших финансовых рынках, начните зарабатывать с успешными брокерами.
 				</p>
 			</div>
-			<div class="new-capabilities_button">
-				<div class="button">
+			<div class="new-capabilities_button anhcors">
+				<a href="#begin-trade" class="button">
 					<p>Стать клиентом компании</p>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -85,7 +96,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="why-should" id="why-should" >
+	<div class="why-should anhcors" id="why-should" >
 		<div class="container">
 			<h2 class="h2">Почему нужно начать работать с нами</h2>
 			<p>
@@ -108,10 +119,10 @@
 					<p>Ведущие брокеры компании обучат вас прибыльной торговле даже если вы не торговали и не имели опыта работы на бирже.</p>
 				</div>
 			</div>
-			<div class="button">Открыть торговый счет</div>
+			<a href="#begin-trade" class="button">Открыть торговый счет</a>
 		</div>
 	</div>
-<div class="reduce-risks" >
+<div class="reduce-risks anhcors" >
 		<div class="container">
 			<h2 class="h2">Снижаем риски и увеличиваем прибыль</h2>
 			<p>
@@ -129,7 +140,7 @@
 					<p class="price">
 						Минимальная инвестиция: <span>$1000</span>
 					</p>
-					<div class="button">Открыть торговый счет</div>
+					<a href="#begin-trade" class="button">Открыть торговый счет</a>
 				</div>
 				<div class="block">
 					<h4>Начальный счет</h4>
@@ -142,7 +153,7 @@
 					<p class="price">
 						Минимальный депозит: <span>$50</span>
 					</p>
-					<div class="button">Стать клиентом компании</div>
+					<a href="#begin-trade" class="button">Стать клиентом компании</a>
 				</div>
 			</div>
 		</div>
@@ -213,7 +224,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="begin-trade">
+	<div class="begin-trade" id="begin-trade">
 		<div class="container">
 			<h2>Начните торговать уже сегодня</h2>
 			<p>
@@ -258,21 +269,10 @@
 			<div class="risk">
 				<h3>Уведомление о рисках</h3>
 				<p>
-					Торговля валютами и контрактами на разницу цен несет высокий риск убытков в связи с тем, что такая торговля осуществляется за счет кредитования, что может привести к полной потере вами своего капитала. Такая торговля подходит не всем категориям инвесторов. Нажмите <a href="#">здесь</a>, чтобы ознакомиться с полным текстом нашего предупреждения о рисках, и до того, как продолжить, удостоверьтесь в том, что вы осознаете имеющиеся риски, принимая во внимание свой опыт в данной сфере. При необходимости обратитесь к независимому консультанту. Информация, содержащаяся на данном веб-сайте и в опубликованном на нем документах, имеет общий характер и не учитывает ваши личные обстоятельства, финансовое положение или потребности. Для того чтобы оценить, подходит ли вам торговля такими финансовыми продуктами, вы должны внимательно ознакомиться с нашими <a href="#">Условиями торговли</a> и получить независимую консультацию.
+					Торговля валютами и контрактами на разницу цен несет высокий риск убытков в связи с тем, что такая торговля осуществляется за счет кредитования, что может привести к полной потере вами своего капитала. Такая торговля подходит не всем категориям инвесторов. Нажмите здесь, чтобы ознакомиться с полным текстом нашего предупреждения о рисках, и до того, как продолжить, удостоверьтесь в том, что вы осознаете имеющиеся риски, принимая во внимание свой опыт в данной сфере. При необходимости обратитесь к независимому консультанту. Информация, содержащаяся на данном веб-сайте и в опубликованном на нем документах, имеет общий характер и не учитывает ваши личные обстоятельства, финансовое положение или потребности. Для того чтобы оценить, подходит ли вам торговля такими финансовыми продуктами, вы должны внимательно ознакомиться с нашими Условиями торговли и получить независимую консультацию.
 				</p>
 			</div>
 		</div>
-		<ul class="footer-links">
-			<li>
-				<a href="#">Отказ от ответственности</a>
-			</li>
-			<li>
-				<a href="#">Согласие с рассылкой</a>
-			</li>
-			<li>
-				<a href="#">Политика конфиденциальности</a>
-			</li>
-		</ul>
 		<ul class="footer-icons">
 			<li class="visa"></li>
 			<li class="master"></li>
@@ -283,5 +283,12 @@
 			<li class="reuters"></li>
 		</ul>
 	</footer>
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+
 </body>
 </html>
