@@ -1273,6 +1273,29 @@ footer .footer-icons .reuters {
     margin-bottom: 20px;
   }
 
+  .how-work h2:before {
+    display: none;
+  }
+
+  .how-work h2:after {
+    display: none;
+  }
+
+  .how-work_block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .how-work_block .block {
+    width: 37%;
+  }
+
+  .begin-trade .form input[type="submit"] {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
   .form {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1315,6 +1338,7 @@ footer .footer-icons .reuters {
 
   .modalWindow div p {
     font-size: 16px;
+    width: 100%;
   }
 
   .modalWindow div .close {
@@ -1528,7 +1552,7 @@ footer .footer-icons .reuters {
   }
 
   .with-broker {
-    padding: 0 20px;
+    padding: 0 20px 0 10px;
   }
 
   .with-broker h2 {
@@ -1557,6 +1581,35 @@ footer .footer-icons .reuters {
 
   .with-broker_block .central-icon {
     display: none;
+  }
+
+  .how-work h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .how-work_block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .how-work_block .block {
+    width: 80%;
+  }
+
+  .begin-trade {
+    padding-top: 30px;
+  }
+
+  .begin-trade h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .begin-trade .form input {
+    width: 60%;
   }
 
   .modalWindow div {
