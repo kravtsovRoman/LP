@@ -1,0 +1,340 @@
+
+@media screen and (max-width: 1600px) {
+}
+
+
+@media screen and (max-width: 1299px) {
+	header{
+		.container{
+			padding: 0 5px;
+			.nav-menu{
+				li{
+					font-size: 14px;
+				}
+			}
+			.reg-button{
+				padding: 5px 20px;
+				font-size: 14px;
+			}
+		}
+		.header_block{
+			justify-content: space-around;
+		}
+	}
+	.leptop{
+		& img{
+			width: 40%;
+			position: absolute;
+			left: -10%;
+			top: 5%;
+		}
+		& p{
+			width: 70%;
+			padding-left: 300px;
+			margin-bottom: 30px;
+			line-height: 25px;
+		}
+	}
+	.modalWindow{
+		div{
+			width: 50%;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 991px) {
+	header{
+		height: inherit;
+		position: relative;
+		background-size: cover;
+		.container{
+			.logo{
+				margin-top: 10px;
+				width: 100px;
+			}
+			.reg-button{
+				margin-top: 30px;
+				padding: 10px 30px;
+				font-size: 16px;
+			}
+			.nav-menu{
+				background: #bbfa32;
+				display: none;
+				position: absolute;
+				top: 100px;
+				right: 0;
+				box-shadow: -3px 5px 20px  rgba(0, 0, 0, .7);
+				z-index: 9999;
+				.menu-fixed{
+					line-height: 1em;
+				}
+				li{
+					float: none;
+					margin-top: 0;
+					line-height: 1em;
+					font-size: .8em;
+					padding: 10px 30px ;
+					transition: all .3s;
+					&:not(:last-child){
+						border-bottom: 1px solid #333;
+					}
+					& a{
+						color: #000;
+						transition: all .3s;
+					}
+					& a:hover{
+						font-weight: 600;
+						border: none;
+					}
+				}
+			}
+			.burger{
+				display: block;
+			}
+			.header_block{
+				flex-wrap: wrap;
+				justify-content: center;
+				padding-bottom: 30px;
+				.block{
+					width: 30%;
+					margin: 20px 30px;
+					& .icon{
+						background-position: -5% 0;
+						&.icon-2{
+							background-position: 31% 0;
+						}
+						&.icon-3{
+							background-position: 68% 0;
+						}
+						&.icon-4{
+							background-position: 101% 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.our-advantages{
+		&_block{
+			.block{
+				width: 40%;
+			}
+		}
+	}
+	.leptop{
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			& img{
+				display: none;
+			}
+			& p{
+				width: 100%;
+				padding-left: 0px;
+				padding: 30px 10px 0 10px;
+				margin-bottom: 30px;
+				text-align: center;
+			}
+			& .button{
+				margin-left: 0;
+			}
+		}
+	}
+
+
+	.begin-trade{
+		.form{
+			input[type="submit"]{
+				margin-left: 0;
+				padding: 10px 0;
+			}
+		}
+	}
+	.form{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		input[type="text"]{
+			width: 30%;
+			margin: 0  0 20px 0;
+		}
+		input[type="submit"]{
+			width: 30%;
+			display: inline-block;
+			padding: 10px 0;
+			margin: 0;
+		}
+	}
+	.modalWindow{
+		div{
+			width: 50%;
+			margin: 25% auto;
+			padding: 30px;
+			img{
+				width: 75px;
+			}
+			h2{
+				width: 90%;
+				font-size: 30px;
+			}
+			p{
+				font-size: 16px;
+				width: 100%;
+			}
+			.close{
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+	header{
+		.container{
+			.header_block{
+				.block{
+					width: 70%;
+					&:hover{
+						font-weight: 400;
+					}
+					& .icon{
+						display: none;
+					}
+				}
+			}
+			.header-content_title{
+				width: 80%;
+			}
+			.header-content_description{
+				width: 80%;
+			}
+		}
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 610px) {
+	.our-advantages{
+		p{
+			width: 90%;
+		}
+		&_block{
+			margin-bottom: 20px;
+			.block{
+				margin-top: 20px;
+				p{
+					width: 100%;
+				}
+				h4{
+					padding-left: 0;
+					&:before{
+						top: -50px;
+						left: 0;	
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+	header{
+		.container{
+			.nav-menu{
+				width: 100%;
+				text-align: center;
+			}
+			.reg-button{
+				margin: 35px 0 0 0;
+				padding: 5px 10px;
+			}
+			.header-content_title{
+				width: 100%;
+				font-size: 30px;
+				margin: 10px 0 20px 0;
+			}
+			.header-content_description{
+				width: 100%;
+				font-size: 18px;
+				padding-bottom: 40px;
+			}
+			.header_block{
+				.block{
+					margin: 10px;
+				}
+			}
+			.button{
+				margin-bottom: 30px;
+				width: inherit;
+				padding: 10px 50px;
+			}
+		}
+	}
+	.our-advantages{
+		h2{
+			font-size: 30px;
+			margin-bottom: 20px;
+			&+p{
+				width: 90%;
+				font-size: 16px;
+			}
+		}
+		&_block{
+			margin-top: 70px;
+			.block{
+				width: 80%;
+				padding: 0;
+				margin-bottom: 70px;
+			}
+		}
+	}
+	.leptop{
+		.container{
+			& p{
+				font-size: 16px;
+			}
+			& .button{
+				padding: 10px 0;
+				width: 80%;
+				text-align: center;
+				font-size: 16px;
+			}
+		}
+	}
+
+
+	.modalWindow{
+		div{
+			width: 70%;
+			margin: 70% auto;
+			padding: 30px;
+			img{
+				width: 75px;
+			}
+			h2{
+				width: 90%;
+				font-size: 30px;
+			}
+			p{
+				font-size: 16px;
+			}
+			.close{
+				font-size: 25px;
+				top: 0;
+			}
+		}
+	}
+}
