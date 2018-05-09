@@ -949,6 +949,7 @@ header .container .button-fixed {
 
 .ways-replenishment .footer-icons .qiwi {
   background-position: -340px 5px;
+  width: 118px;
 }
 
 .ways-replenishment .footer-icons .yandex {
@@ -972,7 +973,7 @@ header .container .button-fixed {
 .trust-us .slider {
   width: 100%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 70px;
 }
 
@@ -1001,34 +1002,20 @@ header .container .button-fixed {
 
 .trust-us .slider .slick-list {
   margin: 0 100px;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
-.trust-us .slider .slide {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
-}
-
-.trust-us .slider .slide .block {
-  width: 45%;
-  min-height: 250px;
+.trust-us .slider .block {
   text-align: left;
   font-size: 16px;
   line-height: 24px;
   margin: 0 20px;
-  padding: 10px 30px;
+  padding: 30px;
   background: #252525;
   position: relative;
 }
 
-.trust-us .slider .slide .block .foto {
+.trust-us .slider .block .foto {
   width: 100px;
   height: 100px;
   -webkit-border-radius: 50%;
@@ -1040,19 +1027,19 @@ header .container .button-fixed {
   background-position: -234px -2px;
 }
 
-.trust-us .slider .slide .block .foto-2 {
+.trust-us .slider .block .foto-2 {
   background-position: -445px -20px;
 }
 
-.trust-us .slider .slide .block .foto-3 {
+.trust-us .slider .block .foto-3 {
   background-position: -70px -8px;
 }
 
-.trust-us .slider .slide .block .foto-4 {
+.trust-us .slider .block .foto-4 {
   background-position: -667px -25px;
 }
 
-.trust-us .slider .slide .block .triangle {
+.trust-us .slider .block .triangle {
   position: absolute;
   top: -20px;
   left: 130px;
@@ -1061,27 +1048,27 @@ header .container .button-fixed {
   background: url("../image/slide-triangle.png") no-repeat;
 }
 
-.trust-us .slider .slide .block .name {
+.trust-us .slider .block .name {
   padding-left: 35%;
   color: #bbfa32;
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
-.trust-us .slider .slide .block .message {
+.trust-us .slider .block .message {
   padding-bottom: 10px;
 }
 
-.trust-us .slider .slide .block .read-more {
+.trust-us .slider .block .read-more {
   color: #2ca3e0;
   text-decoration: underline;
 }
 
-.trust-us .slider .slide .block .read-more:hover {
+.trust-us .slider .block .read-more:hover {
   cursor: pointer;
 }
 
-.trust-us .slider .slide .block .read-more span {
+.trust-us .slider .block .read-more span {
   padding-left: 10px;
 }
 
@@ -1188,8 +1175,67 @@ footer .warning p {
     line-height: 25px;
   }
 
-  .modalWindow div {
-    width: 50%;
+  .profitable-terms .curve .point-1 {
+    top: 140px;
+    left: 40px;
+  }
+
+  .profitable-terms .curve .point-2 {
+    top: 65px;
+    left: 230px;
+  }
+
+  .profitable-terms .curve .point-3 {
+    width: 25%;
+    top: 25px;
+    left: 480px;
+  }
+
+  .profitable-terms .curve .point-4 {
+    top: 55px;
+    left: 840px;
+  }
+
+  .open-account table {
+    width: 95%;
+    margin: 50px auto 0 auto;
+  }
+
+  .ways-replenishment .flex {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .ways-replenishment .flex .text-block {
+    width: 80%;
+    text-align: center;
+  }
+
+  .ways-replenishment .flex .text-block p {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .ways-replenishment .flex .footer-icons {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .ways-replenishment .flex .footer-icons li {
+    margin-top: 0;
+  }
+
+  .trust-us .slider .slick-arrow {
+    right: 55px;
+  }
+
+  .trust-us .slider .slick-prev {
+    left: 60px;
+  }
+
+  footer .container {
+    padding: 0 20px;
   }
 }
 
@@ -1324,6 +1370,98 @@ footer .warning p {
     margin-left: 0;
   }
 
+  .lucrative-trade_block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .lucrative-trade_block .block {
+    width: 40%;
+    padding: 0;
+  }
+
+  .lucrative-trade_block .block h4:after {
+    display: none;
+  }
+
+  .profitable-terms .curve .point-1 {
+    top: 80px;
+    left: 30px;
+  }
+
+  .profitable-terms .curve .point-2 {
+    top: 15px;
+    left: 190px;
+  }
+
+  .profitable-terms .curve .point-3 {
+    width: 30%;
+    top: 120px;
+    left: 380px;
+  }
+
+  .profitable-terms .curve .point-4 {
+    top: 55px;
+    left: 630px;
+  }
+
+  .open-account .table-container {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll !important;
+  }
+
+  .open-account .table-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #2ca3e0;
+  }
+
+  .open-account .table-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #2ca3e0;
+  }
+
+  .open-account .table-container::-webkit-scrollbar {
+    height: 7px;
+    background-color: #2ca3e0;
+  }
+
+  .open-account .table-container::-webkit-scrollbar-thumb {
+    background-color: #fff;
+  }
+
+  .open-account .table-container::-webkit-scrollbar-thumb:hover {
+    background: #bbfa32;
+  }
+
+  .open-account .table-container table {
+    width: 1000px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .open-account .table-container table td:nth-child(1) {
+    font-size: 14px;
+  }
+
+  .open-account .table-container table .button {
+    font-size: 14px;
+  }
+
+  .trust-us .slider .slick-list {
+    margin: 0 50px;
+  }
+
+  .trust-us .slider .slick-arrow {
+    right: 10px;
+  }
+
+  .trust-us .slider .slick-prev {
+    left: 10px;
+  }
+
   .begin-trade .form input[type="submit"] {
     margin-left: 0;
     padding: 10px 0;
@@ -1354,28 +1492,33 @@ footer .warning p {
     margin: 0;
   }
 
-  .modalWindow div {
-    width: 50%;
-    margin: 25% auto;
-    padding: 30px;
+  footer .container .flex {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
 
-  .modalWindow div img {
-    width: 75px;
+  footer .container .flex .logo {
+    margin-bottom: 30px;
   }
 
-  .modalWindow div h2 {
-    width: 90%;
-    font-size: 30px;
-  }
-
-  .modalWindow div p {
-    font-size: 16px;
+  footer .container .flex .place {
     width: 100%;
+    text-align: center;
   }
 
-  .modalWindow div .close {
-    font-size: 25px;
+  footer .container .flex .risk {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  footer .container .flex .warning {
+    width: 90%;
+    margin-top: 30px;
+    padding-left: 0;
   }
 }
 
@@ -1398,6 +1541,14 @@ footer .warning p {
 
   header .container .header-content_description {
     width: 80%;
+  }
+
+  .profitable-terms {
+    padding-bottom: 50px;
+  }
+
+  .profitable-terms .curve {
+    display: none;
   }
 }
 
@@ -1492,27 +1643,146 @@ footer .warning p {
     font-size: 16px;
   }
 
-  .modalWindow div {
-    width: 70%;
-    margin: 70% auto;
-    padding: 30px;
+  .lucrative-trade {
+    padding: 0 10px 30px 10px;
   }
 
-  .modalWindow div img {
-    width: 75px;
+  .lucrative-trade h2 {
+    font-size: 30px;
+    margin-top: 30px;
   }
 
-  .modalWindow div h2 {
+  .lucrative-trade_block .block {
+    width: 80%;
+    text-align: center;
+  }
+
+  .profitable-terms h2 {
+    font-size: 30px;
+    width: 95%;
+  }
+
+  .profitable-terms p {
+    font-size: 16px;
     width: 90%;
+  }
+
+  .open-account h2 {
     font-size: 30px;
   }
 
-  .modalWindow div p {
-    font-size: 16px;
+  .open-account p {
+    width: 95%;
   }
 
-  .modalWindow div .close {
-    font-size: 25px;
-    top: 0;
+  .open-account table {
+    margin-top: 20px;
+  }
+
+  .ways-replenishment .flex .text-block p {
+    width: 100%;
+  }
+
+  .trust-us {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
+  .trust-us h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .trust-us h2 + p {
+    margin-bottom: 20px;
+  }
+
+  .trust-us .slider {
+    padding-bottom: 20px;
+  }
+
+  .trust-us .slider .slick-list {
+    margin: 0;
+  }
+
+  .trust-us .slider .block {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .trust-us .slider .block .triangle {
+    display: none;
+  }
+
+  .trust-us .slider .block .name {
+    padding: 50px 0 10px 0;
+    text-align: center;
+  }
+
+  .trust-us .slider .block .foto {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .trust-us .slider .block .message {
+    font-size: 14px;
+  }
+
+  .trust-us .slider .slick-arrow {
+    top: 30px;
+    right: 40px;
+  }
+
+  .trust-us .slider .slick-prev {
+    top: 5px;
+    left: 40px;
+  }
+
+  .begin-trade h2 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .begin-trade p {
+    font-size: 16px;
+    width: 95%;
+  }
+
+  .begin-trade .form input[type="text"] {
+    width: 60%;
+  }
+
+  .begin-trade .form input[type="submit"] {
+    width: 80%;
+  }
+
+  footer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  footer .container .flex .contacts {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  footer .container .flex .place p {
+    padding: 0;
+  }
+
+  footer .container .flex .risk {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  footer .container .flex .warning {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
   }
 }

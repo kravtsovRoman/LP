@@ -35,9 +35,68 @@
 			line-height: 25px;
 		}
 	}
-	.modalWindow{
-		div{
-			width: 50%;
+	.profitable-terms{
+		& .curve{
+			& .point{
+				&-1{
+					top: 140px;
+					left: 40px;
+				}
+				&-2{
+					top: 65px;
+					left: 230px;
+				}
+				&-3{
+					width: 25%;
+					top: 25px;
+					left: 480px;
+				}
+				&-4{
+					top: 55px;
+					left: 840px;
+				}
+			}
+		}
+	}
+	.open-account{
+		table{
+			width: 95%;
+			margin: 50px auto 0 auto;
+		}
+	}
+	.ways-replenishment{
+		.flex{
+			flex-wrap: wrap;
+			.text-block{
+				width: 80%;
+				text-align: center;
+				p{
+					width: 70%;
+					margin: 0 auto;
+				}
+			}
+			.footer-icons{
+				width: 90%;
+				margin-bottom: 20px;
+				li{
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.trust-us{
+		.slider{
+			.slick-arrow{
+				right: 55px;
+			}
+			.slick-prev{
+				left: 60px;
+			}
+		}
+	}
+	footer{
+		.container{
+			padding: 0 20px;
 		}
 	}
 }
@@ -143,8 +202,96 @@
 			}
 		}
 	}
+	.lucrative-trade{
+		&_block{
+			flex-wrap: wrap;
+			.block{
+				width: 40%;
+				padding: 0;
+				h4{
+					&:after{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.profitable-terms{
+		& .curve{
+			& .point{
+				&-1{
+					top: 80px;
+					left: 30px;
+				}
+				&-2{
+					top: 15px;
+					left: 190px;
+				}
+				&-3{
+					width: 30%;
+					top: 120px;
+					left: 380px;
+				}
+				&-4{
+					top: 55px;
+					left: 630px;
+				}
+			}
+		}
+	}
+	.open-account{
+		.table-container{
+			width: 100%;
+			overflow: hidden;
+			overflow-x: scroll!important;
+			&::-webkit-scrollbar-track{
 
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+				background-color: #2ca3e0;
+			}
+			&::-webkit-scrollbar-track{
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+				background-color: #2ca3e0;
+			}
 
+			&::-webkit-scrollbar{
+				height: 7px;
+				background-color: #2ca3e0;
+			}
+
+			&::-webkit-scrollbar-thumb{
+				background-color: #fff;
+				&:hover{
+					background: #bbfa32;
+				}
+			}
+			table{
+				width: 1000px;
+				padding: 0 10px;
+				margin-bottom: 10px;
+				font-size: 14px;
+				td:nth-child(1){
+					font-size: 14px;
+				}
+				.button{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.trust-us{
+		.slider{
+			.slick-list{
+				margin: 0 50px;
+			}
+			.slick-arrow{
+				right: 10px;
+			}
+			.slick-prev{
+				left: 10px;
+			}
+		}
+	}
 	.begin-trade{
 		.form{
 			input[type="submit"]{
@@ -168,24 +315,27 @@
 			margin: 0;
 		}
 	}
-	.modalWindow{
-		div{
-			width: 50%;
-			margin: 25% auto;
-			padding: 30px;
-			img{
-				width: 75px;
-			}
-			h2{
-				width: 90%;
-				font-size: 30px;
-			}
-			p{
-				font-size: 16px;
-				width: 100%;
-			}
-			.close{
-				font-size: 25px;
+	footer{
+		.container{
+			.flex{
+				flex-wrap: wrap;
+				justify-content: space-around;
+				.logo{
+					margin-bottom: 30px;
+				}
+				.place{
+					width: 100%;
+					text-align: center;
+				}
+				.risk{
+					width: 90%;
+					margin-top: 30px;
+				}
+				.warning{
+					width: 90%;
+					margin-top: 30px;
+					padding-left: 0;
+				}
 			}
 		}
 	}
@@ -214,6 +364,12 @@
 			.header-content_description{
 				width: 80%;
 			}
+		}
+	}
+	.profitable-terms{
+		padding-bottom: 50px;
+		& .curve{
+			display: none;
 		}
 	}
 }
@@ -314,26 +470,139 @@
 			}
 		}
 	}
-
-
-	.modalWindow{
-		div{
-			width: 70%;
-			margin: 70% auto;
-			padding: 30px;
-			img{
-				width: 75px;
+	.lucrative-trade{
+		padding: 0 10px 30px 10px;
+		h2{
+			font-size: 30px;
+			margin-top: 30px;
+		}
+		&_block{
+			.block{
+				width: 80%;
+				text-align: center;
 			}
-			h2{
-				width: 90%;
-				font-size: 30px;
+		}
+	}
+	.profitable-terms{
+		h2{
+			font-size: 30px;
+			width: 95%;
+		}
+		p{
+			font-size: 16px;
+			width: 90%;
+		}
+	}
+	.open-account{
+		h2{
+			font-size: 30px;
+		}
+		p{
+			width: 95%;
+		}
+		table{
+			margin-top: 20px;
+		}
+	}
+	.ways-replenishment{
+		.flex{
+			.text-block{
+				p{
+					width: 100%;
+				}
 			}
-			p{
-				font-size: 16px;
+		}
+	}
+	.trust-us{
+		padding-top: 40px;
+		padding-bottom: 0px;
+		h2{
+			margin-top: 0;
+			margin-bottom: 30px;
+			font-size: 30px;
+			&+p{
+				margin-bottom: 20px;
 			}
-			.close{
-				font-size: 25px;
-				top: 0;
+		}
+		.slider{
+			padding-bottom: 20px;
+			.slick-list{
+				margin: 0;
+			}
+			.block{
+				padding: 15px;
+				text-align: center;
+				.triangle{
+					display: none;
+				}
+				.name{
+					padding: 50px 0 10px 0;
+					text-align: center;
+				}
+				.foto{
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				.message{
+					font-size: 14px;
+				}
+			}
+			.slick-arrow{
+				top: 30px;
+				right: 40px;
+			}
+			.slick-prev{
+				top: 5px;
+				left: 40px;
+			}
+		}
+	}
+	.begin-trade{
+		h2{
+			width: 100%;
+			font-size: 24px;
+			line-height: 30px;
+		}
+		p{
+			font-size: 16px;
+			width: 95%;
+		}
+		.form{
+			input[type="text"]{
+				width: 60%;
+			}
+			input[type="submit"]{
+				width: 80%;
+			}
+		}
+	}
+	
+	footer{
+		padding-top: 30px;
+		padding-bottom: 50px;
+		.container{
+			.flex{
+				.contacts{
+					margin-bottom: 30px;
+					text-align: center;
+				}
+				.logo{
+				}
+				.place{
+					p{
+						padding: 0;
+					}
+				}
+				.risk{
+					width: 100%;
+					text-align: center;
+					margin-top: 50px;
+				}
+				.warning{
+					width: 100%;
+					text-align: center;
+					margin-top: 50px;
+				}
 			}
 		}
 	}
