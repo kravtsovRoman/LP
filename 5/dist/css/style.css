@@ -1173,8 +1173,25 @@ footer .footer-icons .reuters {
     text-align: center;
   }
 
-  .on-question input {
+  .on-question .form input[type="text"] {
     width: 40%;
+    margin-right: 20px;
+  }
+
+  .on-question .form input[type="submit"] {
+    width: 40%;
+  }
+
+  .to-successful_block {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin-bottom: 0;
+  }
+
+  .to-successful_block .block {
+    width: 40%;
+    margin-bottom: 30px;
   }
 
   footer .container .flex {
@@ -1271,11 +1288,11 @@ footer .footer-icons .reuters {
   }
 
   .profitable-trade_button {
-    margin: 25px 0;
+    margin: 25px auto;
   }
 
   .profitable-trade_button a {
-    padding: 10px 20%;
+    padding: 10px 30px;
   }
 
   .we-make .slider .slick-arrow {
@@ -1298,6 +1315,40 @@ footer .footer-icons .reuters {
 
   .we-make .slider .slide .block .total {
     text-align: center;
+  }
+
+  .on-question {
+    text-align: center;
+  }
+
+  .on-question .form input[type="text"] {
+    width: 60%;
+    margin-right: 0px;
+  }
+
+  .on-question .form input[type="submit"] {
+    width: 60%;
+  }
+
+  .to-successful h2 {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .to-successful h2 + p {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .to-successful_block .block {
+    width: 70%;
+    max-width: 355px;
+  }
+
+  .to-successful_block .block h4 {
+    width: 90%;
   }
 }
 
@@ -1371,9 +1422,19 @@ footer .footer-icons .reuters {
     width: 100%;
   }
 
+  .on-question h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
   footer {
     padding-top: 30px;
     padding-bottom: 50px;
+  }
+
+  footer h3 {
+    font-size: 25px;
   }
 
   footer .container .flex .contacts {

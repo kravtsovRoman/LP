@@ -58,8 +58,6 @@
 			}
 		}
 	}
-
-
 	footer{
 		.container{
 			padding: 0 20px;
@@ -178,12 +176,25 @@
 	}
 	.on-question{
 		text-align: center;
-		input{
+		.form input[type="text"]{
+			width: 40%;
+			margin-right: 20px;
+			
+		}
+		.form input[type="submit"]{
 			width: 40%;
 		}
 	}
-
-
+	.to-successful{
+		&_block{
+			justify-content: space-around;
+			margin-bottom: 0;
+			.block{
+				width: 40%;
+				margin-bottom: 30px;
+			}
+		}
+	}
 	footer{
 		.container{
 			.flex{
@@ -257,9 +268,9 @@
 			text-align: center;
 		}
 		&_button{
-			margin: 25px 0;
+			margin: 25px auto;
 			a{
-				padding: 10px 20%;
+				padding: 10px 30px;
 			}
 		}
 	}
@@ -282,6 +293,38 @@
 					.total{
 						text-align: center;
 					}
+				}
+			}
+		}
+	}
+	.on-question{
+		text-align: center;
+		.form input[type="text"]{
+			width: 60%;
+			margin-right: 0px;
+			
+		}
+		.form input[type="submit"]{
+			width: 60%;
+		}
+	}
+	.to-successful{
+		h2{
+			width: 90%;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			font-size: 30px;
+			&+p{
+				width: 95%;
+				font-size: 16px;
+			}
+		}
+		&_block{
+			.block{
+				width: 70%;
+				max-width: 355px;
+				h4{
+					width: 90%;
 				}
 			}
 		}
@@ -365,11 +408,19 @@
 			}
 		}
 	}
-
-	
+	.on-question{
+		h2{
+			font-size: 25px;
+			line-height: 30px;
+			margin-bottom: 20px;
+		}
+	}
 	footer{
 		padding-top: 30px;
 		padding-bottom: 50px;
+		h3{
+			font-size: 25px;
+		}
 		.container{
 			.flex{
 				.contacts{
