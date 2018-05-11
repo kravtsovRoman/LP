@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>LP_6</title>
+	<title>Strade 24</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="image/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="libs/slick/css/slick.css">
 	<link rel="stylesheet" href="libs/slick/css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">	
@@ -16,7 +18,15 @@
 				<a href="">
 					<img class="logo" src="image/logo.png" alt="">
 				</a>
-				<ul class="nav-menu" id="anhcors">
+				<div class="burger">
+					<input type="checkbox" id="burger_check" class="burger_checkbox">
+					<label for="burger_check">
+						<span class="span-1"></span>
+						<span class="span-2"></span>
+						<span class="span-3"></span>
+					</label>
+				</div>
+				<ul class="nav-menu anhcors">
 					<li>
 						<a href="">Главная</a>
 					</li>
@@ -33,14 +43,14 @@
 						<a href="#footer">Контакты</a>
 					</li>
 				</ul>
-				<div class="reg-button">
-					<a href="#">Регистрация</a>
+				<div class="reg-button anhcors">
+					<a href="#tarde-with">Регистрация</a>
 				</div>
 			</div>
 		</div>
 		<div class="clear"></div>
 	</header>
-	<div class="slider" id="slider">
+	<div class="slider anhcors" id="slider">
 		<div class="slide flex">
 			<div class="block">
 				<img src="image/slide1_bg.jpg">
@@ -49,7 +59,7 @@
 					<h4>ЛУЧШИЕ УСЛОВИЯ ВЕДЕНИЯ ТОРГОВ, НИЗКИЕ СПРЕДЫ</h4>
 					<p>Дорога к успеху с strade24</p>
 					<div class="button header-button">
-						<a href="#">Начать торговать</a>
+						<a href="#tarde-with">Начать торговать</a>
 					</div>
 				</div>
 			</div>
@@ -62,7 +72,7 @@
 					<h4>10 ЛЕТ В БИЗНЕСЕ</h4>
 					<p>Валюта, металлы, акции, индексы</p>
 					<div class="button header-button">
-						<a href="#">Начать торговать</a>
+						<a href="#tarde-with">Начать торговать</a>
 					</div>
 				</div>
 			</div>
@@ -75,7 +85,7 @@
 					<h4>Поможем работать в прибыль</h4>
 					<p>Торговля на бирже 24 часа в сутки, 5 дней в неделю</p>
 					<div class="button header-button">
-						<a href="#">Начать торговать</a>
+						<a href="#tarde-with">Начать торговать</a>
 					</div>
 				</div>
 			</div>
@@ -127,7 +137,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="tarde-with">
+	<div class="tarde-with" id="tarde-with">
 		<div class="container flex">
 			<div class="text">
 				<h3>Торгуйте с успешной компанией</h3>
@@ -135,14 +145,14 @@
 					Пройдите регистрацию и задайте все необходимые вопросы нашим консультантам перед тем как приступить к торговле.
 				</p>
 			</div>
-			<div>
-				<div class="button">
-					<a href="#">Регистрация</a>
-				</div>
-			</div>
+			<form class="form">
+				<input type="text" placeholder="Имя">
+				<input type="text" placeholder="Телефон">
+				<input href="#openModal" type="submit" value="РЕГИСТРАЦИЯ"></input>
+			</form>
 		</div>
 	</div>
-	<div class="make-step" id="make-step">
+	<div class="make-step anhcors" id="make-step">
 		<div class="container">
 			<h2 class="h2">Сделайте уверенный шаг к своей мечте</h2>
 			<p>
@@ -155,7 +165,7 @@
 					<p >
 						Мы подберем для Вас оптимальную стратегию торговли, подходящую под Ваши финансовые и временные возможности.
 					</p>
-					<a href="#">Узнать больше</a>
+					<a href="#tarde-with">Узнать больше</a>
 				</div>
 				<div class="block">
 					<div class="image image-2"></div>
@@ -163,7 +173,7 @@
 					<p>
 						Наша команда специалистов всегда готова предоставить лучшие решения по инвестированию в рыночные инструменты.
 					</p>
-					<a href="#">Узнать больше</a>
+					<a href="#tarde-with">Узнать больше</a>
 				</div>
 				<div class="block">
 					<div class="image image-3"></div>
@@ -171,7 +181,7 @@
 					<p> 
 						Обучение торговле на мировых рынках один из сильнейших аспектов для ведения прибыльной торговли.
 					</p>
-					<a href="#">Узнать больше</a>
+					<a href="#tarde-with">Узнать больше</a>
 				</div>
 			</div>
 		</div>
@@ -182,8 +192,8 @@
 				<h3>Закажите брокерские услуги уже сегодня</h3>
 			</div>
 			<div>
-				<div class="button">
-					<a href="#">Получить консультацию</a>
+				<div class="button anhcors">
+					<a href="#tarde-with">Получить консультацию</a>
 				</div>
 			</div>
 		</div>
@@ -195,44 +205,56 @@
 				Главная награда для нас – положительная динамика вашего счета. Наши сотрудники приложат все усилия, чтобы вы могли заработать на торговле. Все, что требуется от вас – это первый шаг, который приведет вас к настоящему успеху.
 			</p>
 			<div class="slider-footer">
-				<div class="slide flex">
+				<div class="slide">
 					<div class="block">
 						<div class="foto"></div>
 						<p class="name">Peter Hart</p>
 						<p class="city">London</p>
 					</div>
+				</div>
+				<div class="slide">
 					<div class="block">
 						<div class="foto foto-2"></div>
 						<p class="name">Betty Lane</p>
 						<p class="city">Manchester</p>
 					</div>
+				</div>
+				<div class="slide">
 					<div class="block">
 						<div class="foto foto-3"></div>
 						<p class="name">Richard Pierce</p>
 						<p class="city">Birmingham</p>
 					</div>
+				</div>
+				<div class="slide">
 					<div class="block">
 						<div class="foto foto-4"></div>
 						<p class="name">Janice Rose</p>
 						<p class="city">Leeds</p>
 					</div>
 				</div>
-				<div class="slide flex">
+				<div class="slide">
 					<div class="block">
 						<div class="foto foto-5"></div>
 						<p class="name">Harry Nolan</p>
 						<p class="city">Paris</p>
 					</div>
+				</div>
+				<div class="slide">
 					<div class="block">
 						<div class="foto foto-6"></div>
 						<p class="name">Bob Thomas</p>
 						<p class="city">Portland</p>
 					</div>
+				</div>
+				<div class="slide">
 					<div class="block">
 						<div class="foto foto-7"></div>
 						<p class="name">Richy Pens</p>
 						<p class="city">Berlin</p>
 					</div>
+				</div>
+				<div class="slide">
 					<div class="block">
 						<div class="foto foto-8"></div>
 						<p class="name">Jany Milliton</p>
@@ -256,8 +278,11 @@
 					<p>
 						+441440400025 
 					</p>
+					<p> 
+						+442080681922
+					</p>
 				</div>
-				<ul class="links1">
+				<!-- <ul class="links1">
 					<li>
 						<a href="#">
 							Финанасовое планирование
@@ -307,29 +332,29 @@
 							</a>
 					</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
-				<div class="risk">
-					<h3>Уведомление о рисках</h3>
-					<p>
-						Торговля валютами и контрактами на разницу цен несет высокий риск убытков в связи с тем, что такая торговля осуществляется за счет кредитования, что может привести к полной потере вами своего капитала. Такая торговля подходит не всем категориям инвесторов. Нажмите <a href="#">здесь</a>, чтобы ознакомиться с полным текстом нашего предупреждения о рисках, и до того, как продолжить, удостоверьтесь в том, что вы осознаете имеющиеся риски, принимая во внимание свой опыт в данной сфере. При необходимости обратитесь к независимому консультанту. Информация, содержащаяся на данном веб-сайте и в опубликованном на нем документах, имеет общий характер и не учитывает ваши личные обстоятельства, финансовое положение или потребности. Для того чтобы оценить, подходит ли вам торговля такими финансовыми продуктами, вы должны внимательно ознакомиться с нашими <a href="#">Условиями торговли</a> и получить независимую консультацию.
-					</p>
-				</div>
+			<div class="risk">
+				<h3>Уведомление о рисках</h3>
 				<p>
-					Компания имеет несколько департаментов и офисов менеджмента для торговли на финансовых рынках лондонской биржи:
+					Торговля валютами и контрактами на разницу цен несет высокий риск убытков в связи с тем, что такая торговля осуществляется за счет кредитования, что может привести к полной потере вами своего капитала. Такая торговля подходит не всем категориям инвесторов. Нажмите здесь, чтобы ознакомиться с полным текстом нашего предупреждения о рисках, и до того, как продолжить, удостоверьтесь в том, что вы осознаете имеющиеся риски, принимая во внимание свой опыт в данной сфере. При необходимости обратитесь к независимому консультанту. Информация, содержащаяся на данном веб-сайте и в опубликованном на нем документах, имеет общий характер и не учитывает ваши личные обстоятельства, финансовое положение или потребности. Для того чтобы оценить, подходит ли вам торговля такими финансовыми продуктами, вы должны внимательно ознакомиться с нашими Условиями торговли и получить независимую консультацию.
 				</p>
-				<p>
-					Европа - London(LSE)
-				</p>
-				<p>
-					10 Paternoster Row - 24 часа в сутки 5 дней в неделю
-				</p>
-				<p>
-					Tel: +441440400025, +442080681922
-				</p>
-				<p>
-					Азия - Trust Company Complex, Ajeltake Road, Ajeltake Island, MH96960, Majuro, Marshall Islands, P.O. Box 1405 - 24 часа в сутки 5 дней в неделю
-				</p>
+			</div>
+			<p>
+				Компания имеет несколько департаментов и офисов менеджмента для торговли на финансовых рынках лондонской биржи:
+			</p>
+			<p>
+				Европа - London(LSE)
+			</p>
+			<p>
+				10 Paternoster Row - 24 часа в сутки 5 дней в неделю
+			</p>
+			<p>
+				Tel: +441440400025, +442080681922
+			</p>
+			<p>
+				Азия - Trust Company Complex, Ajeltake Road, Ajeltake Island, MH96960, Majuro, Marshall Islands, P.O. Box 1405 - 24 часа в сутки 5 дней в неделю
+			</p>
 		</div>
 	</footer>
 

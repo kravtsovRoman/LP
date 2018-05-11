@@ -1,0 +1,364 @@
+
+@media screen and (max-width: 1600px) {
+}
+
+
+@media screen and (max-width: 1299px) {
+	header{
+		.container{
+			padding: 0 10px;
+		}
+	}
+	.our-service{
+		&_block{
+			padding: 0 20px;
+		}
+	}
+	.order-brokerage{
+		.container{
+			padding: 0 20px;
+			.text{
+				width: 50%;
+				h3{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.we-glad{
+		.container{
+			padding: 0 20px;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 991px) {
+	header{
+		height: inherit;
+		position: relative;
+		background-size: cover;
+		.container{
+			.logo{
+				margin-top: 10px;
+				width: 100px;
+			}
+			.reg-button{
+				margin-top: 30px;
+				padding: 10px 30px;
+				font-size: 16px;
+			}
+			.nav-menu{
+				background: #ff4f00;
+				display: none;
+				position: absolute;
+				top: 70px;
+				right: 0;
+				box-shadow: -3px 5px 20px  rgba(0, 0, 0, .7);
+				z-index: 9999;
+				.menu-fixed{
+					line-height: 1em;
+				}
+				li{
+					float: none;
+					margin-top: 0;
+					line-height: 1em;
+					margin-right: 5px;
+					font-size: .8em;
+					padding: 10px 30px ;
+					transition: all .3s;
+					&:not(:last-child){
+						border-bottom: 1px solid #333;
+					}
+					& a{
+						color: #fff;
+						transition: all .3s;
+						border: none;
+					}
+					& a:hover{
+						color: #000;
+					}
+				}
+			}
+			.burger{
+				display: block;
+			}
+		}
+		.header-content{
+			width: 99%;
+			padding-left: 0;
+			border-left: 0;
+			text-align: center;
+		}
+	}
+	.our-service{
+		&_block{
+			.block{
+				width: 40%;
+			}
+		}
+	}
+	.tarde-with{
+		p{
+			width: 80%;
+			margin: 0 auto;
+		}
+		.form{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			input{
+				width: 40%;
+				margin: 10px 50px;
+			}
+			input[type="submit"]{
+				width: 45%;
+				margin: 10px 50px;
+			}
+
+		}
+	}
+	.order-brokerage{
+		.container{
+			padding: 0 20px;
+			.text{
+				width: 50%;
+				h3{
+					width: 100%;
+				}
+				&+div{
+					width: 50%;
+					max-width: 350px;
+					margin: auto;
+				}
+			}
+			.button{
+				padding: 10px 0;
+				width: 100%;
+				text-align: center;
+				
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 767px) {
+	.our-service{
+		&_block{
+			.block{
+				margin-top: 30px;
+				margin-bottom: 0;
+				width: 80%;
+			}
+		}
+	}
+	.make-step{
+		h2{
+			&+p{
+				width: 90%;
+			}
+		}
+		&_block{
+			padding-bottom: 40px;
+			.block{
+				width: 50%;
+				text-align: center;
+				margin-bottom: 30px;
+				padding-bottom: 0;
+				p{
+					width: 100%;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+	.order-brokerage{
+		.container{
+			flex-wrap: wrap;
+			.text{
+				width: 100%;
+				h3{
+					text-align: center;
+					margin-bottom: 20px;
+				}
+				&+div{
+					width: 70%;
+					
+					margin: auto;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 610px) {
+	.slider{
+		.block{
+			.slider-content{
+				padding-top: 30px;
+				left: 0;
+				transform: none;
+				h2{
+					font-size: 2em;
+					width: 90%;
+					margin: 50px auto;
+				}
+				h4{
+					font-size: 1.5em;
+					width: 90%;
+					&+p{
+						width: 80%;
+						margin: 30px auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	header{
+		.container{
+			.nav-menu{
+				width: 100%;
+				text-align: center;
+			}
+			.reg-button{
+				margin: 35px 0 0 0;
+				padding: 5px 10px;
+			}
+		}
+		.header-content{
+			h1{
+				margin-top: 50px;
+				font-size: 25px;
+				line-height: 40px;
+				span{
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+	.slider{
+		.block{
+			height: 550px;
+			.slider-content{
+				h2{
+					font-size: 1.5em;
+					line-height: 35px;
+				}
+				h4{
+					font-size: 1.2em;
+					width: 90%;
+					&+p{
+						font-size: 1.3em;
+					}
+				}
+				.header-button{
+					padding: 10px 30px;
+				}
+			}
+		}
+	}
+	.our-service{
+		h2{
+			margin-top: 30px;
+			margin-bottom: 20px;
+			font-size: 30px;
+			&+p{
+				width: 90%;
+			}
+		}
+		&_block{
+			padding: 0 5px;
+			.block{
+				margin: 30px 0 0 0 ;
+				padding: 0 0 0 10px;
+				width: 90%;
+				h4{
+					padding-left: 30px;
+					margin-bottom: 20px;
+					margin-top: 20px;
+					&+p{
+						width: 100%;
+						padding: 0;
+						margin: 0;
+					}
+					&:before{
+						left: -25px;
+						top: 5px;
+					}
+				}
+			}
+		}
+	}
+	.tarde-with{
+		h3{
+			margin: 0 auto 20px auto;
+		}
+		p{
+			width: 90%;
+		}
+		.form{
+			input{
+				width: 80%;
+			}
+			input[type="submit"]{
+				width: 100%;
+			}
+
+		}
+	}
+	.make-step{
+		h2{
+			margin: 30px 0 20px 0;
+			font-size: 30px;
+			&+p{
+				width: 90%;
+			}
+		}
+		&_block{
+			.block{
+				width: 90%;
+				text-align: center;
+				margin-bottom: 0;
+				padding-bottom: 0;
+				p{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.order-brokerage{
+		.container{
+			.text{
+				width: 100%;
+				h3{
+					font-size: 25px;
+				}
+				&+div{
+					width: 100%;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.we-glad{
+		.container{
+			padding: 0;
+			h2{
+				font-size: 30px;
+				margin: 30px 0 20px 0;
+				&+p{
+					width: 90%;
+				}
+			}
+		}
+	}
+}
+

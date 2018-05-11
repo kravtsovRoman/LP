@@ -40,23 +40,84 @@ body{
 	display: inline-block;
 }
 header{
-	& .header-top{
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	right: 0;
+	left: 0;
+	.header-top{
+		width: 100%;
 		height: 100px;
 		background: $bgColor;
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+		right: 0;
+		left: 0;
 	}
 	& .logo{
 		width: 100px;
 		margin-top: 10px;
 		float: left;
+		transition: all .5s;
+	}
+	.burger{
+		display: none;
+		float: right;
+		margin-left: 10px;
+		margin-right: 10px;
+		&_checkbox{
+			display: none;
+			&:checked {
+				+label .span-2{
+					opacity: 0;
+				}
+				+label .span-1{
+					transform: rotate(135deg);
+					position: absolute;
+					top: 5px;
+				}
+				+label .span-3{
+					transform: rotate(-135deg);
+					position: absolute;
+					top: 5px;
+				}
+			}
+			&+label{
+				position: relative;
+				display: block;
+				width: 35px;
+				height: 20px;
+				left: 0;
+				top: 35px;
+				right: 0;
+				bottom: 0;
+				&:hover{
+					cursor: pointer;
+				}
+				span{
+					width: 35px;
+					height: 3px;
+					display: block;
+					background: #FFF;
+					border-radius: 5px;
+					margin-top: 5px;
+					transition: all .3s;
+				}
+			}
+		}
 	}
 	& .nav-menu{
 		float: left;
-		margin-left: 80px;
+		margin-left: 55px;
+		margin-top: 30px;
+		transition: all .5s;
 		& li{
 			float: left;
 			margin-left: 10px;
 			padding: 8px;
-			margin-top: 30px;
+			
+			transition: all .5s;
 			& a{
 				&:hover{
 					border-bottom: 4px solid $mainColor;
@@ -70,6 +131,7 @@ header{
 		float: right;
 		padding: 10px 40px;
 		border-radius: 20px;
+		transition: all .5s;
 		& a{
 			color: #fff;
 		}
@@ -88,8 +150,7 @@ header{
 		right: 50px;
 		width: 52px;
 		height: 172px;
-		background: url('../image/slider-arrow.png');
-		background-repeat: no-repeat;
+		background: url('../image/slider-arrow.png') no-repeat;
 		z-index: 999;
 		&:before,{
 			content: '';
@@ -97,7 +158,7 @@ header{
 	}
 	& .slick-prev{
 		transform: rotate(180deg);
-		top: calc(50% - 40px);
+		top: calc(50% - 85px);
 		left: 50px;
 	}
 	& .slick-dots{
@@ -122,6 +183,7 @@ header{
 	}
 	& .block{
 		height: 650px;
+		padding-top: 100px;
 		color: #fff;
 		position: relative;
 		& img{
@@ -168,6 +230,28 @@ header{
 		}
 	}
 }
+
+header .header-top-fixed{
+	position: fixed;
+	height: auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	background: #000025;
+}
+header .logo-fixed{
+	width: 70px;
+	margin: 10px 0;
+}
+header .menu-fixed{
+	margin-top: 25px;
+}
+header .container .button-fixed{
+	margin-top: 20px;
+}
+
+
 .our-service{
 	text-align: center;
 	color: #000;
@@ -213,305 +297,332 @@ header{
 				background: url('../image/our-service-icons.png') no-repeat;
 				background-position: 10px -5px;
 			}
-			}& .h4-2:before{
-				background-position: -60px 0 ;
-			}
-			& .h4-3:before{
-				background-position: -130px -5px ;
-			}
-			& .h4-4:before{
-				background-position: -215px 0px ;
-			}
-			& .h4-5:before{
-				background-position: -280px 0px ;
-			}
-			& .h4-6:before{
-				background-position: -353px 0px ;
-			}
-			& p{
-				width: 95%;
-				font-size: 16px;
-				padding-left: 10px;
-				margin: 0;
+		}& .h4-2:before{
+			background-position: -60px 0 ;
+		}
+		& .h4-3:before{
+			background-position: -130px -5px ;
+		}
+		& .h4-4:before{
+			background-position: -215px 0px ;
+		}
+		& .h4-5:before{
+			background-position: -280px 0px ;
+		}
+		& .h4-6:before{
+			background-position: -353px 0px ;
+		}
+		& p{
+			width: 95%;
+			font-size: 16px;
+			padding-left: 10px;
+			margin: 0;
+		}
+	}
+}
+.tarde-with{
+	padding: 35px 0 20px 0;
+	background: $bgColor;
+	color: #fff;
+	.flex{
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.text{
+			width: 100%;
+			text-align: center;
+		}
+	}
+	& h3{
+		font-size: 24px;
+		font-weight: 700;
+		color: $mainColor;
+		font-family: $secondFont;
+		margin-bottom: 20px;
+	}
+	& p{
+		font-size: 16px;
+		
+	}
+	& .button{
+		padding: 15px 60px;
+		margin-top: 10px;
+		background: $mainColor;
+		border-radius: 50px;
+		&:hover{
+			background: $secondColor;
+		}
+	}
+	.form{
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 40px 0 10px 0;
+		& input{
+			color: #fff;
+			padding: 15px 30px ;
+			outline: none;
+			width: 25%;
+		}
+		& input[type="text"]{
+			background: transparent;
+			border: 0;
+			font-size: 16px;
+			color: #000;
+			background: rgba(255, 255, 255, .7);
+			font-family: $secondFont;
+		}
+		& input[type="submit"]{
+			margin-right: 0;
+			background: $mainColor;
+			color: #fff;
+			font-size: 16px;
+			padding: 15px 0px;
+			border: none;
+			&:hover{
+				background: $secondColor;
+				cursor: pointer;
 			}
 		}
 	}
-	.tarde-with{
-		padding: 35px 0;
-		background: $bgColor;
-		color: #fff;
-		& h3{
-			font-size: 24px;
-			font-weight: 700;
-			color: $mainColor;
-			font-family: $secondFont;
+}
+.make-step{
+	text-align: center;
+	color: #000;
+	padding-bottom: 1px;
+	& h2{
+		color: #000;
+		font-family: $thirdFont;
+		font-size: 36px;
+		font-weight: 700;
+	}
+	& p{
+		width: 65%;
+		margin: 0 auto;
+		line-height: 25px;
+	}
+	&_block{		
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		& .block{
+			width: 28%;
+			margin: 30px 10px;
+			padding: 20px 10px;
+			text-align: left;
 			margin-bottom: 20px;
+			&:hover .image{
+				transform: scale(1.05);
+				cursor: pointer;
+			}
+		}
+		& .image{
+			transition: .3s all;
+			width: 100%;
+			height: 200px;
+			background: url('../image/make-step_image1.jpg') no-repeat;
+			background-position: center;
+			margin-bottom: 20px;
+		}
+		& .image-2{
+			background: url('../image/make-step_image2.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		& .image-3{
+			background: url('../image/make-step_image3.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		& h4{
+			margin-bottom: 10px;
+			font-size: 20px;
+			color: #000;
+			font-weight: 600;
+		}
+		& p{
+			width: 95%;
+			font-size: 16px;
+			line-height: 22px;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+		& a{
+			color: #000;
+			font-weight: 700;
+			text-decoration: underline;
+		}
+	}
+}
+.order-brokerage{
+	padding: 35px 0;
+	background: $bgColor;
+	color: #fff;
+	border-bottom: 1px solid;
+	& .container{
+		justify-content: space-between;
+	}
+	& h3{
+		width: 70%;
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 700;
+		color: $mainColor;
+		font-family: $thirdFont;
+	}
+	& .button{
+		padding: 15px 60px;
+		margin-top: 10px;
+		border-radius: 50px;
+		border: 2px solid $mainColor;
+		&:hover{
+			background: $mainColor;
+		}
+	}
+}
+.we-glad{
+	text-align: center;
+	color: #000;
+	padding-bottom: 20px;
+	& h2{
+		color: #000;
+		font-family: $thirdFont;
+		font-size: 36px;
+		font-weight: 700;
+	}
+	& p{
+		width: 65%;
+		margin: 0 auto;
+		line-height: 25px;
+	}
+	& .slider-footer{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		& .slick-arrow{
+			position: absolute;
+			top: 50%;
+			right: 0px;
+			width: 46px;
+			height: 46px;
+			background: url('../image/slider-footer-arrow.png');
+			background-repeat: no-repeat;
+			z-index: 999;
+			&:before,{
+				content: '';
+			}
+		}
+		& .flex{
+			justify-content: center;
+		}
+		& .slick-prev{
+			transform: rotate(180deg);
+			top: calc(50% - 25px);
+			left: 0px;
+		}
+		& .block{
+			& .foto{
+				width: 175px;
+				height: 175px;
+				margin: 0 auto;
+				border-radius: 50%;
+				background: url('../image/footer-slider-fotos.jpg');
+				&-2{
+					background-position:  -205px 0;
+				}
+				&-3{
+					background-position:  -405px -20px;
+				}
+				&-4{
+					background-position:  -620px -10px;
+				}
+				&-5{
+					background: url('../image/footer-slider-fotos2.jpg');
+					background-position:  -19px -12px;
+				}
+				&-6{
+					background: url('../image/footer-slider-fotos2.jpg');
+					background-position:  -254px -20px;
+				}
+				&-7{
+					background: url('../image/footer-slider-fotos2.jpg');
+					background-position:  -480px -10px;
+				}
+				&-8{
+					background: url('../image/footer-slider-fotos2.jpg');
+					background-position:  -700px 0px;
+				}
+			}
+			& .name{
+				font-size: 20px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+footer{
+	background: $bgColor;
+	color: #fff;
+	font-size: 14px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	& p{
+		margin-top: 3px;
+	}
+	& .flex{
+		justify-content: space-around;
+	}
+	& .logo{
+		width: 150px;
+		margin-bottom: 50px;
+	}
+	& .contacts{
+		padding: 0 30px;
+		& h3{
+			font-family: $thirdFont;
+			font-size: 22px;
+			color: #fff;
+		}
+		& p{
+			padding-top: 15px;
+		}
+	}
+	& .links1{
+		list-style: disc;
+		padding: 0 80px;
+		border-left: 1px solid #fff;
+		border-right: 1px solid #fff;
+		& li{
+			margin-top: 10px;
+			&:hover{
+				color: $mainColor;
+			}
+			& a:hover{
+				color: $mainColor;
+			}
+		}
+	}
+	& .links2{
+		& li{
+			margin-top: 20px;
+			text-decoration: underline;
+			& a:hover{
+				color: $mainColor;
+			}
+		}
+	}
+	& .risk{
+		padding-bottom: 30px;
+		& h3{
+			font-size: 20px;
+			line-height: 36px;
 		}
 		& p{
 			font-size: 16px;
-			width: 60%;
+			line-height: 24px;
 		}
-		& .button{
-			padding: 15px 60px;
-			margin-top: 10px;
-			background: $mainColor;
-			border-radius: 50px;
-			&:hover{
-				background: $secondColor;
-			}
-		}
-	}
-	.make-step{
-		text-align: center;
-		color: #000;
-		padding-bottom: 1px;
-		& h2{
-			color: #000;
-			font-family: $thirdFont;
-			font-size: 36px;
-			font-weight: 700;
-		}
-		& p{
-			width: 65%;
-			margin: 0 auto;
-			line-height: 25px;
-		}
-		&_block{		
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			& .block{
-				width: 28%;
-				margin: 30px 10px;
-				padding: 20px 10px;
-				text-align: left;
-				margin-bottom: 20px;
-				&:hover .image{
-					transform: scale(1.05);
-					cursor: pointer;
-				}
-			}
-			& .image{
-				transition: .3s all;
-				width: 100%;
-				height: 200px;
-				background: url('../image/make-step_image1.jpg') no-repeat;
-				background-position: center;
-				margin-bottom: 20px;
-			}
-			& .image-2{
-				background: url('../image/make-step_image2.jpg');
-				background-position: center;
-				background-repeat: no-repeat;
-			}
-			& .image-3{
-				background: url('../image/make-step_image3.jpg');
-				background-position: center;
-				background-repeat: no-repeat;
-			}
-			& h4{
-				margin-bottom: 10px;
-				font-size: 20px;
-				color: #000;
-				font-weight: 600;
-			}
-			& p{
-				width: 95%;
-				font-size: 16px;
-				line-height: 22px;
-				margin: 0;
-				margin-bottom: 20px;
-			}
-			& a{
-				color: #000;
-				font-weight: 700;
-				text-decoration: underline;
-			}
-		}
-	}
-	.order-brokerage{
-		padding: 35px 0;
-		background: $bgColor;
-		color: #fff;
-		border-bottom: 1px solid;
-		& .container{
-			justify-content: space-between;
-		}
-		& h3{
-			width: 70%;
-			font-size: 30px;
-			line-height: 36px;
-			font-weight: 700;
+		& a{
 			color: $mainColor;
-			font-family: $thirdFont;
-		}
-		& .button{
-			padding: 15px 60px;
-			margin-top: 10px;
-			border-radius: 50px;
-			border: 2px solid $mainColor;
-			&:hover{
-				background: $mainColor;
-			}
+			text-decoration: underline;
 		}
 	}
-	.we-glad{
-		text-align: center;
-		color: #000;
-		padding-bottom: 20px;
-		& h2{
-			color: #000;
-			font-family: $thirdFont;
-			font-size: 36px;
-			font-weight: 700;
-		}
-		& p{
-			width: 65%;
-			margin: 0 auto;
-			line-height: 25px;
-		}
-		& .slider-footer{
-			margin-top: 50px;
-			margin-bottom: 50px;
-			& .slick-arrow{
-				position: absolute;
-				top: 50%;
-				right: 0px;
-				width: 46px;
-				height: 46px;
-				background: url('../image/slider-footer-arrow.png');
-				background-repeat: no-repeat;
-				z-index: 999;
-				&:before,{
-					content: '';
-				}
-			}
-			& .flex{
-				justify-content: center;
-			}
-			& .slick-prev{
-				transform: rotate(180deg);
-				top: calc(50% - 40px);
-				left: 0px;
-			}
-			& .slide{
-				display: flex;
-				justify-content: center;
-			}
-			& .block{
-				width: 20%;
-				padding: 0px;
-				color: #000;
-				& .foto{
-					width: 175px;
-					height: 175px;
-					margin: 0 auto;
-					border-radius: 50%;
-					background: url('../image/footer-slider-fotos.jpg');
-					&-2{
-						background-position:  -205px 0;
-					}
-					&-3{
-						background-position:  -405px -20px;
-					}
-					&-4{
-						background-position:  -620px -10px;
-					}
-					&-5{
-						background: url('../image/footer-slider-fotos2.jpg');
-						background-position:  -19px -12px;
-					}
-					&-6{
-						background: url('../image/footer-slider-fotos2.jpg');
-						background-position:  -254px -20px;
-					}
-					&-7{
-						background: url('../image/footer-slider-fotos2.jpg');
-						background-position:  -480px -10px;
-					}
-					&-8{
-						background: url('../image/footer-slider-fotos2.jpg');
-						background-position:  -700px 0px;
-					}
-				}
-				& .name{
-					font-size: 20px;
-					font-weight: 700;
-				}
-			}
-		}
-	}
-
-
-
-
-
-
-
-	footer{
-		background: $bgColor;
-		color: #fff;
-		font-size: 14px;
-		padding-top: 50px;
-		padding-bottom: 40px;
-		& p{
-			margin-top: 3px;
-		}
-		& .flex{
-			justify-content: space-between;
-		}
-		& .logo{
-			width: 150px;
-			margin-bottom: 50px;
-		}
-		& .contacts{
-			padding: 0 30px;
-			& h3{
-				font-family: $thirdFont;
-				font-size: 22px;
-				color: #fff;
-			}
-			& p{
-				padding-top: 15px;
-			}
-		}
-		& .links1{
-			list-style: disc;
-			padding: 0 80px;
-			border-left: 1px solid #fff;
-			border-right: 1px solid #fff;
-			& li{
-				margin-top: 10px;
-				&:hover{
-					color: $mainColor;
-				}
-				& a:hover{
-					color: $mainColor;
-				}
-			}
-		}
-		& .links2{
-			& li{
-				margin-top: 20px;
-				text-decoration: underline;
-				& a:hover{
-					color: $mainColor;
-				}
-			}
-		}
-		& .risk{
-			padding-bottom: 30px;
-			& h3{
-				font-size: 20px;
-				line-height: 36px;
-			}
-			& p{
-				font-size: 16px;
-				line-height: 24px;
-			}
-			& a{
-				color: $mainColor;
-				text-decoration: underline;
-			}
-		}
-	}
+}
