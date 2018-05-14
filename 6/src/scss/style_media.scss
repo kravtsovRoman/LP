@@ -30,6 +30,10 @@
 			padding: 0 20px;
 		}
 	}
+	footer{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 
@@ -359,6 +363,29 @@
 				}
 			}
 		}
+	}
+	footer{
+		padding-left: 10px;
+		padding-right: 10px;
+		.flex{
+			flex-wrap: wrap;
+			justify-content: center;
+			.contacts{
+				margin-bottom: 40px;
+				text-align: center;
+			}
+		}
+		.risk{
+				text-align: center;
+				h3{
+					font-size: 2em;
+					margin-bottom: 10px;
+				}
+				p{
+					font-size: 14px;
+					line-height: 18px;
+				}
+			}
 	}
 }
 

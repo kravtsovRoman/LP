@@ -49,11 +49,7 @@ $(document).ready(function(){
 		]
 	});
 
-
-
-
-
-
+	//Slider 2
 	$('.slider-footer').slick({
 		speed: 500,
 		slidesToShow: 4,

@@ -960,6 +960,11 @@ footer .risk a {
   .we-glad .container {
     padding: 0 20px;
   }
+
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1307,5 +1312,39 @@ footer .risk a {
 
   .we-glad .container h2 + p {
     width: 90%;
+  }
+
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  footer .flex {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  footer .flex .contacts {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  footer .risk {
+    text-align: center;
+  }
+
+  footer .risk h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  footer .risk p {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
