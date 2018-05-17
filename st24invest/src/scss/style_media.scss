@@ -1,0 +1,623 @@
+
+@media screen and (max-width: 1600px) {
+}
+
+
+@media screen and (max-width: 1299px) {
+	.container{
+		padding: 0 20px;
+	}
+	header{
+		background-position: 0;
+		background-size: cover;
+		.header-top{
+			padding: 0 10px;
+		}
+		.nav-menu li{
+			padding-left: 10px;
+		}
+	}
+	.our-advantages .become-partner input[type='submit']{
+		padding: 10px 70px;
+	}
+	.brends .flex{
+		flex-wrap: wrap;
+		li{
+			width: 18%;
+		}
+	}
+	footer .footer_blocks{
+		flex-wrap: wrap;
+		justify-content: center;
+		form{
+			margin-top: 20px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 991px) {
+	header{
+		background-position: -230px 0;
+		.header-text{
+			h1{
+				font-size: 30px;
+				line-height: 32px;
+			}
+			h5{
+				margin-top: 15px;
+				margin-bottom: 20px;
+				font-size: 18px;
+				line-height: 20px;
+			}
+		}
+		.header-top{
+			.header-right{
+			}
+			.buttons{
+				transition: all .3s;
+				margin: 35px 0;
+				a{
+					margin-right: 20px;
+					transition: all .4s;
+				}
+			}
+		}
+		.nav-menu{
+			background: #d32424;
+			display: none;
+			position: absolute;
+			top: 100%;
+			right: 0;
+			box-shadow: -3px 5px 20px  rgba(0, 0, 0, .7);
+			margin-top: 2px;
+			li{
+				float: none;
+				font-size: 1.1em;
+				padding: 15px 20px;
+				transition: all .3s;
+				&:not(:last-child){
+					border-bottom: 1px solid #ccc;
+				}
+				& a:hover{
+					color: #000;
+					font-weight: 900;
+				}
+			}
+		}
+		.burger{
+			display: block;
+		}
+	}
+	.our-advantages{
+		&_content{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&_blocks{
+			width: 100%;
+		}
+	}
+	.start-earning .modalWindow div{
+		width: 50%;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	header .header-text .button{
+		padding: 15px 50px;
+		font-size: 16px;
+	}
+	.under-header p{
+		width: 80%;
+	}
+	.our-advantages{
+		.become-partner{
+			width: 50%;
+		}
+	}
+	.affiliate-program{
+		padding-bottom: 0;
+		.container{
+			display: block;
+			.affiliate-program_blocks{
+				width: 100%;
+				.block{
+					.button{
+						margin-left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+	}
+	.img-right{
+		display: none;
+	}
+	.start-earning{
+		padding-bottom: 40px;
+		h2{
+			font-size: 1.1em;
+		}
+	}
+	.how-work{
+		padding: 30px 0;
+		&_blocks{
+			.block{
+				p{
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+	.our-features{
+		&_blocks{
+			padding-right: 5px;
+			.block{
+				width: 40%;
+			}
+		}
+	}
+	.digits{
+		.block{
+			width: 100px;
+			height: 100px;
+		}
+	}
+	.faq{
+		padding: 30px 0;
+		height: 400px;
+	}
+	.brends{
+		.flex{
+			li{
+				min-width: 160px;
+			}
+		}
+	}
+	.start-earning .modalWindow div{
+		width: 60%;
+		padding: 50px;
+		h2{
+			margin: 10px;
+		}
+	}
+	.footer-text p{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+
+@media screen and (max-width: 610px) {
+	header{
+		.buttons{
+			.button{
+				padding: 0 20px;
+			}
+		}
+		.burger{
+			margin-left: 0;
+		}
+		.nav-menu{
+			width: 70%;
+			right: 50%;
+			transform: translateX(50%);
+			text-align: center;
+		}
+		.header-text {
+			padding: 0 30px 100px 30px;
+			width: 90%;
+			text-align: center;
+			h1{
+				font-size: 28px;
+			}
+			h5{
+				margin-bottom: 50px;
+			}
+		}
+	}
+	.under-header{
+		p{
+			width: 90%;
+		}
+	}
+	.how-work_blocks{
+		.block{
+			p{
+				&:before{
+					width: 75px;
+				}
+			}
+		}
+	}
+	.partner-deductions{
+		padding-bottom: 20px;
+		&_blocks{
+			.block{
+				width: 80%;
+				margin-bottom: 50px;
+			}
+		}
+	}
+	.digits{
+		padding-bottom: 0;
+		.flex{
+			flex-wrap: wrap;
+			.block{
+				margin-bottom: 100px;
+				margin: 0 auto 100px auto;
+			}
+		}
+	}
+	footer{
+		.footer_blocks{
+			.block{
+				width: 90%;
+				&:first-child{
+					justify-content: space-between;
+					margin-bottom: 30px;
+				}
+				form{
+					justify-content: center;
+					flex-direction: none;
+					input{
+						margin: 5px auto;
+					}
+				}
+			}
+		}
+	}
+	.start-earning{
+		.form{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			input{
+				margin-top: 5px;
+			}
+			input[type="text"]{
+				width: 60%;
+			}
+		}
+		.modalWindow div{
+			width: 70%;
+			padding: 50px;
+			img{
+				width: 100px;
+			}
+			h2{
+				margin: 10px;
+				font-size: 2em;
+			}
+			p{
+				font-size: 1em;
+			}
+			.close{
+				font-size: 40px;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	header{
+		.header-top{
+			.container{
+				padding: 0;
+				.logo{
+					width: 75px;
+				}
+			}
+			.buttons{
+				display: flex;
+				flex-wrap: wrap;
+				margin: 10px 30px 10px 0;
+				justify-content: center;
+				a{
+					margin: 0 10px 10px 10px;
+					width: 50%;
+					min-width: 100px;
+					text-align: center;
+				}
+			}
+			.burger{
+				position: absolute;
+				right: 10px;
+			}
+			.nav-menu{
+				width: 100%;
+			}
+		}
+		.header-text{
+			width: 95%;
+			margin-top: 50px;
+			padding: 0 10px;
+			.button{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.under-header{
+		p{
+			margin: 30px auto;
+		}
+	}
+	.our-advantages{
+		&_blocks{
+			.block{
+				width: 100%;
+				margin-top: 50px;
+				p{
+					padding-left: 0;
+					text-align: center;
+					&:before{
+						top: -40px;
+						left: 50%;
+					}
+				}
+			}
+		}
+		.become-partner{
+			width: 90%;
+		}
+	}
+	.our-features{
+		&_blocks{
+			.block{
+				width: 90%;
+				margin-bottom: 40px;
+				p{
+					padding-top: 50px;
+					width: 100%;
+					text-align: center;
+					padding-left: 0;
+					&:before{
+						left: 50%;
+						top: 10px;
+					}
+				}
+			}
+		}
+	}
+	.start-earning{
+		.form{
+			input[type="text"]{
+				width: 70%;
+				margin-bottom: 10px;
+			}
+			input[type="submit"]{
+				width: 78%;
+				padding: 10px 0;
+			}
+		}
+	}
+	.how-work{ 
+		p{
+			width: 100%;
+		}
+		&_blocks{
+			flex-wrap: wrap;
+			margin-top: 0;
+			.block{
+				width: 100%;
+				margin-top: 30px;
+				p{
+					&:before{
+						top: -74px;
+						width: 150px;
+					}
+				}
+			}
+		}
+	}
+	.digits{
+		.flex{
+			.block{
+				width: 150px;
+				height: 150px;
+				&:after{
+					bottom: -70px;
+				}
+			}
+		}
+	}
+	.faq{
+		padding-bottom: 0;
+		p{
+			font-size: 16px;
+		}
+		.accordion-menu{
+			margin-bottom: 0;
+			.dropdownlink{
+				padding: 15px 40px 15px 20px;
+				font-size: 16px;
+			}
+		}
+	}
+	footer{
+		padding-top: 30px;
+		.description{
+			font-size: 14px;
+		}
+		.footer_blocks{
+			flex-wrap: wrap;
+			.block{
+				width: 100%;
+				margin: 0 auto;
+				.footer-mail:before{
+					display: none;
+				}
+			}
+			.flex{
+				flex-wrap: wrap;
+				margin: 0 auto;
+				text-align: center;
+				a{
+					margin: 0 auto;
+					.logo{
+						margin-right: 0;
+					}
+				}
+				.contacts{
+					margin: 0 auto;
+				}
+			}
+			.footer-text{
+				p{
+					padding-left: 0;
+					border: none;
+					font-size: 14px;
+					margin-top: 0;
+					text-align: center;
+				}
+			}
+			.form{
+				input[type="text"]{
+					min-width: 200px;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	h2{
+		margin-top: 30px;
+		font-size: 25px;
+	}
+	header{
+		.header-text{
+			h1{
+				font-size: 25px;
+			}
+			h5{
+				margin: 10px auto 30px auto;
+				font-size: 16px;
+			}
+		}
+	}
+	.under-header{
+		p{
+			width: 95%;
+			font-size: 16px;
+			border-left: 0;
+			padding: 0;
+			margin: 15px auto;
+			text-align: center;
+		}
+	}
+	.our-advantages{
+		padding-bottom: 30px;
+		.container{
+			padding: 0 10px;
+		}
+		.description{
+			font-size: 20px;
+		}
+		p{
+			font-size: 16px;
+		}
+		.become-partner{
+			width: 100%;
+			padding: 25px;
+			input[type='text']{
+				padding-top: 10px;
+			}
+			input[type='submit']{
+				margin-top: 10px;
+			}
+		}
+	}
+	.affiliate-program{
+		padding: 30px 0 0 0;
+		.block{
+			border: 0;
+			padding-left: 0;
+			margin-bottom: 40px;
+			h4{
+				font-size: 20px;
+				text-align: center;
+			}
+			p{
+				font-size: 16px;
+				line-height: 18px;
+			}
+			.button{
+				padding: 10px 40px;
+				font-size: 16px;
+			}
+		}
+	}
+	.our-features{
+		p{
+			width: 100%;
+			font-size: 16px;
+		}
+	}
+	.start-earning{
+		padding-bottom: 20px;
+		.modalWindow div{
+			top: 75px;
+			width: 80%;
+			padding: 20px;
+			h2{
+				margin-bottom: 0;
+				font-size: 1.5em;
+			}
+			.close{
+				font-size: 30px;
+				top: 0px;
+			}
+		}
+		.form{
+			input[type="text"]{
+				width: 90%;
+				margin-right: 0;
+			}
+			input[type="submit"]{
+				width: 103%;
+			}
+		}
+	}
+	.partner-deductions{
+		&_blocks{
+			.block{
+				text-align: center;
+				width: 100%;
+				.border-text{
+					
+					h4{
+						font-size: 20px;
+						&+p{
+							font-size: 16px;
+						}
+					}
+				}
+				.description{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.faq{
+		p{
+			font-size: 14px;
+		}
+		.accordion-menu{
+			.dropdownlink{
+				padding: 10px 30px 10px 15px;
+				.fa-chevron-down{
+					right: 10px;
+				}
+			}
+		}
+	}
+	.brends{
+		padding: 10px 0;
+	}
+}

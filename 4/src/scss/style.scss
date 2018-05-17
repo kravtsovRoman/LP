@@ -704,6 +704,7 @@ header .container .button-fixed{
 				padding: 30px;
 				background: #252525;
 				position: relative;
+				outline: none;
 				& .foto{
 					width: 100px;
 					height: 100px;
@@ -753,61 +754,61 @@ header .container .button-fixed{
 			}
 		}
 	}
-	footer{
-		background: #000;
-		color: #fff;
-		font-size: 14px;
-		padding-top: 50px;
-		padding-bottom: 70px;
-		& .logo{
-			width: 150px;
-		}
-		& .contacts{
-			padding: 0 30px;
-			& h3{
-				color: #fff;
-			}
-			& .mail{
-				padding: 20px 0;
-			}
-			& p{
-				padding-top: 5px;
-			}
-		}
-		& .place{
-			& div{
-				margin-bottom: 30px;
-			}
-			& p{
-				margin-left: 10px;
-				line-height: 24px;
-				padding-right: 40px;
-			}
-			& .country{
-				color: $secondColor;
-			}
-		}
+footer{
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+	padding-top: 50px;
+	padding-bottom: 70px;
+	& .logo{
+		width: 150px;
+	}
+	& .contacts{
+		padding: 0 30px;
 		& h3{
-			color: $secondColor;
-			font-size: 24px;
-			text-transform: uppercase;
-			margin-bottom: 20px;
+			color: #fff;
 		}
-		& .risk{
-			width: 50%;
-			& p{
-				line-height: 24px;
-			}
-			& a{
-
-				text-decoration: underline;
-			}
+		& .mail{
+			padding: 20px 0;
 		}
-		& .warning{
-			width: 50%;
-			padding-left: 70px;
-			& p{
-				line-height: 24px;
-			}
+		& p{
+			padding-top: 5px;
 		}
 	}
+	& .place{
+		& div{
+			margin-bottom: 30px;
+		}
+		& p{
+			margin-left: 10px;
+			line-height: 24px;
+			padding-right: 40px;
+		}
+		& .country{
+			color: $secondColor;
+		}
+	}
+	& h3{
+		color: $secondColor;
+		font-size: 24px;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	& .risk{
+		width: 50%;
+		& p{
+			line-height: 24px;
+		}
+		& a{
+
+			text-decoration: underline;
+		}
+	}
+	& .warning{
+		width: 50%;
+		padding-left: 70px;
+		& p{
+			line-height: 24px;
+		}
+	}
+}

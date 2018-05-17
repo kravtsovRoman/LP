@@ -565,6 +565,9 @@ footer{
 	font-size: 14px;
 	padding-top: 50px;
 	padding-bottom: 40px;
+	.country{
+		color: $mainColor;
+	}
 	& p{
 		margin-top: 3px;
 	}

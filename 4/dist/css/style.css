@@ -1013,6 +1013,7 @@ header .container .button-fixed {
   padding: 30px;
   background: #252525;
   position: relative;
+  outline: none;
 }
 
 .trust-us .slider .block .foto {

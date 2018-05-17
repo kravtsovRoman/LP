@@ -741,6 +741,7 @@ footer .flex {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 footer .logo {
