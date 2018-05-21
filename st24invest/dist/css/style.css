@@ -200,6 +200,16 @@ h2 {
   font-size: 36px;
 }
 
+.all-news {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #333;
+}
+
+.all-news:hover {
+  text-decoration: none;
+}
+
 /* Main style END*/
 
 .header {
@@ -209,6 +219,9 @@ h2 {
   z-index: 999;
   color: #fff;
   padding-top: 20px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .header a {
@@ -218,6 +231,9 @@ h2 {
 .header-top {
   padding-bottom: 10px;
   border-bottom: 1px solid #7f7f7f;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .header-top .logo {
@@ -286,6 +302,9 @@ h2 {
   padding: 15px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .header .nav-menu .out-list li:hover .inner-list {
@@ -301,10 +320,16 @@ h2 {
   left: 0;
   background: #292929;
   min-width: 100px;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 .header .nav-menu .inner-list li {
   padding: 7px 10px;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 .header .nav-menu .inner-list li sup {
@@ -316,123 +341,318 @@ h2 {
   cursor: pointer;
 }
 
+.menu-padding {
+  padding: 5px !important;
+}
+
+.header-padding {
+  padding-top: 10px !important;
+}
+
+.header-top-padding {
+  padding-bottom: 5px !important;
+}
+
 main {
   padding: 110px 0 50px 0;
 }
 
-main .all-news {
-  text-decoration: underline;
-  font-weight: 600;
-  color: #333;
-}
-
-section {
+main section {
   width: 70%;
-  height: 1500px;
   padding-right: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-section .title-text p {
+main section .title-text p {
   font-size: 20px;
   font-weight: 300;
 }
 
-.day-new .block-image {
+main section .day-new .block-image {
   width: 45%;
   background: #ccc;
 }
 
-.day-new .block-image img {
+main section .day-new .block-image img {
   width: 100%;
   height: 100%;
 }
 
-.day-new .block-text {
+main section .day-new .block-text {
   width: 55%;
   background: #e4ae51;
-  padding: 10px 15px;
+  padding: 15px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.day-new .block-text h3 {
+main section .day-new .block-text h3 {
   width: 90%;
   font-weight: 500;
   font-size: 16px;
   margin: 5px 0;
 }
 
-.day-new .block-text p {
+main section .day-new .block-text p {
   margin-bottom: 10px;
+  line-height: 18px;
 }
 
-.day-new .block-text a {
+main section .day-new .block-text p + a {
   color: #333;
   text-decoration: underline;
 }
 
-.analitic .blocks .block {
+main section .day-new .block-text p + a:hover {
+  text-decoration: none;
+}
+
+main section .analitic .blocks .block {
   width: 50%;
   margin: 20px 0;
 }
 
-.analitic .blocks .block-image {
+main section .analitic .blocks .block-image {
   width: 25%;
 }
 
-.analitic .blocks .block-text {
+main section .analitic .blocks .block-text {
   width: 73%;
 }
 
-.analitic .blocks .block-text a {
+main section .analitic .blocks .block-text a {
   color: #333;
 }
 
-.analitic .blocks .block-text h3 {
+main section .analitic .blocks .block-text h3 {
   width: 90%;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.analitic .blocks .block-text span {
+main section .analitic .blocks .block-text span {
   display: inline-block;
   margin-bottom: 5px;
   color: #828282;
 }
 
-.analitic .blocks .block-text .category {
+main section .analitic .blocks .block-text .category {
   color: #e4ae51;
 }
 
-.economic-news .blocks .block {
+main section .economic-news .blocks .block {
   width: 50%;
   margin: 20px 0;
 }
 
-.economic-news .blocks .block h3 {
+main section .economic-news .blocks .block h3 {
   width: 90%;
   font-size: 16px;
   font-weight: 500;
   margin: 10px 0;
 }
 
-.economic-news .blocks .block span {
+main section .economic-news .blocks .block span {
   display: inline-block;
   margin-bottom: 5px;
   color: #828282;
 }
 
-.economic-news .blocks .block .country {
+main section .economic-news .blocks .block .country {
   color: #e4ae51;
 }
 
-aside {
+main aside {
   width: 30%;
-  height: 1500px;
-  background: #ccc;
+}
+
+main aside .currency h2 {
+  position: relative;
+  z-index: 99;
+  background: #FFF;
+}
+
+main aside .currency .currency-widget {
+  margin-top: -40px;
+}
+
+main aside .news-feed .feed {
+  position: relative;
+}
+
+main aside .news-feed .line {
+  width: 1px;
+  height: 100%;
+  background: #e4ae51;
+  position: absolute;
+  left: 17px;
+}
+
+main aside .news-feed h5 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+main aside .news-feed span {
+  position: absolute;
+  background: #fff;
+  line-height: 1.5em;
+}
+
+main aside .news-feed p {
+  position: relative;
+  padding-left: 50px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.reg-row {
+  background: #d4d4d4;
+  padding: 50px 0px;
+}
+
+.reg-row h2 {
+  width: 70%;
+  font-size: 33px;
+  line-height: 47px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.reg-row .button-block {
+  width: 30%;
+}
+
+.reg-row .button-block h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reg-row .button-block .button {
+  width: 50%;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.reg-row .button-block .button:hover {
+  color: #000;
+}
+
+.main-bottom {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.main-bottom .block {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.main-bottom .block .items {
+  margin-bottom: 35px;
+}
+
+.main-bottom .block .items .item {
+  margin-top: 20px;
+}
+
+.main-bottom .block .items .item a {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  line-height: 20px;
+  display: block;
+}
+
+.main-bottom .block .items .item .category {
+  color: #e4ae51;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.main-bottom .crip h2 {
+  margin-top: 0;
+}
+
+.main-bottom .econom-calendar .econom-widget {
+  margin-top: -45px;
+  height: 450px;
+  z-index: 1;
+}
+
+.main-bottom .econom-calendar h2 {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+  z-index: 99;
+  background: #FFF;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background: #292929;
+  color: #fff;
+  line-height: 18px;
+}
+
+footer .block {
+  width: 30%;
+}
+
+footer .block h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+footer .block .logo img {
+  margin-bottom: 15px;
+}
+
+footer .block .email {
+  margin-bottom: 30px;
+}
+
+footer .block .info {
+  width: 95%;
+  margin-bottom: 30px;
+}
+
+footer .block .nav-menu li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+footer .block .nav-menu li a:hover {
+  color: #e4ae51;
+}
+
+footer .subscribe {
+  text-align: center;
+}
+
+footer .subscribe h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+footer .subscribe p {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+footer .subscribe .button {
+  width: 60%;
+  padding: 10px;
 }
 @media screen and (max-width: 1299px) {
   .container {
