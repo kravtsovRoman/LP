@@ -200,6 +200,19 @@ h2 {
   font-size: 36px;
 }
 
+h3 {
+  width: 90%;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #333;
+}
+
+h3:hover {
+  color: #e4ae51;
+  text-decoration: underline;
+}
+
 .all-news {
   text-decoration: underline;
   font-weight: 700;
@@ -387,13 +400,6 @@ main section .day-new .block-text {
           box-sizing: border-box;
 }
 
-main section .day-new .block-text h3 {
-  width: 90%;
-  font-weight: 500;
-  font-size: 16px;
-  margin: 5px 0;
-}
-
 main section .day-new .block-text p {
   margin-bottom: 10px;
   line-height: 18px;
@@ -425,13 +431,6 @@ main section .analitic .blocks .block-text a {
   color: #333;
 }
 
-main section .analitic .blocks .block-text h3 {
-  width: 90%;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
 main section .analitic .blocks .block-text span {
   display: inline-block;
   margin-bottom: 5px;
@@ -445,13 +444,6 @@ main section .analitic .blocks .block-text .category {
 main section .economic-news .blocks .block {
   width: 50%;
   margin: 20px 0;
-}
-
-main section .economic-news .blocks .block h3 {
-  width: 90%;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 10px 0;
 }
 
 main section .economic-news .blocks .block span {
@@ -502,12 +494,18 @@ main aside .news-feed span {
   line-height: 1.5em;
 }
 
-main aside .news-feed p {
+main aside .news-feed a {
   position: relative;
   padding-left: 50px;
   margin-top: 20px;
   font-size: 16px;
   line-height: 17px;
+  display: block;
+}
+
+main aside .news-feed a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .reg-row {
@@ -569,6 +567,10 @@ main aside .news-feed p {
   margin-bottom: 5px;
   line-height: 20px;
   display: block;
+}
+
+.main-bottom .block .items .item a:hover {
+  color: #e4ae51;
 }
 
 .main-bottom .block .items .item .category {
@@ -653,6 +655,97 @@ footer .subscribe p {
 footer .subscribe .button {
   width: 60%;
   padding: 10px;
+}
+
+.breadcrumbs {
+  margin: 30px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+  color: #828282;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs span:hover {
+  color: #e4ae51;
+}
+
+.breadcrumbs .last-crumb {
+  color: #000;
+}
+
+.breadcrumbs .last-crumb:hover {
+  color: #e4ae51;
+}
+
+.country-list li {
+  text-transform: uppercase;
+}
+
+.country-list li a {
+  color: #828282;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 7px;
+}
+
+.country-list li a:hover {
+  color: #e4ae51;
+  border: 1px solid #e4ae51;
+}
+
+.category-news .category-description {
+  font-weight: 300;
+}
+
+.category-news .blocks .block {
+  width: 50%;
+  margin: 20px 0;
+}
+
+.category-news .blocks .block span {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #828282;
+}
+
+.category-news .blocks .block .country {
+  background: #d4e0ff;
+  padding: 3px 7px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.category-news .pagination {
+  margin: 30px auto 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.category-news .pagination .begin {
+  display: none;
+}
+
+.category-news .pagination .end {
+  display: inline-block;
+}
+
+.category-news .pagination .active {
+  background: #e4ae51;
+  cursor: auto;
+}
+
+.category-news .pagination a {
+  padding: 0 5px;
+  margin: 0 2px;
+}
+
+.category-news .pagination a:hover {
+  background: #e4ae51;
 }
 @media screen and (max-width: 1299px) {
   .container {

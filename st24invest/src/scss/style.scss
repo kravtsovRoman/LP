@@ -51,6 +51,17 @@ h1, h2{
 h2{
 	font-size: 36px; 
 }
+h3{
+	width: 90%;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 10px 0;
+	color: #333;
+	&:hover{
+		color: $mainColor;
+		text-decoration: underline;
+	}
+}
 .all-news{
 	text-decoration: underline;
 	font-weight: 700;
@@ -211,14 +222,14 @@ h2{
 
 // Style for fixed header
 .menu-padding{
-		padding: 5px!important;
-	}
-	.header-padding{
-		padding-top: 10px!important;
-	}
-	.header-top-padding{
-		padding-bottom: 5px!important;
-	}
+	padding: 5px!important;
+}
+.header-padding{
+	padding-top: 10px!important;
+}
+.header-top-padding{
+	padding-bottom: 5px!important;
+}
 
 
 main{
@@ -248,12 +259,6 @@ main{
 					background: $mainColor;
 					padding: 15px 15px;
 					box-sizing: border-box;
-					h3{
-						width: 90%;
-						font-weight: 500;
-						font-size: 16px;
-						margin: 5px 0;
-					}
 					p{
 						margin-bottom: 10px;
 						line-height: 18px;
@@ -281,12 +286,6 @@ main{
 						a{
 							color: #333;
 						}
-						h3{
-							width: 90%;
-							font-size: 16px;
-							font-weight: 500;
-							margin-bottom: 10px;
-						}
 						span{
 							display: inline-block;
 							margin-bottom: 5px;
@@ -304,12 +303,6 @@ main{
 				.block{
 					width: 50%;
 					margin: 20px 0;
-					h3{
-						width: 90%;
-						font-size: 16px;
-						font-weight: 500;
-						margin: 10px 0;
-					}
 					span{
 						display: inline-block;
 						margin-bottom: 5px;
@@ -352,19 +345,25 @@ main{
 				font-weight: 600;
 				font-size: 16px;
 				margin-top: 20px;
+				
+
 			}
 			span{
 				position: absolute;
 				background: #fff;
-				line-height: 1.5em ;
+				line-height: 1.5em;
 			}
-			p{
+			a{
 				position: relative;
 				padding-left: 50px;
 				margin-top: 20px;
 				font-size: 16px;
 				line-height: 17px;
-
+				display: block;
+				&:hover{
+					text-decoration: underline;
+					cursor: pointer;
+				}
 			}
 		}
 	}
@@ -415,6 +414,9 @@ main{
 					margin-bottom: 5px;
 					line-height: 20px;
 					display: block;
+					&:hover{
+						color: $mainColor;
+					}
 				}
 				.category{
 					color: $mainColor;
@@ -498,3 +500,85 @@ footer{
 		}
 	}
 }
+
+
+// Category
+
+.breadcrumbs{
+	margin: 30px 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	a, span{
+		color: #828282;
+		&:hover{
+			color: $mainColor;
+		}
+	}
+	.last-crumb{
+		color: #000;
+		&:hover{
+			color: $mainColor;
+		}
+	}
+}
+.country-list{
+	li{
+		text-transform: uppercase;
+		a{
+			color: #828282;
+			border: 1px solid #fff;
+			box-sizing: border-box;
+			padding: 7px;
+			&:hover{
+				color: $mainColor;
+				border: 1px solid $mainColor;
+			}
+		}
+	}
+}
+.category-news{
+	.category-description{
+		font-weight: 300;
+	}
+	.blocks{
+		.block{
+			width: 50%;
+			margin: 20px 0;
+			span{
+				display: inline-block;
+				margin-bottom: 5px;
+				color: #828282;
+			}
+			.country{
+				background: #d4e0ff;
+				padding: 3px 7px;
+				border-radius: 3px;
+			}
+		}
+	}
+	.pagination{
+		margin: 30px auto 0 auto;
+		font-size: 16px;
+		font-weight: 700;
+		.begin{
+			display: none;
+		}
+		.end{
+			display: inline-block;
+		}
+		.active{
+			background: $mainColor;
+			cursor: auto;
+		}
+		a{
+			padding: 0 5px;
+			margin: 0 2px;
+			&:hover{
+				background: $mainColor;
+			}
+		}
+	}
+}
+
+// Category END
+
