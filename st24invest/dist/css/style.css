@@ -488,6 +488,10 @@ main aside .news-feed .feed {
   position: relative;
 }
 
+main aside .news-feed h2 {
+  margin-top: 20px;
+}
+
 main aside .news-feed .line {
   width: 1px;
   height: 100%;
@@ -807,10 +811,12 @@ footer .subscribe .button {
 
 .news-title {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .news-time {
   color: #828282;
+  margin-bottom: 10px;
 }
 
 .news-image {
@@ -821,6 +827,86 @@ footer .subscribe .button {
 
 .news-image img {
   width: 100%;
+}
+
+.news-text {
+  margin-bottom: 30px;
+}
+
+.news-text p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.news #share {
+  width: 100%;
+  border: 1px solid #eaeaea;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+}
+
+.news #share .like {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.news #share .push {
+  display: inline-block;
+  width: 17%;
+  min-width: 100px;
+  line-height: 40px;
+  margin: 5px 2px 20px 2px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.news #share .facebook {
+  background-color: #3b5998;
+}
+
+.news #share .facebook:hover {
+  background-color: #2d4373;
+  color: #fff;
+}
+
+.news #share .google {
+  background-color: #dd4b39;
+}
+
+.news #share .google:hover {
+  background-color: #c23321;
+  color: #fff;
+}
+
+.news #share .twitter {
+  background-color: #55acee;
+}
+
+.news #share .twitter:hover {
+  background-color: #2795e9;
+  color: #fff;
+}
+
+.news #share .vkontakte {
+  background-color: #587ea3;
+}
+
+.news #share .vkontakte:hover {
+  background-color: #466482;
+  color: #fff;
+}
+
+.news #share .ok {
+  background-color: #ee8208;
+}
+
+.news #share .ok:hover {
+  background-color: #ee7808;
+  color: #fff;
 }
 @media screen and (max-width: 1299px) {
   .container {
