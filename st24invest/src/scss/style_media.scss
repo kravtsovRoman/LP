@@ -1,11 +1,53 @@
+$mainColor: #e4ae51;
+$secondColor: #e49d24; 
+$bgColor: #292929;
+$mainFont: 'Roboto', serif;
+$secondFort: 'Merriweather', serif;
+
 
 @media screen and (max-width: 1600px) {
 }
 
 
 @media screen and (max-width: 1299px) {
-	.container{
+	h2{
+		font-size: 32px;
+	}
+	header .container{
 		padding: 0 10px;
+		.nav-menu .out-list{
+			justify-content: center;
+			&>li:not(:last-child){
+				margin-right: 30px;
+			}
+		}
+	}
+	main{
+		padding: 130px 10px 20px 10px;
+		section{
+			padding-right: 10px;
+		}
+	}
+	aside{
+		.currency{
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.reg-row{
+		padding: 30px 10px;
+	}
+	.main-bottom{
+		.container{
+			padding: 0 10px;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	footer{
+		padding: 30px 10px 20px 10px;
 	}
 }
 
@@ -16,17 +58,96 @@
 
 
 @media screen and (max-width: 767px) {
-	
+	.header{
+		.header-top{
+			border-bottom: none;
+			.burger{
+				display: block;
+			}
+		}
+		.nav-menu{
+			display: none;
+			position: absolute;
+			background: $bgColor;
+			right: 0;
+			top: 100%;
+			.out-list{
+				display: inline-block;
+				&>li{
+					width: 100%;
+					padding: 7px 20px;
+					transition: none;
+					&:hover{
+						background: $mainColor;
+					}
+				}
+			}
+			.inner-list{
+				top: 0;
+				left: -50%;
+				border-top: 0;
+				border-right: 1px solid #fff;
+			}
+		}
+	}
+	main{
+		padding: 70px 10px 20px 10px;
+	}
 }
 
 
 @media screen and (max-width: 610px) {
-	
+	.header{
+		.header-top{
+			.header-reg{
+				display: none;
+			}
+		}
+		.nav-menu{
+			width: 100%;
+			text-align: center;
+			border-top: 1px solid #fff;
+			.out-list{
+				width: 100%;
+				&>li{
+					padding: 7px 20px;
+					&:hover{
+						background: $bgColor;
+					}
+				}
+				.inner-list{
+					transition: all 1s;
+					position: relative;
+					top: 99%;
+					left: 0;
+					border-right: 0;
+					text-align: center;
+					width: 70%;
+					margin: 0 auto;
+					background: lighten($bgColor, 20%);
+				}
+			}
+		}
+	}
 }
 
 
 @media screen and (max-width: 480px) {
-	
+	.header{
+		.header-top{
+			.logo{
+				width: 130px;
+				img{
+					width: 100%;
+				}
+			}
+			.header-time{
+				padding: 0px 30px 0 5px;
+				border: 0;
+			}
+		}
+		
+	}
 }
 
 

@@ -193,6 +193,9 @@ h1,
 h2 {
   margin: 20px 0 10px 0;
   font-family: "Merriweather", serif;
+}
+
+h1 {
   font-size: 40px;
 }
 
@@ -306,13 +309,72 @@ h3:hover {
   color: #999;
 }
 
+.header-top .burger {
+  display: none;
+  float: right;
+  margin-left: 10px;
+}
+
+.header-top .burger_checkbox {
+  display: none;
+}
+
+.header-top .burger_checkbox:checked + label .span-2 {
+  opacity: 0;
+}
+
+.header-top .burger_checkbox:checked + label .span-1 {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  position: absolute;
+  top: 5px;
+}
+
+.header-top .burger_checkbox:checked + label .span-3 {
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  position: absolute;
+  top: 5px;
+}
+
+.header-top .burger_checkbox + label {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header-top .burger_checkbox + label:hover {
+  cursor: pointer;
+}
+
+.header-top .burger_checkbox + label span {
+  width: 35px;
+  height: 3px;
+  display: block;
+  background: #FFF;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-top: 5px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
 .header .nav-menu {
   text-transform: uppercase;
+  position: relative;
 }
 
 .header .nav-menu .out-list li {
   position: relative;
-  padding: 15px 0;
+  padding: 10px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: all .5s;
@@ -329,8 +391,11 @@ h3:hover {
   border-top: 1px solid #e4ae51;
   position: absolute;
   top: 100%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: none;
-  left: 0;
+  left: 50%;
   background: #292929;
   min-width: 100px;
   -webkit-transition: none;
@@ -430,7 +495,7 @@ main section .analitic .blocks .block-image {
 }
 
 main section .analitic .blocks .block-text {
-  width: 73%;
+  width: 70%;
 }
 
 main section .analitic .blocks .block-text a {
@@ -443,6 +508,7 @@ main section .analitic .blocks .block-text h3 {
 
 main section .analitic .blocks .block-text span {
   display: inline-block;
+  margin-top: 10px;
   margin-bottom: 5px;
   color: #828282;
 }
@@ -454,6 +520,10 @@ main section .analitic .blocks .block-text .category {
 main section .economic-news .blocks .block {
   width: 50%;
   margin: 5px 0;
+}
+
+main section .economic-news .blocks .block-image img {
+  width: 98%;
 }
 
 main section .economic-news .blocks .block span {
@@ -909,7 +979,148 @@ footer .subscribe .button {
   color: #fff;
 }
 @media screen and (max-width: 1299px) {
-  .container {
+  h2 {
+    font-size: 32px;
+  }
+
+  header .container {
     padding: 0 10px;
+  }
+
+  header .container .nav-menu .out-list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  header .container .nav-menu .out-list > li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  main {
+    padding: 130px 10px 20px 10px;
+  }
+
+  main section {
+    padding-right: 10px;
+  }
+
+  aside .currency img {
+    width: 100%;
+  }
+
+  .reg-row {
+    padding: 30px 10px;
+  }
+
+  .main-bottom .container {
+    padding: 0 10px;
+  }
+
+  .main-bottom img {
+    width: 100%;
+  }
+
+  footer {
+    padding: 30px 10px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header .header-top {
+    border-bottom: none;
+  }
+
+  .header .header-top .burger {
+    display: block;
+  }
+
+  .header .nav-menu {
+    display: none;
+    position: absolute;
+    background: #292929;
+    right: 0;
+    top: 100%;
+  }
+
+  .header .nav-menu .out-list {
+    display: inline-block;
+  }
+
+  .header .nav-menu .out-list > li {
+    width: 100%;
+    padding: 7px 20px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+
+  .header .nav-menu .out-list > li:hover {
+    background: #e4ae51;
+  }
+
+  .header .nav-menu .inner-list {
+    top: 0;
+    left: -50%;
+    border-top: 0;
+    border-right: 1px solid #fff;
+  }
+
+  main {
+    padding: 70px 10px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .header .header-top .header-reg {
+    display: none;
+  }
+
+  .header .nav-menu {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #fff;
+  }
+
+  .header .nav-menu .out-list {
+    width: 100%;
+  }
+
+  .header .nav-menu .out-list > li {
+    padding: 7px 20px;
+  }
+
+  .header .nav-menu .out-list > li:hover {
+    background: #292929;
+  }
+
+  .header .nav-menu .out-list .inner-list {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    position: relative;
+    top: 99%;
+    left: 0;
+    border-right: 0;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    background: #5c5c5c;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header .header-top .logo {
+    width: 130px;
+  }
+
+  .header .header-top .logo img {
+    width: 100%;
+  }
+
+  .header .header-top .header-time {
+    padding: 0px 30px 0 5px;
+    border: 0;
   }
 }

@@ -4,7 +4,6 @@ $bgColor: #292929;
 $mainFont: 'Roboto', serif;
 $secondFort: 'Merriweather', serif;
 
-
 /* Main style */
 body{
 	position: relative;
@@ -46,6 +45,8 @@ body{
 h1, h2{
 	margin: 20px 0 10px 0;
 	font-family: $secondFort;
+}
+h1{
 	font-size: 40px;
 }
 h2{
@@ -71,53 +72,6 @@ h3{
 	}
 }
 /* Main style END*/
-
-
-// .burger{
-// 	display: none;
-// 	float: right;
-// 	margin-left: 10px;
-// 	&_checkbox{
-// 		display: none;
-// 		&:checked {
-// 			+label .span-2{
-// 				opacity: 0;
-// 			}
-// 			+label .span-1{
-// 				transform: rotate(135deg);
-// 				position: absolute;
-// 				top: 5px;
-// 			}
-// 			+label .span-3{
-// 				transform: rotate(-135deg);
-// 				position: absolute;
-// 				top: 5px;
-// 			}
-// 		}
-// 		&+label{
-// 			position: relative;
-// 			display: block;
-// 			width: 35px;
-// 			height: 20px;
-// 			left: 0;
-// 			top: 0;
-// 			right: 0;
-// 			bottom: 0;
-// 			&:hover{
-// 				cursor: pointer;
-// 			}
-// 			span{
-// 				width: 35px;
-// 				height: 3px;
-// 				display: block;
-// 				background: #FFF;
-// 				border-radius: 5px;
-// 				margin-top: 5px;
-// 				transition: all .3s;
-// 			}
-// 		}
-// 	}
-// }
 
 .header{
 	width: 100%;
@@ -181,13 +135,59 @@ h3{
 				}
 			}
 		}
+		.burger{
+			display: none;
+			float: right;
+			margin-left: 10px;
+			&_checkbox{
+				display: none;
+				&:checked {
+					+label .span-2{
+						opacity: 0;
+					}
+					+label .span-1{
+						transform: rotate(135deg);
+						position: absolute;
+						top: 5px;
+					}
+					+label .span-3{
+						transform: rotate(-135deg);
+						position: absolute;
+						top: 5px;
+					}
+				}
+				&+label{
+					position: relative;
+					display: block;
+					width: 35px;
+					height: 20px;
+					left: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					&:hover{
+						cursor: pointer;
+					}
+					span{
+						width: 35px;
+						height: 3px;
+						display: block;
+						background: #FFF;
+						border-radius: 5px;
+						margin-top: 5px;
+						transition: all .3s;
+					}
+				}
+			}
+		}
 	}
 	.nav-menu{
 		text-transform: uppercase;
+		position: relative;
 		.out-list{
 			& li{
 				position: relative;
-				padding: 15px 0;
+				padding: 10px 0;
 				box-sizing: border-box;
 				transition: all .5s;
 				&:hover .inner-list{
@@ -200,8 +200,9 @@ h3{
 			border-top: 1px solid $mainColor;
 			position: absolute;
 			top: 100%;
+			transform: translateX(-50%);
 			display: none;
-			left: 0;
+			left: 50%;
 			background: $bgColor;
 			min-width: 100px;
 			transition: none;
@@ -231,6 +232,7 @@ h3{
 .header-top-padding{
 	padding-bottom: 5px!important;
 }
+// Style for fixed header END
 
 
 main{
@@ -289,7 +291,7 @@ main{
 						padding-top: 10px;
 					}
 					&-text{
-						width: 73%;
+						width: 70%;
 						a{
 							color: #333;
 						}
@@ -298,6 +300,7 @@ main{
 						}
 						span{
 							display: inline-block;
+							margin-top: 10px;
 							margin-bottom: 5px;
 							color: #828282;
 						}
@@ -313,6 +316,11 @@ main{
 				.block{
 					width: 50%;
 					margin: 5px 0;
+					&-image{
+						img{
+							width: 98%;
+						}
+					}
 					span{
 						display: inline-block;
 						margin-bottom: 5px;
@@ -514,7 +522,6 @@ footer{
 }
 
 
-
 // Category
 
 .breadcrumbs{
@@ -592,8 +599,8 @@ footer{
 		}
 	}
 }
-
 // Category END
+
 
 // Instruments
 
@@ -638,6 +645,7 @@ footer{
 	}
 }
 // Instruments END
+
 
 // News
 
@@ -699,5 +707,4 @@ footer{
 		.ok:hover 				{background-color:#ee7808; color:#fff;}
 	}
 }
-
 // News END

@@ -17,10 +17,10 @@ $(document).ready(function(){
 
 
   //Burger menu в моб. версии
-  // $('#burger_check+label').on('click', function(event){
-  //   $('.nav-menu').fadeToggle(200);
-  //   event.stopPropagation();
-  // });
+  $('#burger_check+label').on('click', function(event){
+    $('.nav-menu').fadeToggle(200);
+    event.stopPropagation();
+  });
 
 // Facebook comments
   (function(d, s, id) {
