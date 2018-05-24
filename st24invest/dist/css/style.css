@@ -1006,10 +1006,6 @@ footer .subscribe .button {
     padding-right: 10px;
   }
 
-  aside .currency img {
-    width: 100%;
-  }
-
   .reg-row {
     padding: 30px 10px;
   }
@@ -1024,6 +1020,57 @@ footer .subscribe .button {
 
   footer {
     padding: 30px 10px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  main section {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  main section .analitic .blocks .block {
+    width: 45%;
+  }
+
+  main section .economic-news .blocks .block {
+    width: 48%;
+  }
+
+  main section .economic-news .blocks .block-image {
+    width: 100%;
+  }
+
+  main aside {
+    width: 100%;
+  }
+
+  main aside .currency {
+    display: none;
+  }
+
+  .reg-row {
+    text-align: center;
+  }
+
+  .reg-row h2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .reg-row .button-block {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .main-bottom .block {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+
+  footer .block h2 {
+    line-height: 30px;
+    text-align: center;
   }
 }
 
@@ -1070,6 +1117,72 @@ footer .subscribe .button {
   main {
     padding: 70px 10px 20px 10px;
   }
+
+  main h1 {
+    text-align: center;
+  }
+
+  main h1 + p {
+    text-align: center;
+  }
+
+  main section .day-new .block-image {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  main section .day-new .block-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  main section .analitic .blocks .block {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  main section .analitic .blocks .block-image {
+    width: 15%;
+  }
+
+  main section .analitic .blocks .block-image img {
+    width: 100%;
+  }
+
+  main section .analitic .blocks .block-text {
+    width: 80%;
+  }
+
+  .main-bottom .block {
+    width: 100%;
+  }
+
+  footer .block {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  footer .block .email {
+    margin-bottom: 10px;
+  }
+
+  footer .block .info {
+    margin-bottom: 10px;
+  }
+
+  footer .subscribe {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer .subscribe h5 {
+    margin-bottom: 10px;
+  }
+
+  footer .subscribe p {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 610px) {
@@ -1096,16 +1209,15 @@ footer .subscribe .button {
   }
 
   .header .nav-menu .out-list .inner-list {
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
     position: relative;
     top: 99%;
-    left: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
     border-right: 0;
     text-align: center;
     width: 70%;
-    margin: 0 auto;
     background: #5c5c5c;
   }
 }
@@ -1122,5 +1234,54 @@ footer .subscribe .button {
   .header .header-top .header-time {
     padding: 0px 30px 0 5px;
     border: 0;
+  }
+
+  main section h1 {
+    font-size: 30px;
+  }
+
+  main section h2 {
+    font-size: 26px;
+  }
+
+  main section .day-new .block-image {
+    width: 100%;
+  }
+
+  main section .day-new .block-text {
+    width: 100%;
+  }
+
+  main section .analitic .blocks .block-image {
+    width: 50%;
+  }
+
+  main section .analitic .blocks .block-image a {
+    margin: 0 auto;
+  }
+
+  main section .analitic .blocks .block-text {
+    width: 100%;
+  }
+
+  main section .analitic .blocks .block-text h3 {
+    width: 100%;
+  }
+
+  main section .economic-news .blocks .block {
+    width: 100%;
+  }
+
+  main aside .news-feed .feed .item a {
+    font-size: 14px;
+  }
+
+  .reg-row h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .reg-row .button-block .button {
+    width: 80%;
   }
 }
