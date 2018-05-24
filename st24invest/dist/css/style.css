@@ -998,6 +998,11 @@ footer .subscribe .button {
     margin-right: 30px;
   }
 
+  .country-list ul li {
+    width: 15%;
+    margin-bottom: 20px;
+  }
+
   main {
     padding: 130px 10px 20px 10px;
   }
@@ -1020,6 +1025,14 @@ footer .subscribe .button {
 
   footer {
     padding: 30px 10px 20px 10px;
+  }
+
+  .category-news .blocks .block {
+    width: 48%;
+  }
+
+  .category-news .blocks .block-image img {
+    width: 100%;
   }
 }
 
@@ -1069,8 +1082,12 @@ footer .subscribe .button {
   }
 
   footer .block h2 {
-    line-height: 30px;
+    font-size: 25px;
     text-align: center;
+  }
+
+  .country-list ul li {
+    width: 20%;
   }
 }
 
@@ -1151,6 +1168,15 @@ footer .subscribe .button {
 
   main section .analitic .blocks .block-text {
     width: 80%;
+  }
+
+  .country-list ul li {
+    width: 32%;
+    margin-bottom: 12px;
+  }
+
+  .country-list ul li a {
+    padding: 3px 7px;
   }
 
   .main-bottom .block {
@@ -1236,6 +1262,10 @@ footer .subscribe .button {
     border: 0;
   }
 
+  .country-list ul li {
+    width: 50%;
+  }
+
   main section h1 {
     font-size: 30px;
   }
@@ -1283,5 +1313,9 @@ footer .subscribe .button {
 
   .reg-row .button-block .button {
     width: 80%;
+  }
+
+  .category-news .blocks .block {
+    width: 100%;
   }
 }

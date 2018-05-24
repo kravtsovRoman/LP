@@ -22,6 +22,14 @@ $secondFort: 'Merriweather', serif;
 			}
 		}
 	}
+	.country-list{
+		ul{
+			li{
+				width: 15%;
+				margin-bottom: 20px;
+			}
+		}
+	}
 	main{
 		padding: 130px 10px 20px 10px;
 		section{
@@ -44,7 +52,21 @@ $secondFort: 'Merriweather', serif;
 	footer{
 		padding: 30px 10px 20px 10px;
 	}
+	.category-news{
+		.blocks{
+			.block{
+				width: 48%;
+				&-image{
+					img{
+						width: 100%;
+					}
+				}
+			}
+		} 
+	}
 }
+
+
 
 
 @media screen and (max-width: 991px) {
@@ -97,8 +119,15 @@ $secondFort: 'Merriweather', serif;
 	footer{
 		.block{
 			h2{
-				line-height: 30px;
+				font-size: 25px;
 				text-align: center;
+			}
+		}
+	}
+	.country-list{
+		ul{
+			li{
+				width: 20%;
 			}
 		}
 	}
@@ -172,6 +201,17 @@ $secondFort: 'Merriweather', serif;
 							width: 80%;
 						}
 					}
+				}
+			}
+		}
+	}
+	.country-list{
+		ul{
+			li{
+				width: 32%;
+				margin-bottom: 12px;
+				a{
+					padding: 3px 7px;
 				}
 			}
 		}
@@ -257,6 +297,13 @@ $secondFort: 'Merriweather', serif;
 			}
 		}
 	}
+	.country-list{
+		ul{
+			li{
+				width: 50%;
+			}
+		}
+	}
 	main{
 		section{
 			h1{
@@ -317,6 +364,13 @@ $secondFort: 'Merriweather', serif;
 				width: 80%;
 			}
 		}
+	}
+	.category-news{
+		.blocks{
+			.block{
+				width: 100%;
+			}
+		} 
 	}
 }
 
