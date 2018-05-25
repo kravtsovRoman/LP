@@ -1,0 +1,73 @@
+$mainColor: #ff8300;
+$secondColor: #1f75b7; 
+$mainFont: 'Open Sans', sans-serif;
+
+/* Main style */
+body{
+	position: relative;
+	overflow-x: hidden;
+	font-size: 18px;
+	font-family: $mainFont;
+	color: #212121;
+	height: 1500px;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;  
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.button{
+	display: inline-block;
+	text-transform: uppercase;
+	background: $secondColor;
+	padding: 5px 20px;
+	cursor: pointer;
+	border: 1px solid $secondColor;
+	&:hover{
+		background: transparent;
+	}
+}
+
+/* Main style END*/
+
+.header{
+	width: 100%;
+	background: $mainColor;
+	position: fixed;
+	z-index: 999;
+	color: #fff;
+	padding: 10px 0;
+	.logo{
+		align-items: center;
+		&-image{
+			width: 75px;
+			margin-right: 20px;
+			img{
+				width: 100%;
+			}
+		}
+		&-text{
+			text-transform: uppercase;
+			font-weight: 800;
+		}
+	}
+	.search{
+		width: 25%;
+		input{
+			width: 100%;
+			box-sizing: border-box;
+			border: 0;
+			outline: none;
+			border-radius: 15px;
+			height: 30px;
+			padding-left: 40px;
+		}
+	}
+}
+
+
+
