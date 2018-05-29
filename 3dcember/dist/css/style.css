@@ -605,3 +605,250 @@ h2 {
 .footer-subscribe {
   width: 30%;
 }
+
+.footer-subscribe form {
+  width: 60%;
+}
+
+.footer-subscribe form input {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 0;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+}
+
+.footer-subscribe form input[type="submit"] {
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #ff8300;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #ff8300;
+}
+
+.footer-subscribe form input[type="submit"]:hover {
+  background: transparent;
+  cursor: pointer;
+}
+
+.modalWindow {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 99999;
+}
+
+.modalWindow:target {
+  display: block;
+}
+
+.modalWindow .inner-block {
+  width: 600px;
+  background: #FFF;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: 2px solid #1f75b7;
+  position: relative;
+  top: 75px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 50px 100px;
+}
+
+.modalWindow .close {
+  font-size: 3em;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  cursor: pointer;
+  color: #000;
+  font-weight: 300;
+}
+
+.modalWindow .close:hover {
+  color: #1f75b7;
+}
+
+.modalWindow h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.modalWindow .order-info {
+  width: 90%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.modalWindow .order-info-image {
+  width: 150px;
+  margin-right: 30px;
+}
+
+.modalWindow .order-info-image img {
+  width: 100%;
+}
+
+.modalWindow .order-info-text {
+  color: #7d7d7d;
+}
+
+.modalWindow .order-info-text .title {
+  width: 60%;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.modalWindow .order-info-text .price {
+  font-size: 36px;
+  color: #636363;
+}
+
+.modalWindow h3 {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.modalWindow .credit-card {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.modalWindow .credit-card p {
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.modalWindow .credit-card img {
+  width: 100px;
+  height: 18px;
+}
+
+.modalWindow .inputs {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.modalWindow .inputs div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+}
+
+.modalWindow .inputs div label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.modalWindow .inputs div input[type="text"] {
+  border: 1px solid #8fbadb;
+  line-height: 1.5em;
+}
+
+.modalWindow .checkbox {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.modalWindow .checkbox label {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.modalWindow input[type="submit"] {
+  background: #1f75b7;
+  border: 2px solid #1f75b7;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.modalWindow input[type="submit"]:hover {
+  background: transparent;
+  color: #000;
+}
+
+.modalWindow .success {
+  padding: 100px;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modalWindow .success h3 {
+  font-size: 40px;
+}
+
+.modalWindow .success p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.modalWindow .success .title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #7d7d7d;
+}
+
+.modalWindow .success .button {
+  background: #ff8300;
+  border: 2px solid #ff8300;
+  color: #fff;
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.modalWindow .success .button:hover {
+  background: transparent;
+  color: #000;
+}

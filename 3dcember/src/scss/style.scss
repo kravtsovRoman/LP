@@ -336,10 +336,10 @@ h2{
 	padding: 30px 0;
 	background: $secondColor;
 	h3{
-			font-weight: 800;
-			text-transform: uppercase;
-			margin-bottom: 20px;
-		}
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
 	&-category{
 		width: 22%;
 		text-transform: uppercase;
@@ -375,6 +375,194 @@ h2{
 	}
 	&-subscribe{
 		width: 30%;
+		form{
+			width: 60%;
+			input{
+				width: 100%;
+				padding: 10px 20px;
+				margin-bottom: 10px;
+				border: 0;
+				border-radius: 30px;
+				box-sizing: border-box;
+				font-size: 16px;
+				outline: none;
+			}
+			input[type="submit"]{
+				font-size: 14px;
+				text-transform: uppercase;
+				background: $mainColor;
+				font-weight: 600;
+				color: #fff;
+				border: 2px solid $mainColor;
+				&:hover{
+					background: transparent;
+					cursor: pointer;
+					
+				}
+			}
+		}
+	}
+}
+.modalWindow{
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255,255,255,0.5);
+	z-index: 99999;
+	&:target {
+		display: block;
+	}
+	.inner-block{
+		width: 600px;
+		background: #FFF;
+		border-radius: 20px;
+		border: 2px solid $secondColor;
+		position: relative;
+		top: 75px;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 50px 100px;
+	}
+	.close{
+		font-size: 3em;
+		position: absolute;
+		right: 20px;
+		top: 0px;
+		cursor: pointer;
+		color: #000;
+		font-weight: 300;
+		&:hover{
+			color: $secondColor;
+		}
+	}
+	h2{
+		font-size: 40px;
+		font-weight: 800;
+		margin-bottom: 30px;
+	}
+	.order-info{
+		width: 90%;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+		&-image{
+			width: 150px;
+			margin-right: 30px;
+			img{
+				width: 100%;
+			}
+		}
+		&-text{
+			color: #7d7d7d;
+			.title{
+				width: 60%;
+				font-size: 30px;
+				font-weight: 500;
+				margin-bottom: 20px;
+			}
+			.price{
+				font-size: 36px;
+				color: #636363;
+			}
+		}
+	}
+	
+	h3{
+		font-size: 30px;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	.credit-card{
+		justify-content: flex-start;
+		margin-bottom: 20px;
+		p{
+			margin-right: 20px;
+			font-size: 22px;
+			font-weight: 500;
+		}
+		img{
+			width: 100px;
+			height: 18px;
+		}
+	}
+	.inputs{
+		justify-content: flex-start;
+		margin-bottom: 10px;
+		div{
+			flex-direction: column;
+			margin-right: 30px;
+			label{
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: 500;
+				margin-bottom: 3px;
+			}
+			input[type="text"]{
+				border: 1px solid #8fbadb;
+				line-height: 1.5em;
+			}
+		}
+	}
+	.checkbox{
+		justify-content: flex-start;
+		margin-bottom: 30px;
+		label{
+			font-size: 12px;
+			font-weight: 500;
+			margin-top: 5px;
+			margin-left: 5px;
+		}
+	}
+	input[type="submit"]{
+		background: $secondColor;
+		border: 2px solid $secondColor;
+		color: #fff;
+		font-size: 24px;
+		text-transform: uppercase;
+		padding: 5px 0;
+		width: 30%;
+		display: block;
+		margin: 0 auto;
+		cursor: pointer;
+		transform: translateX(-50%);
+		&:hover{
+			background: transparent;
+			color: #000;
+		}
+	}
+	.success{
+		padding: 100px;
+		text-align: center;
+		flex-direction: column;
+		h3{
+			font-size: 40px;
+		}
+		p{
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 50px;
+		}
+		.title{
+			margin-bottom: 20px;
+			font-size: 30px;
+			font-weight: 500;
+			color: #7d7d7d;
+		}
+		.button{
+			background: $mainColor;
+			border: 2px solid $mainColor;
+			color: #fff;
+			width: 30%;
+			margin: 0 auto;
+			padding: 10px 0;
+			&:hover{
+				background: transparent;
+				color: #000;
+			}
+		}
 	}
 }
 
