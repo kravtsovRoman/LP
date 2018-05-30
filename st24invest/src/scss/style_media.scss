@@ -64,9 +64,13 @@ $secondFort: 'Merriweather', serif;
 			}
 		} 
 	}
+	.tabs__content{
+		padding: 0 10px;
+	}
+	.bottom-contacts{
+		padding: 20px 10px 30px 10px;
+	}
 }
-
-
 
 
 @media screen and (max-width: 991px) {
@@ -129,6 +133,23 @@ $secondFort: 'Merriweather', serif;
 			li{
 				width: 20%;
 			}
+		}
+	}
+	.tabs__caption{
+		li{
+			width: 30%;
+		}
+	}
+	.tabs__content{
+		.block{
+			flex-direction: column;
+			text-align: center;
+		}
+		.block-image{
+			width: 100%;
+		}
+		.block-text{
+			width: 100%;
 		}
 	}
 }
@@ -265,6 +286,47 @@ $secondFort: 'Merriweather', serif;
 			.block:not(:last-child){
 				margin-bottom: 50px;
 			}
+		}
+	}
+	.achievements{
+		.blocks{
+			justify-content: center;
+			.block{
+				width: 30%;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.tabs__caption{
+		li{
+
+			font-size: 16px;
+		}
+	}
+	.tabs__content{
+		text-align: center;
+		.reklama p, .registr p{
+			width: 100%;
+		}
+	}
+	.tabs .reklama p, .tabs .registr p{
+		width: 100%;
+	}
+	.bottom-contacts{
+		text-align: center;
+		.flex{
+			p{
+				margin: 0 auto 30px auto;
+			}
+		}
+	}
+	.modalWindow{
+		.inner-block{
+			width: 70%;
+			padding: 0px 10px;
+		}
+		form{
+			width: 95%;
 		}
 	}
 }
@@ -432,9 +494,55 @@ $secondFort: 'Merriweather', serif;
 			}
 		}
 	}
+	.achievements{
+		.blocks{
+			.block:not(:last-child){
+				margin-bottom: 40px;
+			}
+			.block{
+				width: 70%;
+			}
+		}
+	}
+	.tabs__caption{
+		flex-direction: column;
+		li{
+			margin-bottom: 20px;
+			text-align: center;
+			width: 70%;
+		}
+	}
+	.tabs__content{
+		h2{
+			font-size: 24px;
+		}
+		.button{
+			width: 80%;
+		}
+		.block{
+			padding: 20px 10px;
+		}
+		.block-text{
+			h4{
+				font-size: 20px;
+			}
+		}
+	}
+	.modalWindow{
+		.inner-block{
+			width: 85%;
+			top: 10%;
+		}
+		form{
+			width: 100%;
+		}
+		.close{
+			top: -15px;
+			right: 5px;
+		}
+		h2{
+			font-size: 25px;
+		}
+	}
 }
 
-
-@media screen and (max-width: 320px) {
-	
-}

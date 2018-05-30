@@ -1036,6 +1036,263 @@ footer .subscribe .button {
   background-color: #ee7808;
   color: #fff;
 }
+
+.achievements {
+  padding: 30px 0 10px 0;
+}
+
+.achievements .blocks .block {
+  width: 20%;
+  text-align: center;
+}
+
+.achievements .blocks .block p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.achievements .blocks .block .first-text {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.tabs .reklama h2 span,
+.tabs .registr h2 span {
+  text-transform: uppercase;
+}
+
+.tabs .reklama p,
+.tabs .registr p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.tabs .reklama .button,
+.tabs .registr .button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tabs__content {
+  display: none;
+  /* по умолчанию прячем все блоки */
+  padding: 30px 0;
+}
+
+.tabs__content h2 + p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.tabs__content .button {
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+.tabs__content .button:hover {
+  color: #000;
+}
+
+.tabs__content .block {
+  border: 2px solid #e4ae51;
+  margin: 20px 0;
+  padding: 35px;
+}
+
+.tabs__content .block-image {
+  width: 10%;
+}
+
+.tabs__content .block-text {
+  width: 90%;
+}
+
+.tabs__content .block-text h4 {
+  font-size: 26px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 10px;
+}
+
+.tabs__content .block-text h4 + p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.tabs__content.active {
+  display: block;
+  /* по умолчанию показываем нужный блок */
+  color: #000;
+}
+
+.tabs .active {
+  color: #000;
+}
+
+.tabs__caption {
+  padding: 30px 0;
+  margin: 0 auto;
+  background: #f4d8a7;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabs__caption li {
+  width: 25%;
+  text-align: center;
+  font-size: 22px;
+  color: #86765a;
+  cursor: pointer;
+}
+
+.tabs__caption li:hover {
+  color: #000;
+}
+
+.bottom-contacts {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.bottom-contacts h4 {
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 30px;
+}
+
+.bottom-contacts .flex {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.bottom-contacts .flex p {
+  margin-right: 20px;
+  font-size: 20px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.bottom-contacts .flex p:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: url("../../../../../image/bottom-contacts.png") no-repeat;
+  background-position: 10px 0;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+.bottom-contacts .flex .mail:before {
+  background-position: -290px 0;
+}
+
+.bottom-contacts .flex .skype:before {
+  background-position: -610px 0;
+}
+
+.modalWindow {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 99999;
+}
+
+.modalWindow:target {
+  display: block;
+}
+
+.modalWindow .inner-block {
+  width: 600px;
+  background: #FFF;
+  border: 1px solid #e49d24;
+  position: relative;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 10px 50px;
+}
+
+.modalWindow .close {
+  font-size: 4em;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  cursor: pointer;
+  color: #000;
+  font-weight: 200;
+}
+
+.modalWindow .close:hover {
+  color: #e49d24;
+}
+
+.modalWindow h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.modalWindow form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.modalWindow form label {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.modalWindow form input,
+.modalWindow form textarea {
+  padding: 10px 10px;
+  border: 1px solid #aaa;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.modalWindow form input[type="submit"] {
+  background: #dd9925;
+  border: 2px solid #dd9925;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modalWindow form input[type="submit"]:hover {
+  background: transparent;
+  color: #000;
+}
 @media screen and (max-width: 1299px) {
   h2 {
     font-size: 32px;
@@ -1092,6 +1349,14 @@ footer .subscribe .button {
   .category-news .blocks .block-image img {
     width: 100%;
   }
+
+  .tabs__content {
+    padding: 0 10px;
+  }
+
+  .bottom-contacts {
+    padding: 20px 10px 30px 10px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1146,6 +1411,27 @@ footer .subscribe .button {
 
   .country-list ul li {
     width: 20%;
+  }
+
+  .tabs__caption li {
+    width: 30%;
+  }
+
+  .tabs__content .block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .tabs__content .block-image {
+    width: 100%;
+  }
+
+  .tabs__content .block-text {
+    width: 100%;
   }
 }
 
@@ -1288,6 +1574,53 @@ footer .subscribe .button {
 
   .instruments .blocks .block:not(:last-child) {
     margin-bottom: 50px;
+  }
+
+  .achievements .blocks {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .achievements .blocks .block {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .tabs__caption li {
+    font-size: 16px;
+  }
+
+  .tabs__content {
+    text-align: center;
+  }
+
+  .tabs__content .reklama p,
+  .tabs__content .registr p {
+    width: 100%;
+  }
+
+  .tabs .reklama p,
+  .tabs .registr p {
+    width: 100%;
+  }
+
+  .bottom-contacts {
+    text-align: center;
+  }
+
+  .bottom-contacts .flex p {
+    margin: 0 auto 30px auto;
+  }
+
+  .modalWindow .inner-block {
+    width: 70%;
+    padding: 0px 10px;
+  }
+
+  .modalWindow form {
+    width: 95%;
   }
 }
 
@@ -1439,5 +1772,61 @@ footer .subscribe .button {
 
   .instruments .blocks .block-text a {
     width: 50%;
+  }
+
+  .achievements .blocks .block:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .achievements .blocks .block {
+    width: 70%;
+  }
+
+  .tabs__caption {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tabs__caption li {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 70%;
+  }
+
+  .tabs__content h2 {
+    font-size: 24px;
+  }
+
+  .tabs__content .button {
+    width: 80%;
+  }
+
+  .tabs__content .block {
+    padding: 20px 10px;
+  }
+
+  .tabs__content .block-text h4 {
+    font-size: 20px;
+  }
+
+  .modalWindow .inner-block {
+    width: 85%;
+    top: 10%;
+  }
+
+  .modalWindow form {
+    width: 100%;
+  }
+
+  .modalWindow .close {
+    top: -15px;
+    right: 5px;
+  }
+
+  .modalWindow h2 {
+    font-size: 25px;
   }
 }
