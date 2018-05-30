@@ -10,6 +10,9 @@ $secondFort: 'Merriweather', serif;
 
 
 @media screen and (max-width: 1299px) {
+	.instruments-for-category{
+		padding: 0 10px;
+	}
 	h2{
 		font-size: 32px;
 	}
@@ -468,7 +471,7 @@ $secondFort: 'Merriweather', serif;
 	}
 	.instruments-for-category{
 		h2{
-			font-size: 35px;
+			font-size: 30px;
 		}
 	}
 	.category-news{
@@ -545,4 +548,3 @@ $secondFort: 'Merriweather', serif;
 		}
 	}
 }
-
