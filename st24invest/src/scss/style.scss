@@ -259,6 +259,8 @@ h3{
 // Style for fixed header END
 
 
+// Index page
+
 main{
 	padding: 110px 0 20px 0;
 	section{
@@ -556,6 +558,7 @@ footer{
 		}
 	}
 }
+// Index page END
 
 
 // Category
@@ -771,7 +774,7 @@ footer{
 
 
 
-//Achievements
+//Achievements- tabs
 
 .achievements{
 	padding: 30px 0 10px 0;
@@ -1182,12 +1185,124 @@ footer{
 		}
 	}
 	.add-broker{
-		text-decoration: underline;
+		color: #fff;
 		&:hover{
-			text-decoration: none;
+			color: #000;
 		}
 	}
 }
 // Brokers END
 
 
+
+// Brokers-list
+
+.brokers{
+	&-description{
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	.brokers-list{
+		margin-top: 40px;
+		.brok{
+			margin-left: 20px;
+		}
+		.middle-numeral-text{
+			float: right;
+			margin-right: 100px;
+		}
+		.block{
+			margin: 10px 0;
+			padding: 30px;
+			position: relative;
+			&:nth-child(odd){
+				background: #fcf5e9;
+			}
+			&-logo{
+				cursor: pointer;
+				justify-content: flex-start;
+				align-items: center;
+				&:hover .logo{
+					filter: grayscale(0);
+				}
+				&:hover h3{
+					color: #000;
+					text-decoration: underline;
+				}
+				.logo{
+					margin-right: 30px;
+					filter: grayscale(100%);
+					width: 10%;
+				}
+				&-title{
+					width: 65%;
+					h3{
+						text-transform: uppercase;
+						font-size: 36px;
+					}
+				}
+			}
+			.numeral{
+				font-size: 30px;
+				font-weight: 500;
+			}
+			&-green{
+				.numeral{
+					color: #33b64c;
+				}
+			}
+			&-yellow{
+				.numeral{
+					color: #e49d24;
+				}
+			}
+			&-red{
+				.numeral{
+					color: #e53935;
+				}
+			}
+			&-text{
+				font-size: 16px;
+				line-height: 24px;
+				margin-top: 10px;
+				margin-bottom: 20px;
+			}
+			.add-review{
+				text-decoration: underline;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.pagination{
+		padding-top: 20px;
+		margin-bottom: 30px;
+	}
+}
+.add-broker{
+	text-align: center;
+	h3{
+		font-size: 30px;
+		font-family: $secondFont;
+		padding-top: 30px;
+		&:hover{
+			color: #000;
+			text-decoration: none;
+		}
+		&+p{
+			text-align: left;
+			font-size: 18px;
+			width: 90%;
+			margin-bottom: 20px;
+		}
+	}
+	.button{
+		color: #fff;
+		margin: 0 auto;
+		&:hover{
+			color: #000;
+		}
+	}	
+}
+// Brokers-list END
