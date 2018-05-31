@@ -332,6 +332,25 @@ $secondFort: 'Merriweather', serif;
 			width: 95%;
 		}
 	}
+	.broker{
+		.reviews{
+			.block{
+				padding: 10px 120px 10px 10px;
+			}
+		}
+		.feedback{
+			width: 90%;
+			margin: 0 auto;
+			form{
+				min-width: 300px;
+			}
+		}
+	}
+	.another-brokers{
+		h3{
+			margin-top: 0;
+		}
+	}
 }
 
 
@@ -545,6 +564,42 @@ $secondFort: 'Merriweather', serif;
 		}
 		h2{
 			font-size: 25px;
+		}
+	}
+	.broker{
+		&-title{
+			flex-direction: column;
+			&-logo{
+				margin: 0 auto;
+			}		
+		}
+		&-description{
+			text-align: center;
+		}
+		.reviews{
+			.block{
+				padding: 5px;
+				&:after{
+					display: none;
+				}
+			}
+		}
+		.feedback{
+			width: 100%;
+			margin: 0 auto;
+			form{
+				min-width: 270px;
+				.button{
+					font-size: 24px;
+					padding: 5px 0;
+					margin-bottom: 30px;
+				}
+			}
+			.stars{
+				span{
+					font-size: 2em;
+				}
+			}
 		}
 	}
 }

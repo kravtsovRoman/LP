@@ -8,16 +8,51 @@ $mainFont: 'Open Sans', sans-serif;
 
 
 @media screen and (max-width: 1299px) {
-
+	.container{
+		padding: 0 10px;
+	}
+	.category{
+		.container{
+			padding: 0;
+		}
+		&-item{
+			background-size: cover;
+			.overlay{
+				p{
+					font-size: 36px;
+				}
+			}
+		}
+	}
+	.vip-ads{
+		.container{
+			padding: 0;
+		}
+	}
 }
 
 @media screen and (max-width: 991px) {
-
+	.category{
+		background: #FFF;
+		&-item{
+			height: 200px;
+			.overlay{
+				padding: 56px 0;
+				p{
+					font-size: 28px;
+				}
+			}
+		}
+	}
 }
 
 
 @media screen and (max-width: 767px) {
-
+	.header{
+		.search{
+			width: 180px;
+		}
+	}
 }
 
 
@@ -27,7 +62,17 @@ $mainFont: 'Open Sans', sans-serif;
 
 
 @media screen and (max-width: 480px) {
-
+	.header{
+		padding: 5px 0;
+		.logo-image{
+			width: 35px;
+			margin-right: 10px;
+		}
+		.search{
+			margin: 0 auto;
+			width: 250px;
+		}
+	}
 }
 
 

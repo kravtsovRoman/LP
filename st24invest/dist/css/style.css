@@ -226,6 +226,35 @@ h3:hover {
   text-decoration: none;
 }
 
+.pagination {
+  margin: 30px auto 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pagination .begin {
+  display: none;
+}
+
+.pagination .end {
+  display: inline-block;
+}
+
+.pagination .active {
+  background: #e4ae51;
+  cursor: auto;
+}
+
+.pagination a {
+  padding: 0 5px;
+  margin: 0 2px;
+}
+
+.pagination a:hover {
+  background: #e4ae51;
+}
+
 /* Main style END*/
 
 .header {
@@ -889,34 +918,6 @@ footer .subscribe .button {
   font-weight: 500;
 }
 
-.category-news .pagination {
-  margin: 30px auto 0 auto;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.category-news .pagination .begin {
-  display: none;
-}
-
-.category-news .pagination .end {
-  display: inline-block;
-}
-
-.category-news .pagination .active {
-  background: #e4ae51;
-  cursor: auto;
-}
-
-.category-news .pagination a {
-  padding: 0 5px;
-  margin: 0 2px;
-}
-
-.category-news .pagination a:hover {
-  background: #e4ae51;
-}
-
 .instruments-title {
   margin: 0;
   line-height: 45px;
@@ -1318,6 +1319,257 @@ footer .subscribe .button {
   background: transparent;
   color: #000;
 }
+
+.broker-title {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.broker-title-logo {
+  margin-right: 20px;
+}
+
+.broker-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.broker .reviews {
+  margin-top: 40px;
+}
+
+.broker .reviews .block {
+  margin: 10px 0;
+  padding: 30px 120px 30px 30px;
+  position: relative;
+}
+
+.broker .reviews .block:nth-child(odd) {
+  background: #ececec;
+}
+
+.broker .reviews .block-green .numeral {
+  color: #43a047;
+}
+
+.broker .reviews .block-green:after {
+  background: url("../../../../../image/green-like.png") no-repeat;
+}
+
+.broker .reviews .block-yellow .numeral {
+  color: #e49d24;
+}
+
+.broker .reviews .block-yellow:after {
+  background: url("../../../../../image/yellow-like.png") no-repeat;
+}
+
+.broker .reviews .block-red .numeral {
+  color: #e53935;
+}
+
+.broker .reviews .block-red:after {
+  background: url("../../../../../image/red-like.png") no-repeat;
+}
+
+.broker .reviews .block:after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+}
+
+.broker .reviews .block-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.broker .reviews .block-numeral {
+  font-size: 18px;
+}
+
+.broker .feedback {
+  width: 60%;
+}
+
+.broker .feedback h3 {
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.broker .feedback h3:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.broker .feedback h3 + p {
+  font-size: 18px;
+}
+
+.broker .feedback .stars {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.broker .feedback .stars span {
+  width: 35px;
+  font-size: 3em;
+  cursor: pointer;
+}
+
+.broker .feedback .stars span:hover:before {
+  content: '\2605';
+}
+
+.broker .feedback .stars span:before {
+  content: '\2606';
+  color: green;
+}
+
+.broker .feedback .stars .star-1:before {
+  color: #cc0000;
+}
+
+.broker .feedback .stars .star-2:before {
+  color: red;
+}
+
+.broker .feedback .stars .star-3:before {
+  color: #f3540d;
+}
+
+.broker .feedback .stars .star-4:before {
+  color: #f37c0d;
+}
+
+.broker .feedback .stars .star-5:before {
+  color: #f3940d;
+}
+
+.broker .feedback .stars .star-6:before {
+  color: #f3d50d;
+}
+
+.broker .feedback .stars .star-7:before {
+  color: #e5f30d;
+}
+
+.broker .feedback .stars .star-8:before {
+  color: #baf30d;
+}
+
+.broker .feedback .stars .star-9:before {
+  color: #64f30d;
+}
+
+.broker .feedback .stars .star-10:before {
+  color: #50c30a;
+}
+
+.broker .feedback form {
+  width: 100%;
+}
+
+.broker .feedback form label {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.broker .feedback form textarea {
+  width: 100%;
+  resize: none;
+  margin-bottom: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.broker .feedback form .text-input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.broker .feedback form .text-input div {
+  width: 47%;
+}
+
+.broker .feedback form .text-input div input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.broker .feedback form .button {
+  width: 100%;
+  color: #fff;
+  font-size: 28px;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.broker .feedback form .button:hover {
+  color: #000;
+}
+
+.another-brokers {
+  border-left: 1px solid #faebd3;
+  border-right: 1px solid #faebd3;
+  text-align: center;
+}
+
+.another-brokers h3 {
+  font-size: 36px;
+  font-family: "Merriweather", serif;
+  margin-top: 60px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.another-brokers h3:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.another-brokers ul {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.another-brokers ul li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.another-brokers ul li:hover {
+  text-decoration: underline;
+}
+
+.another-brokers .add-broker {
+  text-decoration: underline;
+}
+
+.another-brokers .add-broker:hover {
+  text-decoration: none;
+}
 @media screen and (max-width: 1299px) {
   .instruments-for-category {
     padding: 0 10px;
@@ -1651,6 +1903,23 @@ footer .subscribe .button {
   .modalWindow form {
     width: 95%;
   }
+
+  .broker .reviews .block {
+    padding: 10px 120px 10px 10px;
+  }
+
+  .broker .feedback {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .broker .feedback form {
+    min-width: 300px;
+  }
+
+  .another-brokers h3 {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 610px) {
@@ -1857,5 +2126,48 @@ footer .subscribe .button {
 
   .modalWindow h2 {
     font-size: 25px;
+  }
+
+  .broker-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .broker-title-logo {
+    margin: 0 auto;
+  }
+
+  .broker-description {
+    text-align: center;
+  }
+
+  .broker .reviews .block {
+    padding: 5px;
+  }
+
+  .broker .reviews .block:after {
+    display: none;
+  }
+
+  .broker .feedback {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .broker .feedback form {
+    min-width: 270px;
+  }
+
+  .broker .feedback form .button {
+    font-size: 24px;
+    padding: 5px 0;
+    margin-bottom: 30px;
+  }
+
+  .broker .feedback .stars span {
+    font-size: 2em;
   }
 }

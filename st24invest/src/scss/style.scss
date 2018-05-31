@@ -72,6 +72,29 @@ h3{
 		text-decoration: none;
 	}
 }
+.pagination{
+	margin: 30px auto 0 auto;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	.begin{
+		display: none;
+	}
+	.end{
+		display: inline-block;
+	}
+	.active{
+		background: $mainColor;
+		cursor: auto;
+	}
+	a{
+		padding: 0 5px;
+		margin: 0 2px;
+		&:hover{
+			background: $mainColor;
+		}
+	}
+}
 /* Main style END*/
 
 .header{
@@ -584,8 +607,8 @@ footer{
 			justify-content: center;
 			flex-direction: column;
 			&:hover p{
-					text-decoration: none;
-				}
+				text-decoration: none;
+			}
 			div{
 				margin-bottom: 10px;
 				img{
@@ -632,28 +655,6 @@ footer{
 				color: $mainColor;
 				margin-left: 5px;
 				font-weight: 500;
-			}
-		}
-	}
-	.pagination{
-		margin: 30px auto 0 auto;
-		font-size: 16px;
-		font-weight: 700;
-		.begin{
-			display: none;
-		}
-		.end{
-			display: inline-block;
-		}
-		.active{
-			background: $mainColor;
-			cursor: auto;
-		}
-		a{
-			padding: 0 5px;
-			margin: 0 2px;
-			&:hover{
-				background: $mainColor;
 			}
 		}
 	}
@@ -982,3 +983,211 @@ footer{
 	}
 }
 //Achievements END
+
+
+// Brokers
+
+.broker{
+	&-title{
+		justify-content: flex-start;
+		align-items: center;
+		padding-top: 30px;
+		margin-bottom: 20px;
+		&-logo{
+			margin-right: 20px;
+		}
+	}
+	&-description{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.reviews{
+		margin-top: 40px;
+		.block{
+			margin: 10px 0;
+			padding: 30px 120px 30px 30px;
+			position: relative;
+			&:nth-child(odd){
+				background: #ececec;
+			}
+			&-green{
+				.numeral{
+					color: #43a047;
+				}
+				&:after{
+					background: url('/image/green-like.png') no-repeat;
+				}
+			}
+			&-yellow{
+				.numeral{
+					color: #e49d24;
+				}
+				&:after{
+					background: url('/image/yellow-like.png') no-repeat;
+				}
+			}
+			&-red{
+				.numeral{
+					color: #e53935;
+				}
+				&:after{
+					background: url('/image/red-like.png') no-repeat;
+				}
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 100px;
+				height: 100px;
+				
+			}
+			&-text{
+				font-size: 16px;
+				line-height: 24px;
+				margin-bottom: 20px;
+			}
+			&-numeral{
+				font-size: 18px;
+			}
+		}
+	}
+	.feedback{
+		width: 60%;
+		h3{
+			font-size: 30px;
+			font-family: $secondFont;
+			margin-top: 40px; 
+			width: 100%;
+			margin-bottom: 30px;
+			&:hover{
+				text-decoration: none;
+				color: #000;
+			}
+			&+p{
+				font-size: 18px;
+			}
+		}
+		.stars{
+			display: inline-block;
+			margin-bottom: 20px;
+			span{
+				width: 35px;
+				font-size: 3em;
+				cursor: pointer;
+				&:hover:before{
+					content: '\2605';
+				}
+				&:before{
+					content: '\2606';
+					color: green;
+				}
+			}
+			.star-1:before{
+				color: darken(red, 10%);
+			}
+			.star-2:before{
+				color: darken(red, 0%);
+			}
+			.star-3:before{
+				color: #f3540d;
+			}
+			.star-4:before{
+				color: #f37c0d;
+			}
+			.star-5:before{
+				color: #f3940d;
+			}
+			.star-6:before{
+				color: #f3d50d;
+			}
+			.star-7:before{
+				color: #e5f30d;
+			}
+			.star-8:before{
+				color: #baf30d;
+			}
+			.star-9:before{
+				color: #64f30d;
+			}
+			.star-10:before{
+				color: darken(#64f30d, 10%);
+			}
+		}
+		form{
+			width: 100%;
+			label{
+				font-size: 18px;
+				margin-bottom: 5px;
+				display: block;
+			}
+			textarea{
+				width: 100%;
+				resize: none;
+				margin-bottom: 15px;
+				box-sizing: border-box;
+			}
+			.text-input{
+				width: 100%;
+				margin-bottom: 20px;
+				div{
+					width: 47%;
+					input[type="text"]{
+						width: 100%;
+						padding: 10px;
+						box-sizing: border-box;
+					}
+				}
+			}
+			.button{
+				width: 100%;
+				color: #fff;
+				font-size: 28px;
+				padding: 10px 0;
+				margin-bottom: 50px;
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+	}
+}
+.another-brokers{
+	border-left: 1px solid #faebd3;
+	border-right: 1px solid #faebd3;
+	text-align: center;
+	h3{
+		font-size: 36px;
+		font-family: $secondFont;
+		margin-top: 60px; 
+		width: 100%;
+		margin-bottom: 30px;
+		&:hover{
+			text-decoration: none;
+			color: #000;
+		}
+	}
+	ul{
+		text-transform: uppercase;
+		font-size: 16px;
+		margin-bottom: 30px;
+		li{
+			margin-bottom: 15px;
+			cursor: pointer;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+	.add-broker{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+// Brokers END
+
+
