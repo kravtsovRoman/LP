@@ -866,15 +866,8 @@ footer .subscribe .button {
   text-decoration: none;
 }
 
-.instruments-for-category-blocks .block div {
-  margin-bottom: 10px;
-}
-
-.instruments-for-category-blocks .block div img {
-  width: 100%;
-}
-
 .instruments-for-category-blocks .block p {
+  margin-top: 20px;
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 20px;
@@ -1692,7 +1685,6 @@ footer .subscribe .button {
 .add-broker h3 + p {
   text-align: left;
   font-size: 18px;
-  width: 90%;
   margin-bottom: 20px;
 }
 
@@ -1847,6 +1839,17 @@ footer .subscribe .button {
 
   .tabs__content .block-text {
     width: 100%;
+  }
+
+  .add-broker h3 {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .add-broker h3 + p {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 20px auto;
   }
 }
 
@@ -2053,6 +2056,32 @@ footer .subscribe .button {
 
   .another-brokers h3 {
     margin-top: 0;
+  }
+
+  .brokers .brokers-list .brok,
+  .brokers .brokers-list .middle-numeral-text {
+    display: none;
+  }
+
+  .brokers .brokers-list .block {
+    padding: 10px;
+  }
+
+  .brokers .brokers-list .block .block-logo-title {
+    width: auto;
+    margin-right: 20px;
+  }
+
+  .brokers .brokers-list .block .block-logo-title h3 {
+    font-size: 25px;
+  }
+
+  .brokers .brokers-list .block .block-logo .logo {
+    width: 70px;
+  }
+
+  .brokers .brokers-list .block .block-logo .logo img {
+    width: 100%;
   }
 }
 
@@ -2307,5 +2336,29 @@ footer .subscribe .button {
 
   .another-brokers h3 {
     font-size: 30px;
+  }
+
+  .brokers .brokers-list .block .block-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .brokers .brokers-list .block .block-logo .logo {
+    margin: 0;
+  }
+
+  .brokers .brokers-list .block .block-logo-title {
+    margin: 0;
+  }
+
+  .brokers .brokers-list .block-text {
+    text-align: center;
+  }
+
+  .add-broker h3 + p {
+    width: 100%;
   }
 }
