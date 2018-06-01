@@ -38,6 +38,9 @@ h2{
 }
 /* Main style END*/
 
+
+
+// INDEX 
 .header{
 	width: 100%;
 	background: $mainColor;
@@ -251,6 +254,9 @@ h2{
 			width: 24%;
 			margin-bottom: 40px;
 			position: relative;
+			&-card{ // CSS for Card page
+				width: 20%;
+			}
 			.new, .sale{
 				position: absolute;
 				top: 10px;
@@ -282,6 +288,7 @@ h2{
 				font-size: 22px;
 				font-weight: 600;
 				margin-bottom: 15px;
+				display: block;
 			}
 			.price{
 				display: inline-block;
@@ -565,3 +572,122 @@ h2{
 	}
 }
 
+// INDEX  END
+
+
+// Card
+.breadcrumbs{
+	margin: 20px 0;
+	padding-left: 70px;
+	font-weight: 600;
+	a{
+		color: #000;
+		&:hover{
+			color: $mainColor;
+		}
+	}
+	.last-crumb{
+		color: #000;
+		font-weight: 700;
+		&:hover{
+			color: $mainColor;
+		}
+	}
+}
+.card{
+	padding-top: 130px;
+	padding-bottom: 50px;
+	.slider-card{
+		width: 40%;
+		padding-left: 70px;
+		img{
+			width: 100%;
+		}
+	}
+	.card-description{
+		width: 45%;
+		.title{
+			font-size: 30px;
+			font-weight: 800;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		.price{
+			font-size: 48px;
+			font-weight: 800;
+			margin-bottom: 50px;
+		}
+		.button{
+			padding: 10px 40px;
+			margin-bottom: 40px;
+			&:hover{
+				color: #000;
+			}
+		}
+		.tags{
+			margin-top: 20px;
+			p{
+				font-size: 18px;
+				font-weight: 800;
+				line-height: 24px;
+				text-transform: uppercase;
+				display: inline-block;
+			}
+			a{
+				font-size: 14px;
+				font-weight: 300;
+				color: #3c3c3c;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+		.accordion-menu {
+		position: relative;
+		max-width: 570px;
+		margin-top: 40px;
+		& li{
+			margin-top: 10px;
+			&.open .dropdownlink{
+				text-decoration: underline;
+				img {
+					transform: rotate(180deg);
+				}
+			}
+		}
+		.dropdownlink {
+			cursor: pointer;
+			display: block;
+			font-size: 22px;
+			&:hover{
+				text-decoration: underline;
+			}
+			img {
+				margin-left: 10px;
+			}
+		}
+		.submenuItems {
+			display: none;
+			table{
+				width: 100%;
+				color: #313131;
+				border: 1px solid #9ac1df;
+				tr{
+					background: #E7F0F7;
+				}
+				tr:nth-child(odd){
+					background: #9ac1df;
+				}
+				td{
+					padding: 5px 10px;
+				}
+				td:nth-child(odd){
+					width: 65%;
+				}
+			}
+		}
+	}
+	}
+}
+
+// Card END

@@ -461,6 +461,10 @@ h2 {
   position: relative;
 }
 
+.popular .blocks .block-card {
+  width: 20%;
+}
+
 .popular .blocks .block .new,
 .popular .blocks .block .sale {
   position: absolute;
@@ -498,6 +502,7 @@ h2 {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
+  display: block;
 }
 
 .popular .blocks .block .price {
@@ -850,6 +855,151 @@ h2 {
 .modalWindow .success .button:hover {
   background: transparent;
   color: #000;
+}
+
+.breadcrumbs {
+  margin: 20px 0;
+  padding-left: 70px;
+  font-weight: 600;
+}
+
+.breadcrumbs a {
+  color: #000;
+}
+
+.breadcrumbs a:hover {
+  color: #ff8300;
+}
+
+.breadcrumbs .last-crumb {
+  color: #000;
+  font-weight: 700;
+}
+
+.breadcrumbs .last-crumb:hover {
+  color: #ff8300;
+}
+
+.card {
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+.card .slider-card {
+  width: 40%;
+  padding-left: 70px;
+}
+
+.card .slider-card img {
+  width: 100%;
+}
+
+.card .card-description {
+  width: 45%;
+}
+
+.card .card-description .title {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.card .card-description .price {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.card .card-description .button {
+  padding: 10px 40px;
+  margin-bottom: 40px;
+}
+
+.card .card-description .button:hover {
+  color: #000;
+}
+
+.card .card-description .tags {
+  margin-top: 20px;
+}
+
+.card .card-description .tags p {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.card .card-description .tags a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+
+.card .card-description .tags a:hover {
+  text-decoration: underline;
+}
+
+.card .card-description .accordion-menu {
+  position: relative;
+  max-width: 570px;
+  margin-top: 40px;
+}
+
+.card .card-description .accordion-menu li {
+  margin-top: 10px;
+}
+
+.card .card-description .accordion-menu li.open .dropdownlink {
+  text-decoration: underline;
+}
+
+.card .card-description .accordion-menu li.open .dropdownlink img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card .card-description .accordion-menu .dropdownlink {
+  cursor: pointer;
+  display: block;
+  font-size: 22px;
+}
+
+.card .card-description .accordion-menu .dropdownlink:hover {
+  text-decoration: underline;
+}
+
+.card .card-description .accordion-menu .dropdownlink img {
+  margin-left: 10px;
+}
+
+.card .card-description .accordion-menu .submenuItems {
+  display: none;
+}
+
+.card .card-description .accordion-menu .submenuItems table {
+  width: 100%;
+  color: #313131;
+  border: 1px solid #9ac1df;
+}
+
+.card .card-description .accordion-menu .submenuItems table tr {
+  background: #E7F0F7;
+}
+
+.card .card-description .accordion-menu .submenuItems table tr:nth-child(odd) {
+  background: #9ac1df;
+}
+
+.card .card-description .accordion-menu .submenuItems table td {
+  padding: 5px 10px;
+}
+
+.card .card-description .accordion-menu .submenuItems table td:nth-child(odd) {
+  width: 65%;
 }
 @media screen and (max-width: 1299px) {
   .container {
