@@ -451,22 +451,22 @@ h2 {
   margin-top: -10px;
 }
 
-.popular {
+.products {
   padding-top: 70px;
 }
 
-.popular .blocks .block {
+.products .blocks .block {
   width: 24%;
   margin-bottom: 40px;
   position: relative;
 }
 
-.popular .blocks .block-card {
-  width: 20%;
+.products .blocks .block-card {
+  width: 21%;
 }
 
-.popular .blocks .block .new,
-.popular .blocks .block .sale {
+.products .blocks .block .new,
+.products .blocks .block .sale {
   position: absolute;
   top: 10px;
   left: 0;
@@ -477,53 +477,53 @@ h2 {
   font-weight: 700;
 }
 
-.popular .blocks .block .sale {
+.products .blocks .block .sale {
   background: #ff3d3d;
 }
 
-.popular .blocks .block .sale-price {
+.products .blocks .block .sale-price {
   display: inline-block;
   text-decoration: line-through;
   color: red;
   padding: 0 5px;
 }
 
-.popular .blocks .block .sale-price span {
+.products .blocks .block .sale-price span {
   color: #999;
   font-weight: 700;
   font-size: 24px;
 }
 
-.popular .blocks .block img {
+.products .blocks .block img {
   width: 100%;
 }
 
-.popular .blocks .block .title {
+.products .blocks .block .title {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 15px;
   display: block;
 }
 
-.popular .blocks .block .price {
+.products .blocks .block .price {
   display: inline-block;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.popular .blocks .block a {
+.products .blocks .block a {
   color: #000;
 }
 
-.popular .blocks .block .button {
+.products .blocks .block .button {
   background: transparent;
   text-align: center;
   margin: 0 auto;
   display: table;
 }
 
-.popular .blocks .block .button:hover {
+.products .blocks .block .button:hover {
   background: #1f75b7;
   color: #fff;
 }
@@ -857,9 +857,12 @@ h2 {
   color: #000;
 }
 
+.card .breadcrumbs {
+  padding-left: 70px;
+}
+
 .breadcrumbs {
   margin: 20px 0;
-  padding-left: 70px;
   font-weight: 600;
 }
 
@@ -880,51 +883,61 @@ h2 {
   color: #ff8300;
 }
 
-.card {
+.card,
+.category-list {
   padding-top: 130px;
   padding-bottom: 50px;
 }
 
-.card .slider-card {
+.card .slider-card,
+.category-list .slider-card {
   width: 40%;
   padding-left: 70px;
 }
 
-.card .slider-card img {
+.card .slider-card img,
+.category-list .slider-card img {
   width: 100%;
 }
 
-.card .card-description {
+.card .card-description,
+.category-list .card-description {
   width: 45%;
 }
 
-.card .card-description .title {
+.card .card-description .title,
+.category-list .card-description .title {
   font-size: 30px;
   font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.card .card-description .price {
+.card .card-description .price,
+.category-list .card-description .price {
   font-size: 48px;
   font-weight: 800;
   margin-bottom: 50px;
 }
 
-.card .card-description .button {
+.card .card-description .button,
+.category-list .card-description .button {
   padding: 10px 40px;
   margin-bottom: 40px;
 }
 
-.card .card-description .button:hover {
+.card .card-description .button:hover,
+.category-list .card-description .button:hover {
   color: #000;
 }
 
-.card .card-description .tags {
+.card .card-description .tags,
+.category-list .card-description .tags {
   margin-top: 20px;
 }
 
-.card .card-description .tags p {
+.card .card-description .tags p,
+.category-list .card-description .tags p {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -932,74 +945,130 @@ h2 {
   display: inline-block;
 }
 
-.card .card-description .tags a {
+.card .card-description .tags a,
+.category-list .card-description .tags a {
   font-size: 14px;
   font-weight: 300;
   color: #3c3c3c;
 }
 
-.card .card-description .tags a:hover {
+.card .card-description .tags a:hover,
+.category-list .card-description .tags a:hover {
   text-decoration: underline;
 }
 
-.card .card-description .accordion-menu {
+.card .card-description .accordion-menu,
+.category-list .card-description .accordion-menu {
   position: relative;
   max-width: 570px;
   margin-top: 40px;
 }
 
-.card .card-description .accordion-menu li {
+.card .card-description .accordion-menu li,
+.category-list .card-description .accordion-menu li {
   margin-top: 10px;
 }
 
-.card .card-description .accordion-menu li.open .dropdownlink {
+.card .card-description .accordion-menu li.open .dropdownlink,
+.category-list .card-description .accordion-menu li.open .dropdownlink {
   text-decoration: underline;
 }
 
-.card .card-description .accordion-menu li.open .dropdownlink img {
+.card .card-description .accordion-menu li.open .dropdownlink img,
+.category-list .card-description .accordion-menu li.open .dropdownlink img {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.card .card-description .accordion-menu .dropdownlink {
+.card .card-description .accordion-menu .dropdownlink,
+.category-list .card-description .accordion-menu .dropdownlink {
   cursor: pointer;
   display: block;
   font-size: 22px;
 }
 
-.card .card-description .accordion-menu .dropdownlink:hover {
+.card .card-description .accordion-menu .dropdownlink:hover,
+.category-list .card-description .accordion-menu .dropdownlink:hover {
   text-decoration: underline;
 }
 
-.card .card-description .accordion-menu .dropdownlink img {
+.card .card-description .accordion-menu .dropdownlink img,
+.category-list .card-description .accordion-menu .dropdownlink img {
   margin-left: 10px;
 }
 
-.card .card-description .accordion-menu .submenuItems {
+.card .card-description .accordion-menu .submenuItems,
+.category-list .card-description .accordion-menu .submenuItems {
   display: none;
 }
 
-.card .card-description .accordion-menu .submenuItems table {
+.card .card-description .accordion-menu .submenuItems table,
+.category-list .card-description .accordion-menu .submenuItems table {
   width: 100%;
   color: #313131;
   border: 1px solid #9ac1df;
 }
 
-.card .card-description .accordion-menu .submenuItems table tr {
+.card .card-description .accordion-menu .submenuItems table tr,
+.category-list .card-description .accordion-menu .submenuItems table tr {
   background: #E7F0F7;
 }
 
-.card .card-description .accordion-menu .submenuItems table tr:nth-child(odd) {
+.card .card-description .accordion-menu .submenuItems table tr:nth-child(odd),
+.category-list .card-description .accordion-menu .submenuItems table tr:nth-child(odd) {
   background: #9ac1df;
 }
 
-.card .card-description .accordion-menu .submenuItems table td {
+.card .card-description .accordion-menu .submenuItems table td,
+.category-list .card-description .accordion-menu .submenuItems table td {
   padding: 5px 10px;
 }
 
-.card .card-description .accordion-menu .submenuItems table td:nth-child(odd) {
+.card .card-description .accordion-menu .submenuItems table td:nth-child(odd),
+.category-list .card-description .accordion-menu .submenuItems table td:nth-child(odd) {
   width: 65%;
+}
+
+.category-list .breadcrumbs {
+  margin-bottom: 10px;
+}
+
+.category-list .products {
+  padding-top: 0;
+}
+
+.category-list .products h2 {
+  display: inline-block;
+}
+
+.category-list .products h2 + span {
+  font-style: italic;
+  font-size: 22px;
+}
+
+.category-list .products .blocks {
+  margin-bottom: 50px;
+}
+
+.category-list .products .blocks .block {
+  margin: 20px 0;
+}
+
+.category-list .load-more {
+  background: transparent;
+  border: 2px solid #1f75b7;
+  color: #1f75b7;
+  display: block;
+  padding: 10px 50px;
+  margin: 0 auto;
+  width: 10%;
+  text-align: center;
+}
+
+.category-list .load-more:hover {
+  background: #1f75b7;
+  color: #fff;
 }
 @media screen and (max-width: 1299px) {
   .container {
