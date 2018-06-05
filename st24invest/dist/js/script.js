@@ -30,7 +30,7 @@ $(document).ready(function(){
     $('.nav-menu').fadeToggle(200);
     event.stopPropagation();
   });
-
+ 
 // Facebook comments
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];

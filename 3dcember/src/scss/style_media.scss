@@ -27,6 +27,19 @@ $mainFont: 'Open Sans', sans-serif;
 	.vip-ads{
 		.container{
 			padding: 0;
+			.items{
+				.item{
+					.vip-ads-text{
+						padding-top: 10%;
+						margin-bottom: 20px;
+					}
+				}
+				.item-2{
+					.vip-ads-text{
+						padding-top: 30%;
+					}
+				}
+			}
 		}
 	}
 }
@@ -44,6 +57,74 @@ $mainFont: 'Open Sans', sans-serif;
 			}
 		}
 	}
+	.vip-ads{
+		.container{
+			.items{
+				.item{
+					height: 230px;
+					.vip-ads-text{
+						width: 45%;
+						padding-top: 3%;
+					}
+				}
+				.item-2{
+					.vip-ads-text{
+						width: 95%;
+						padding-top: 25%;
+						p{
+							font-size: 20px;
+						}
+						.price{
+							font-size: 24px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.models-statistic{
+		.blocks{
+			.block{
+				padding-top: 10px;
+				span{
+					font-size: 30px;
+				}
+			}
+		}
+	}
+	.footer-tags{
+		width: 35%;
+		text-align: center;
+		.footer-category{
+			.logo-text{
+				
+			}
+		}
+	}
+	.footer-subscribe{
+		form{
+			width: 100%;
+		}
+	}
+	.modalWindow{
+		.inner-block{
+			width: 60%;
+			padding: 20px 40px;
+		}
+		.order-info{
+			width: 100%;
+			&-image{
+				margin: auto;
+			}  
+			&-text{
+				margin: auto;
+				text-align: center;
+				.title{
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 
@@ -53,11 +134,147 @@ $mainFont: 'Open Sans', sans-serif;
 			width: 180px;
 		}
 	}
+	.category-item{
+		width: 50%;
+		background-position: center;
+		&:after{
+			width: 100%;
+			height: 2px;
+			right: 0px;
+			top: 0px;
+		}
+	}
+	.vip-ads{
+		.container{
+			.items{
+				.item{
+					width: 100%;
+					height: 100%;
+					&:after{
+						width: 100%;
+						height: 2px;
+						right: 0px;
+						top: 0px;
+					}
+					.vip-ads-text{
+						padding-top: 8%;
+					}
+				}
+				.item-2{
+					.vip-ads-text{
+						width: 95%;
+						padding-top: 30%;
+					}
+				}
+			}
+		}
+	}
+	.products{
+		.blocks{
+			.block{
+				width: 48%;
+				text-align: center;
+				img{
+					width: 90%;
+					margin-bottom: 10px;
+				}
+				.title{
+					height: 46px;
+					width: 100%;
+					overflow: hidden;
+				}
+			}
+		}
+	}
+	.models-statistic{
+		padding-top: 10px;
+		.blocks{
+			flex-direction: column;
+			.block{
+				background-position: center;
+				width: 100%;
+				span{
+					font-size: 36px;
+				}
+				p{
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+	.footer-category{
+		width: 100%;
+		margin: 0 auto 30px auto;
+		justify-content: space-around;
+		ul{
+			li{
+				float: left;
+				margin-right: 20px;
+			}
+		}
+	}
+	.footer-tags{
+		width: 48%;
+	}
+	.footer-subscribe{
+		width: 48%;
+	}
+	.modalWindow{
+		.inner-block{
+			width: 70%;
+			padding: 30px 30px;
+			top: 25px;
+		}
+		form{
+			.inputs{
+				flex-direction: column;
+				width: 65%;
+				margin: 0 auto;
+				input{
+					margin-bottom: 10px;
+				}
+			}
+			.checkbox{
+				width: 80%;
+				margin: 0 auto 20px auto;
+			}
+		}
+		input[type="submit"]{
+			width: 80%;
+			transform: translateX(0);
+		}
+	}
 }
 
 
 @media screen and (max-width: 610px) {
-
+	.footer-category{
+		flex-direction: column;
+		margin: 0 auto;
+		a{
+			margin: 0 auto;
+		}
+		.logo-text{
+			text-align: center;
+		}
+		ul{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 50px;
+			li{
+				margin: 0 auto;
+			}
+		}
+	}
+	.footer-tags{
+		.tags{
+			padding-left: 0px;
+			span{
+				margin-right: 7px;
+			}
+		}
+	}
 }
 
 
@@ -71,6 +288,88 @@ $mainFont: 'Open Sans', sans-serif;
 		.search{
 			margin: 0 auto;
 			width: 250px;
+		}
+	}
+	.category{
+		padding-top: 78px;
+		&-item{
+			width: 100%;
+		}
+	}
+	.vip-ads{
+		display: none;
+	}
+	.products{
+		.blocks{
+			.block{
+				width: 100%;
+				margin-bottom: 50px;
+				.title{
+					height: auto;
+				}
+			}
+		}
+	}
+	.models-statistic{
+		.blocks{
+			margin-bottom: 30px;
+			.block{
+				width: 100%;
+			}
+		}
+	}
+	.footer-category{
+		ul{
+			flex-direction: column;
+			margin-bottom: 30px;
+			li{
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.footer-tags{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.footer-subscribe{
+		width: 100%;
+		text-align: center;
+	}
+	.modalWindow{
+		.inner-block{
+			width: 70%;
+			padding: 30px 30px;
+			top: 25px;
+			h2{
+				font-size: 28px;
+				margin-bottom: 20px;
+			}
+			.order-info{
+				.title{
+					font-size: 20px;
+				}
+				.price{
+					font-size: 24px;
+				}
+			}
+			h3{
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+			.credit-card{
+				p{
+					font-size: 16px;
+					margin-right: 10px;
+				}
+			}
+		}
+		form{
+			.inputs{
+				width: 100%;
+				div{
+					width: 100%;
+				}
+			}
 		}
 	}
 }

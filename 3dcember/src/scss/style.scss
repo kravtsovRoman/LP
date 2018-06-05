@@ -56,7 +56,7 @@ h2{
 	}
 	.logo{
 		align-items: center;
-		&-image{
+		&-image{ 
 			width: 75px;
 			margin-right: 20px;
 			transition: all .3s;
@@ -394,7 +394,7 @@ h2{
 				outline: none;
 			}
 			input[type="submit"]{
-				font-size: 14px;
+				font-size: 14px;			
 				text-transform: uppercase;
 				background: $mainColor;
 				font-weight: 600;
@@ -571,7 +571,6 @@ h2{
 		}
 	}
 }
-
 // INDEX  END
 
 
@@ -579,7 +578,6 @@ h2{
 .card .breadcrumbs{
 	padding-left: 70px;
 }
-
 .breadcrumbs{
 	margin: 20px 0;
 	font-weight: 600;
@@ -646,53 +644,52 @@ h2{
 			}
 		}
 		.accordion-menu {
-		position: relative;
-		max-width: 570px;
-		margin-top: 40px;
-		& li{
-			margin-top: 10px;
-			&.open .dropdownlink{
-				text-decoration: underline;
+			position: relative;
+			max-width: 570px;
+			margin-top: 40px;
+			& li{
+				margin-top: 10px;
+				&.open .dropdownlink{
+					text-decoration: underline;
+					img {
+						transform: rotate(180deg);
+					}
+				}
+			}
+			.dropdownlink {
+				cursor: pointer;
+				display: block;
+				font-size: 22px;
+				&:hover{
+					text-decoration: underline;
+				}
 				img {
-					transform: rotate(180deg);
+					margin-left: 10px;
+				}
+			}
+			.submenuItems {
+				display: none;
+				table{
+					width: 100%;
+					color: #313131;
+					border: 1px solid #9ac1df;
+					tr{
+						background: #E7F0F7;
+					}
+					tr:nth-child(odd){
+						background: #9ac1df;
+					}
+					td{
+						padding: 5px 10px;
+					}
+					td:nth-child(odd){
+						width: 65%;
+					}
 				}
 			}
 		}
-		.dropdownlink {
-			cursor: pointer;
-			display: block;
-			font-size: 22px;
-			&:hover{
-				text-decoration: underline;
-			}
-			img {
-				margin-left: 10px;
-			}
-		}
-		.submenuItems {
-			display: none;
-			table{
-				width: 100%;
-				color: #313131;
-				border: 1px solid #9ac1df;
-				tr{
-					background: #E7F0F7;
-				}
-				tr:nth-child(odd){
-					background: #9ac1df;
-				}
-				td{
-					padding: 5px 10px;
-				}
-				td:nth-child(odd){
-					width: 65%;
-				}
-			}
-		}
-	}
 	}
 }
-
 // Card END
 
 
@@ -733,5 +730,57 @@ h2{
 		}
 	}
 }
+// Category END
 
-// CAtegory END
+
+
+
+
+
+
+
+// Not-found page
+
+.not-found{
+	padding-top: 99px;
+	padding-bottom: 200px;
+	width: 100%;
+	height: calc(100vh - 505px);
+	background: url('/image/404.jpg');
+	background-position:  0% 85%;
+	background-size: cover;
+	&-text{
+		margin-top: 10%;
+		margin-left: 7%;
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+		p{
+			font-size: 60px;
+			font-weight: 800;
+			margin-bottom: 20px;
+		}
+		span{
+			font-size: 48px;
+			font-weight: 800;
+			margin-bottom: 20px;
+		}
+		.button{
+			width: 10%;
+			padding: 10px 30px;
+			margin: 0 auto;
+			background: $mainColor;
+			border: 1px solid $mainColor;
+			border: 0;
+			border-radius: 20px;
+			&:hover{
+				background: transparent;
+				border: 1px solid $mainColor;
+			}
+		}
+	}
+}
+
+// Not-found page END
