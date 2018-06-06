@@ -29,7 +29,7 @@ h2{
 	display: inline-block;
 	text-transform: uppercase;
 	background: $secondColor;
-	padding: 5px 20px;
+	padding: 17px 30px;
 	cursor: pointer;
 	border: 1px solid $secondColor;
 	&:hover{
@@ -65,7 +65,7 @@ h2{
 			}
 		}
 		.logo-image-scroll{
-			width: 40px;
+			width: 35px;
 		}
 		&-text{
 			text-transform: uppercase;
@@ -154,20 +154,20 @@ h2{
 			margin: 0 auto;
 		}
 		&-1{
-			background-image: url('/image/category-item-1.jpg');
+			background-image: url('../image/category-item-1.jpg');
 		}
 		&-2{
-			background-image: url('/image/category-item-2.jpg');
+			background-image: url('../image/category-item-2.jpg');
 		}
 		&-3{
-			background-image: url('/image/category-item-3.jpg');
+			background-image: url('../image/category-item-3.jpg');
 			&:after{
 				right: 100%;
 				width: 4px;
 			}
 		}
 		&-4{
-			background-image: url('/image/category-item-4.jpg');
+			background-image: url('../image/category-item-4.jpg');
 			&:after{
 				right: 100%;
 			}
@@ -181,7 +181,7 @@ h2{
 			.item{
 				width: 50%;
 				position: relative;
-				background: url('/image/vip-ads-1.jpg') no-repeat;
+				background: url('../image/vip-ads-1.jpg') no-repeat;
 				background-size: 100%;
 				height: 290px;
 				&:after{
@@ -223,7 +223,7 @@ h2{
 					}
 				}
 				&-2{
-					background: url('/image/vip-ads-2.jpg') no-repeat;
+					background: url('../image/vip-ads-2.jpg') no-repeat;
 					background-size: 100%;
 					&:after{
 						right: 100%;
@@ -318,7 +318,7 @@ h2{
 		.block{
 			width: 32%;
 			height: 200px;
-			background: url('/image/models-statistic.jpg') no-repeat;
+			background: url('../image/models-statistic.jpg') no-repeat;
 			color: #fff;
 			text-align: center;
 			padding-top: 30px;
@@ -619,7 +619,7 @@ h2{
 			margin-bottom: 50px;
 		}
 		.button{
-			padding: 10px 40px;
+			padding: 17px 50px;
 			margin-bottom: 40px;
 			&:hover{
 				color: #000;
@@ -693,6 +693,7 @@ h2{
 // Card END
 
 
+
 // CAtegory
 
 .category-list{
@@ -722,7 +723,7 @@ h2{
 		display: block;
 		padding: 10px 50px;
 		margin: 0 auto;
-		width: 10%;
+		width: 15%;
 		text-align: center;
 		&:hover{
 			background: $secondColor;
@@ -734,11 +735,6 @@ h2{
 
 
 
-
-
-
-
-
 // Not-found page
 
 .not-found{
@@ -746,11 +742,12 @@ h2{
 	padding-bottom: 200px;
 	width: 100%;
 	height: calc(100vh - 505px);
-	background: url('/image/404.jpg');
+	min-height: 300px;
+	background: url('../image/404.jpg');
 	background-position:  0% 85%;
 	background-size: cover;
 	&-text{
-		margin-top: 10%;
+		margin-top: 8%;
 		margin-left: 7%;
 		display: flex;
 		flex-direction: column;
@@ -768,16 +765,16 @@ h2{
 			margin-bottom: 20px;
 		}
 		.button{
-			width: 10%;
+			width: 15%;
 			padding: 10px 30px;
 			margin: 0 auto;
 			background: $mainColor;
 			border: 1px solid $mainColor;
 			border: 0;
 			border-radius: 20px;
+			transition: all .3s;
 			&:hover{
-				background: transparent;
-				border: 1px solid $mainColor;
+				color: #000;
 			}
 		}
 	}
