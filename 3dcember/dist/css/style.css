@@ -242,7 +242,7 @@ h2 {
   width: 20px;
   height: 20px;
   display: block;
-  background: url("../../../../../image/search_icon.png");
+  background: url("../image/search_icon.png");
   position: absolute;
   left: 10px;
   top: 5px;
@@ -652,10 +652,6 @@ h2 {
   z-index: 99999;
 }
 
-.modalWindow:target {
-  display: block;
-}
-
 .modalWindow .inner-block {
   width: 600px;
   background: #FFF;
@@ -924,6 +920,7 @@ h2 {
 .category-list .card-description .button {
   padding: 17px 50px;
   margin-bottom: 40px;
+  color: #fff;
 }
 
 .card .card-description .button:hover,
@@ -1534,26 +1531,28 @@ h2 {
 
   .modalWindow .inner-block {
     width: 70%;
-    padding: 30px 30px;
+    padding: 10px 20px;
     top: 25px;
   }
 
   .modalWindow .inner-block h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .modalWindow .inner-block .order-info .title {
     font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .modalWindow .inner-block .order-info .price {
     font-size: 24px;
+    margin-bottom: 0px;
   }
 
   .modalWindow .inner-block h3 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .modalWindow .inner-block .credit-card p {
@@ -1567,6 +1566,10 @@ h2 {
 
   .modalWindow form .inputs div {
     width: 100%;
+  }
+
+  .modalWindow form .checkbox {
+    margin-bottom: 10px;
   }
 
   .card {

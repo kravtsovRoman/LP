@@ -384,23 +384,25 @@ $mainFont: 'Open Sans', sans-serif;
 	.modalWindow{
 		.inner-block{
 			width: 70%;
-			padding: 30px 30px;
+			padding: 10px 20px;
 			top: 25px;
 			h2{
 				font-size: 28px;
-				margin-bottom: 20px;
+				margin-bottom: 10px;
 			}
 			.order-info{
 				.title{
 					font-size: 20px;
+					margin-bottom: 10px;
 				}
 				.price{
 					font-size: 24px;
+					margin-bottom: 0px;
 				}
 			}
 			h3{
 				font-size: 20px;
-				margin-bottom: 10px;
+				margin-bottom: 5px;
 			}
 			.credit-card{
 				p{
@@ -415,6 +417,9 @@ $mainFont: 'Open Sans', sans-serif;
 				div{
 					width: 100%;
 				}
+			}
+			.checkbox{
+				margin-bottom: 10px;
 			}
 		}
 	}

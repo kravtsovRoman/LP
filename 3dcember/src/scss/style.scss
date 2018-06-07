@@ -80,7 +80,7 @@ h2{
 			width: 20px;
 			height: 20px;
 			display: block;
-			background: url('/image/search_icon.png');
+			background: url('../image/search_icon.png');
 			position: absolute;
 			left: 10px;
 			top: 5px;
@@ -418,9 +418,9 @@ h2{
 	left: 0;
 	background: rgba(255,255,255,0.5);
 	z-index: 99999;
-	&:target {
-		display: block;
-	}
+	// &:target {
+	// 	display: block;
+	// }
 	.inner-block{
 		width: 600px;
 		background: #FFF;
@@ -621,6 +621,7 @@ h2{
 		.button{
 			padding: 17px 50px;
 			margin-bottom: 40px;
+			color: #fff;
 			&:hover{
 				color: #000;
 			}
