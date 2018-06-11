@@ -1,0 +1,285 @@
+$mainColor: #5e358e;
+$secondColor: #333d82; 
+$mainFont: 'Open Sans', sans-serif;
+$secondFont: 'PT Sans', sans-serif;
+
+
+@media screen and (max-width: 1600px) {
+
+}
+
+
+@media screen and (max-width: 1299px) {
+	.container{
+		padding: 0 10px;
+	}
+	.advantages{
+		.blocks{
+			padding-left: 60px;
+		}
+	}
+	.reviews{
+		.slider{
+			width: 100%;
+			.slick-list{
+				margin: 0;
+			}
+			.slick-prev{
+				left: 50px;
+			}
+			.slick-arrow{
+				right: 50px;
+			}
+		}
+	}
+	.fotos{
+		height: 300px;	
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-text{
+		padding-top: 20%;
+	}
+	.main-description{
+		width: 85%;
+	}
+	.advantages{
+		.blocks{
+			padding-left: 70px;
+			.block{
+				width: 45%;
+			}
+		}
+	}
+	.ankets{
+		.blocks{
+			justify-content: space-around;
+			.block{
+				width: 45%;
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	.fotos{
+		height: 200px;	
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.header-top{
+		padding: 0;
+		.menu{
+			.burger{
+				display: block;
+			}
+			.nav-menu{
+				background: $secondColor;
+				display: none;
+				position: absolute;
+				top: 60px;
+				right: -10px;
+				box-shadow: -3px 5px 20px  rgba(0, 0, 0, .7);
+				z-index: 9999;
+				.menu-fixed{
+					line-height: 1em;
+				}
+				li{
+					float: none;
+					margin-top: 0;
+					line-height: 1em;
+					margin-left: 0;
+					margin-right: 0px;
+					font-size: .8em;
+					padding: 10px 20px ;
+					transition: all .3s;
+					&:not(:last-child){
+						border-bottom: 1px solid #fff;
+					}
+					& a{
+						color: #fff;
+						transition: all .3s;
+						border: none;
+					}
+					& a:hover{
+						text-decoration: underline;
+						border: 0;
+					}
+				}
+			}
+		}
+		.logo{
+			width: 75px;
+		}
+	}
+	.header{
+		background-position: 60% 0;
+	}
+	.header-text{
+		padding-top: 30%;
+		padding-left: 10%;
+		width: 60%;
+		h1{
+			font-size: 35px;
+		}
+	}
+	.registrtion-button{
+		padding-bottom: 0;
+		.block{
+			width: 100%;
+			margin-bottom: 50px;
+			&:not(:first-child):before{
+				display: none;
+				width: 0;
+				height: 0;
+			}
+		}
+	}
+	.advantages{
+		.blocks{
+			margin-left: 0;
+			padding-left: 40px;
+			.block{
+				width: 80%;
+				margin: 0 auto 30px auto;
+			}
+		}
+	}
+	.ankets{
+		.blocks{
+			justify-content: center;
+			.block{
+				width: 80%;
+			}
+		}
+	}
+	.reviews{
+		.slider{
+			padding: 0;
+			.slick-arrow{
+				top: 7%;
+			}
+			.slick-prev{
+				top: 0%;
+			}
+			.slide-foto{
+				width: 35%;
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+			.slide-text{
+				width: 95%;
+				text-align: center;
+			}
+		}
+	}
+	.fotos{
+		height: 120px;
+	}
+}
+
+
+@media screen and (max-width: 610px) {
+
+}
+
+
+@media screen and (max-width: 480px) {
+	.header{
+		background-position: 70% 0;
+		.header-text{
+			padding-left: 0%;
+			padding-top: 90%;
+			text-align: center;
+			width: 95%;
+			margin: 0 auto;
+			
+			h1{
+				line-height: 40px;
+				font-size: 30px;
+				background: rgba(255, 255, 255, .7);
+				padding: 20px;
+				border-radius: 20px;
+			}
+			.slogan{
+				background: rgba(255, 255, 255, .7);
+				padding: 20px;
+				border-radius: 20px;
+				font-size: 16px;
+			}
+		}
+	}
+	.header-top{
+		.nav-menu{
+			width: 100%;
+			text-align: center;
+		}
+		.button{
+			padding: 7px 10px;
+		}
+	}
+	.main-description{
+		width: 100%;
+	}
+	.registrtion-button{
+		.block{
+			p{
+				width: 100%;
+				font-size: 18px;
+			}
+			.button{
+				font-size: 20px;
+			}
+		}
+	}
+	.advantages{
+		.blocks{
+			padding-left: 0;
+			text-align: center;
+			.block{
+				margin-top: 50px;
+				width: 100%;
+				&:before{
+					top: -40px;
+					transform: translateX(-50%);
+					left: 50%;
+				}
+			}
+		}
+	}
+	.ankets{
+		.blocks{
+			justify-content: center;
+			.block{
+				width: 95%;
+				text-align: center;
+				background-position: center;
+				-webkit-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+		}
+	}
+	.fotos{
+		height: 100%;
+		.block{
+			width: 100%;
+			img{
+				vertical-align:bottom
+			}
+			&:nth-child(2){
+				width: 100%;
+			}
+			&:nth-child(4){
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	
+}
