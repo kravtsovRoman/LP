@@ -845,7 +845,7 @@ h2 {
 }
 
 .modalWindow-2 {
-  display: block;
+  display: none;
 }
 
 .modalWindow-2 p {
@@ -1251,11 +1251,6 @@ h2 {
 
   .fotos .block:nth-child(4) {
     width: 100%;
-  }
-
-  .modalWindow .inner-block,
-  .modalWindow-2 .inner-block {
-    top: 5%;
   }
 
   .modalWindow .inner-block p,
