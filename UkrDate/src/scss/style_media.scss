@@ -65,6 +65,32 @@ $secondFont: 'PT Sans', sans-serif;
 	.fotos{
 		height: 200px;	
 	}
+	.modalWindow, .modalWindow-2{
+		position: absolute;
+		.inner-block{
+			width: 65%;
+			padding: 15px 50px;
+		}
+		.inputs-text{
+			justify-content: space-around;
+			div{
+				width: 40%;
+				margin-right: 0;
+			}
+		}
+		.inputs-file{
+			justify-content: space-between;
+			margin-bottom: 20px;
+			div{
+				width: 35%;
+				margin-bottom: 20px;
+			}
+		}
+		input[type="file"]{
+			width: 50%;
+			margin-right: 30px;
+		}
+	}
 }
 
 
@@ -178,6 +204,31 @@ $secondFont: 'PT Sans', sans-serif;
 	.fotos{
 		height: 120px;
 	}
+	.modalWindow, .modalWindow-2{
+		.inner-block{
+			width: 75%;
+			padding: 15px 30px;
+			h4{
+				width: 80%;
+				margin: 0 auto;
+			}
+			p{
+				margin-bottom: 20px;
+			}
+		}
+		.inputs-text{
+			justify-content: space-around;
+			div{
+				width: 90%;
+			}
+		}
+		.inputs-file{
+			justify-content: center;
+			div{
+				width: 60%;
+			}
+		}
+	}
 }
 
 
@@ -274,6 +325,29 @@ $secondFont: 'PT Sans', sans-serif;
 			}
 			&:nth-child(4){
 				width: 100%;
+			}
+		}
+	}
+	.modalWindow, .modalWindow-2{
+		.inner-block{
+			top: 5%;
+			p{
+				width: 100%;
+			}
+			h4{
+				font-size: 20px;
+			}
+		}
+		.inputs-text{
+			justify-content: space-around;
+			div{
+				width: 100%;
+			}
+		}
+		.inputs-file{
+			justify-content: center;
+			div{
+				width: 70%;
 			}
 		}
 	}

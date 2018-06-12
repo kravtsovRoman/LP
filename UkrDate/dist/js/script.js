@@ -5,14 +5,12 @@ $(document).ready(function(){ // ready
     if ($(this).scrollTop() > 25) {
       $(".header-top").addClass("header-top-scroll");
       $(".header .logo").addClass("logo-scroll");
-
     }
     else{
       $(".header-top").removeClass("header-top-scroll");
       $(".header .logo").removeClass("logo-scroll");    
     }
   });
-
 
   //Burger menu в моб. версии
     $('#burger_check+label').on('click', function(event){
@@ -35,8 +33,6 @@ $(document).ready(function(){ // ready
     dots: true,
   });
 
-
- 
    //Accordion
    var Accordion = function(el, multiple) {
     this.el = el || {};
@@ -64,7 +60,6 @@ $(document).ready(function(){ // ready
   $('.close').on('click', function(){
     $('.modalWindow-2').fadeOut();
   });
-
 
 };
 

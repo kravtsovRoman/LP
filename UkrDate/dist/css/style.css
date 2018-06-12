@@ -844,6 +844,10 @@ h2 {
   color: #000;
 }
 
+.modalWindow-2 {
+  display: block;
+}
+
 .modalWindow-2 p {
   width: 70%;
   margin: 0 auto 40px auto;
@@ -918,6 +922,51 @@ h2 {
 
   .fotos {
     height: 200px;
+  }
+
+  .modalWindow,
+  .modalWindow-2 {
+    position: absolute;
+  }
+
+  .modalWindow .inner-block,
+  .modalWindow-2 .inner-block {
+    width: 65%;
+    padding: 15px 50px;
+  }
+
+  .modalWindow .inputs-text,
+  .modalWindow-2 .inputs-text {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+
+  .modalWindow .inputs-text div,
+  .modalWindow-2 .inputs-text div {
+    width: 40%;
+    margin-right: 0;
+  }
+
+  .modalWindow .inputs-file,
+  .modalWindow-2 .inputs-file {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .modalWindow .inputs-file div,
+  .modalWindow-2 .inputs-file div {
+    width: 35%;
+    margin-bottom: 20px;
+  }
+
+  .modalWindow input[type="file"],
+  .modalWindow-2 input[type="file"] {
+    width: 50%;
+    margin-right: 30px;
   }
 }
 
@@ -1055,6 +1104,48 @@ h2 {
   .fotos {
     height: 120px;
   }
+
+  .modalWindow .inner-block,
+  .modalWindow-2 .inner-block {
+    width: 75%;
+    padding: 15px 30px;
+  }
+
+  .modalWindow .inner-block h4,
+  .modalWindow-2 .inner-block h4 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .modalWindow .inner-block p,
+  .modalWindow-2 .inner-block p {
+    margin-bottom: 20px;
+  }
+
+  .modalWindow .inputs-text,
+  .modalWindow-2 .inputs-text {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+
+  .modalWindow .inputs-text div,
+  .modalWindow-2 .inputs-text div {
+    width: 90%;
+  }
+
+  .modalWindow .inputs-file,
+  .modalWindow-2 .inputs-file {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .modalWindow .inputs-file div,
+  .modalWindow-2 .inputs-file div {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1160,5 +1251,45 @@ h2 {
 
   .fotos .block:nth-child(4) {
     width: 100%;
+  }
+
+  .modalWindow .inner-block,
+  .modalWindow-2 .inner-block {
+    top: 5%;
+  }
+
+  .modalWindow .inner-block p,
+  .modalWindow-2 .inner-block p {
+    width: 100%;
+  }
+
+  .modalWindow .inner-block h4,
+  .modalWindow-2 .inner-block h4 {
+    font-size: 20px;
+  }
+
+  .modalWindow .inputs-text,
+  .modalWindow-2 .inputs-text {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+
+  .modalWindow .inputs-text div,
+  .modalWindow-2 .inputs-text div {
+    width: 100%;
+  }
+
+  .modalWindow .inputs-file,
+  .modalWindow-2 .inputs-file {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .modalWindow .inputs-file div,
+  .modalWindow-2 .inputs-file div {
+    width: 70%;
   }
 }
