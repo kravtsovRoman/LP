@@ -252,8 +252,8 @@ h2{
 }
 
 
-.modalWindow{
-		display: none;
+.modalWindow-1, .modalWindow-2, .modalWindow-3{
+		// display: none;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -300,7 +300,7 @@ h2{
 		.block{
 			padding: 20px 50px;
 			box-sizing: border-box;
-			&:last-child{
+			&:hover{
 				background: rgba(255, 255, 255, .2);
 			}
 			&-text{
@@ -364,6 +364,46 @@ h2{
 					background: #d2413c;
 					justify-content: flex-start;
 				}
+			}
+		}
+	}
+
+	.modalWindow-2{
+		.inner-block{
+			padding-bottom:10px;
+			.blocks{
+				padding: 0 100px;
+			}
+		}
+	}
+	.modalWindow-3{
+		.block{
+			width: 80%;
+			margin: 0 auto;
+			justify-content: space-between;
+			&:hover{
+				background: none;
+			}
+			&-top-left, &-top-right{
+				width: 48%;
+			}
+			input, textarea, select{
+				width: 100%;
+				display: block;
+				margin-bottom: 10px;
+			}
+			input[type="file"]{
+				display: none;
+			}
+			.inputs-file{
+				display: flex;
+				justify-content: space-between;
+			}
+			.modalFoto{
+				border: 1px solid #ccc;
+				width: 50px;
+				height: 50px;
+				display: block;
 			}
 		}
 	}

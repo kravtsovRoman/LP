@@ -41,19 +41,21 @@ $(document).ready(function(){ // ready
 
   //modalWindow
   $('.openModal-1').on('click', function(){
-    $('.modalWindow').fadeIn();
+    $('.modalWindow-1').fadeIn();
   });
-  // $('.openModal-2').on('click', function(){
-  //   $('.modalWindow-2').fadeIn();
-  // });
+  $('.openModal-2').on('click', function(){
+    $('.modalWindow-2').fadeIn();
+  });
+   $('.openModal-3').on('click', function(){
+    $('.modalWindow-3').fadeIn();
+  });
 
 
   $('.close').on('click', function(){
-    $('.modalWindow').fadeOut();
+    $('.modalWindow-1').fadeOut();
+    $('.modalWindow-2').fadeOut();
+    $('.modalWindow-3').fadeOut();
   });
-  // $('.close').on('click', function(){
-  //   $('.modalWindow-2').fadeOut();
-  // });
 
 };
 

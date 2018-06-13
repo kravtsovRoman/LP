@@ -431,8 +431,9 @@ h2 {
   background-position: -137px 0;
 }
 
-.modalWindow {
-  display: none;
+.modalWindow-1,
+.modalWindow-2,
+.modalWindow-3 {
   position: absolute;
   top: 0;
   right: 0;
@@ -442,7 +443,9 @@ h2 {
   z-index: 99999;
 }
 
-.modalWindow .inner-block {
+.modalWindow-1 .inner-block,
+.modalWindow-2 .inner-block,
+.modalWindow-3 .inner-block {
   width: 50%;
   background: url("../image/modal-bg-1.jpg");
   background-repeat: no-repeat;
@@ -457,7 +460,9 @@ h2 {
   padding: 50px 0 0 0;
 }
 
-.modalWindow .close {
+.modalWindow-1 .close,
+.modalWindow-2 .close,
+.modalWindow-3 .close {
   font-size: 4em;
   position: absolute;
   right: 20px;
@@ -467,11 +472,15 @@ h2 {
   font-weight: 300;
 }
 
-.modalWindow .close:hover {
+.modalWindow-1 .close:hover,
+.modalWindow-2 .close:hover,
+.modalWindow-3 .close:hover {
   color: #f05f5a;
 }
 
-.modalWindow h3 {
+.modalWindow-1 h3,
+.modalWindow-2 h3,
+.modalWindow-3 h3 {
   text-align: center;
   font-size: 25px;
   font-weight: 900;
@@ -480,55 +489,77 @@ h2 {
   margin-bottom: 3%;
 }
 
-.modalWindow .blocks {
+.modalWindow-1 .blocks,
+.modalWindow-2 .blocks,
+.modalWindow-3 .blocks {
   padding: 0px 50px;
   margin-bottom: 50px;
 }
 
-.modalWindow .block {
+.modalWindow-1 .block,
+.modalWindow-2 .block,
+.modalWindow-3 .block {
   padding: 20px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.modalWindow .block:last-child {
+.modalWindow-1 .block:hover,
+.modalWindow-2 .block:hover,
+.modalWindow-3 .block:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.modalWindow .block-text {
+.modalWindow-1 .block-text,
+.modalWindow-2 .block-text,
+.modalWindow-3 .block-text {
   width: 50%;
 }
 
-.modalWindow .block-text h4 {
+.modalWindow-1 .block-text h4,
+.modalWindow-2 .block-text h4,
+.modalWindow-3 .block-text h4 {
   font-size: 24px;
   line-height: 60px;
   font-weight: 900;
 }
 
-.modalWindow .block-text h4 span {
+.modalWindow-1 .block-text h4 span,
+.modalWindow-2 .block-text h4 span,
+.modalWindow-3 .block-text h4 span {
   color: #f05f5a;
 }
 
-.modalWindow .block-text p {
+.modalWindow-1 .block-text p,
+.modalWindow-2 .block-text p,
+.modalWindow-3 .block-text p {
   line-height: 24px;
 }
 
-.modalWindow .block-button .button {
+.modalWindow-1 .block-button .button,
+.modalWindow-2 .block-button .button,
+.modalWindow-3 .block-button .button {
   border: 2px solid #000;
   color: #000;
 }
 
-.modalWindow .block-button .button:hover {
+.modalWindow-1 .block-button .button:hover,
+.modalWindow-2 .block-button .button:hover,
+.modalWindow-3 .block-button .button:hover {
   border: 2px solid #f05f5a;
   color: #ffe164;
 }
 
-.modalWindow .discount .block {
+.modalWindow-1 .discount .block,
+.modalWindow-2 .discount .block,
+.modalWindow-3 .discount .block {
   width: 50%;
   color: #fff;
 }
 
-.modalWindow .discount .block h5 {
+.modalWindow-1 .discount .block h5,
+.modalWindow-2 .discount .block h5,
+.modalWindow-3 .discount .block h5 {
   margin-right: 40px;
   font-size: 60px;
   font-weight: 900;
@@ -539,7 +570,9 @@ h2 {
   position: relative;
 }
 
-.modalWindow .discount .block h5:after {
+.modalWindow-1 .discount .block h5:after,
+.modalWindow-2 .discount .block h5:after,
+.modalWindow-3 .discount .block h5:after {
   content: '%';
   font-size: 0.5em;
   position: absolute;
@@ -549,14 +582,18 @@ h2 {
   text-shadow: 0 0 5px red;
 }
 
-.modalWindow .discount .block p {
+.modalWindow-1 .discount .block p,
+.modalWindow-2 .discount .block p,
+.modalWindow-3 .discount .block p {
   width: 45%;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
 }
 
-.modalWindow .discount .block:first-child {
+.modalWindow-1 .discount .block:first-child,
+.modalWindow-2 .discount .block:first-child,
+.modalWindow-3 .discount .block:first-child {
   background: #f05f5a;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -564,10 +601,68 @@ h2 {
           justify-content: flex-end;
 }
 
-.modalWindow .discount .block:last-child {
+.modalWindow-1 .discount .block:last-child,
+.modalWindow-2 .discount .block:last-child,
+.modalWindow-3 .discount .block:last-child {
   background: #d2413c;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.modalWindow-2 .inner-block {
+  padding-bottom: 10px;
+}
+
+.modalWindow-2 .inner-block .blocks {
+  padding: 0 100px;
+}
+
+.modalWindow-3 .block {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modalWindow-3 .block:hover {
+  background: none;
+}
+
+.modalWindow-3 .block-top-left,
+.modalWindow-3 .block-top-right {
+  width: 48%;
+}
+
+.modalWindow-3 .block input,
+.modalWindow-3 .block textarea,
+.modalWindow-3 .block select {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modalWindow-3 .block input[type="file"] {
+  display: none;
+}
+
+.modalWindow-3 .block .inputs-file {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modalWindow-3 .block .modalFoto {
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+  display: block;
 }
