@@ -141,12 +141,11 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #1e3746;
-  height: 1500px;
-  background-image: url("../image/bg-top.jpg"), url("../image/bg-bottom.jpg");
-  background-position: top, bottom;
-  background-repeat: no-repeat, no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100%;
+  background-image: url("../image/bg-top.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  -webkit-background-size: 105% 105%;
+          background-size: 105%;
 }
 
 .container {
@@ -206,8 +205,8 @@ h2 {
 /* Main style END*/
 
 .header {
-  padding-top: 75px;
   padding-bottom: 50px;
+  padding-top: 75px;
 }
 
 .header .logo {
@@ -268,14 +267,307 @@ h2 {
 }
 
 .services .block-image {
-  width: 30%;
+  width: 25%;
 }
 
 .services .block-image img {
-  width: 80%;
-  height: 220px;
+  width: 90%;
+  height: 180px;
 }
 
 .services .block .block-button {
   width: 20%;
+}
+
+.about-us {
+  padding-bottom: 135px;
+}
+
+.about-us h2 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.about-us .block {
+  width: 48%;
+}
+
+.about-us .block p {
+  color: #333;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  opacity: .5;
+}
+
+.faq {
+  padding-bottom: 100px;
+  background: url("../image/faq-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.faq .flex {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.faq .accordion-menu {
+  position: relative;
+  width: 50%;
+}
+
+.faq .accordion-menu li.open .dropdownlink .fa-chevron-down:before {
+  content: '−';
+}
+
+.faq .accordion-menu .dropdownlink {
+  cursor: pointer;
+  display: block;
+  padding: 20px 15px 0px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.faq .accordion-menu .dropdownlink i {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+.faq .accordion-menu .dropdownlink .fa-chevron-down:before {
+  content: '+';
+  display: inline-block;
+  font-size: 2em;
+  color: #fcdf65;
+  font-weight: 400;
+}
+
+.faq .accordion-menu .submenuItems {
+  display: none;
+  width: 70%;
+}
+
+.faq .accordion-menu .submenuItems li {
+  padding-top: 10px;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  opacity: .6;
+}
+
+.faq .accordion-menu .submenuItems li p {
+  font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  z-index: 1;
+  margin-top: -120px;
+  padding-top: 150px;
+  min-height: 230px;
+  background: url("../image/bg-bottom.png") no-repeat;
+  background-position: center;
+}
+
+.footer h2 {
+  margin-bottom: 30px;
+}
+
+.footer .contacts li {
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.footer .contacts li:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../image/footer-icon.png");
+}
+
+.footer .contacts a {
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #1e3746;
+}
+
+.footer .contacts .footer-phone:before {
+  background-position: -33px 0;
+}
+
+.footer .social ul li {
+  float: left;
+  margin-right: 20px;
+  width: 22px;
+  height: 20px;
+  background: url("../image/footer-icon.png");
+}
+
+.footer .social ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.footer .social ul .twiter {
+  background-position: -64px 0;
+}
+
+.footer .social ul .vk {
+  background-position: -99px 0;
+}
+
+.footer .social ul .facebook {
+  background-position: -137px 0;
+}
+
+.modalWindow {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99999;
+}
+
+.modalWindow .inner-block {
+  width: 50%;
+  background: url("../image/modal-bg-1.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  position: relative;
+  top: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 50px 0 0 0;
+}
+
+.modalWindow .close {
+  font-size: 4em;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  cursor: pointer;
+  color: #000;
+  font-weight: 300;
+}
+
+.modalWindow .close:hover {
+  color: #f05f5a;
+}
+
+.modalWindow h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 35px;
+  color: #000;
+  margin-bottom: 3%;
+}
+
+.modalWindow .blocks {
+  padding: 0px 50px;
+  margin-bottom: 50px;
+}
+
+.modalWindow .block {
+  padding: 20px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modalWindow .block:last-child {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.modalWindow .block-text {
+  width: 50%;
+}
+
+.modalWindow .block-text h4 {
+  font-size: 24px;
+  line-height: 60px;
+  font-weight: 900;
+}
+
+.modalWindow .block-text h4 span {
+  color: #f05f5a;
+}
+
+.modalWindow .block-text p {
+  line-height: 24px;
+}
+
+.modalWindow .block-button .button {
+  border: 2px solid #000;
+  color: #000;
+}
+
+.modalWindow .block-button .button:hover {
+  border: 2px solid #f05f5a;
+  color: #ffe164;
+}
+
+.modalWindow .discount .block {
+  width: 50%;
+  color: #fff;
+}
+
+.modalWindow .discount .block h5 {
+  margin-right: 40px;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 75px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20%;
+  position: relative;
+}
+
+.modalWindow .discount .block h5:after {
+  content: '%';
+  font-size: 0.5em;
+  position: absolute;
+  bottom: 15px;
+  left: 110%;
+  line-height: 20px;
+  text-shadow: 0 0 5px red;
+}
+
+.modalWindow .discount .block p {
+  width: 45%;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.modalWindow .discount .block:first-child {
+  background: #f05f5a;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modalWindow .discount .block:last-child {
+  background: #d2413c;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }

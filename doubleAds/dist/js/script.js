@@ -40,20 +40,20 @@ $(document).ready(function(){ // ready
 
 
   //modalWindow
-  $('.openModal').on('click', function(){
+  $('.openModal-1').on('click', function(){
     $('.modalWindow').fadeIn();
   });
-  $('.openModal-2').on('click', function(){
-    $('.modalWindow-2').fadeIn();
-  });
+  // $('.openModal-2').on('click', function(){
+  //   $('.modalWindow-2').fadeIn();
+  // });
 
 
   $('.close').on('click', function(){
     $('.modalWindow').fadeOut();
   });
-  $('.close').on('click', function(){
-    $('.modalWindow-2').fadeOut();
-  });
+  // $('.close').on('click', function(){
+  //   $('.modalWindow-2').fadeOut();
+  // });
 
 };
 
