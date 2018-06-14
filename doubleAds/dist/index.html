@@ -229,7 +229,7 @@
 			</div>
 		</footer>
 
-		<!-- <div class="modalWindow-1">
+		<div class="modalWindow modalWindow-1">
 			<div class="inner-block">
 				<span class="close">&times;</span>
 				<h3>Выберите ваш тариф</h3>
@@ -242,7 +242,7 @@
 							</p>
 						</div>
 						<div class="block-button">
-							<div class="button">Заказать</div>
+							<div class="button openModal-3">Заказать</div>
 						</div>
 					</div>
 					<div class="block flex">
@@ -253,7 +253,7 @@
 							</p>
 						</div>
 						<div class="block-button">
-							<div class="button">Заказать</div>
+							<div class="button openModal-3">Заказать</div>
 						</div>
 					</div>
 					<div class="block flex">
@@ -264,7 +264,7 @@
 							</p>
 						</div>
 						<div class="block-button">
-							<div class="button">Заказать</div>
+							<div class="button openModal-3">Заказать</div>
 						</div>
 					</div>
 				</div>
@@ -280,8 +280,8 @@
 				</div>
 			</div>
 		</div>
-	-->
-		<!-- <div class="modalWindow-2">
+	
+		<div class="modalWindow modalWindow-2">
 			<div class="inner-block">
 				<span class="close">&times;</span>
 				<h3>Выберите колличество досок</h3>
@@ -294,7 +294,7 @@
 							</p>
 						</div>
 						<div class="block-button">
-							<div class="button">Заказать</div>
+							<div class="button openModal-3">Заказать</div>
 						</div>
 					</div>
 					<div class="block flex">
@@ -305,7 +305,7 @@
 							</p>
 						</div>
 						<div class="block-button">
-							<div class="button">Заказать</div>
+							<div class="button openModal-3">Заказать</div>
 						</div>
 					</div>
 					<div class="block flex">
@@ -316,56 +316,89 @@
 							</p>
 						</div>
 						<div class="block-button">
-							<div class="button">Заказать</div>
+							<div class="button openModal-3">Заказать</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
-		<div class="modalWindow-3 ">
+		<div class="modalWindow modalWindow-3 ">
 			<div class="inner-block">
 				<span class="close">&times;</span>
 				<h3>Оформление заявки</h3>
-				<form action="" method="post">
+				<form action="" method="post" onclick="return false">
 					<div class="block flex">
 						<div class="block-top-left">
 							<input type="text" name="form-name" placeholder="Введите название объявления">
-							<textarea rows="10" placeholder="Текст объявления"></textarea>
+							<textarea rows="8" placeholder="Текст объявления"></textarea>
 						</div>
 						<div class="block-top-right">
-							<select>asd</select>
-							<select>asdae</select>
-							<p>Загрузите фото товара</p>
+							<select>
+								<option>Категория</option>
+								<option>Категория 1</option>
+								<option>Категория 2</option>
+								<option>Категория 3</option>
+								<option>Категория 4</option>
+							</select>
+							<select>
+								<option>Подкатегория</option>
+								<option>Подкатегория 1</option>
+								<option>Подкатегория 2</option>
+								<option>Подкатегория 3</option>
+								<option>Подкатегория 4</option>
+							</select>
+							<p class="form-decription">Загрузите фото товара</p>
 							<div class="inputs-file">
 								<div>
-									<label class="modalFoto" for="fotka-1">ФОТО</label>
+									<label class="modalFoto" for="fotka-1">
+										<img src="image/modal-foto.png">
+										<span class="foto-delete"></span>
+									</label>
 									<input type="file" id="fotka-1">
 								</div>
 								<div>
-									<label class="modalFoto" for="fotka-2">ФОТО</label>
+									<label class="modalFoto" for="fotka-2">
+										<span class="add-foto"></span>
+									</label>
 									<input type="file" id="fotka-2">
 								</div>
 								<div>
-									<label class="modalFoto" for="fotka-3">ФОТО</label>
+									<label class="modalFoto" for="fotka-3">
+										<span class="add-foto"></span>
+									</label>
 									<input type="file" id="fotka-3">
 								</div>
 								<div>
-									<label class="modalFoto" for="fotka-4">ФОТО</label>
+									<label class="modalFoto" for="fotka-4">
+										<span class="add-foto"></span>
+									</label>
 									<input type="file" id="fotka-4">
 								</div>
 							</div>
+							<p class="max-size">*максимальный размер фото <span>2мб.</span></p>
 						</div>
 					</div>
-					
-
-
-
-
 					<div class="block">
-						2
+						<p class="form-decription">Ваши контакты</p>
+						<div class="inputs-contacts flex">
+							<input type="text" placeholder="Ваше имя">
+							<input type="text" placeholder="Ваш номер телефона">
+							<input type="mail" placeholder="Ваш E-mail">
+							<input type="submit" class="button openModal-4" value="Оформить заказ">
+						</div>
 					</div>
 				</form>
+			</div>
+		</div>
+		<div class="modalWindow modalWindow-4 ">
+			<div class="inner-block">
+				<span class="close">&times;</span>
+				<div class="block flex">
+					<h3>Спасибо!</h3>
+					<p>Номер вашего заказа <span>№343-334</span></p>
+					<div class="button">Перейти к оплате</div>
+				</div>
 			</div>
 		</div>
 

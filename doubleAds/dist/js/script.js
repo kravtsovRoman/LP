@@ -2,15 +2,18 @@ $(document).ready(function(){ // ready
 
   // Fixed header
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 25) {
-      $(".header-top").addClass("header-top-scroll");
-      $(".header .logo").addClass("logo-scroll");
+    if ($(this).scrollTop() > 230) {
+      $(".header").addClass("header-scroll");
+      $("body").addClass("body-scroll");
     }
     else{
-      $(".header-top").removeClass("header-top-scroll");
-      $(".header .logo").removeClass("logo-scroll");    
+      $(".header").removeClass("header-scroll");
+      $("body").removeClass("body-scroll");   
     }
   });
+
+
+
 
   //Burger menu в моб. версии
     // $('#burger_check+label').on('click', function(event){
@@ -41,13 +44,20 @@ $(document).ready(function(){ // ready
 
   //modalWindow
   $('.openModal-1').on('click', function(){
+    $('.modalWindow').fadeOut();
     $('.modalWindow-1').fadeIn();
   });
   $('.openModal-2').on('click', function(){
+    $('.modalWindow').fadeOut();
     $('.modalWindow-2').fadeIn();
   });
    $('.openModal-3').on('click', function(){
+    $('.modalWindow').fadeOut();
     $('.modalWindow-3').fadeIn();
+  });
+   $('.openModal-4').on('click', function(){
+    $('.modalWindow').fadeOut();
+    $('.modalWindow-4').fadeIn();
   });
 
 
@@ -55,6 +65,7 @@ $(document).ready(function(){ // ready
     $('.modalWindow-1').fadeOut();
     $('.modalWindow-2').fadeOut();
     $('.modalWindow-3').fadeOut();
+    $('.modalWindow-4').fadeOut();
   });
 
 };
