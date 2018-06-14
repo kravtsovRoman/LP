@@ -1,0 +1,78 @@
+$mainColor: #e75046; 
+$mainFont: 'Roboto', sans-serif;
+
+
+
+.modalBlock{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.3);
+	z-index: 99999;
+	.inner-block{
+		width: 450px;
+		background:  rgba(0, 0, 0, 0.7);
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);	
+		padding: 100px 0 50px 0;
+		text-align: center;
+		color: #fff;
+		font-family: $mainFont;
+		img{
+			width: 100px;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+		h2{
+			font-size: 40px;
+			font-weight: 700;
+			color: $mainColor;
+			margin-bottom: 20px;
+			&+p{
+				width: 80%;
+				margin: 0 auto;
+				margin-bottom: 20px;
+				font-size: 20px;
+			}
+		}
+		p{
+			line-height: 26px;
+			margin-bottom: 20px;
+		}
+		.button{
+			width: 200px;
+			margin: 0 auto;
+			cursor: pointer;
+			background: #e49d24;
+			padding: 15px 0;
+			&:hover{
+				color: #000;
+			}
+		}
+	}
+	.close{
+		font-size: 4em;
+		position: absolute;
+		right: 20px;
+		top: 0px;
+		cursor: pointer;
+		color: #fff;
+		font-weight: 300;
+		&:hover{
+			color: $mainColor;
+		}
+	}
+	.time{
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		background: rgba(255, 255, 255, .2);
+		padding: 5px;
+		border-radius: 7px;
+	}
+}
