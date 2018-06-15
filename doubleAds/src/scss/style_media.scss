@@ -9,26 +9,175 @@ $mainFont: 'Roboto', sans-serif;
 
 
 @media screen and (max-width: 1299px) {
-
+	.container{
+		padding: 0 10px;
+	}
+	body{
+		background-size: auto;
+	}
+	.services{
+		.block{
+			padding: 20px 30px;
+		}
+	}
+	.about-us{
+		padding-bottom: 50px;
+	}
+	.faq{
+		padding-top: 50px;
+	}
 }
 
 @media screen and (max-width: 991px) {
-
+	.header{
+		padding-top: 30px;
+		padding-bottom: 10px;
+		.title-menu{
+			h1{
+				width: 100%;
+				font-size: 22px;
+				margin-bottom: 20px;
+			}
+		}
+		.logo{
+			margin-right: 10px;
+			width: 15%;
+		}
+	}
+	.services{
+		.block{
+			justify-content: center;
+			&-text{
+				width: 70%;
+				margin-bottom: 20px;
+			}
+			&-image{
+				width: 30%;
+			}
+		}
+	}
 }
 
 
 @media screen and (max-width: 767px) {
-
+	.services{
+		.block{
+			flex-wrap: wrap;
+			align-items: column;
+			&-text{
+				width: 100%;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			&-image{
+				width: 70%;
+				margin-bottom: 30px;
+				img{
+					width: 75%;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	.body-scroll{
+		padding-top: 100px!important;
+	}
+	.about-us{
+		text-align: center;
+		h2{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.block{
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
 }
 
 
 @media screen and (max-width: 610px) {
-
+	.header{
+		.title-menu{
+			h1{
+				display: none;
+			}
+			ul{
+				li{
+					margin-right: 20px;
+				}
+			}
+		}
+		.logo{
+			margin-right: 0;
+		}
+	}
 }
 
 
 @media screen and (max-width: 480px) {
-
+	.header{
+		padding: 5px 0;
+		.title-menu{
+			width: 10%;
+			.burger{
+				display: block;
+			}
+			.anhcors{
+				width: 100%;
+				background: $mainColor;
+				display: none;
+				position: absolute;
+				top: 55px;
+				right: 0;
+				box-shadow: -3px 5px 20px  rgba(0, 0, 0, .7);
+				z-index: 9999;
+				.menu-fixed{
+					line-height: 1em;
+				}
+				li{
+					float: none;
+					margin-top: 0;
+					margin-right: 0;
+					line-height: 1em;
+					font-size: .8em;
+					padding: 10px 30px ;
+					transition: all .3s;
+					text-align: center;
+					&:not(:last-child){
+						border-bottom: 1px solid #333;
+					}
+					& a{
+						color: #fff;
+						transition: all .3s;
+					}
+					& a:hover{
+						font-weight: 600;
+						border: none;
+						color: #000;
+					}
+				}
+			}
+		}
+		.logo{
+				width: 100px;
+			}
+	}
+	.services{
+		.block{
+			padding: 15px 15px;
+			&-text{
+				h3{
+					width: 100%;
+					font-size: 26px;
+				}
+			}
+			&-image{
+				width: 100%;
+			}
+		}
+	}
 }
 
 

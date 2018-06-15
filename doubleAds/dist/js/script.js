@@ -12,14 +12,11 @@ $(document).ready(function(){ // ready
     }
   });
 
-
-
-
   //Burger menu в моб. версии
-    // $('#burger_check+label').on('click', function(event){
-    //   $('.nav-menu').fadeToggle(200);
-    //   event.stopPropagation();
-    // });
+    $('#burger_check+label').on('click', function(event){
+      $('.anhcors').fadeToggle(200);
+      // event.stopPropagation();
+    });
 
     //Anchors
   $(".anhcors").on("click","a", function (event) {
@@ -59,6 +56,10 @@ $(document).ready(function(){ // ready
     $('.modalWindow').fadeOut();
     $('.modalWindow-4').fadeIn();
   });
+   $('.openModal-5').on('click', function(){
+    $('.modalWindow').fadeOut();
+    $('.modalWindow-5').fadeIn();
+  });
 
 
   $('.close').on('click', function(){
@@ -66,6 +67,7 @@ $(document).ready(function(){ // ready
     $('.modalWindow-2').fadeOut();
     $('.modalWindow-3').fadeOut();
     $('.modalWindow-4').fadeOut();
+    $('.modalWindow-5').fadeOut();
   });
 
 };

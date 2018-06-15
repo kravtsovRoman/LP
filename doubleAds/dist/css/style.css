@@ -243,12 +243,71 @@ h2 {
   border-bottom: 4px solid #64d7d7;
 }
 
+.header .title-menu .burger {
+  display: none;
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.header .title-menu .burger_checkbox {
+  display: none;
+}
+
+.header .title-menu .burger_checkbox:checked + label .span-2 {
+  opacity: 0;
+}
+
+.header .title-menu .burger_checkbox:checked + label .span-1 {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  position: absolute;
+  top: 5px;
+}
+
+.header .title-menu .burger_checkbox:checked + label .span-3 {
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  position: absolute;
+  top: 5px;
+}
+
+.header .title-menu .burger_checkbox + label {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header .title-menu .burger_checkbox + label:hover {
+  cursor: pointer;
+}
+
+.header .title-menu .burger_checkbox + label span {
+  width: 35px;
+  height: 3px;
+  display: block;
+  background: #000;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-top: 5px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
 .header-scroll {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  padding: 3px 0 0 0;
+  padding: 3px 0 0 0 !important;
   background: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 0px 1px 20px #000;
           box-shadow: 0px 1px 20px #000;
@@ -256,15 +315,19 @@ h2 {
 }
 
 .header-scroll .logo {
-  width: 7%;
+  width: 10%;
 }
 
 .header-scroll h1 {
   display: none;
 }
 
+.header-scroll .anhcors {
+  top: 52px !important;
+}
+
 .body-scroll {
-  padding-top: 230px;
+  padding-top: 230px !important;
 }
 
 .services .block {
@@ -303,12 +366,8 @@ h2 {
   height: 180px;
 }
 
-.services .block .block-button {
-  width: 20%;
-}
-
 .about-us {
-  padding-bottom: 135px;
+  padding-bottom: 60px;
 }
 
 .about-us h2 {
@@ -329,9 +388,13 @@ h2 {
 }
 
 .faq {
+  padding-top: 50px;
   padding-bottom: 100px;
-  background: url("../image/faq-bg.jpg");
-  background-repeat: no-repeat;
+  background: url("../image/faq-bg-1.png");
+  -webkit-background-size: auto auto;
+          background-size: auto;
+  background-repeat: repeat-y;
+  background-position: top right;
 }
 
 .faq .flex {
@@ -433,36 +496,27 @@ h2 {
   background-position: -33px 0;
 }
 
-.footer .social ul li {
-  float: left;
-  margin-right: 20px;
-  width: 22px;
-  height: 20px;
-  background: url("../image/footer-icon.png");
+.footer .footer-links {
+  margin-top: 50px;
 }
 
-.footer .social ul li a {
-  width: 100%;
-  height: 100%;
+.footer .footer-links a {
   display: block;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 10px;
 }
 
-.footer .social ul .twiter {
-  background-position: -64px 0;
-}
-
-.footer .social ul .vk {
-  background-position: -99px 0;
-}
-
-.footer .social ul .facebook {
-  background-position: -137px 0;
+.footer .footer-links a:hover {
+  color: grey;
 }
 
 .modalWindow-1,
 .modalWindow-2,
 .modalWindow-3,
-.modalWindow-4 {
+.modalWindow-4,
+.modalWindow-5 {
   display: none;
   position: absolute;
   top: 0;
@@ -476,7 +530,8 @@ h2 {
 .modalWindow-1 .inner-block,
 .modalWindow-2 .inner-block,
 .modalWindow-3 .inner-block,
-.modalWindow-4 .inner-block {
+.modalWindow-4 .inner-block,
+.modalWindow-5 .inner-block {
   width: 50%;
   background: url("../image/modal-bg-1.jpg");
   background-repeat: no-repeat;
@@ -494,7 +549,8 @@ h2 {
 .modalWindow-1 .close,
 .modalWindow-2 .close,
 .modalWindow-3 .close,
-.modalWindow-4 .close {
+.modalWindow-4 .close,
+.modalWindow-5 .close {
   font-size: 4em;
   position: absolute;
   right: 20px;
@@ -507,14 +563,16 @@ h2 {
 .modalWindow-1 .close:hover,
 .modalWindow-2 .close:hover,
 .modalWindow-3 .close:hover,
-.modalWindow-4 .close:hover {
+.modalWindow-4 .close:hover,
+.modalWindow-5 .close:hover {
   color: #f05f5a;
 }
 
 .modalWindow-1 h3,
 .modalWindow-2 h3,
 .modalWindow-3 h3,
-.modalWindow-4 h3 {
+.modalWindow-4 h3,
+.modalWindow-5 h3 {
   text-align: center;
   font-size: 25px;
   font-weight: 900;
@@ -526,7 +584,8 @@ h2 {
 .modalWindow-1 .blocks,
 .modalWindow-2 .blocks,
 .modalWindow-3 .blocks,
-.modalWindow-4 .blocks {
+.modalWindow-4 .blocks,
+.modalWindow-5 .blocks {
   padding: 0px 50px;
   margin-bottom: 50px;
 }
@@ -534,7 +593,8 @@ h2 {
 .modalWindow-1 .block,
 .modalWindow-2 .block,
 .modalWindow-3 .block,
-.modalWindow-4 .block {
+.modalWindow-4 .block,
+.modalWindow-5 .block {
   padding: 20px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -543,21 +603,24 @@ h2 {
 .modalWindow-1 .block:hover,
 .modalWindow-2 .block:hover,
 .modalWindow-3 .block:hover,
-.modalWindow-4 .block:hover {
+.modalWindow-4 .block:hover,
+.modalWindow-5 .block:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
 .modalWindow-1 .block-text,
 .modalWindow-2 .block-text,
 .modalWindow-3 .block-text,
-.modalWindow-4 .block-text {
+.modalWindow-4 .block-text,
+.modalWindow-5 .block-text {
   width: 50%;
 }
 
 .modalWindow-1 .block-text h4,
 .modalWindow-2 .block-text h4,
 .modalWindow-3 .block-text h4,
-.modalWindow-4 .block-text h4 {
+.modalWindow-4 .block-text h4,
+.modalWindow-5 .block-text h4 {
   font-size: 24px;
   line-height: 60px;
   font-weight: 900;
@@ -566,21 +629,24 @@ h2 {
 .modalWindow-1 .block-text h4 span,
 .modalWindow-2 .block-text h4 span,
 .modalWindow-3 .block-text h4 span,
-.modalWindow-4 .block-text h4 span {
+.modalWindow-4 .block-text h4 span,
+.modalWindow-5 .block-text h4 span {
   color: #f05f5a;
 }
 
 .modalWindow-1 .block-text p,
 .modalWindow-2 .block-text p,
 .modalWindow-3 .block-text p,
-.modalWindow-4 .block-text p {
+.modalWindow-4 .block-text p,
+.modalWindow-5 .block-text p {
   line-height: 24px;
 }
 
 .modalWindow-1 .block-button .button,
 .modalWindow-2 .block-button .button,
 .modalWindow-3 .block-button .button,
-.modalWindow-4 .block-button .button {
+.modalWindow-4 .block-button .button,
+.modalWindow-5 .block-button .button {
   border: 2px solid #000;
   color: #000;
 }
@@ -588,7 +654,8 @@ h2 {
 .modalWindow-1 .block-button .button:hover,
 .modalWindow-2 .block-button .button:hover,
 .modalWindow-3 .block-button .button:hover,
-.modalWindow-4 .block-button .button:hover {
+.modalWindow-4 .block-button .button:hover,
+.modalWindow-5 .block-button .button:hover {
   border: 2px solid #f05f5a;
   color: #ffe164;
 }
@@ -596,7 +663,8 @@ h2 {
 .modalWindow-1 .discount .block,
 .modalWindow-2 .discount .block,
 .modalWindow-3 .discount .block,
-.modalWindow-4 .discount .block {
+.modalWindow-4 .discount .block,
+.modalWindow-5 .discount .block {
   width: 50%;
   color: #fff;
 }
@@ -604,7 +672,8 @@ h2 {
 .modalWindow-1 .discount .block h5,
 .modalWindow-2 .discount .block h5,
 .modalWindow-3 .discount .block h5,
-.modalWindow-4 .discount .block h5 {
+.modalWindow-4 .discount .block h5,
+.modalWindow-5 .discount .block h5 {
   margin-right: 40px;
   font-size: 60px;
   font-weight: 900;
@@ -618,7 +687,8 @@ h2 {
 .modalWindow-1 .discount .block h5:after,
 .modalWindow-2 .discount .block h5:after,
 .modalWindow-3 .discount .block h5:after,
-.modalWindow-4 .discount .block h5:after {
+.modalWindow-4 .discount .block h5:after,
+.modalWindow-5 .discount .block h5:after {
   content: '%';
   font-size: 0.5em;
   position: absolute;
@@ -631,7 +701,8 @@ h2 {
 .modalWindow-1 .discount .block p,
 .modalWindow-2 .discount .block p,
 .modalWindow-3 .discount .block p,
-.modalWindow-4 .discount .block p {
+.modalWindow-4 .discount .block p,
+.modalWindow-5 .discount .block p {
   width: 45%;
   font-size: 24px;
   line-height: 28px;
@@ -641,7 +712,8 @@ h2 {
 .modalWindow-1 .discount .block:first-child,
 .modalWindow-2 .discount .block:first-child,
 .modalWindow-3 .discount .block:first-child,
-.modalWindow-4 .discount .block:first-child {
+.modalWindow-4 .discount .block:first-child,
+.modalWindow-5 .discount .block:first-child {
   background: #f05f5a;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -652,7 +724,8 @@ h2 {
 .modalWindow-1 .discount .block:last-child,
 .modalWindow-2 .discount .block:last-child,
 .modalWindow-3 .discount .block:last-child,
-.modalWindow-4 .discount .block:last-child {
+.modalWindow-4 .discount .block:last-child,
+.modalWindow-5 .discount .block:last-child {
   background: #d2413c;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -668,11 +741,13 @@ h2 {
   padding: 0 100px;
 }
 
-.modalWindow-3 .inner-block {
-  padding-bottom: 50px;
+.modalWindow-3 .inner-block,
+.modalWindow-5 .inner-block {
+  padding: 20px;
 }
 
-.modalWindow-3 .block {
+.modalWindow-3 .block,
+.modalWindow-5 .block {
   width: 80%;
   margin: 0 auto;
   -webkit-box-pack: justify;
@@ -684,43 +759,54 @@ h2 {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-bottom: 0;
+  padding-top: 0;
 }
 
-.modalWindow-3 .block:hover {
+.modalWindow-3 .block:hover,
+.modalWindow-5 .block:hover {
   background: none;
 }
 
-.modalWindow-3 .block form {
+.modalWindow-3 .block form,
+.modalWindow-5 .block form {
   height: 700px;
 }
 
 .modalWindow-3 .block-top-left,
-.modalWindow-3 .block-top-right {
+.modalWindow-3 .block-top-right,
+.modalWindow-5 .block-top-left,
+.modalWindow-5 .block-top-right {
   width: 48%;
 }
 
 .modalWindow-3 .block input,
 .modalWindow-3 .block textarea,
-.modalWindow-3 .block select {
+.modalWindow-3 .block select,
+.modalWindow-5 .block input,
+.modalWindow-5 .block textarea,
+.modalWindow-5 .block select {
   width: 100%;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   resize: none;
   outline: none;
 }
 
-.modalWindow-3 .block select {
+.modalWindow-3 .block select,
+.modalWindow-5 .block select {
   outline: none;
   font-weight: 700;
 }
 
-.modalWindow-3 .block input[type="file"] {
+.modalWindow-3 .block input[type="file"],
+.modalWindow-5 .block input[type="file"] {
   display: none;
 }
 
-.modalWindow-3 .block .inputs-file {
+.modalWindow-3 .block .inputs-file,
+.modalWindow-5 .block .inputs-file {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -732,7 +818,13 @@ h2 {
   margin: 10px 0;
 }
 
-.modalWindow-3 .block .modalFoto {
+.modalWindow-3 .block .inputs-file div,
+.modalWindow-5 .block .inputs-file div {
+  margin-right: 5px;
+}
+
+.modalWindow-3 .block .modalFoto,
+.modalWindow-5 .block .modalFoto {
   width: 65px;
   height: 65px;
   display: block;
@@ -749,18 +841,23 @@ h2 {
 }
 
 .modalWindow-3 .block .modalFoto:hover .foto-delete,
-.modalWindow-3 .block .modalFoto:hover .add-foto {
+.modalWindow-3 .block .modalFoto:hover .add-foto,
+.modalWindow-5 .block .modalFoto:hover .foto-delete,
+.modalWindow-5 .block .modalFoto:hover .add-foto {
   -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
           transform: scale(1.3);
 }
 
-.modalWindow-3 .block .modalFoto img {
+.modalWindow-3 .block .modalFoto img,
+.modalWindow-5 .block .modalFoto img {
   width: 100%;
 }
 
 .modalWindow-3 .block .modalFoto .foto-delete,
-.modalWindow-3 .block .modalFoto .add-foto {
+.modalWindow-3 .block .modalFoto .add-foto,
+.modalWindow-5 .block .modalFoto .foto-delete,
+.modalWindow-5 .block .modalFoto .add-foto {
   width: 16px;
   height: 16px;
   position: absolute;
@@ -772,13 +869,15 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.modalWindow-3 .block .modalFoto .foto-delete {
+.modalWindow-3 .block .modalFoto .foto-delete,
+.modalWindow-5 .block .modalFoto .foto-delete {
   top: -5px;
   right: -5px;
   background: url("../image/delete-foto-icon.png");
 }
 
-.modalWindow-3 .block .modalFoto .add-foto {
+.modalWindow-3 .block .modalFoto .add-foto,
+.modalWindow-5 .block .modalFoto .add-foto {
   width: 20px;
   height: 20px;
   background: url("../image/add-foto-icon.png");
@@ -786,22 +885,50 @@ h2 {
   right: 0;
 }
 
-.modalWindow-3 .inputs-contacts input {
+.modalWindow-3 .block .main-foto,
+.modalWindow-5 .block .main-foto {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modalWindow-3 .inputs-contacts,
+.modalWindow-5 .inputs-contacts {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modalWindow-3 .inputs-contacts input,
+.modalWindow-5 .inputs-contacts input {
   width: 48%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.modalWindow-3 .inputs-contacts .button {
+.modalWindow-3 .inputs-contacts input:nth-child(odd),
+.modalWindow-5 .inputs-contacts input:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.modalWindow-3 .inputs-contacts .button,
+.modalWindow-5 .inputs-contacts .button {
   background: #f05f5a;
   -webkit-box-shadow: 0px 5px 1px 0 #d2413c;
           box-shadow: 0px 5px 1px 0 #d2413c;
   border: 2px solid #f05f5a;
   color: #ffe164;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
-.modalWindow-3 .inputs-contacts .button:hover {
+.modalWindow-3 .inputs-contacts .button:hover,
+.modalWindow-5 .inputs-contacts .button:hover {
   background: transparent;
   color: #f05f5a;
   border: 2px solid #f05f5a;
@@ -809,17 +936,41 @@ h2 {
           box-shadow: none;
 }
 
+.modalWindow-3 input[type="submit"],
+.modalWindow-5 input[type="submit"] {
+  background: #f05f5a;
+  -webkit-box-shadow: 0px 5px 1px 0 #d2413c;
+          box-shadow: 0px 5px 1px 0 #d2413c;
+  color: #ffe164;
+  border: 2px solid #f05f5a;
+}
+
+.modalWindow-3 input[type="submit"]:hover,
+.modalWindow-5 input[type="submit"]:hover {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #f05f5a;
+  border: 2px solid #f05f5a;
+}
+
 .modalWindow-3 input,
 .modalWindow-3 select,
-.modalWindow-3 textarea {
-  padding: 20px 10px;
+.modalWindow-3 textarea,
+.modalWindow-5 input,
+.modalWindow-5 select,
+.modalWindow-5 textarea {
+  padding: 12px 10px;
   border: 0;
   font-size: 16px;
 }
 
 .modalWindow-3 input::-webkit-input-placeholder,
 .modalWindow-3 select::-webkit-input-placeholder,
-.modalWindow-3 textarea::-webkit-input-placeholder {
+.modalWindow-3 textarea::-webkit-input-placeholder,
+.modalWindow-5 input::-webkit-input-placeholder,
+.modalWindow-5 select::-webkit-input-placeholder,
+.modalWindow-5 textarea::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #1e3746;
   font-weight: 700;
@@ -828,7 +979,10 @@ h2 {
 
 .modalWindow-3 input::-moz-placeholder,
 .modalWindow-3 select::-moz-placeholder,
-.modalWindow-3 textarea::-moz-placeholder {
+.modalWindow-3 textarea::-moz-placeholder,
+.modalWindow-5 input::-moz-placeholder,
+.modalWindow-5 select::-moz-placeholder,
+.modalWindow-5 textarea::-moz-placeholder {
   /* Firefox 19+ */
   color: #1e3746;
   font-weight: 700;
@@ -837,7 +991,10 @@ h2 {
 
 .modalWindow-3 input:-ms-input-placeholder,
 .modalWindow-3 select:-ms-input-placeholder,
-.modalWindow-3 textarea:-ms-input-placeholder {
+.modalWindow-3 textarea:-ms-input-placeholder,
+.modalWindow-5 input:-ms-input-placeholder,
+.modalWindow-5 select:-ms-input-placeholder,
+.modalWindow-5 textarea:-ms-input-placeholder {
   /* IE 10+ */
   color: #1e3746;
   font-weight: 700;
@@ -846,26 +1003,86 @@ h2 {
 
 .modalWindow-3 input:-moz-placeholder,
 .modalWindow-3 select:-moz-placeholder,
-.modalWindow-3 textarea:-moz-placeholder {
+.modalWindow-3 textarea:-moz-placeholder,
+.modalWindow-5 input:-moz-placeholder,
+.modalWindow-5 select:-moz-placeholder,
+.modalWindow-5 textarea:-moz-placeholder {
   /* Firefox 18- */
   color: #1e3746;
   font-weight: 700;
   opacity: .5;
 }
 
-.modalWindow-3 .form-decription {
+.modalWindow-3 .form-decription,
+.modalWindow-5 .form-decription {
   font-weight: 700;
   padding-top: 10px;
   margin-bottom: 10px;
 }
 
-.modalWindow-3 .max-size {
+.modalWindow-3 .number-main-foto,
+.modalWindow-5 .number-main-foto {
   color: grey;
+  text-align: center;
 }
 
-.modalWindow-3 .max-size span {
-  color: #000;
-  font-weight: 700;
+.modalWindow-3 .radio,
+.modalWindow-5 .radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.modalWindow-3 .radio + label,
+.modalWindow-5 .radio + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+
+.modalWindow-3 .radio + label:before,
+.modalWindow-5 .radio + label:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 15px;
+  height: 15px;
+  border: 1px solid #CDD1DA;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #FFF;
+}
+
+.modalWindow-3 .radio + label:after,
+.modalWindow-5 .radio + label:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 67%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 11px;
+  height: 11px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: #f05f5a;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.modalWindow-3 .radio:checked + label:after,
+.modalWindow-5 .radio:checked + label:after {
+  opacity: 1;
 }
 
 .modalWindow-4 .inner-block {
@@ -915,4 +1132,198 @@ h2 {
 
 .modalWindow-4 .block img {
   margin-right: 5%;
+}
+@media screen and (max-width: 1299px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  body {
+    -webkit-background-size: auto auto;
+            background-size: auto;
+  }
+
+  .services .block {
+    padding: 20px 30px;
+  }
+
+  .about-us {
+    padding-bottom: 50px;
+  }
+
+  .faq {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  .header .title-menu h1 {
+    width: 100%;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .header .logo {
+    margin-right: 10px;
+    width: 15%;
+  }
+
+  .services .block {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .services .block-text {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .services .block-image {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .services .block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: column;
+    -webkit-align-items: column;
+        -ms-flex-align: column;
+            align-items: column;
+  }
+
+  .services .block-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .services .block-image {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .services .block-image img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .body-scroll {
+    padding-top: 100px !important;
+  }
+
+  .about-us {
+    text-align: center;
+  }
+
+  .about-us h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about-us .block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .header .title-menu h1 {
+    display: none;
+  }
+
+  .header .title-menu ul li {
+    margin-right: 20px;
+  }
+
+  .header .logo {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 5px 0;
+  }
+
+  .header .title-menu {
+    width: 10%;
+  }
+
+  .header .title-menu .burger {
+    display: block;
+  }
+
+  .header .title-menu .anhcors {
+    width: 100%;
+    background: #f05f5a;
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    -webkit-box-shadow: -3px 5px 20px rgba(0, 0, 0, 0.7);
+            box-shadow: -3px 5px 20px rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+  }
+
+  .header .title-menu .anhcors .menu-fixed {
+    line-height: 1em;
+  }
+
+  .header .title-menu .anhcors li {
+    float: none;
+    margin-top: 0;
+    margin-right: 0;
+    line-height: 1em;
+    font-size: .8em;
+    padding: 10px 30px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    text-align: center;
+  }
+
+  .header .title-menu .anhcors li:not(:last-child) {
+    border-bottom: 1px solid #333;
+  }
+
+  .header .title-menu .anhcors li a {
+    color: #fff;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .header .title-menu .anhcors li a:hover {
+    font-weight: 600;
+    border: none;
+    color: #000;
+  }
+
+  .header .logo {
+    width: 100px;
+  }
+
+  .services .block {
+    padding: 15px 15px;
+  }
+
+  .services .block-text h3 {
+    width: 100%;
+    font-size: 26px;
+  }
+
+  .services .block-image {
+    width: 100%;
+  }
 }

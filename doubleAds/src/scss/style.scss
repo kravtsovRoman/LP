@@ -84,6 +84,52 @@ h2{
 				}
 			}
 		}
+		.burger{
+			display: none;
+			float: right;
+			margin-left: 10px;
+			margin-right: 0;
+			&_checkbox{
+				display: none;
+				&:checked {
+					+label .span-2{
+						opacity: 0;
+					}
+					+label .span-1{
+						transform: rotate(135deg);
+						position: absolute;
+						top: 5px;
+					}
+					+label .span-3{
+						transform: rotate(-135deg);
+						position: absolute;
+						top: 5px;
+					}
+				}
+				&+label{
+					position: relative;
+					display: block;
+					width: 35px;
+					height: 20px;
+					left: 0;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					&:hover{
+						cursor: pointer;
+					}
+					span{
+						width: 35px;
+						height: 3px;
+						display: block;
+						background: #000;
+						border-radius: 5px;
+						margin-top: 5px;
+						transition: all .3s;
+					}
+				}
+			}
+		}
 	}	
 }
 
@@ -93,19 +139,22 @@ h2{
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 3px 0 0 0;
+	padding: 3px 0 0 0!important;
 	background: rgba(255, 255, 255, .9);
 	box-shadow: 0px 1px 20px #000;
 	z-index: 9999;
 	.logo{
-		width: 7%;
+		width: 10%;
 	}
 	h1{
 		display: none;
 	}
+	.anhcors{
+		top: 52px!important;
+	}
 }
 .body-scroll{
-	padding-top: 230px;
+	padding-top: 230px!important;
 }
 // Fixed header END
 
@@ -138,13 +187,10 @@ h2{
 				height: 180px;
 			}
 		}
-		.block-button{
-			width: 20%;
-		}
 	}
 }
 .about-us{
-	padding-bottom: 135px;
+	padding-bottom: 60px;
 	h2{
 		margin-top: 30px;
 		margin-bottom: 40px;
@@ -162,9 +208,12 @@ h2{
 	}
 }
 .faq{
+	padding-top: 50px;
 	padding-bottom: 100px;
-	background: url('../image/faq-bg.jpg');
-	background-repeat: no-repeat;
+	background: url('../image/faq-bg-1.png');
+	background-size: auto;
+	background-repeat: repeat-y;
+	background-position: top right;
 	.flex{
 		align-items: flex-start;
 		margin-bottom: 20px;
@@ -250,38 +299,28 @@ h2{
 			background-position: -33px 0;
 		}
 	}
-	.social{
-		ul{
-			li{
-				float: left;
-				margin-right: 20px;
-				width: 22px;
-				height: 20px;
-				background: url('../image/footer-icon.png');
-				a{
-					width: 100%;
-					height: 100%;
-					display: block;
-				}
-			}
-			.twiter{
-				background-position: -64px 0;
-			}
-			.vk{
-				background-position: -99px 0;
-			}
-			.facebook{
-				background-position: -137px 0;
+	.footer-links{
+		margin-top: 50px;
+		a{
+			display: block;
+			color: #000;
+			font-size: 16px;
+			font-weight: 700;
+			margin: 10px 10px;
+			&:hover{
+				color: grey;
 			}
 		}
 	}
 }
 
+// INDEX  END
 
 .modalWindow-1, 
 .modalWindow-2, 
 .modalWindow-3, 
-.modalWindow-4{
+.modalWindow-4,
+.modalWindow-5{
 	display: none;
 	position: absolute;
 	top: 0;
@@ -404,9 +443,13 @@ h2{
 		}
 	}
 }
-.modalWindow-3{
+.modalWindow-3, .modalWindow-5{
+
 	.inner-block{
-		padding-bottom: 50px;
+		padding: 20px;
+		h2{
+			
+		}
 	}
 	.block{
 		width: 80%;
@@ -414,6 +457,7 @@ h2{
 		justify-content: space-between;
 		align-items: flex-start;
 		padding-bottom: 0;
+		padding-top: 0;
 		&:hover{
 			background: none;
 		}
@@ -426,7 +470,7 @@ h2{
 		input, textarea, select{
 			width: 100%;
 			display: block;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 			box-sizing: border-box;
 			resize: none;
 			outline: none;
@@ -442,6 +486,9 @@ h2{
 			display: flex;
 			justify-content: space-between;
 			margin: 10px 0;
+			div{
+				margin-right: 5px;
+			}
 		}
 		.modalFoto{
 			width: 65px;
@@ -481,18 +528,26 @@ h2{
 				right: 0;
 			}
 		}
+		.main-foto{
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 	.inputs-contacts{
+		justify-content: space-between;
 		input{
 			width: 48%;
 			box-sizing: border-box;
+			&:nth-child(odd){
+				margin-right: 20px; 
+			}
 		}
 		.button{
 			background: $mainColor;
 			box-shadow: 0px 5px 1px 0 #d2413c;
 			border: 2px solid $mainColor;
 			color: #ffe164;
-			padding: 15px 0;
+			padding: 10px 0;
 			&:hover{
 				background: transparent;
 				color: $mainColor;
@@ -501,8 +556,20 @@ h2{
 			}
 		}
 	}
+	input[type="submit"]{
+		background: $mainColor;
+		box-shadow: 0px 5px 1px 0 #d2413c;
+		color: #ffe164;
+		border: 2px solid $mainColor;
+		&:hover{
+			background: transparent;
+			box-shadow: none;
+			color: $mainColor;
+			border: 2px solid $mainColor;
+		}
+	}
 	input, select, textarea{
-		padding: 20px 10px;
+		padding: 12px 10px;
 		border: 0;
 		font-size: 16px;
 		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -531,13 +598,55 @@ h2{
 		padding-top: 10px;
 		margin-bottom: 10px;
 	}
-	.max-size{
+	.number-main-foto{
 		color: grey;
-		span{
-			color: #000;
-			font-weight: 700;
-		}
+		text-align: center;
 	}
+
+
+
+
+	.radio {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		margin: 10px 0 0 7px;
+	}
+	.radio + label {
+		position: relative;
+		padding: 0 0 0 35px;
+		cursor: pointer;
+	}
+	.radio + label:before {
+		content: '';
+		position: absolute;
+		top: 5px;
+		left: 50%;
+		transform: translateX(50%);
+		width: 15px;
+		height: 15px;
+		border: 1px solid #CDD1DA;
+		border-radius: 50%;
+		background: #FFF;
+	}
+	.radio + label:after {
+		content: '';
+		position: absolute;
+		top: 8px;
+		left: 67%;
+		transform: translateX(50%);
+		width: 11px;
+		height: 11px;
+		border-radius: 50%;
+		background: $mainColor;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+		opacity: 0;
+		transition: .2s;
+	}
+	.radio:checked + label:after {
+		opacity: 1;
+	}
+
 }
 .modalWindow-4{
 	.inner-block{
@@ -577,4 +686,4 @@ h2{
 	}
 }
 
-// INDEX  END
+

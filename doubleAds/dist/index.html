@@ -33,6 +33,14 @@
 						<a href="#footer">Контакты</a>
 					</li>
 				</ul>
+				<div class="burger">
+					<input type="checkbox" id="burger_check" class="burger_checkbox">
+					<label for="burger_check">
+						<span class="span-1"></span>
+						<span class="span-2"></span>
+						<span class="span-3"></span>
+					</label>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -196,36 +204,32 @@
 			</div>
 		</section>
 		<footer class="footer" id="footer">
-			<div class="container">
-				<h2>Контакты</h2>
-				<div class="flex">
-					<div class="contacts">
-						<ul>
-							<li>
-								<a href="skype: smmchik?call" class="">smmchik</a>
-							</li>
-							<li class="footer-phone">
-								<a href="tel: 8 800 343-34-34">8 800 343-34-34</a>
-							</li>
-							<li class="footer-phone">
-								<a href="tel: +7 343 343-34-34">+7 343 343-34-34</a>
-							</li>
-						</ul>
-					</div>
-					<div class="social">
-						<ul>
-							<li class="twiter">
-								<a href="https://twitter.com/"></a>
-							</li>
-							<li class="vk">
-								<a href="https://vk.com/"></a>
-							</li>
-							<li class="facebook">
-								<a href="https://www.facebook.com/"></a>
-							</li>
-						</ul>
-					</div>
+			<div class="container flex">
+				<div class="contacts">
+					<h2>Контакты</h2>
+					<ul>
+						<li>
+							<a href="skype: smmchik?call" class="">smmchik</a>
+						</li>
+						<li class="footer-phone">
+							<a href="tel: 8 800 343-34-34">8 800 343-34-34</a>
+						</li>
+						<li class="footer-phone">
+							<a href="tel: +7 343 343-34-34">+7 343 343-34-34</a>
+						</li>
+					</ul>
 				</div>
+				<ul class="footer-links">
+					<li>
+						<a href="#">Политика конфиденциальности</a>
+					</li>
+					<li>
+						<a href="#">Уведомления о рисках</a>
+					</li>
+					<li>
+						<a href="#">Условия хранения персональных данных</a>
+					</li>
+				</ul>
 			</div>
 		</footer>
 
@@ -280,7 +284,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="modalWindow modalWindow-2">
 			<div class="inner-block">
 				<span class="close">&times;</span>
@@ -294,7 +298,7 @@
 							</p>
 						</div>
 						<div class="block-button">
-							<div class="button openModal-3">Заказать</div>
+							<div class="button openModal-5">Заказать</div>
 						</div>
 					</div>
 					<div class="block flex">
@@ -305,7 +309,7 @@
 							</p>
 						</div>
 						<div class="block-button">
-							<div class="button openModal-3">Заказать</div>
+							<div class="button openModal-5">Заказать</div>
 						</div>
 					</div>
 					<div class="block flex">
@@ -316,14 +320,14 @@
 							</p>
 						</div>
 						<div class="block-button">
-							<div class="button openModal-3">Заказать</div>
+							<div class="button openModal-5">Заказать</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="modalWindow modalWindow-3 ">
+		<div class="modalWindow modalWindow-3">
 			<div class="inner-block">
 				<span class="close">&times;</span>
 				<h3>Оформление заявки</h3>
@@ -331,7 +335,7 @@
 					<div class="block flex">
 						<div class="block-top-left">
 							<input type="text" name="form-name" placeholder="Введите название объявления">
-							<textarea rows="8" placeholder="Текст объявления"></textarea>
+							<textarea rows="12" placeholder="Текст объявления"></textarea>
 						</div>
 						<div class="block-top-right">
 							<select>
@@ -348,6 +352,7 @@
 								<option>Подкатегория 3</option>
 								<option>Подкатегория 4</option>
 							</select>
+							<input type="text" placeholder="Регион">
 							<p class="form-decription">Загрузите фото товара</p>
 							<div class="inputs-file">
 								<div>
@@ -356,27 +361,35 @@
 										<span class="foto-delete"></span>
 									</label>
 									<input type="file" id="fotka-1">
+									<input checked="checked" type="radio" class="radio" id="radio-1" name="radio-foto" />
+									<label for="radio-1"></label>
 								</div>
 								<div>
 									<label class="modalFoto" for="fotka-2">
 										<span class="add-foto"></span>
 									</label>
 									<input type="file" id="fotka-2">
+									<input type="radio" class="radio" id="radio-2" name="radio-foto" />
+									<label for="radio-2"></label>
 								</div>
 								<div>
 									<label class="modalFoto" for="fotka-3">
 										<span class="add-foto"></span>
 									</label>
 									<input type="file" id="fotka-3">
+									<input type="radio" class="radio" id="radio-3" name="radio-foto" />
+									<label for="radio-3"></label>
 								</div>
 								<div>
 									<label class="modalFoto" for="fotka-4">
 										<span class="add-foto"></span>
 									</label>
 									<input type="file" id="fotka-4">
+									<input type="radio" class="radio" id="radio-4" name="radio-foto" />
+									<label for="radio-4"></label>
 								</div>
 							</div>
-							<p class="max-size">*максимальный размер фото <span>2мб.</span></p>
+							<p class="number-main-foto">*выберите главное фото</p>
 						</div>
 					</div>
 					<div class="block">
@@ -384,14 +397,15 @@
 						<div class="inputs-contacts flex">
 							<input type="text" placeholder="Ваше имя">
 							<input type="text" placeholder="Ваш номер телефона">
-							<input type="mail" placeholder="Ваш E-mail">
-							<input type="submit" class="button openModal-4" value="Оформить заказ">
+							<input type="email" placeholder="Ваш E-mail">
+							<input type="submit" class="button openModal-4" value="Оформить заявку">
 						</div>
 					</div>
 				</form>
 			</div>
 		</div>
-		<div class="modalWindow modalWindow-4 ">
+
+		<div class="modalWindow modalWindow-4">
 			<div class="inner-block">
 				<span class="close">&times;</span>
 				<div class="block flex">
@@ -399,6 +413,27 @@
 					<p>Номер вашего заказа <span>№343-334</span></p>
 					<div class="button">Перейти к оплате</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="modalWindow modalWindow-5">
+			<div class="inner-block">
+				<span class="close">&times;</span>
+				<h3>Оформление заявки</h3>
+				<form action="" method="post" onclick="return false">
+					<div class="block flex">
+						<input type="text" name="form-link" placeholder="Введите ссылку на объявления ">
+					</div>
+					<div class="block">
+						<p class="form-decription">Ваши контакты</p>
+						<div class="inputs-contacts flex">
+							<input type="text" placeholder="Ваше имя">
+							<input type="text" placeholder="Ваш номер телефона">
+							<input type="email" placeholder="Ваш E-mail">
+							<input type="submit" class="button openModal-4" value="Оформить заявку">
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 
