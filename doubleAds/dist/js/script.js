@@ -4,11 +4,11 @@ $(document).ready(function(){ // ready
   $(window).scroll(function() {
     if ($(this).scrollTop() > 230) {
       $(".header").addClass("header-scroll");
-      $("body").addClass("body-scroll");
+      $(".wrapper").addClass("wrapper-scroll");
     }
     else{
       $(".header").removeClass("header-scroll");
-      $("body").removeClass("body-scroll");   
+      $(".wrapper").removeClass("wrapper-scroll");   
     }
   });
 

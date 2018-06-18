@@ -4,7 +4,6 @@ $mainFont: 'Roboto', sans-serif;
 
 
 @media screen and (max-width: 1600px) {
-
 }
 
 
@@ -12,8 +11,8 @@ $mainFont: 'Roboto', sans-serif;
 	.container{
 		padding: 0 10px;
 	}
-	body{
-		background-size: auto;
+	.wrapper{
+		background-size: 250%;
 	}
 	.services{
 		.block{
@@ -26,9 +25,19 @@ $mainFont: 'Roboto', sans-serif;
 	.faq{
 		padding-top: 50px;
 	}
+	.modalWindow-1 .inner-block, 
+	.modalWindow-2 .inner-block, 
+	.modalWindow-3 .inner-block, 
+	.modalWindow-4 .inner-block, 
+	.modalWindow-5 .inner-block{
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 991px) {
+	.wrapper{
+		background-size: 450%;
+	}
 	.header{
 		padding-top: 30px;
 		padding-bottom: 10px;
@@ -56,10 +65,53 @@ $mainFont: 'Roboto', sans-serif;
 			}
 		}
 	}
+	.faq{
+		background-size: 100%;
+		h2{
+			margin-bottom: 20px;
+		}
+		.flex{
+			justify-content: center;
+		}
+		.accordion-menu{
+			width: 80%;
+			.submenuItems{
+				width: 100%;
+			}
+		}
+	}
+
+	.modalWindow-1, 
+	.modalWindow-2, 
+	.modalWindow-3, 
+	.modalWindow-4, 
+	.modalWindow-5{
+		.inner-block{
+			width: 90%;
+		}
+		.blocks{
+			padding: 0;
+			.block{
+				padding: 10px 10px;
+				&-text{
+					width: 70%;
+					margin: 0 auto;
+					text-align: center;
+					margin-bottom: 10px;
+				}
+				&-button{
+					margin: 0 auto;
+				}
+			}
+		}
+	}
 }
 
 
 @media screen and (max-width: 767px) {
+	.wrapper{
+		background-size: 700%;
+	}
 	.services{
 		.block{
 			flex-wrap: wrap;
@@ -94,6 +146,21 @@ $mainFont: 'Roboto', sans-serif;
 			margin-bottom: 20px;
 		}
 	}
+	.modalWindow-1, 
+	.modalWindow-2, 
+	.modalWindow-3, 
+	.modalWindow-4, 
+	.modalWindow-5{
+		.discount{
+			.block{
+				width: 100%;
+				text-align: center;
+				p{
+					width: 60%;
+				}
+			}
+		}
+	}
 }
 
 
@@ -113,10 +180,21 @@ $mainFont: 'Roboto', sans-serif;
 			margin-right: 0;
 		}
 	}
+	.footer{
+		margin-top: -150px;
+		background-size: cover;
+		.flex{
+			justify-content: center;
+			text-align: center;
+		}
+	}
 }
 
 
 @media screen and (max-width: 480px) {
+	.wrapper{
+		background-size: 1350%;
+	}
 	.header{
 		padding: 5px 0;
 		.title-menu{
@@ -161,8 +239,8 @@ $mainFont: 'Roboto', sans-serif;
 			}
 		}
 		.logo{
-				width: 100px;
-			}
+			width: 100px;
+		}
 	}
 	.services{
 		.block{
@@ -175,6 +253,59 @@ $mainFont: 'Roboto', sans-serif;
 			}
 			&-image{
 				width: 100%;
+			}
+		}
+	}
+	.faq{
+		padding-top: 60px;
+		h2{
+			font-size: 25px;
+		}
+		.accordion-menu{
+			width: 100%;
+			.dropdownlink{
+				font-size: 16px;
+				padding: 20px 10px 0px 25px;
+			}
+			.submenuItems{
+				li{
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+	.modalWindow-1, 
+	.modalWindow-2, 
+	.modalWindow-3, 
+	.modalWindow-4, 
+	.modalWindow-5{
+		.close{
+			right: 5px;
+			top: -15px;
+		}
+		.blocks{
+			margin-bottom: 20px;
+			.block{
+				margin-bottom: 20px;
+				&-text{
+					width: 100%;
+					h4{
+						line-height: 30px;
+						font-size: 22px;
+					}
+					p{
+						line-height: 18px;
+					}
+				}
+				.button{
+					padding: 15px 50px;
+				}
+			}
+		}
+		.discount{
+			.block{
+				padding: 10px;
 			}
 		}
 	}

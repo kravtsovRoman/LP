@@ -9,10 +9,16 @@ body{
 	font-size: 16px;
 	font-family: $mainFont;
 	color: #1e3746;
+	// background-image: url('../image/bg-top.jpg');
+	// background-position: top;
+	// background-repeat: no-repeat;
+	// background-size: 105%;
+}
+.wrapper{
 	background-image: url('../image/bg-top.jpg');
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: 105%;
+	background-size: 100% 115%;
 }
 .container{
 	max-width: 1170px;
@@ -153,7 +159,7 @@ h2{
 		top: 52px!important;
 	}
 }
-.body-scroll{
+.wrapper-scroll{
 	padding-top: 230px!important;
 }
 // Fixed header END
@@ -366,7 +372,7 @@ h2{
 		margin-bottom: 50px;
 	}
 	.block{
-		padding: 20px 50px;
+		padding: 20px 20px;
 		box-sizing: border-box;
 		&:hover{
 			background: rgba(255, 255, 255, .2);
@@ -602,10 +608,6 @@ h2{
 		color: grey;
 		text-align: center;
 	}
-
-
-
-
 	.radio {
 		position: absolute;
 		z-index: -1;
