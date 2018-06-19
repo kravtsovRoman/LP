@@ -738,6 +738,7 @@ h2 {
 
 .modalWindow-2 .inner-block {
   padding-bottom: 10px;
+  width: 60%;
 }
 
 .modalWindow-2 .inner-block .blocks {
@@ -751,7 +752,7 @@ h2 {
 
 .modalWindow-3 .block,
 .modalWindow-5 .block {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -1165,6 +1166,14 @@ h2 {
   .modalWindow-5 .inner-block {
     width: 80%;
   }
+
+  .modalWindow-5 .inner-block {
+    width: 70%;
+  }
+
+  .modalWindow-4 .inner-block {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1339,6 +1348,36 @@ h2 {
   .modalWindow-4 .discount .block p,
   .modalWindow-5 .discount .block p {
     width: 60%;
+  }
+
+  .modalWindow-2 .inner-block .blocks {
+    padding: 0;
+  }
+
+  .modalWindow-2 .inner-block .blocks .block-text {
+    width: 90%;
+  }
+
+  .modalWindow-5 .inputs-contacts {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .modalWindow-5 .inputs-contacts input {
+    width: 70%;
+  }
+
+  .modalWindow-5 .inputs-contacts input:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .modalWindow-4 .inner-block {
+    padding-bottom: 100px;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
 }
 
@@ -1537,5 +1576,32 @@ h2 {
   .modalWindow-4 .discount .block,
   .modalWindow-5 .discount .block {
     padding: 10px;
+  }
+
+  .modalWindow-5 .block {
+    width: 100%;
+    padding: 0;
+  }
+
+  .modalWindow-5 .block input {
+    font-size: 14px;
+  }
+
+  .modalWindow-5 .inputs-contacts input {
+    width: 90%;
+  }
+
+  .modalWindow-4 .inner-block {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .modalWindow-4 .block {
+    margin: 0;
+  }
+
+  .modalWindow-4 .block .button {
+    padding: 15px 0;
+    width: 80%;
   }
 }

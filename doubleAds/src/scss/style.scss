@@ -203,7 +203,6 @@ h2{
 	}
 	.block{
 		width: 48%;
-		
 		p{
 			color: #333;
 			font-size: 16px;
@@ -334,7 +333,6 @@ h2{
 	bottom: 0;
 	left: 0;
 	background: rgba(0,0,0,0.7);
-	
 	z-index: 99999;
 	.inner-block{
 		width: 50%;
@@ -444,6 +442,7 @@ h2{
 .modalWindow-2{
 	.inner-block{
 		padding-bottom:10px;
+		width: 60%;
 		.blocks{
 			padding: 0 100px;
 		}
@@ -453,12 +452,9 @@ h2{
 
 	.inner-block{
 		padding: 20px;
-		h2{
-			
-		}
 	}
 	.block{
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
 		justify-content: space-between;
 		align-items: flex-start;
@@ -648,7 +644,6 @@ h2{
 	.radio:checked + label:after {
 		opacity: 1;
 	}
-
 }
 .modalWindow-4{
 	.inner-block{
@@ -657,7 +652,6 @@ h2{
 		background-size: 100%;	
 		padding: 70px 0 200px 0;
 		min-height: 280px;
-		
 	}
 	.block{
 		flex-direction: column;
@@ -687,5 +681,4 @@ h2{
 		}
 	}
 }
-
 
