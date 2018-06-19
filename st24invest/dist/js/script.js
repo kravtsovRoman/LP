@@ -40,3 +40,7 @@ $(document).ready(function(){
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+  // Open-Close nav-menu
+  $('.out-list li').on('click', function(){
+    $(this).children(".inner-list").fadeToggle(200);
+  });

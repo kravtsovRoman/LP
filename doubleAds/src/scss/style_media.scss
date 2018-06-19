@@ -183,7 +183,8 @@ $mainFont: 'Roboto', sans-serif;
 			}
 		}
 	}
-	.modalWindow-5{
+	.modalWindow-5,
+	.modalWindow-3{
 		.inputs-contacts{
 			justify-content: center;
 			input{
@@ -199,6 +200,18 @@ $mainFont: 'Roboto', sans-serif;
 			padding-bottom: 100px;
 			background-position: center;
 			background-size: cover;
+		}
+	}
+	.modalWindow-3{
+		.block-top-left, 
+		.block-top-right{
+			width: 85%;
+			margin: 0 auto;
+		}
+		.inputs-contacts{
+			input{
+				width: 85%;
+			}
 		}
 	}
 }
@@ -350,6 +363,12 @@ $mainFont: 'Roboto', sans-serif;
 		}
 	}
 	.modalWindow-5{
+		.inner-block{
+			padding: 20px 5px;
+		}
+		.close{
+			font-size: 3em;
+		}
 		.block{
 			width: 100%;
 			padding: 0;
@@ -373,6 +392,34 @@ $mainFont: 'Roboto', sans-serif;
 			.button{
 				padding: 15px 0;
 				width: 80%;
+			}
+		}
+	}
+	.modalWindow-3{
+		.block-top-left, 
+		.block-top-right{
+			width: 95%;
+		}
+		.inner-block{
+			width: 95%;
+			padding: 20px 5px;
+		}
+		.block{
+			padding: 0;
+			width: 100%;
+			input{
+				font-size: 14px;
+			}
+			p{
+				text-align: center;
+			}
+		}
+		.close{
+			font-size: 3em;
+		}
+		.inputs-contacts{
+			input{
+				width: 95%;
 			}
 		}
 	}

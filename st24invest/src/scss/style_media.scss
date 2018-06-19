@@ -174,9 +174,9 @@ $secondFort: 'Merriweather', serif;
 			.burger{
 				display: block;
 			}
-			 .header-reg{
-					display: none;
-				}
+			.header-reg{
+				display: none;
+			}
 		}
 		.nav-menu{
 			display: none;
@@ -193,9 +193,6 @@ $secondFort: 'Merriweather', serif;
 					&:before{
 						content: '';
 					}
-					&:hover:not(:first-child){
-						background: $mainColor;
-					}
 				}
 				.nav-menu-button-2{
 					display: block;
@@ -204,7 +201,7 @@ $secondFort: 'Merriweather', serif;
 			}
 			.inner-list{
 				top: 0;
-				left: -50%;
+				left: -100%;
 				border-top: 0;
 				border-right: 1px solid #fff;
 			}
@@ -413,12 +410,8 @@ $secondFort: 'Merriweather', serif;
 
 @media screen and (max-width: 610px) {
 	.header{
-		.header-top{
-			.header-reg{
-				display: none;
-			}
-		}
-		.nav-menu{
+		.container{
+			.nav-menu{
 			width: 100%;
 			text-align: center;
 			border-top: 1px solid #fff;
@@ -429,24 +422,53 @@ $secondFort: 'Merriweather', serif;
 				width: 100%;
 				&>li{
 					padding: 7px 20px;
+					width: 85%;
+					margin: 0 auto;
+					transform: translate(0);
+					&:not(:last-child){
+						margin: 0 auto;
+					}
+					.arrow-down{
+						top: 10px	;
+						height: 10px;
+					}
 					&:hover{
 						background: $bgColor;
+					}
+					&:hover .arrow-down{
+						top: 10px;
+					}
+					.second-li{
+						display: block;
+					}
+					&>a{
+						display: none;
 					}
 				}
 				.inner-list{
 					position: relative;
-					top: 99%;
-					left: -70px;
+					top: 95%;
+					left: 50%;
 					transform: translate(-50%);
 					border-right: 0;
 					text-align: center;
 					width: 70%;
 					background: lighten($bgColor, 20%);
+					// text-align: left;
+					li{
+						// padding-left: 30px;
+					}
 				}
 			}
 		}
-
+		}
+		.header-top{
+			.header-reg{
+				display: none;
+			}
+		}
 	}
+	
 	.instruments-for-category{
 		text-align: center;
 		&-blocks{
