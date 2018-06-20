@@ -10,6 +10,9 @@ $secondFort: 'Merriweather', serif;
 
 
 @media screen and (max-width: 1299px) {
+	.breadcrumbs{
+		margin-top: 30px;
+	}
 	.instruments-for-category{
 		padding: 0 10px;
 	}
@@ -298,12 +301,19 @@ $secondFort: 'Merriweather', serif;
 		}
 	}
 	.instruments{
+		&-title{
+			margin: 0 auto;
+			width: 100%;
+		}
 		.blocks {
 			.block{
 				&-text{
 					width: 100%;
 					margin-bottom: 30px;
 					text-align: center;
+					ul{
+						text-align: left;
+					}
 					a{
 						width: 50%;
 					}
@@ -425,6 +435,9 @@ $secondFort: 'Merriweather', serif;
 					width: 85%;
 					margin: 0 auto;
 					transform: translate(0);
+					&:hover .inner-list{
+						display: none;
+					}
 					&:not(:last-child){
 						margin: 0 auto;
 					}

@@ -1,6 +1,15 @@
 $(document).ready(function(){
 
 
+    $('.out-list li').on('click', function(){
+      if (document.body.clientWidth <= 610){
+        $(this).children(".inner-list").slideToggle(200);
+      }
+    });
+ 
+
+
+
   $(window).scroll(function() {
     if ($(this).scrollTop() > 25) {
       $(".out-list li").addClass("menu-padding");
@@ -24,13 +33,12 @@ $(document).ready(function(){
   });
 });
 
-
   //Burger menu в моб. версии
   $('#burger_check+label').on('click', function(event){
     $('.nav-menu').fadeToggle(200);
     event.stopPropagation();
   });
- 
+
 // Facebook comments
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -40,7 +48,22 @@ $(document).ready(function(){
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-  // Open-Close nav-menu
-  $('.out-list li').on('click', function(){
-    $(this).children(".inner-list").fadeToggle(200);
-  });
+  // Open-Close nav-menu when screen width < 610px
+  // $('.out-list li').on('click', function(){
+  //   $(this).children(".inner-list").slideToggle(200);
+  // });
+
+
+
+
+  // $(window).resize(function() {
+  //   if ($(window).width() <= '610'){
+  //     $('.out-list li p').on('click', function(){
+  //       $(this).children(".inner-list").slideToggle(200);
+  //     });
+  //   }
+  // });
+
+
+
+  

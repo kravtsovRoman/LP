@@ -224,9 +224,9 @@ h3{
 				color: $mainColor;
 				padding: 15px 20px 15px 0;
 				box-sizing: border-box;
-				// &:hover .inner-list{
-				// 	display: block;
-				// }
+				&:hover .inner-list{
+					display: block;
+				}
 				&:hover{
 					background: $mainColor;
 				}
@@ -234,6 +234,19 @@ h3{
 					display: none;
 					cursor: pointer;
 					color: #fff;
+				}
+				.button-second{
+					background: $mainColor;
+					border: 0;
+					padding: 5px 30px;
+					margin: 0 auto;
+					text-transform: uppercase;
+					border: 1px solid $mainColor;
+					outline: none;
+					&:hover{
+						background: transparent;
+						
+					}
 				}
 				.arrow-down{
 					width: 20px;
@@ -735,26 +748,49 @@ footer{
 	&-title{
 		margin: 0;
 		line-height: 45px;
+		width: 70%;
+	}
+	h4{
+		font-size: 18px;
+		font-weight: 500;
+		margin: 15px 0;
 	}
 	.blocks{
 		margin-top: 30px;
 		.block{
 			&:not(:last-child){
-				margin-bottom: 100px;
+				margin-bottom: 30px;
 			}
 			&-text{
-				width: 45%;
+				width: 50%;
 				h2{
-					margin-top: 0;
+					font-size: 24px;
+					
 				}
 				p{
 					font-weight: 300;
-					line-height: 16px;
-					margin-bottom: 30px;
+					line-height: 20px;
+				}
+				ul{
+					list-style-type: disc;
+					margin-left: 30px;
+					line-height: 20px;
+				}
+				span{
+					font-weight: 500;
+				}
+			}
+			&-image{
+				width: 45%;
+				margin-top: 20px;
+				img{
+					width: 100%;
 				}
 				.button{
 					background: transparent;
-					width: 70%;
+					box-sizing: border-box;
+					width: 100%;
+					margin: 20px auto;
 					font-size: 16px;
 					text-align: center;
 					padding: 15px;
@@ -763,10 +799,18 @@ footer{
 						color: #fff;
 					}
 				}
+				ul{
+					list-style-type: disc;
+					margin-left: 30px;
+					line-height: 20px;
+				}
 			}
-			&-image{
-				width: 50%;
-				margin: auto 0;
+		}
+		.bottom-text{
+			font-weight: 500;
+			font-style: italic;
+			span{
+				font-weight: 700;
 			}
 		}
 	}
@@ -1364,7 +1408,7 @@ footer{
 		color: #fff;
 		margin: 0 auto;
 		&:hover{
-			color: #000;
+			color: #000; 
 		}
 	}
 }
@@ -1379,3 +1423,131 @@ footer{
 	display: block;
 }
 // Change header END
+
+
+// Dominator
+
+.dominator{
+	table{
+		width: 100%;
+		margin-bottom: 50px;
+		text-align: center;
+		tr:not(:last-child){
+			border-bottom: 1px solid #f4f4f4;
+		}
+		td, th{
+			padding: 20px;
+			font-size: 18px;
+		}
+		tr{
+			&:nth-child(even){
+				background: #fafafa;
+			}
+		}
+		td{
+			&:last-child{
+				font-weight: 500;
+			}
+			&:first-child{
+				color: $mainColor;
+			}
+		}
+		.filter-blur{
+			filter: blur(5px);
+		}
+	}
+	.table-registration{
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		width: 35%;
+		font-size: 	30px; 
+		font-weight: 	700;
+		.button{
+			color: #fff;
+			font-size: 	16px;
+			margin-top: 	20px;
+			padding: 	10px 0;
+			width: 90%;
+			font-weight: 	400;
+			&:hover{
+				color: #000;
+			}
+		}
+	}
+	.wrapper{
+		position: relative;
+	}
+}
+
+.gray-color{
+	color: #999;
+}
+.red-color{
+	color: #ad4135;
+}
+.green-color{
+	color: #90c63d;
+}
+
+.arrow-up{
+	&:after{
+		content: '▲';
+	}
+}
+.arrow-down{
+	&:after{
+		content: '▼';
+	}
+}
+
+
+.indikators{
+	margin-bottom: 50px;
+	h2{
+		font-size: 28px;
+		text-decoration: underline;
+	}
+	&-name{
+		color: $mainColor;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 5px;
+	}
+	&-description{
+		color: #828282;
+	}
+	.blocks{
+		justify-content: space-around;
+		margin-top: 20px;
+		.block{
+			width: 30%;
+			li{
+				position: relative;
+				padding: 15px 60px 15px 0;
+				border-bottom: 1px solid #f4f4f4;
+				&:last-child{
+					border-bottom: 0;
+				}
+				span{
+					position: absolute;
+					right: 10px;
+					top: 40%;
+					font-size: 16px;
+					margin-right: 20px;
+					&:after{
+						position: absolute;
+						top: 10%;
+						margin-left: 5px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Dominator END
