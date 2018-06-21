@@ -415,6 +415,35 @@ $secondFort: 'Merriweather', serif;
 			}	
 		}
 	}
+	.dominator{
+		.table-registration{
+			width: 60%;
+			bottom: 20px;
+			font-size: 20px;
+			.button{
+				margin-top: 10px;
+			}
+		}
+		table{
+			td{
+				padding: 10px 0px;
+				font-size: 14px;
+			}
+		}
+	}
+	.indikators{
+		.blocks{
+			.block{
+				width: 70%;
+			}
+		}
+	}
+	.signals{
+		table th{
+			font-size: 14px;
+			padding: 10px 5px;
+		}
+	}
 }
 
 
@@ -422,58 +451,54 @@ $secondFort: 'Merriweather', serif;
 	.header{
 		.container{
 			.nav-menu{
-			width: 100%;
-			text-align: center;
-			border-top: 1px solid #fff;
-			.arrow-down{
-				left: 90%;
-			}
-			.out-list{
 				width: 100%;
-				&>li{
-					padding: 7px 20px;
-					width: 85%;
-					margin: 0 auto;
-					transform: translate(0);
-					&:hover .inner-list{
-						display: none;
-					}
-					&:not(:last-child){
-						margin: 0 auto;
-					}
-					.arrow-down{
-						top: 10px	;
-						height: 10px;
-					}
-					&:hover{
-						background: $bgColor;
-					}
-					&:hover .arrow-down{
-						top: 10px;
-					}
-					.second-li{
-						display: block;
-					}
-					&>a{
-						display: none;
-					}
+				text-align: center;
+				border-top: 1px solid #fff;
+				.arrow-down{
+					left: 90%;
 				}
-				.inner-list{
-					position: relative;
-					top: 95%;
-					left: 50%;
-					transform: translate(-50%);
-					border-right: 0;
-					text-align: center;
-					width: 70%;
-					background: lighten($bgColor, 20%);
-					// text-align: left;
-					li{
-						// padding-left: 30px;
+				.out-list{
+					width: 100%;
+					&>li{
+						padding: 7px 20px;
+						width: 85%;
+						margin: 0 auto;
+						transform: translate(0);
+						&:hover .inner-list{
+							display: none;
+						}
+						&:not(:last-child){
+							margin: 0 auto;
+						}
+						.arrow-down{
+							top: 10px	;
+							height: 10px;
+						}
+						&:hover{
+							background: $bgColor;
+						}
+						&:hover .arrow-down{
+							top: 10px;
+						}
+						.second-li{
+							display: block;
+						}
+						&>a{
+							display: none;
+						}
+					}
+					.inner-list{
+						position: relative;
+						top: 95%;
+						left: 50%;
+						transform: translate(-50%);
+						border-right: 0;
+						text-align: center;
+						width: 70%;
+						background: lighten($bgColor, 20%);
 					}
 				}
 			}
-		}
 		}
 		.header-top{
 			.header-reg{
@@ -481,7 +506,6 @@ $secondFort: 'Merriweather', serif;
 			}
 		}
 	}
-	
 	.instruments-for-category{
 		text-align: center;
 		&-blocks{
@@ -496,6 +520,13 @@ $secondFort: 'Merriweather', serif;
 					margin-bottom: 10px;
 				}
 			}
+		}
+	}
+	.dominator, 
+	.signals{
+		table{
+			display: block;
+			overflow: auto;
 		}
 	}
 }
@@ -723,5 +754,17 @@ $secondFort: 'Merriweather', serif;
 	}
 	.add-broker h3 + p{
 		width: 100%;
+	}
+	.dominator{
+		.table-registration{
+			width: 80%;
+		}
+	}
+	.indikators{
+		.blocks{
+			.block{
+				width: 100%;
+			}
+		}
 	}
 }

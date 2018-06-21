@@ -1786,40 +1786,49 @@ footer .subscribe .button {
   display: block;
 }
 
-.dominator table {
+.dominator table,
+.signals table {
   width: 100%;
   margin-bottom: 50px;
   text-align: center;
 }
 
-.dominator table tr:not(:last-child) {
+.dominator table tr:not(:last-child),
+.signals table tr:not(:last-child) {
   border-bottom: 1px solid #f4f4f4;
 }
 
 .dominator table td,
-.dominator table th {
+.dominator table th,
+.signals table td,
+.signals table th {
   padding: 20px;
   font-size: 18px;
 }
 
-.dominator table tr:nth-child(even) {
+.dominator table tr:nth-child(even),
+.signals table tr:nth-child(even) {
   background: #fafafa;
 }
 
-.dominator table td:last-child {
+.dominator table td:last-child,
+.signals table td:last-child {
   font-weight: 500;
 }
 
-.dominator table td:first-child {
+.dominator table td:first-child,
+.signals table td:first-child {
   color: #e4ae51;
 }
 
-.dominator table .filter-blur {
+.dominator table .filter-blur,
+.signals table .filter-blur {
   -webkit-filter: blur(5px);
           filter: blur(5px);
 }
 
-.dominator .table-registration {
+.dominator .table-registration,
+.signals .table-registration {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -1832,7 +1841,8 @@ footer .subscribe .button {
   font-weight: 700;
 }
 
-.dominator .table-registration .button {
+.dominator .table-registration .button,
+.signals .table-registration .button {
   color: #fff;
   font-size: 16px;
   margin-top: 20px;
@@ -1841,31 +1851,33 @@ footer .subscribe .button {
   font-weight: 400;
 }
 
-.dominator .table-registration .button:hover {
+.dominator .table-registration .button:hover,
+.signals .table-registration .button:hover {
   color: #000;
 }
 
-.dominator .wrapper {
+.dominator .wrapper,
+.signals .wrapper {
   position: relative;
 }
 
-.gray-color {
+main .gray-color {
   color: #999;
 }
 
-.red-color {
+main .red-color {
   color: #ad4135;
 }
 
-.green-color {
+main .green-color {
   color: #90c63d;
 }
 
-.arrow-up:after {
+main .arrow-up:after {
   content: '▲';
 }
 
-.arrow-down:after {
+main .arrow-down:after {
   content: '▼';
 }
 
@@ -1924,6 +1936,85 @@ footer .subscribe .button {
   top: 10%;
   margin-left: 5px;
   font-size: 14px;
+}
+
+.signals h1 {
+  position: relative;
+  display: inline-block;
+}
+
+.signals h1 .info {
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.signals h1 .info:hover + .tooltip {
+  display: block;
+}
+
+.signals h1 .info:hover {
+  font-size: 20px;
+}
+
+.signals h1 .tooltip {
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  position: absolute;
+  left: 102%;
+  top: -20%;
+  font-size: 14px;
+  width: 100%;
+  display: none;
+  padding: 10px 20px;
+  -webkit-box-shadow: 2px 2px 20px 1px black;
+          box-shadow: 2px 2px 20px 1px black;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  z-index: 9;
+  background: #fff;
+}
+
+.signals table th {
+  color: #999;
+}
+
+.signals table td:not(:last-child),
+.signals table th:not(:last-child) {
+  border-right: 1px solid #f4f4f4;
+}
+
+.signals table th,
+.signals table td {
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.signals table td:last-child {
+  font-weight: 400;
+}
+
+.signals table td:first-child {
+  color: #000;
+}
+
+.signals table tr:nth-child(even) {
+  background: none;
+}
+
+.signals table .red-color {
+  color: red;
+}
+
+.signals .table-registration {
+  bottom: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 @media screen and (max-width: 1299px) {
   .breadcrumbs {
@@ -2344,6 +2435,30 @@ footer .subscribe .button {
   .brokers .brokers-list .block .block-logo .logo img {
     width: 100%;
   }
+
+  .dominator .table-registration {
+    width: 60%;
+    bottom: 20px;
+    font-size: 20px;
+  }
+
+  .dominator .table-registration .button {
+    margin-top: 10px;
+  }
+
+  .dominator table td {
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+
+  .indikators .blocks .block {
+    width: 70%;
+  }
+
+  .signals table th {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
 }
 
 @media screen and (max-width: 610px) {
@@ -2439,6 +2554,12 @@ footer .subscribe .button {
 
   .instruments-for-category-blocks .block p {
     margin-bottom: 10px;
+  }
+
+  .dominator table,
+  .signals table {
+    display: block;
+    overflow: auto;
   }
 }
 
@@ -2654,6 +2775,14 @@ footer .subscribe .button {
   }
 
   .add-broker h3 + p {
+    width: 100%;
+  }
+
+  .dominator .table-registration {
+    width: 80%;
+  }
+
+  .indikators .blocks .block {
     width: 100%;
   }
 }

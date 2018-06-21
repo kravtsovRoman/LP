@@ -1418,7 +1418,6 @@ footer{
 
 // Change header
 .nav-menu-button{
-	// float: right;
 	text-align: center;
 	display: block;
 }
@@ -1427,7 +1426,7 @@ footer{
 
 // Dominator
 
-.dominator{
+.dominator, .signals{
 	table{
 		width: 100%;
 		margin-bottom: 50px;
@@ -1482,22 +1481,21 @@ footer{
 	}
 }
 
-.gray-color{
+main .gray-color{
 	color: #999;
 }
-.red-color{
+main .red-color{
 	color: #ad4135;
 }
-.green-color{
+main .green-color{
 	color: #90c63d;
 }
-
-.arrow-up{
+main .arrow-up{
 	&:after{
 		content: '▲';
 	}
 }
-.arrow-down{
+main .arrow-down{
 	&:after{
 		content: '▼';
 	}
@@ -1551,3 +1549,74 @@ footer{
 }
 
 // Dominator END
+
+
+// Signals
+
+.signals{
+	h1{
+		position: relative;
+		display: inline-block;
+		.info{
+			font-size: 18px;
+			cursor: pointer;
+			transition: all .2s;
+			&:hover +.tooltip{
+				display: block;
+			}
+			&:hover{
+				font-size: 20px;
+			}
+		}
+		.tooltip{
+			transition: all .2s;
+			position: absolute;
+			left: 102%;
+			top: -20%;
+			font-size: 14px;
+			width: 100%;
+			display: none;
+			padding: 10px 20px;
+			box-shadow: 2px 2px 20px 1px black;
+			border-radius: 5px;
+			z-index: 9;
+			background: #fff;
+		}
+	}
+	table{
+		th{
+			color: #999;
+		}
+		td:not(:last-child),
+		th:not(:last-child), {
+			border-right: 1px solid #f4f4f4;
+		}
+		th, td{
+			font-size: 16px;
+			padding: 15px 0;
+		}
+		td{
+			&:last-child{
+				font-weight: 400;
+			}
+			&:first-child{
+				color: #000;
+			}
+		}
+		tr{
+			&:nth-child(even){
+				background: none;
+			}
+		}
+		.red-color{
+			color: red;
+		}
+	}
+	.table-registration{
+			bottom: 30%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+}
+
+// Signals END
