@@ -167,6 +167,15 @@ $secondFort: 'Merriweather', serif;
 			margin: 0 auto 20px auto;
 		}
 	}
+	.signals{
+		h1{
+			.tooltip{
+				left: 50%;
+				top: 130%;
+				width: 300px;
+			}
+		}
+	}
 }
 
 
@@ -444,6 +453,27 @@ $secondFort: 'Merriweather', serif;
 			padding: 10px 5px;
 		}
 	}
+	.signals{
+		.table-registration{
+			width: 70%;
+			.button{
+				width: 60%;
+			}
+		}
+	}
+	.grafic{
+		.table-registration{
+			width: 70%;
+		}
+	}
+	.grafic-block{
+		width: 100%;
+		overflow: auto;
+		display: block;
+	}
+	.tradingview-widget-container{
+		width: 700px;
+	}
 }
 
 
@@ -527,6 +557,14 @@ $secondFort: 'Merriweather', serif;
 		table{
 			display: block;
 			overflow: auto;
+		}
+	}
+	.signals{
+		h1{
+			.tooltip{
+				left: 30%;
+				width: 80%;
+			}
 		}
 	}
 }
@@ -765,6 +803,24 @@ $secondFort: 'Merriweather', serif;
 			.block{
 				width: 100%;
 			}
+		}
+	}
+	.signals{
+		.table-registration{
+			width: 95%;
+		}
+	}
+	.signals{
+		h1{
+			.tooltip{
+				left: 0%;
+				width: 85%;
+			}
+		}
+	}
+	.grafic{
+		.table-registration{
+			width: 90%;
 		}
 	}
 }

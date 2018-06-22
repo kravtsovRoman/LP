@@ -1861,6 +1861,32 @@ footer .subscribe .button {
   position: relative;
 }
 
+.table-registration {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  width: 35%;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.table-registration .button {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 90%;
+  font-weight: 400;
+}
+
+.table-registration .button:hover {
+  color: #000;
+}
+
 main .gray-color {
   color: #999;
 }
@@ -1955,10 +1981,6 @@ main .arrow-down:after {
   display: block;
 }
 
-.signals h1 .info:hover {
-  font-size: 20px;
-}
-
 .signals h1 .tooltip {
   -webkit-transition: all .2s;
   -o-transition: all .2s;
@@ -2015,6 +2037,60 @@ main .arrow-down:after {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.grafic h1 {
+  margin-bottom: 40px;
+}
+
+.grafic .links div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.grafic .links div ul {
+  width: 85%;
+  float: left;
+}
+
+.grafic .links div ul li {
+  float: left;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0px 7px 5px 7px;
+  cursor: pointer;
+}
+
+.grafic .links div ul li:hover {
+  color: #e4ae51;
+  text-decoration: underline;
+}
+
+.grafic .links p {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  font-weight: 700;
+}
+
+.grafic .grafic-block {
+  height: 600px;
+}
+
+.grafic .container-for-button {
+  position: relative;
+}
+
+.grafic .table-registration {
+  top: 30%;
+}
+
+.grafic .filter-blur {
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
 }
 @media screen and (max-width: 1299px) {
   .breadcrumbs {
@@ -2174,6 +2250,12 @@ main .arrow-down:after {
     width: 50%;
     text-align: center;
     margin: 0 auto 20px auto;
+  }
+
+  .signals h1 .tooltip {
+    left: 50%;
+    top: 130%;
+    width: 300px;
   }
 }
 
@@ -2459,6 +2541,28 @@ main .arrow-down:after {
     font-size: 14px;
     padding: 10px 5px;
   }
+
+  .signals .table-registration {
+    width: 70%;
+  }
+
+  .signals .table-registration .button {
+    width: 60%;
+  }
+
+  .grafic .table-registration {
+    width: 70%;
+  }
+
+  .grafic-block {
+    width: 100%;
+    overflow: auto;
+    display: block;
+  }
+
+  .tradingview-widget-container {
+    width: 700px;
+  }
 }
 
 @media screen and (max-width: 610px) {
@@ -2560,6 +2664,11 @@ main .arrow-down:after {
   .signals table {
     display: block;
     overflow: auto;
+  }
+
+  .signals h1 .tooltip {
+    left: 30%;
+    width: 80%;
   }
 }
 
@@ -2784,5 +2893,18 @@ main .arrow-down:after {
 
   .indikators .blocks .block {
     width: 100%;
+  }
+
+  .signals .table-registration {
+    width: 95%;
+  }
+
+  .signals h1 .tooltip {
+    left: 0%;
+    width: 85%;
+  }
+
+  .grafic .table-registration {
+    width: 90%;
   }
 }
