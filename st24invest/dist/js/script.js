@@ -18,8 +18,8 @@ $(document).ready(function(){
     }
     else{
       $(".out-list li").removeClass("menu-padding");
-      $(".header").removeClass("header-padding");   
-      $(".header-top").removeClass("header-top-padding");     
+      $(".header").removeClass("header-padding");
+      $(".header-top").removeClass("header-top-padding");
     }
   });
 
