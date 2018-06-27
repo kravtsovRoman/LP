@@ -1,5 +1,15 @@
 $(document).ready(function(){ // ready
 
+// Range slider
+  $("#rangeslider").ionRangeSlider({
+    type: "single",
+    min: 0,
+    max: 1000,
+    grid: true,
+    step: 100,
+    values: [0, 100, 300, 500, 700, 900, '>1000']
+  });
+
   // Fixed header
   $(window).scroll(function() {
     if ($(this).scrollTop() > 230) {
