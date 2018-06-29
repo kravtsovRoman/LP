@@ -136,12 +136,17 @@ $mainFont: 'Roboto', sans-serif;
 			}
 		}
 	}
+	.services{
+		.block-text-3{
+			width: 100%;
+		}
+	}
 }
 
 
 @media screen and (max-width: 767px) {
 	.wrapper{
-		background-size: 700%;
+		background-size: 905%;
 	}
 	.services{
 		.block{
@@ -256,6 +261,24 @@ $mainFont: 'Roboto', sans-serif;
 			}
 		}
 	}
+	.services{
+		.block-image-3{
+			width: 35%;
+		}
+	}
+	.modalWindow-7{
+		.inner-block{
+			form{
+				.area-block{
+					margin-bottom: 20px;
+				}
+				.range-width{
+					width: 95%;
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
 }
 
 
@@ -288,7 +311,7 @@ $mainFont: 'Roboto', sans-serif;
 
 @media screen and (max-width: 480px) {
 	.wrapper{
-		background-size: 1350%;
+		background-size: 1710%;
 	}
 	.header{
 		padding: 5px 0;
@@ -479,17 +502,9 @@ $mainFont: 'Roboto', sans-serif;
 			}
 		}
 	}
-	.modalWindow-7{
-		.inner-block{
-			form{
-				.area-block{
-					margin-bottom: 20px;
-				}
-				.range-width{
-					width: 95%;
-					margin-bottom: 20px;
-				}
-			}
+	.services{
+		.block-image-3{
+			width: 60%;
 		}
 	}
 }

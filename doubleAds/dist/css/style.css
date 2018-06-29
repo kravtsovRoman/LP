@@ -1589,12 +1589,16 @@ h2 {
   .modalWindow-5 .blocks .block-button {
     margin: 0 auto;
   }
+
+  .services .block-text-3 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .wrapper {
-    -webkit-background-size: 700% 700%;
-            background-size: 700%;
+    -webkit-background-size: 905% 905%;
+            background-size: 905%;
   }
 
   .services .block {
@@ -1735,6 +1739,19 @@ h2 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+
+  .services .block-image-3 {
+    width: 35%;
+  }
+
+  .modalWindow-7 .inner-block form .area-block {
+    margin-bottom: 20px;
+  }
+
+  .modalWindow-7 .inner-block form .range-width {
+    width: 95%;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 610px) {
@@ -1767,8 +1784,8 @@ h2 {
 
 @media screen and (max-width: 480px) {
   .wrapper {
-    -webkit-background-size: 1350% 1350%;
-            background-size: 1350%;
+    -webkit-background-size: 1710% 1710%;
+            background-size: 1710%;
   }
 
   .header {
@@ -2020,12 +2037,7 @@ h2 {
     width: 90%;
   }
 
-  .modalWindow-7 .inner-block form .area-block {
-    margin-bottom: 20px;
-  }
-
-  .modalWindow-7 .inner-block form .range-width {
-    width: 95%;
-    margin-bottom: 20px;
+  .services .block-image-3 {
+    width: 60%;
   }
 }
