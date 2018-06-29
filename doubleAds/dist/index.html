@@ -7,9 +7,9 @@
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="shortcut icon" href="image/favicon.png">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/ion.rangeSlider.css">
-	<link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css" type="text/css">
+	<link rel="stylesheet" href="libs/rangeslider/normalize.css">
+	<link rel="stylesheet" href="libs/rangeslider/ion.rangeSlider.css">
+	<link rel="stylesheet" href="libs/rangeslider/ion.rangeSlider.skinHTML5.css" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -77,7 +77,7 @@
 					</div>
 					<div class="block flex">
 						<div class="block-text block-text-3">
-							<a href="">Отзывы на форумах</a>
+							<div class="openModal-6 ">Отзывы на форумах</div>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempore quod ratione amet consectetur obcaecati placeat, veniam unde sunt labore libero deleniti sequi!
 							</p>
@@ -86,7 +86,7 @@
 							<img alt="doubleAds"  src="image/services-image-3.png">
 						</div>
 						<div class="block-text block-text-3">
-							<a href="">Рассылка по SMS</a>
+							<div class="openModal-7">Рассылка по SMS</div>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempore quod ratione amet consectetur obcaecati placeat, veniam unde sunt labore libero deleniti sequi!
 							</p>
@@ -463,8 +463,49 @@
 	<div class="modalWindow modalWindow-6">
 		<div class="inner-block">
 			<span class="close">&times;</span>
-			<h3>Ползунок</h3>
-			<input type="text" id="rangeslider" name="example_name" value="" />
+			<h3>Отзывы на форумах</h3>
+			<p class="description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+			</p>
+			<div class="callout">
+				<p>$100</p><p>$0.1 за отзыв</p>
+			</div>
+			<div class="range-width">
+				<input type="text" id="rangeslider" />
+			</div>
+			<form class="flex">
+				<input class="" type="text" placeholder="Имя">
+				<input class="" type="text" placeholder="Номер телефона">
+				<input class="button" type="submit" value="Оставить заявку ">
+			</form>
+		</div>
+	</div>
+
+	<div class="modalWindow modalWindow-7">
+		<div class="inner-block">
+			<span class="close">&times;</span>
+			<h3>Рассылка по смс</h3>
+			<p class="description">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+			</p>
+			<form class="flex">
+				<div class="area-block">
+					<textarea  rows="10" placeholder="Текст SMS"></textarea>
+					<p>Текст сообщения до 140 символов</p>
+				</div>
+				<div class="range-width">
+					<div class="callout">
+						<p>$100</p><p>$0.1 за смс</p>
+					</div>
+					<input type="text" id="rangeslider-2" />
+					<p>
+						Количество номеров 
+					</p>
+				</div>
+				<input class="" type="text" placeholder="Имя">
+				<input class="" type="text" placeholder="Номер телефона">
+				<input class="button" type="submit" value="Оставить заявку ">
+			</form>
 		</div>
 	</div>
 

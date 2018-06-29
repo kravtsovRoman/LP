@@ -10,6 +10,15 @@ $(document).ready(function(){ // ready
     values: [0, 100, 300, 500, 700, 900, '>1000']
   });
 
+  $("#rangeslider-2").ionRangeSlider({
+    type: "single",
+    min: 0,
+    max: 1000,
+    grid: true,
+    step: 100,
+    values: [0, 100, 500, 1000, 1500, '>2000']
+  });
+
   // Fixed header
   $(window).scroll(function() {
     if ($(this).scrollTop() > 230) {
@@ -70,14 +79,18 @@ $(document).ready(function(){ // ready
     $('.modalWindow').fadeOut();
     $('.modalWindow-5').fadeIn();
   });
+   $('.openModal-6').on('click', function(){
+    $('.modalWindow').fadeOut();
+    $('.modalWindow-6').fadeIn();
+  });
+   $('.openModal-7').on('click', function(){
+    $('.modalWindow').fadeOut();
+    $('.modalWindow-7').fadeIn();
+  });
 
 
   $('.close').on('click', function(){
-    $('.modalWindow-1').fadeOut();
-    $('.modalWindow-2').fadeOut();
-    $('.modalWindow-3').fadeOut();
-    $('.modalWindow-4').fadeOut();
-    $('.modalWindow-5').fadeOut();
+    $('.modalWindow').fadeOut();
   });
 
 };

@@ -350,6 +350,17 @@ h2 {
   width: 40%;
 }
 
+.services .block-text-3 div {
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.services .block-text-3 div:hover {
+  color: #f05f5a;
+}
+
 .services .block-text-3 p {
   margin-top: 30px;
 }
@@ -361,18 +372,6 @@ h2 {
   line-height: 35px;
   font-weight: 700;
   margin-bottom: 20px;
-}
-
-.services .block-text a {
-  color: #000;
-  border-bottom: 1px dashed #777;
-  cursor: pointer;
-  margin-bottom: 30px;
-}
-
-.services .block-text a:hover {
-  color: #f05f5a;
-  border-bottom: 1px solid #f05f5a;
 }
 
 .services .block-text p {
@@ -534,6 +533,7 @@ h2 {
 
 .footer .footer-links a {
   display: block;
+  color: #000;
   font-size: 16px;
   font-weight: 700;
   margin: 10px 10px;
@@ -548,7 +548,8 @@ h2 {
 .modalWindow-3,
 .modalWindow-4,
 .modalWindow-5,
-.modalWindow-6 {
+.modalWindow-6,
+.modalWindow-7 {
   display: none;
   position: absolute;
   top: 0;
@@ -564,7 +565,8 @@ h2 {
 .modalWindow-3 .inner-block,
 .modalWindow-4 .inner-block,
 .modalWindow-5 .inner-block,
-.modalWindow-6 .inner-block {
+.modalWindow-6 .inner-block,
+.modalWindow-7 .inner-block {
   width: 50%;
   background: url("../image/modal-bg-1.jpg");
   background-repeat: no-repeat;
@@ -584,7 +586,8 @@ h2 {
 .modalWindow-3 .close,
 .modalWindow-4 .close,
 .modalWindow-5 .close,
-.modalWindow-6 .close {
+.modalWindow-6 .close,
+.modalWindow-7 .close {
   font-size: 4em;
   position: absolute;
   right: 20px;
@@ -599,7 +602,8 @@ h2 {
 .modalWindow-3 .close:hover,
 .modalWindow-4 .close:hover,
 .modalWindow-5 .close:hover,
-.modalWindow-6 .close:hover {
+.modalWindow-6 .close:hover,
+.modalWindow-7 .close:hover {
   color: #f05f5a;
 }
 
@@ -608,7 +612,8 @@ h2 {
 .modalWindow-3 h3,
 .modalWindow-4 h3,
 .modalWindow-5 h3,
-.modalWindow-6 h3 {
+.modalWindow-6 h3,
+.modalWindow-7 h3 {
   text-align: center;
   font-size: 25px;
   font-weight: 900;
@@ -622,7 +627,8 @@ h2 {
 .modalWindow-3 .blocks,
 .modalWindow-4 .blocks,
 .modalWindow-5 .blocks,
-.modalWindow-6 .blocks {
+.modalWindow-6 .blocks,
+.modalWindow-7 .blocks {
   padding: 0px 50px;
   margin-bottom: 50px;
 }
@@ -632,7 +638,8 @@ h2 {
 .modalWindow-3 .block,
 .modalWindow-4 .block,
 .modalWindow-5 .block,
-.modalWindow-6 .block {
+.modalWindow-6 .block,
+.modalWindow-7 .block {
   padding: 20px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -643,7 +650,8 @@ h2 {
 .modalWindow-3 .block:hover,
 .modalWindow-4 .block:hover,
 .modalWindow-5 .block:hover,
-.modalWindow-6 .block:hover {
+.modalWindow-6 .block:hover,
+.modalWindow-7 .block:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -652,7 +660,8 @@ h2 {
 .modalWindow-3 .block-text,
 .modalWindow-4 .block-text,
 .modalWindow-5 .block-text,
-.modalWindow-6 .block-text {
+.modalWindow-6 .block-text,
+.modalWindow-7 .block-text {
   width: 50%;
 }
 
@@ -661,7 +670,8 @@ h2 {
 .modalWindow-3 .block-text h4,
 .modalWindow-4 .block-text h4,
 .modalWindow-5 .block-text h4,
-.modalWindow-6 .block-text h4 {
+.modalWindow-6 .block-text h4,
+.modalWindow-7 .block-text h4 {
   font-size: 24px;
   line-height: 60px;
   font-weight: 900;
@@ -672,7 +682,8 @@ h2 {
 .modalWindow-3 .block-text h4 span,
 .modalWindow-4 .block-text h4 span,
 .modalWindow-5 .block-text h4 span,
-.modalWindow-6 .block-text h4 span {
+.modalWindow-6 .block-text h4 span,
+.modalWindow-7 .block-text h4 span {
   color: #f05f5a;
 }
 
@@ -681,7 +692,8 @@ h2 {
 .modalWindow-3 .block-text p,
 .modalWindow-4 .block-text p,
 .modalWindow-5 .block-text p,
-.modalWindow-6 .block-text p {
+.modalWindow-6 .block-text p,
+.modalWindow-7 .block-text p {
   line-height: 24px;
 }
 
@@ -690,7 +702,8 @@ h2 {
 .modalWindow-3 .block-button .button,
 .modalWindow-4 .block-button .button,
 .modalWindow-5 .block-button .button,
-.modalWindow-6 .block-button .button {
+.modalWindow-6 .block-button .button,
+.modalWindow-7 .block-button .button {
   border: 2px solid #000;
   color: #000;
 }
@@ -700,7 +713,8 @@ h2 {
 .modalWindow-3 .block-button .button:hover,
 .modalWindow-4 .block-button .button:hover,
 .modalWindow-5 .block-button .button:hover,
-.modalWindow-6 .block-button .button:hover {
+.modalWindow-6 .block-button .button:hover,
+.modalWindow-7 .block-button .button:hover {
   border: 2px solid #f05f5a;
   color: #ffe164;
 }
@@ -710,7 +724,8 @@ h2 {
 .modalWindow-3 .discount .block,
 .modalWindow-4 .discount .block,
 .modalWindow-5 .discount .block,
-.modalWindow-6 .discount .block {
+.modalWindow-6 .discount .block,
+.modalWindow-7 .discount .block {
   width: 50%;
   color: #fff;
 }
@@ -720,7 +735,8 @@ h2 {
 .modalWindow-3 .discount .block h5,
 .modalWindow-4 .discount .block h5,
 .modalWindow-5 .discount .block h5,
-.modalWindow-6 .discount .block h5 {
+.modalWindow-6 .discount .block h5,
+.modalWindow-7 .discount .block h5 {
   margin-right: 40px;
   font-size: 60px;
   font-weight: 900;
@@ -736,7 +752,8 @@ h2 {
 .modalWindow-3 .discount .block h5:after,
 .modalWindow-4 .discount .block h5:after,
 .modalWindow-5 .discount .block h5:after,
-.modalWindow-6 .discount .block h5:after {
+.modalWindow-6 .discount .block h5:after,
+.modalWindow-7 .discount .block h5:after {
   content: '%';
   font-size: 0.5em;
   position: absolute;
@@ -751,7 +768,8 @@ h2 {
 .modalWindow-3 .discount .block p,
 .modalWindow-4 .discount .block p,
 .modalWindow-5 .discount .block p,
-.modalWindow-6 .discount .block p {
+.modalWindow-6 .discount .block p,
+.modalWindow-7 .discount .block p {
   width: 45%;
   font-size: 24px;
   line-height: 28px;
@@ -763,7 +781,8 @@ h2 {
 .modalWindow-3 .discount .block:first-child,
 .modalWindow-4 .discount .block:first-child,
 .modalWindow-5 .discount .block:first-child,
-.modalWindow-6 .discount .block:first-child {
+.modalWindow-6 .discount .block:first-child,
+.modalWindow-7 .discount .block:first-child {
   background: #f05f5a;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -776,7 +795,8 @@ h2 {
 .modalWindow-3 .discount .block:last-child,
 .modalWindow-4 .discount .block:last-child,
 .modalWindow-5 .discount .block:last-child,
-.modalWindow-6 .discount .block:last-child {
+.modalWindow-6 .discount .block:last-child,
+.modalWindow-7 .discount .block:last-child {
   background: #d2413c;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -1187,20 +1207,56 @@ h2 {
   margin-right: 5%;
 }
 
-.modalWindow-6 {
-  display: block;
+.modalWindow-6 .inner-block,
+.modalWindow-7 .inner-block {
+  top: 30%;
+  padding: 70px 150px;
 }
 
-.modalWindow-6 .irs-slider {
+.modalWindow-6 .inner-block h3,
+.modalWindow-7 .inner-block h3 {
+  font-size: 30px;
+}
+
+.modalWindow-6 .inner-block .description,
+.modalWindow-7 .inner-block .description {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto 50px auto;
+}
+
+.modalWindow-6 .range-width,
+.modalWindow-7 .range-width {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modalWindow-6 .irs-min,
+.modalWindow-6 .irs-max,
+.modalWindow-7 .irs-min,
+.modalWindow-7 .irs-max {
+  display: none;
+}
+
+.modalWindow-6 .irs-grid-text,
+.modalWindow-7 .irs-grid-text {
+  font-size: 12px;
+  color: #000;
+}
+
+.modalWindow-6 .irs-slider,
+.modalWindow-7 .irs-slider {
   background: #ff6163;
   border: 0;
 }
 
-.modalWindow-6 .irs-single {
+.modalWindow-6 .irs-single,
+.modalWindow-7 .irs-single {
   background: #ff6163;
 }
 
-.modalWindow-6 .irs-line {
+.modalWindow-6 .irs-line,
+.modalWindow-7 .irs-line {
   width: 98%;
   margin: 0 auto;
   height: 2px;
@@ -1209,15 +1265,151 @@ h2 {
   top: 38px;
 }
 
-.modalWindow-6 .irs-bar {
+.modalWindow-6 .irs-bar,
+.modalWindow-7 .irs-bar {
   background: #ff6163;
   border: 0;
 }
 
-.modalWindow-6 .irs-bar-edge {
+.modalWindow-6 .irs-bar-edge,
+.modalWindow-7 .irs-bar-edge {
   width: 15px;
   background: #ff6163;
   border: 0;
+}
+
+.modalWindow-6 .callout,
+.modalWindow-7 .callout {
+  padding: 5px 10px;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  background: #ffae64;
+  color: #000;
+  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.modalWindow-6 form,
+.modalWindow-7 form {
+  margin-top: 50px;
+}
+
+.modalWindow-6 input,
+.modalWindow-7 input {
+  width: 25%;
+  padding: 20px 20px;
+  border: 2px solid #333;
+  background: transparent;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  outline: none;
+}
+
+.modalWindow-6 input::-webkit-input-placeholder,
+.modalWindow-7 input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #1e3746;
+  font-weight: 700;
+  opacity: .5;
+}
+
+.modalWindow-6 input::-moz-placeholder,
+.modalWindow-7 input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #1e3746;
+  font-weight: 700;
+  opacity: .7;
+}
+
+.modalWindow-6 input:-ms-input-placeholder,
+.modalWindow-7 input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #1e3746;
+  font-weight: 700;
+  opacity: .7;
+}
+
+.modalWindow-6 input:-moz-placeholder,
+.modalWindow-7 input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #1e3746;
+  font-weight: 700;
+  opacity: .7;
+}
+
+.modalWindow-6 input[type="submit"],
+.modalWindow-7 input[type="submit"] {
+  width: 35%;
+  background: #f05f5a;
+  -webkit-box-shadow: 0px 5px 1px 0 #d2413c;
+          box-shadow: 0px 5px 1px 0 #d2413c;
+  color: #ffe164;
+  border: 2px solid #f05f5a;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.modalWindow-6 input[type="submit"]:hover,
+.modalWindow-7 input[type="submit"]:hover {
+  background: transparent;
+  color: #f05f5a;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modalWindow-7 .inner-block {
+  width: 60%;
+}
+
+.modalWindow-7 .inner-block .description {
+  margin-bottom: 20px;
+}
+
+.modalWindow-7 .inner-block form {
+  margin-top: 20px;
+}
+
+.modalWindow-7 .inner-block form .area-block {
+  width: 30%;
+  margin-bottom: 70px;
+}
+
+.modalWindow-7 .inner-block form .area-block p {
+  font-size: 10px;
+}
+
+.modalWindow-7 .inner-block form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #ffeb99;
+  border: 1px solid #000;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 10px;
+  outline: none;
+  position: relative;
+  resize: none;
+}
+
+.modalWindow-7 .inner-block form label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.modalWindow-7 .inner-block form .range-width {
+  width: 65%;
+  margin-bottom: 100px;
+}
+
+.modalWindow-7 .inner-block form .callout {
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 1299px) {
   .container {
@@ -1255,6 +1447,41 @@ h2 {
 
   .modalWindow-4 .inner-block {
     width: 75%;
+  }
+
+  .modalWindow-6 .inner-block,
+  .modalWindow-7 .inner-block {
+    width: 60%;
+    padding: 30px;
+  }
+
+  .modalWindow-6 input,
+  .modalWindow-7 input {
+    padding: 15px 5px;
+  }
+
+  .modalWindow-6 input::-webkit-input-placeholder,
+  .modalWindow-7 input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 14px;
+  }
+
+  .modalWindow-6 input::-moz-placeholder,
+  .modalWindow-7 input::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 14px;
+  }
+
+  .modalWindow-6 input:-ms-input-placeholder,
+  .modalWindow-7 input:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 14px;
+  }
+
+  .modalWindow-6 input:-moz-placeholder,
+  .modalWindow-7 input:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 14px;
   }
 }
 
@@ -1473,6 +1700,40 @@ h2 {
 
   .modalWindow-3 .inputs-contacts input {
     width: 85%;
+  }
+
+  .modalWindow-6 .inner-block,
+  .modalWindow-7 .inner-block {
+    width: 85%;
+    padding: 20px;
+  }
+
+  .modalWindow-6 .inner-block .description,
+  .modalWindow-7 .inner-block .description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .modalWindow-6 .inner-block form,
+  .modalWindow-7 .inner-block form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .modalWindow-6 .inner-block form .area-block,
+  .modalWindow-7 .inner-block form .area-block {
+    width: 80%;
+  }
+
+  .modalWindow-6 .inner-block form input,
+  .modalWindow-7 .inner-block form input {
+    margin-bottom: 20px;
+    width: 80%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
@@ -1737,5 +1998,34 @@ h2 {
 
   .modalWindow-3 .inputs-contacts input {
     width: 95%;
+  }
+
+  .modalWindow-6 .inner-block,
+  .modalWindow-7 .inner-block {
+    padding: 50px  10px;
+  }
+
+  .modalWindow-6 .inner-block .callout,
+  .modalWindow-7 .inner-block .callout {
+    width: 80%;
+  }
+
+  .modalWindow-6 .inner-block form,
+  .modalWindow-7 .inner-block form {
+    margin-top: 20px;
+  }
+
+  .modalWindow-6 .inner-block form input,
+  .modalWindow-7 .inner-block form input {
+    width: 90%;
+  }
+
+  .modalWindow-7 .inner-block form .area-block {
+    margin-bottom: 20px;
+  }
+
+  .modalWindow-7 .inner-block form .range-width {
+    width: 95%;
+    margin-bottom: 20px;
   }
 }
