@@ -1,0 +1,17 @@
+
+// Arrow-down
+@keyframes slidein {
+  0% {
+    border: 20px solid transparent;	
+		border-top: 20px solid #fff;
+  }
+
+  50% {
+    border: 25px solid transparent;	
+		border-top: 25px solid #fff;
+  }
+  100% {
+    border: 20px solid transparent;	
+		border-top: 20px solid #fff;
+  }
+}

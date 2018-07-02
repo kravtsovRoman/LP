@@ -1,0 +1,13 @@
+
+// Local Font Montserrat
+// @font-face {
+//     font-family: 'Montserrat';
+//     src: local('../fonts/montserrat/Montserrat'), 
+//     local('Montserrat'), 
+//     url('../fonts/montserrat/montserrat.woff2') format('woff2'), 
+//     url('../fonts/montserrat/montserrat.woff') format('woff'), 
+//     url('../fonts/montserrat/montserrat.ttf') format('truetype');
+//     font-style: normal;
+// }
+// External Font Montserrat
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&subset=cyrillic');
