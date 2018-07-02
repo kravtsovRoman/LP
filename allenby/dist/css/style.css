@@ -479,7 +479,35 @@ section .block-img {
 
 section .block-img img {
   width: 100%;
-  height: 100%;
+  background-position: center;
+}
+
+section .block-img-1 {
+  background: url("../image/section-img-1.jpg") no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+section .block-img-2 {
+  background: url("../image/section-img-2.jpg") no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+section .block-img-3 {
+  background: url("../image/section-img-3.jpg") no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+section .block-img-4 {
+  background: url("../image/section-img-4.jpg") no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
 section .block-text {
@@ -510,9 +538,40 @@ section .block-text .wrapper .block-button {
 }
 
 footer .contacts {
-  width: 40%;
+  width: 35%;
+  background: #000;
+  color: #fff;
+  padding: 30px 0 40px 0;
+}
+
+footer .contacts .wrapper {
+  float: right;
+  margin-right: 70px;
+}
+
+footer .contacts .wrapper .logo {
+  width: 250px;
+}
+
+footer .contacts .wrapper li {
+  padding-top: 30px;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-position: left 100%;
+}
+
+footer .contacts .wrapper .phone {
+  background: url("../image/phone_icon.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+}
+
+footer .contacts .wrapper .location {
+  background: url("../image/location-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
 }
 
 footer .map {
-  width: 60%;
+  width: 65%;
 }
