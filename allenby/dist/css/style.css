@@ -246,6 +246,9 @@ header .burger {
   float: right;
   margin-left: 10px;
   margin-right: 10px;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 header .burger_checkbox {
@@ -363,7 +366,7 @@ header .logo-fixed {
 }
 
 header .nav-menu .nav-menu-fixed {
-  padding: 10px;
+  padding: 8px;
 }
 
 header .nav-menu .nav-phone-fixed {
@@ -405,6 +408,23 @@ header .nav-menu .nav-phone-fixed {
 
 .slider .slide .slick-slide {
   width: 100% !important;
+}
+
+.slider .slide-1 {
+  background: url("../image/slide1_bg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  outline: none;
+}
+
+.slider .slide-2 {
+  background: url("../image/slide2_bg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
   outline: none;
 }
 
@@ -413,6 +433,7 @@ header .nav-menu .nav-phone-fixed {
   padding-top: 100px;
   color: #fff;
   position: relative;
+  outline: none;
 }
 
 .slider .block img {
@@ -434,6 +455,7 @@ header .nav-menu .nav-phone-fixed {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+  outline: none;
 }
 
 .slider .block .slider-content img {
@@ -466,6 +488,7 @@ header .nav-menu .nav-phone-fixed {
   cursor: pointer;
   -webkit-animation: slidein 2s infinite linear;
           animation: slidein 2s infinite linear;
+  outline: none;
 }
 
 section .block {
@@ -574,4 +597,184 @@ footer .contacts .wrapper .location {
 
 footer .map {
   width: 65%;
+}
+@media screen and (max-width: 1600px) {
+  .slider .slick-arrow {
+    right: 4%;
+  }
+
+  .slider .slick-prev {
+    left: 4%;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  section .block-text .wrapper {
+    width: 75%;
+    padding: 30px;
+  }
+
+  section .block-text .wrapper .button {
+    padding: 12px 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header .nav-menu li {
+    padding: 30px 0;
+  }
+
+  header .nav-menu li a:after {
+    content: '';
+  }
+
+  header .nav-menu .nav-menu-fixed {
+    padding: 12px 5px;
+  }
+
+  header .nav-menu .header-phone {
+    display: none;
+    margin-left: 0;
+    background: none;
+    padding-left: 20px;
+  }
+
+  .slider .slick-arrow {
+    display: none;
+  }
+
+  .slider .block .slider-content {
+    width: 95%;
+  }
+
+  .slider .block .slider-content img {
+    width: 100%;
+  }
+
+  section .block-text {
+    padding: 20px 0;
+  }
+
+  section .block-text .wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+
+  section .block-text .wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  section .block-text .wrapper p {
+    font-size: 14px;
+  }
+
+  section .block-text .wrapper .button {
+    padding: 12px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .header-top {
+    top: 0;
+  }
+
+  header .header-top .logo {
+    width: 200px;
+    margin-top: 0;
+  }
+
+  header .header-top .logo-fixed {
+    width: 105px;
+    margin: 0;
+  }
+
+  header .header-top .burger-fixed {
+    margin-top: -30px;
+  }
+
+  header .container {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: auto;
+    -webkit-align-items: auto;
+        -ms-flex-align: auto;
+            align-items: auto;
+  }
+
+  header .nav-menu {
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+
+  header .nav-menu li {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #000;
+    padding: 15px 0;
+  }
+
+  header .nav-menu li:not(:last-child) {
+    border-bottom: 1px solid #fff;
+  }
+
+  header .nav-menu .header-phone {
+    display: block;
+    background: #000;
+    padding: 15px 0;
+  }
+
+  header .nav-menu .header-phone a {
+    padding: 3px 0 3px 30px;
+    background: url("../image/phone_icon.png");
+    background-repeat: no-repeat;
+  }
+
+  header .burger {
+    display: block;
+    margin-top: -10px;
+  }
+
+  .slider .block .slider-content img {
+    height: 150px;
+  }
+
+  section .block-text {
+    width: 100%;
+  }
+
+  section .block-img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .nav-menu {
+    width: 100%;
+  }
+
+  .slider .block .slider-content img {
+    height: 100px;
+  }
+
+  .slider .block .slider-content-2 {
+    top: 20%;
+  }
+
+  .slider .block .slider-content-2 h2 {
+    font-size: 40px;
+  }
+
+  .slider .block .slider-content-2 p {
+    line-height: 22px;
+  }
 }

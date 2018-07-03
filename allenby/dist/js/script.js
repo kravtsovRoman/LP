@@ -14,12 +14,14 @@ $(document).ready(function(){
   		$("header .logo").addClass("logo-fixed");
   		$("header .nav-menu li").addClass("nav-menu-fixed");
   		$("header .nav-menu .header-phone").addClass("nav-phone-fixed");
+  		$("header .burger").addClass("burger-fixed");
   	}
   	else{
   		$(".header-top").removeClass("header-top-fixed");
   		$("header .logo").removeClass("logo-fixed");
   		$("header .nav-menu li").removeClass("nav-menu-fixed");
   		$("header .nav-menu .header-phone").removeClass("nav-phone-fixed");
+  		$("header .burger").removeClass("burger-fixed");
   	}
   });
 
@@ -28,19 +30,19 @@ $(document).ready(function(){
   	event.preventDefault();
   	var id  = $(this).attr('href'),
   	top = $(id).offset().top;
-  	$('body,html').animate({scrollTop: top -80}, 1000);
+  	$('body,html').animate({scrollTop: top -40}, 1000);
   });
 
 	//Slider
 	$('.slider').slick({
 		speed: 500,
 		dots: false,
-		fade: true,
+		fade: true, 
 		responsive: [
 		{
-			breakpoint: 767,
+			breakpoint: 991,
 			settings: {
-				autoplay: true,
+				// autoplay: true,
 				autoplaySpeed: 5000,
 				slidesToShow: 1,
 				slidesToScroll: 1,
